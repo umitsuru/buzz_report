@@ -66,14 +66,14 @@
     if (details) details.open = true;
   }
 
-  function lightTheme() {
+  function darkTheme() {
     var root = document.documentElement;
-    root.setAttribute("data-theme", "light");
-    root.style.background = "#f3f0ea";
+    root.setAttribute("data-theme", "dark");
+    root.style.background = "#000";
     var theme = document.querySelector('meta[name="theme-color"]');
-    if (theme) theme.content = "#f3f0ea";
+    if (theme) theme.content = "#000";
     var scheme = document.querySelector('meta[name="color-scheme"]');
-    if (scheme) scheme.content = "light";
+    if (scheme) scheme.content = "dark";
   }
 
   function fitImages() {
@@ -88,7 +88,7 @@
   }
 
   onReady(function () {
-    lightTheme();
+    darkTheme();
     hardenLinks();
     fold(document.getElementById("tbl"), "数値の一覧表");
     fold(document.getElementById("arch"), "過去の回");

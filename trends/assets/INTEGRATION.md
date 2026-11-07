@@ -1,6 +1,6 @@
 # 日次生成への組み込み
 
-公開サイトは **最新トレンド画像投稿だけ** です。見た目は投稿HTMLを作り直さず、共有の CSS / JS で揃えています。次の生成でこの見た目を残すには、ローカルの `/workspace/x_analysis/trends_build/` に次を足してください。
+公開サイトは **最新トレンド画像投稿だけ** です。見た目は投稿HTMLを作り直さず、共有の CSS / JS で揃えています。背景は黒（`#000` 付近）、投稿カードは横に3枚の3列です。次の生成でこの見た目を残すには、ローカルの `/workspace/x_analysis/trends_build/` に次を足してください。
 
 ## 残すファイル
 
@@ -29,7 +29,7 @@
 <script src="../assets/trends.js"></script>
 ```
 
-CSSは既存の `<style>` より **後ろ** に置いてください。JSは既存の並べ替え用 `<script>` より後ろでも、`<head>` 内の `defer` でも動きます。
+CSSは既存の `<style>` より **後ろ** に置いてください。JSは既存の並べ替え用 `<script>` より後ろでも、`<head>` 内の `defer` でも動きます。生成のたびに `trends.css` を紙色や1列用のCSSで置き換えないでください。このファイルが黒背景と3列の正です。
 
 1つのテンプレート文字列しか出せない場合は、深さに依存しない次のURLでもライブサイトでは動きます。
 
@@ -39,6 +39,20 @@ CSSは既存の `<style>` より **後ろ** に置いてください。JSは既�
 ```
 
 この絶対パスは GitHub Pages の `/buzz_report/` 専用です。リポジトリ直下を別のパスで開くローカル確認ではCSSが当たりません。
+
+## 見た目は黒背景の3列
+
+`trends/assets/trends.css` を最後に読み込みます。最新は `assets/trends.css`、過去回は `../assets/trends.css` です。
+
+- ページ背景は `#000`。カード、表、ナビも暗色で、本文と画像が読める文字色にする
+- `.cards` は常に3列。PCとタブレット（幅760px以上）は3列が幅に収まる
+- それより狭い画面も1列に戻さない。カード最小幅 300px の3列のまま、`.cards` の中だけ横スクロールする
+- 生成HTMLの `@media(max-width:560px){ .cards{ grid-template-columns:1fr } }` は共有CSSが上書きする。1列用の指定を足し直さない
+- 白や紙色（`#f3f0ea` や `#fff`）の背景には戻さない
+
+## 更新時刻
+
+公開は日本時間で1日2回です。朝 6:00 と夜 19:00 で、それぞれ前後15分以内。生成文に回数を書くときは「1日2回（朝6時・夜19時 JST）」にしてください。
 
 ## 出さないリンク
 
@@ -139,12 +153,14 @@ def prune_trends(root: Path = ROOT) -> None:
 
 リンク除去の正規表現は、期限切れIDを `href` に含む過去回リンクだけを対象にしています。投稿そのもの（`https://x.com/...`）は `img/` もスナップショットIDも通常含まないので残ります。
 
-## 任意（暗い一瞬を減らす）
+## 先頭の色（白のちらつきを避ける）
 
-生成HTMLの先頭がまだダークテーマでも、CSSが当たれば紙色になります。余力があれば次だけ合わせてください。
+生成HTMLの先頭は黒にしてください。共有CSSが当たる前の一瞬も紙色にしないためです。
 
 ```html
-<html lang="ja" data-theme="light" style="background:#f3f0ea">
-<meta name="color-scheme" content="light">
-<meta name="theme-color" content="#f3f0ea">
+<html lang="ja" data-theme="dark" style="background:#000">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#000">
 ```
+
+`trends.js` も開いたときにこの3つを黒へ揃えます。`data-theme="light"` や `#f3f0ea` は書かないでください。
