@@ -2,6 +2,8 @@
 
 Xの「上下で比べる15枚の画像シリーズ」の参考投稿を集める棚です。公開サイトのナビやページからはリンクしません。
 
+閲覧ページ：https://umitsuru.github.io/buzz_report/hikaku15/ （`posts/` の中身を自動で読み込んで表示します）
+
 ## 役割分担
 
 | 担当 | やること |
@@ -9,13 +11,14 @@ Xの「上下で比べる15枚の画像シリーズ」の参考投稿を集め�
 | グロッキー（Grok bot） | 投稿を探して、**生データ（本文・数字・画像・返信）をそのまま保存するだけ**。分析・要約・感想は書かない |
 | Claude | 画像を見て分析し、`analysis.md`・`catalog.md`・`neta.md` を書く。新ネタを考える |
 
-グロッキーは `analysis.md`・`catalog.md`・`neta.md` に触れないでください。
+グロッキーは `index.html`・`analysis.md`・`catalog.md`・`neta.md` に触れないでください。
 
 ## フォルダ構成
 
 ```
 hikaku15/
 ├─ README.md            この説明（グロッキーは変更しない）
+├─ index.html           閲覧ページ（Claudeが管理）
 ├─ catalog.md           全投稿の一覧と傾向（Claudeが更新）
 ├─ neta.md              既出ネタ・制作中ネタ・提案済みネタ（Claudeが更新）
 └─ posts/

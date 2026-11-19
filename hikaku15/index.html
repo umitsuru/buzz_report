@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#000">
+<title>上下比較15枚 データベース</title>
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#000;color:#e6e6e6;font:15px/1.7 "Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif}
+  a{color:#9dc3f0}
+  header{position:sticky;top:0;z-index:5;background:rgba(0,0,0,.92);backdrop-filter:blur(6px);border-bottom:1px solid #222}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 14px}
+  .top{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;padding:12px 0 8px}
+  h1{font-size:18px;margin:0;font-weight:700;letter-spacing:.02em}
+  .links{display:flex;gap:12px;font-size:13px}
+  .bar{display:flex;flex-wrap:wrap;gap:8px;padding:0 0 12px}
+  .bar button{background:#151515;color:#ccc;border:1px solid #333;border-radius:999px;padding:5px 12px;font:inherit;font-size:13px;cursor:pointer}
+  .bar button.on{background:#e6e6e6;color:#000;border-color:#e6e6e6}
+  .count{font-size:13px;color:#888;align-self:center;margin-left:auto}
+  main{padding:16px 0 60px}
+  .msg{color:#999;text-align:center;padding:60px 10px}
+  .post{background:#0d0d0d;border:1px solid #232323;border-radius:14px;padding:14px;margin:0 0 18px}
+  .post.own{border-color:#6b5a1e}
+  .ph{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px}
+  .theme{font-size:17px;font-weight:700;margin:0;flex:1 1 100%}
+  .who{font-size:13px;color:#aaa}
+  .tag{font-size:11px;border-radius:4px;padding:1px 6px;background:#3a3010;color:#f0d77a}
+  .tag.new{background:#10303a;color:#7ad4f0}
+  .kpi{display:flex;flex-wrap:wrap;gap:6px 14px;margin:8px 0 10px;font-size:13px;color:#ccc}
+  .kpi b{color:#fff;font-size:15px}
+  .imgs{display:grid;grid-template-columns:repeat(5,1fr);gap:4px}
+  @media(min-width:760px){ .imgs{grid-template-columns:repeat(8,1fr)} }
+  .imgs button{padding:0;border:0;background:#111;border-radius:6px;overflow:hidden;aspect-ratio:3/4;cursor:zoom-in;position:relative}
+  .imgs img{width:100%;height:100%;object-fit:cover;display:block}
+  .imgs span{position:absolute;right:3px;top:2px;font-size:10px;background:rgba(0,0,0,.7);color:#fff;border-radius:3px;padding:0 4px}
+  details{margin-top:10px;border-top:1px solid #222;padding-top:8px}
+  summary{cursor:pointer;font-size:13px;color:#bbb}
+  .txt{white-space:pre-wrap;word-break:break-word;font-size:14px;margin:8px 0 0;color:#ddd}
+  .reps{margin:8px 0 0;padding:0;list-style:none}
+  .reps li{font-size:13px;border-left:2px solid #333;padding:2px 0 2px 8px;margin:0 0 6px;white-space:pre-wrap;word-break:break-word}
+  .reps small{color:#888;margin-left:6px}
+  .ana{font-size:14px;margin-top:8px}
+  .ana h2,.ana h3,.ana h4{font-size:15px;margin:14px 0 4px;color:#fff}
+  .ana ul{margin:4px 0;padding-left:20px}
+  .ana p{margin:6px 0}
+  .ana table{border-collapse:collapse;font-size:12px;width:100%;display:block;overflow-x:auto}
+  .ana td,.ana th{border:1px solid #333;padding:3px 6px;text-align:left;vertical-align:top}
+  .pending{font-size:13px;color:#777;margin-top:10px}
+  .btns{display:flex;gap:10px;margin-top:10px;font-size:13px}
+  /* 拡大表示 */
+  #lb{position:fixed;inset:0;background:#000;display:none;z-index:20;align-items:center;justify-content:center;touch-action:pan-y}
+  #lb.open{display:flex}
+  #lb img{max-width:100vw;max-height:100vh;object-fit:contain;user-select:none}
+  #lb .n{position:fixed;top:10px;left:50%;transform:translateX(-50%);font-size:14px;background:rgba(0,0,0,.6);padding:2px 10px;border-radius:999px}
+  #lb .x,#lb .pv,#lb .nx{position:fixed;background:rgba(40,40,40,.7);color:#fff;border:0;border-radius:999px;width:44px;height:44px;font-size:22px;cursor:pointer}
+  #lb .x{top:8px;right:8px}
+  #lb .pv{left:8px;top:50%}
+  #lb .nx{right:8px;top:50%}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="top">
+      <h1>上下比較15枚 データベース</h1>
+      <div class="links">
+        <a href="https://github.com/umitsuru/buzz_report/blob/main/hikaku15/catalog.md" target="_blank" rel="noopener noreferrer">一覧と傾向</a>
+        <a href="https://github.com/umitsuru/buzz_report/blob/main/hikaku15/neta.md" target="_blank" rel="noopener noreferrer">ネタ帳</a>
+      </div>
+    </div>
+    <div class="bar" id="bar">
+      <button data-sort="new" class="on">新着順</button>
+      <button data-sort="views">表示回数順</button>
+      <button data-sort="likes">いいね順</button>
+      <button data-sort="bm">ブックマーク順</button>
+      <button data-filter="own">自分の投稿だけ</button>
+      <span class="count" id="count"></span>
+    </div>
+  </div>
+</header>
+<main class="wrap" id="list"><p class="msg">読み込み中…</p></main>
+
+<div id="lb" aria-hidden="true">
+  <span class="n" id="lbn"></span>
+  <button class="x" id="lbx" aria-label="閉じる">×</button>
+  <button class="pv" id="lbp" aria-label="前へ">‹</button>
+  <img id="lbi" alt="">
+  <button class="nx" id="lbnx" aria-label="次へ">›</button>
+</div>
+
+<script>
+(() => {
+  const REPO = 'umitsuru/buzz_report';
+  const DIR = 'hikaku15/posts';   // リポジトリ内の場所（GitHub API・リンク用）
+  const REL = 'posts';             // このページから見た場所（データ読み込み用）
+  const list = document.getElementById('list');
+  const count = document.getElementById('count');
+  let posts = [];
+  let sortKey = 'new';
+  let ownOnly = false;
+
+  const el = (tag, cls, text) => {
+    const e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  };
+  const num = v => (v == null || v === '' || isNaN(v)) ? null : Number(v);
+  const fmt = v => {
+    v = num(v);
+    if (v == null) return '—';
+    if (v >= 10000) return (Math.round(v / 1000) / 10).toLocaleString('ja-JP') + '万';
+    return v.toLocaleString('ja-JP');
+  };
+  const fmtDate = s => {
+    if (!s) return '';
+    const d = new Date(s);
+    if (isNaN(d)) return s;
+    return d.toLocaleString('ja-JP', {timeZone: 'Asia/Tokyo', year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit'});
+  };
+
+  // フォルダ一覧：posts/index.json があればそれを、なければ GitHub API を使う
+  async function listFolders() {
+    try {
+      const r = await fetch(REL + '/index.json', {cache: 'no-store'});
+      if (r.ok) {
+        const j = await r.json();
+        if (Array.isArray(j) && j.length) return j;
+      }
+    } catch (e) {}
+    const r = await fetch(`https://api.github.com/repos/${REPO}/contents/${DIR}?ref=main`, {cache: 'no-store'});
+    if (!r.ok) throw new Error('GitHub API ' + r.status);
+    const j = await r.json();
+    return j.filter(x => x.type === 'dir').map(x => x.name);
+  }
+
+  // 画像ファイル名の一覧（raw.json の thread → images → image_count の順に探す）
+  function imageFiles(raw) {
+    let files = [];
+    if (Array.isArray(raw.thread)) raw.thread.forEach(t => (t.images || []).forEach(f => files.push(f)));
+    if (!files.length && Array.isArray(raw.images)) files = raw.images.map(x => typeof x === 'string' ? x : x.file).filter(Boolean);
+    if (!files.length && raw.image_count) for (let i = 1; i <= raw.image_count; i++) files.push(String(i).padStart(2, '0') + '.jpg');
+    return files.map(f => f.replace(/^img\//, ''));
+  }
+
+  // analysis.md の簡易表示（見出し・箇条書き・表・太字・段落）
+  function renderMd(md) {
+    const box = el('div', 'ana');
+    const inline = (parent, s) => {
+      s.split(/(\*\*[^*]+\*\*)/).forEach(part => {
+        if (/^\*\*[^*]+\*\*$/.test(part)) parent.appendChild(el('b', null, part.slice(2, -2)));
+        else if (part) parent.appendChild(document.createTextNode(part));
+      });
+    };
+    const lines = md.replace(/\r/g, '').split('\n');
+    let ul = null, table = null, para = null;
+    const close = () => { ul = null; table = null; para = null; };
+    lines.forEach(line => {
+      const t = line.trim();
+      if (!t) { close(); return; }
+      let m;
+      if ((m = t.match(/^(#{1,4})\s+(.*)$/))) {
+        close();
+        const h = el('h' + Math.min(4, m[1].length + 1));
+        inline(h, m[2]); box.appendChild(h);
+      } else if ((m = t.match(/^[-*]\s+(.*)$/))) {
+        table = null; para = null;
+        if (!ul) { ul = el('ul'); box.appendChild(ul); }
+        const li = el('li'); inline(li, m[1]); ul.appendChild(li);
+      } else if (t.startsWith('|')) {
+        ul = null; para = null;
+        if (/^\|[\s:|-]+\|$/.test(t)) return;
+        if (!table) { table = el('table'); box.appendChild(table); }
+        const tr = el('tr');
+        t.replace(/^\||\|$/g, '').split('|').forEach(c => { const td = el('td'); inline(td, c.trim()); tr.appendChild(td); });
+        table.appendChild(tr);
+      } else {
+        ul = null; table = null;
+        if (!para) { para = el('p'); box.appendChild(para); } else para.appendChild(document.createElement('br'));
+        inline(para, t);
+      }
+    });
+    return box;
+  }
+
+  async function loadPost(folder) {
+    const base = `${REL}/${folder}/`;
+    const r = await fetch(base + 'raw.json', {cache: 'no-store'});
+    if (!r.ok) return null;
+    const raw = await r.json();
+    let analysis = null;
+    try {
+      const a = await fetch(base + 'analysis.md', {cache: 'no-store'});
+      if (a.ok) analysis = await a.text();
+    } catch (e) {}
+    let theme = '';
+    if (analysis) {
+      const m = analysis.match(/^#\s+(.+)$/m);
+      if (m) theme = m[1].trim();
+    }
+    const date = folder.slice(0, 8);
+    return {folder, base, raw, analysis, theme, date, files: imageFiles(raw)};
+  }
+
+  // 拡大表示
+  const lb = document.getElementById('lb'), lbi = document.getElementById('lbi'), lbn = document.getElementById('lbn');
+  let lbSet = [], lbIdx = 0;
+  const lbShow = () => { lbi.src = lbSet[lbIdx]; lbn.textContent = `${lbIdx + 1} / ${lbSet.length}`; };
+  const lbOpen = (set, i) => { lbSet = set; lbIdx = i; lbShow(); lb.classList.add('open'); document.body.style.overflow = 'hidden'; };
+  const lbClose = () => { lb.classList.remove('open'); document.body.style.overflow = ''; lbi.src = ''; };
+  const lbMove = d => { lbIdx = (lbIdx + d + lbSet.length) % lbSet.length; lbShow(); };
+  document.getElementById('lbx').onclick = lbClose;
+  document.getElementById('lbp').onclick = e => { e.stopPropagation(); lbMove(-1); };
+  document.getElementById('lbnx').onclick = e => { e.stopPropagation(); lbMove(1); };
+  lb.addEventListener('click', e => { if (e.target === lb) lbClose(); });
+  document.addEventListener('keydown', e => {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') lbClose();
+    if (e.key === 'ArrowLeft') lbMove(-1);
+    if (e.key === 'ArrowRight') lbMove(1);
+  });
+  let sx = null;
+  lb.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, {passive: true});
+  lb.addEventListener('touchend', e => {
+    if (sx == null) return;
+    const dx = e.changedTouches[0].clientX - sx; sx = null;
+    if (Math.abs(dx) > 40) lbMove(dx < 0 ? 1 : -1);
+  });
+
+  function card(p) {
+    const raw = p.raw, m = raw.metrics || {}, a = raw.author || {};
+    const box = el('article', 'post' + (raw.own ? ' own' : ''));
+    const ph = el('div', 'ph');
+    const firstLine = (raw.text || '').split('\n').find(s => s.trim()) || '（本文なし）';
+    ph.appendChild(el('h2', 'theme', p.theme || firstLine));
+    ph.appendChild(el('span', 'who', `${a.name || ''} ${a.handle || ''}${a.followers != null ? '・フォロワー' + fmt(a.followers) : ''}`));
+    ph.appendChild(el('span', 'who', '投稿 ' + fmtDate(raw.posted_at)));
+    if (raw.own) ph.appendChild(el('span', 'tag', '自分'));
+    if (!p.analysis) ph.appendChild(el('span', 'tag new', '未分析'));
+    box.appendChild(ph);
+
+    const kpi = el('div', 'kpi');
+    [['表示', m.views], ['いいね', m.likes], ['RP', m.reposts], ['引用', m.quotes], ['返信', m.replies], ['BM', m.bookmarks]].forEach(([k, v]) => {
+      const s = el('span'); s.append(k + ' '); s.appendChild(el('b', null, fmt(v))); kpi.appendChild(s);
+    });
+    box.appendChild(kpi);
+
+    if (p.files.length) {
+      const set = p.files.map(f => p.base + 'img/' + f);
+      const g = el('div', 'imgs');
+      set.forEach((src, i) => {
+        const b = el('button');
+        b.setAttribute('aria-label', `${i + 1}枚目を拡大`);
+        const img = el('img'); img.src = src; img.loading = 'lazy'; img.alt = `${i + 1}枚目`;
+        b.appendChild(img); b.appendChild(el('span', null, i + 1));
+        b.onclick = () => lbOpen(set, i);
+        g.appendChild(b);
+      });
+      box.appendChild(g);
+    }
+
+    if (p.analysis) {
+      const d = el('details'); d.open = true;
+      d.appendChild(el('summary', null, 'Claudeの分析'));
+      d.appendChild(renderMd(p.analysis.replace(/^#\s+.+$/m, '')));
+      box.appendChild(d);
+    } else {
+      box.appendChild(el('p', 'pending', 'まだ分析していません。「15枚DBを見て新ネタ」と送ると、分析して追加します。'));
+    }
+
+    const dt = el('details');
+    dt.appendChild(el('summary', null, '本文とスレッド'));
+    const thread = Array.isArray(raw.thread) && raw.thread.length ? raw.thread : [{text: raw.text}];
+    thread.forEach((t, i) => dt.appendChild(el('p', 'txt', (thread.length > 1 ? `【${i === 0 ? '元投稿' : 'セルフリプ' + i}】\n` : '') + (t.text || ''))));
+    box.appendChild(dt);
+
+    const reps = (raw.top_replies || []), qs = (raw.top_quotes || []);
+    if (reps.length || qs.length) {
+      const dr = el('details');
+      dr.appendChild(el('summary', null, `反応（返信${reps.length}件・引用${qs.length}件）`));
+      [['返信', reps], ['引用', qs]].forEach(([label, arr]) => {
+        if (!arr.length) return;
+        dr.appendChild(el('p', 'who', label));
+        const ul = el('ul', 'reps');
+        arr.forEach(r => { const li = el('li', null, r.text || ''); if (r.likes != null) li.appendChild(el('small', null, '♥' + fmt(r.likes))); ul.appendChild(li); });
+        dr.appendChild(ul);
+      });
+      box.appendChild(dr);
+    }
+
+    if (raw.note) box.appendChild(el('p', 'pending', 'メモ：' + raw.note));
+
+    const btns = el('div', 'btns');
+    if (raw.url) { const l = el('a', null, 'Xで見る'); l.href = raw.url; l.target = '_blank'; l.rel = 'noopener noreferrer'; btns.appendChild(l); }
+    const g = el('a', null, 'フォルダを開く');
+    g.href = `https://github.com/${REPO}/tree/main/${DIR}/${p.folder}`; g.target = '_blank'; g.rel = 'noopener noreferrer';
+    btns.appendChild(g);
+    box.appendChild(btns);
+    return box;
+  }
+
+  function render() {
+    let arr = posts.slice();
+    if (ownOnly) arr = arr.filter(p => p.raw.own);
+    const key = {views: 'views', likes: 'likes', bm: 'bookmarks'}[sortKey];
+    arr.sort((x, y) => key
+      ? (num((y.raw.metrics || {})[key]) ?? -1) - (num((x.raw.metrics || {})[key]) ?? -1)
+      : (y.raw.collected_at || y.date).localeCompare(x.raw.collected_at || x.date));
+    list.textContent = '';
+    count.textContent = `${arr.length}件`;
+    if (!arr.length) { list.appendChild(el('p', 'msg', ownOnly ? '自分の投稿はまだありません。' : 'まだ投稿がありません。グロッキーが集めると、ここに並びます。')); return; }
+    arr.forEach(p => list.appendChild(card(p)));
+  }
+
+  document.getElementById('bar').addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    if (b.dataset.sort) {
+      sortKey = b.dataset.sort;
+      document.querySelectorAll('[data-sort]').forEach(x => x.classList.toggle('on', x === b));
+    } else if (b.dataset.filter) {
+      ownOnly = !ownOnly; b.classList.toggle('on', ownOnly);
+    }
+    render();
+  });
+
+  (async () => {
+    try {
+      const folders = await listFolders();
+      const loaded = await Promise.all(folders.map(f => loadPost(f).catch(() => null)));
+      posts = loaded.filter(Boolean);
+      render();
+    } catch (e) {
+      list.textContent = '';
+      list.appendChild(el('p', 'msg', '一覧を読み込めませんでした。少し時間をおいて開き直してください。（' + e.message + '）'));
+    }
+  })();
+})();
+</script>
+</body>
+</html>
