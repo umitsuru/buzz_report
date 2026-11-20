@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#000">
-<title>上下比較15枚 データベース</title>
+<title>比較シリーズ データベース</title>
 <style>
   *{box-sizing:border-box}
   html,body{margin:0;background:#000;color:#e6e6e6;font:15px/1.7 "Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif}
@@ -26,6 +26,7 @@
   .post.own{border-color:#6b5a1e}
   .ph{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px}
   .theme{font-size:17px;font-weight:700;margin:0;flex:1 1 100%}
+  .no{display:inline-block;font-size:14px;font-weight:700;background:#e6e6e6;color:#000;border-radius:6px;padding:1px 8px;margin-right:8px;vertical-align:2px;font-variant-numeric:tabular-nums}
   .who{font-size:13px;color:#aaa}
   .tag{font-size:11px;border-radius:4px;padding:1px 6px;background:#3a3010;color:#f0d77a}
   .tag.new{background:#10303a;color:#7ad4f0}
@@ -65,7 +66,7 @@
 <header>
   <div class="wrap">
     <div class="top">
-      <h1>上下比較15枚 データベース</h1>
+      <h1>比較シリーズ データベース</h1>
       <div class="links">
         <a href="https://github.com/umitsuru/buzz_report/blob/main/hikaku15/catalog.md" target="_blank" rel="noopener noreferrer">一覧と傾向</a>
         <a href="https://github.com/umitsuru/buzz_report/blob/main/hikaku15/neta.md" target="_blank" rel="noopener noreferrer">ネタ帳</a>
@@ -235,7 +236,10 @@
     const box = el('article', 'post' + (raw.own ? ' own' : ''));
     const ph = el('div', 'ph');
     const firstLine = (raw.text || '').split('\n').find(s => s.trim()) || '（本文なし）';
-    ph.appendChild(el('h2', 'theme', p.theme || firstLine));
+    const h = el('h2', 'theme');
+    h.appendChild(el('span', 'no', 'No.' + p.no));
+    h.append(p.theme || firstLine);
+    ph.appendChild(h);
     ph.appendChild(el('span', 'who', `${a.name || ''} ${a.handle || ''}${a.followers != null ? '・フォロワー' + fmt(a.followers) : ''}`));
     ph.appendChild(el('span', 'who', '投稿 ' + fmtDate(raw.posted_at)));
     if (raw.own) ph.appendChild(el('span', 'tag', '自分'));
@@ -308,7 +312,7 @@
     const key = {views: 'views', likes: 'likes', bm: 'bookmarks'}[sortKey];
     arr.sort((x, y) => key
       ? (num((y.raw.metrics || {})[key]) ?? -1) - (num((x.raw.metrics || {})[key]) ?? -1)
-      : (y.raw.collected_at || y.date).localeCompare(x.raw.collected_at || x.date));
+      : y.no - x.no);
     list.textContent = '';
     count.textContent = `${arr.length}件`;
     if (!arr.length) { list.appendChild(el('p', 'msg', ownOnly ? '自分の投稿はまだありません。' : 'まだ投稿がありません。グロッキーが集めると、ここに並びます。')); return; }
@@ -331,6 +335,9 @@
       const folders = await listFolders();
       const loaded = await Promise.all(folders.map(f => loadPost(f).catch(() => null)));
       posts = loaded.filter(Boolean);
+      // 投稿番号：集めた順（collected_at → フォルダ名）に No.1 から。並べ替えや絞り込みでは変わらない
+      posts.slice().sort((x, y) => (x.raw.collected_at || '').localeCompare(y.raw.collected_at || '') || x.folder.localeCompare(y.folder))
+        .forEach((p, i) => { p.no = i + 1; });
       render();
     } catch (e) {
       list.textContent = '';
