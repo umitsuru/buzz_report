@@ -125,5 +125,20 @@
     "status": "プロンプト完成・画像未生成",
     "reference_role": "composition",
     "reference_note": "参考投稿No.59は番号表への収録が未確認。ユーザーの説明と承認済み構成をもとにした創作。"
+  },
+  {
+    "no": 10,
+    "folder": "010",
+    "title": "北海道の結婚式とお車代",
+    "created": "2026-11-22",
+    "gafu_id": "S-04",
+    "style_name": "テレビの再現VTR（オリジナル画風S-04）",
+    "pages": 10,
+    "aspect_ratio": "1:1",
+    "format": "B",
+    "format_name": "正方形1:1・1枚絵（状況説明つき・比較ラベルなし）",
+    "status": "プロンプト完成・画像未生成",
+    "cover": "./010/ref/S-04.jpg",
+    "source": "claude-buzz-text No.12（うみつる、666万表示）"
   }
 ]
