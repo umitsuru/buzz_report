@@ -110,5 +110,20 @@
     "status": "プロンプト完成・画像未生成",
     "cover": "../posts/20261121_2123886600761520325/img/01.png",
     "reference_role": "composition"
+  },
+  {
+    "no": 9,
+    "folder": "009",
+    "title": "平成のデリヘル嬢と令和のデリヘル嬢。20の違い",
+    "created": "2026-11-21",
+    "gafu_id": "",
+    "style_name": "美麗で色っぽい写実寄り青年漫画カラー（参考No.59は未収録・構成参照）",
+    "pages": 20,
+    "aspect_ratio": "1:1",
+    "format": "上下比較",
+    "format_name": "正方形1:1・上段平成2008／下段令和2026・全20枚",
+    "status": "プロンプト完成・画像未生成",
+    "reference_role": "composition",
+    "reference_note": "参考投稿No.59は番号表への収録が未確認。ユーザーの説明と承認済み構成をもとにした創作。"
   }
 ]
