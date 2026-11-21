@@ -2,98 +2,109 @@
   "plan_no": 10,
   "folder": "010",
   "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/010/",
-  "project": "北海道の結婚式とお車代",
+  "project": "夫がコンドーム1年分に当選した",
   "created": "2026-11-22",
   "format": "B",
-  "format_name": "正方形1:1・1枚絵（状況説明つき・比較ラベルなし）",
+  "format_name": "正方形1:1・1枚絵（筆文字の見出し＋ナレーション）",
   "image_count": 10,
   "aspect_ratio": "1:1",
   "initial_mode": "wait_for_explicit_generate_command",
   "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像で画風を確認したあと、指示されたページの NN.md を1つずつ読み、1ページにつき1枚だけ生成する。",
-  "fiction_notice": "架空の創作。登場人物はすべて成人。実在の人物・式場・番組とは関係ない。",
+  "fiction_notice": "架空の創作。大人の登場人物はすべて成人。性的な描写はせず、箱と夫婦の表情だけで笑いを出す。",
   "source_text_post": {
     "site": "claude-buzz-text",
-    "post_id": "n7",
-    "no": 12,
+    "post_id": "n184",
+    "no": 188,
     "account": "@umitsuru_fire",
-    "title": "北海道の結婚式とお車代",
-    "views": 6656332
+    "title": "夫がコンドーム1年分に当選した",
+    "views": 3319517
   },
-  "reference_posts": [],
+  "reference_posts": [
+    {
+      "no": 59,
+      "folder": "hikaku15/posts/20261121_2124062761646801382",
+      "url": "https://x.com/i_have_a_pun/status/2124062761646801382",
+      "title": "↑平成のキャバ嬢 ↓令和のキャバ嬢",
+      "author": "@i_have_a_pun",
+      "role": "画風のみ"
+    }
+  ],
   "style": {
-    "gafu_id": "S-04",
-    "name": "テレビの再現VTR",
-    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/010/ref/S-04.jpg",
+    "gafu_id": "No.59",
+    "ref_post_no": 59,
+    "name": "写実寄りの美麗アニメ（参考投稿No.59のタッチ）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/010/ref/01.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/010/ref/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/010/ref/05.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/010/ref/13.jpg"
+    ],
     "defined_in": "common.md"
-  },
-  "money": {
-    "交通費（飛行機＋ホテル2泊）": "4万2千円",
-    "会費": "2万円",
-    "お車代": "1万円",
-    "受付のお礼": "5千円",
-    "差し引き": "4万7千円の赤字"
   },
   "pages": [
     {
       "page": 1,
       "label": "1/10",
-      "title": "招待状が届く",
+      "title": "当選",
       "file": "01.md"
     },
     {
       "page": 2,
       "label": "2/10",
-      "title": "飛行機とホテルを予約する",
+      "title": "1年分",
       "file": "02.md"
     },
     {
       "page": 3,
       "label": "3/10",
-      "title": "前日の打ち合わせ",
+      "title": "つまり",
       "file": "03.md"
     },
     {
       "page": 4,
       "label": "4/10",
-      "title": "受付で会費を受け取る",
+      "title": "現実",
       "file": "04.md"
     },
     {
       "page": 5,
       "label": "5/10",
-      "title": "お車代を渡される",
+      "title": "2箱目",
       "file": "05.md"
     },
     {
       "page": 6,
       "label": "6/10",
-      "title": "思わず言ってしまう",
+      "title": "負け",
       "file": "06.md"
     },
     {
       "page": 7,
       "label": "7/10",
-      "title": "みんな同じ1万円",
+      "title": "作戦会議",
       "file": "07.md"
     },
     {
       "page": 8,
       "label": "8/10",
-      "title": "ホテルで計算する",
+      "title": "3日目",
       "file": "08.md"
     },
     {
       "page": 9,
       "label": "9/10",
-      "title": "3年前の私の式",
+      "title": "在庫120個",
       "file": "09.md"
     },
     {
       "page": 10,
       "label": "10/10",
-      "title": "北海道のお菓子と手紙",
+      "title": "1年分",
       "file": "10.md"
     }
   ],
-  "wording_fallback": {}
+  "wording_fallback": {
+    "コンドーム": "生成を断られたら、画像内の文字は変えず、プロンプト中の説明だけ「避妊具」「小さな白い箱の日用品」と読み替える。それでも断られたら見出しの「コンドーム」は使わず、箱の文字「10個入り」だけで描く",
+    "在庫を減らそう": "そのまま使う（性的な描写ではない）"
+  }
 }

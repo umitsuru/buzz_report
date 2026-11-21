@@ -129,16 +129,16 @@
   {
     "no": 10,
     "folder": "010",
-    "title": "北海道の結婚式とお車代",
+    "title": "夫がコンドーム1年分に当選した",
     "created": "2026-11-22",
-    "gafu_id": "S-04",
-    "style_name": "テレビの再現VTR（オリジナル画風S-04）",
+    "gafu_id": "No.59",
+    "style_name": "写実寄りの美麗アニメ（参考投稿No.59のタッチ）",
     "pages": 10,
     "aspect_ratio": "1:1",
     "format": "B",
-    "format_name": "正方形1:1・1枚絵（状況説明つき・比較ラベルなし）",
+    "format_name": "正方形1:1・1枚絵（筆文字の見出し＋ナレーション）",
     "status": "プロンプト完成・画像未生成",
-    "cover": "./010/ref/S-04.jpg",
-    "source": "claude-buzz-text No.12（うみつる、666万表示）"
+    "cover": "./010/ref/01.jpg",
+    "source": "claude-buzz-text No.188（うみつる、332万表示）"
   }
 ]
