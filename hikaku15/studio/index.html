@@ -12,10 +12,31 @@
 <section class="hero"><div><span class="overline">GROKBOT COLLECTION × CLAUDE PROMPT MAKER</span>
 <h1>実際の投稿を見て、<br><em>次の漫画を作る。</em></h1>
 <p>Grokbotが集めた連続漫画の画像から、好みの<strong>画風</strong>を選択。選んだ投稿を参考資料として、Claudeにネタ出しと10枚それぞれの完成プロンプトを依頼できます。</p>
-<div class="hero-links"><a href="#posts" class="cta">投稿から画風を選ぶ ↘</a><a href="#claude" class="outline">Claude用の指示へ</a></div>
+<div class="hero-links"><a href="#styles" class="cta">画風10種類を見る ↘</a><a href="#claude" class="outline">Claude用の指示へ</a></div>
 </div><aside class="hero-note"><div class="stamp">10<br><span>SLIDES</span></div><div>REFERENCE → IDEA → 10 PROMPTS</div><p>参考投稿の構図やセリフをコピーするのではなく、画風の特徴だけを制作に活かします。</p></aside></section>
 <section class="countstrip"><div><strong id="countPosts">—</strong><small>収集済み投稿</small></div><div><strong id="countImages">—</strong><small>参考画像</small></div><div><strong>10</strong><small>個別プロンプト作成</small></div><span class="right">投稿データはGrokbotの保存フォルダから読み込みます</span></section>
-<section id="posts" class="section"><header class="section-heading"><div><p class="overline">01 / REFERENCE GALLERY</p><h2>どの投稿の画風にする？</h2><p>実際のX投稿の画像を使った参考一覧です。X上の投稿と一緒に確認できます。</p></div><div id="shownCount" class="shown"></div></header>
+<section id="styles" class="section style-library">
+<header class="section-heading">
+<div><p class="overline">01 / GAFU STYLE LIBRARY</p><h2>画風図鑑 — まずは10種類</h2><p>Grokbotが保存したXの実際の投稿画像を見て、画風を選択。各カードから10枚前後のスライドも確認できます。</p></div>
+<div class="shown" id="styleCount">10 STYLE REFERENCES</div>
+</header>
+<div class="style-tools"><span class="style-hint">参考投稿の画風を選びます。選択したIDは固定で、今後ボットへの指示に利用できます。</span><label class="sr-only" for="styleFilter">画風を絞り込む</label><select id="styleFilter"><option value="">すべての画風</option><option value="自分">自分の投稿だけ</option><option value="逆転・比較">逆転・比較</option><option value="人生比較">人生比較</option><option value="疑惑・ドラマ">疑惑・ドラマ</option><option value="日常の違和感">日常の違和感</option></select></div>
+<div id="styleCards" class="style-cards"><p class="load">10種類の実画像を読み込み中です…</p></div>
+<div class="style-selected" id="styleSelected" aria-live="polite">
+<div class="selected-heading"><span>YOUR SELECTED STYLE</span><strong id="styleSelectedLabel">画風を選んでください</strong></div>
+<div class="selected-style-body">
+<div class="style-selected-media"><img id="styleMainImage" alt="選択中の画風参考画像" loading="lazy"><span id="styleMainIndex">1 / 10</span></div>
+<div class="style-selected-details">
+<p class="style-id" id="styleSelectedId">GAFU-01</p>
+<p id="styleSourceInfo" class="style-subinfo"></p>
+<p class="style-explain">この画像は、すでにXに投稿された参考作品です。描き手の技法を勝手に断定せず、画像生成時には参照画像そのものから「線・色・陰影・人物表現」を分析してもらいます。</p>
+<div id="styleThumbs" class="style-thumbs"></div>
+<div class="style-actions"><button type="button" id="copyStyleCommand" class="cta">この画風を使う指示をコピー ⧉</button><a id="styleXLink" class="outline" target="_blank" rel="noopener noreferrer" href="#">元のX投稿を見る ↗</a></div>
+<div class="style-note">固定IDで指定できます。例：「GAFU-08で10枚の漫画を作って」。既存の人物・セリフ・構図そのものは模倣せず、新しい作品を制作します。</div>
+</div></div></div>
+</section>
+
+<section id="posts" class="section"><!-- Grokbot post feed --><header class="section-heading"><div><p class="overline">01 / REFERENCE GALLERY</p><h2>どの投稿の画風にする？</h2><p>実際のX投稿の画像を使った参考一覧です。X上の投稿と一緒に確認できます。</p></div><div id="shownCount" class="shown"></div></header>
 <div class="filters"><label class="sr-only" for="query">投稿を検索</label><input id="query" type="search" placeholder="投稿タイトル、作者、キーワードで検索"><label class="sr-only" for="sort">並べ替え</label><select id="sort"><option value="views">表示回数順</option><option value="new">新着順</option><option value="likes">いいね順</option></select><label class="check"><input type="checkbox" id="own">自分の投稿のみ</label></div>
 <div id="cards" class="cards"><p class="load">投稿を読み込んでいます…</p></div><p id="loadError" class="warning" hidden></p>
 </section>
