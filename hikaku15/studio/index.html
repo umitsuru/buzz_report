@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#0c0f12">
+<title>X漫画 制作スタジオ — 実際の投稿から画風を選ぶ</title>
+<link rel="stylesheet" href="./studio.css?v=20261121-1"><script src="./app.js?v=20261121-1" defer></script>
+</head><body>
+<div class="layout">
+<header class="topbar">
+  <a href="../" class="logo"><span class="mark">✦</span><span><strong>X MANGA STUDIO</strong><small>実際のX漫画から画風を選ぶ</small></span></a>
+  <nav><a href="../">収集した投稿一覧</a><a href="https://github.com/umitsuru/buzz_report/tree/main/hikaku15" target="_blank" rel="noopener noreferrer">GitHub原本 ↗</a></nav>
+</header>
+<main>
+<section class="hero"><div><span class="overline">GROKBOT COLLECTION × CLAUDE PROMPT MAKER</span>
+<h1>実際の投稿を見て、<br><em>次の漫画を作る。</em></h1>
+<p>Grokbotが集めた連続漫画の画像から、好みの<strong>画風</strong>を選択。選んだ投稿を参考資料として、Claudeにネタ出しと10枚それぞれの完成プロンプトを依頼できます。</p>
+<div class="hero-links"><a href="#posts" class="cta">投稿から画風を選ぶ ↘</a><a href="#claude" class="outline">Claude用の指示へ</a></div>
+</div><aside class="hero-note"><div class="stamp">10<br><span>SLIDES</span></div><div>REFERENCE → IDEA → 10 PROMPTS</div><p>参考投稿の構図やセリフをコピーするのではなく、画風の特徴だけを制作に活かします。</p></aside></section>
+<section class="countstrip"><div><strong id="countPosts">—</strong><small>収集済み投稿</small></div><div><strong id="countImages">—</strong><small>参考画像</small></div><div><strong>10</strong><small>個別プロンプト作成</small></div><span class="right">投稿データはGrokbotの保存フォルダから読み込みます</span></section>
+<section id="posts" class="section"><header class="section-heading"><div><p class="overline">01 / REFERENCE GALLERY</p><h2>どの投稿の画風にする？</h2><p>実際のX投稿の画像を使った参考一覧です。X上の投稿と一緒に確認できます。</p></div><div id="shownCount" class="shown"></div></header>
+<div class="filters"><label class="sr-only" for="query">投稿を検索</label><input id="query" type="search" placeholder="投稿タイトル、作者、キーワードで検索"><label class="sr-only" for="sort">並べ替え</label><select id="sort"><option value="views">表示回数順</option><option value="new">新着順</option><option value="likes">いいね順</option></select><label class="check"><input type="checkbox" id="own">自分の投稿のみ</label></div>
+<div id="cards" class="cards"><p class="load">投稿を読み込んでいます…</p></div><p id="loadError" class="warning" hidden></p>
+</section>
+<section class="section selected" id="selected"><header class="section-heading"><div><p class="overline">02 / SELECTED REFERENCE</p><h2>選択した画風の参考画像</h2></div><span class="selected-dot">● 選択中</span></header>
+<div class="selected-grid"><div class="visual"><img id="heroImage" alt="選択中の参考画像" loading="lazy"><span id="heroPage" class="page-chip">1 / 10</span></div><div class="selected-copy"><h3 id="selectedTitle">作品を選択してください</h3><div id="selectedMeta" class="muted"></div><p id="selectedText" class="selected-text"></p><p class="help">下の画像をクリックすると、Claudeに渡す参考画像のページを変更できます。画風参考は元投稿全体ですが、選んだ1枚を主な参照にします。</p><div id="thumbs" class="thumbs"></div><div class="links"><a id="xLink" href="#" target="_blank" rel="noopener noreferrer">Xの元投稿を見る ↗</a><a id="archiveLink" href="#" target="_blank" rel="noopener noreferrer">収集データを見る ↗</a></div></div></div>
+</section>
+<section class="section" id="claude"><header class="section-heading"><div><p class="overline">03 / CLAUDE PROMPT BUILDER</p><h2>Claudeに10枚のプロンプトを作らせる</h2><p>条件を入力してコピーするだけ。共通設定とは別に、10枚すべての個別プロンプトを作らせます。</p></div></header>
+<div class="builder"><div class="inputs">
+<label>企画・テーマ（未定でも可）<textarea id="idea" rows="3" placeholder="例：女性用風俗店の経理担当が体験する不思議な日常"></textarea></label>
+<label>作品の方向性<select id="tone"><option value="シュールなブラックコメディ。知らない人が「へぇ」と感じるリアルな裏方あるある">シュールな職場あるある</option><option value="意外な展開とオチがあるサスペンス寄りのエンタメ">不穏なサスペンス</option><option value="価値観の違いを対比する、起承転結のある人生比較ドラマ">人生・比較ストーリー</option><option value="温かく少し切ない、共感できる実録コミックエッセイ">実録コミックエッセイ</option></select></label>
+<div class="two"><label>画像枚数<select id="pages"><option value="10">10枚</option><option value="15">15枚</option></select></label><label>縦横比<select id="ratio"><option value="3:4">3:4（縦長）</option><option value="1:1">1:1（正方形）</option><option value="4:3">4:3（横長）</option></select></label></div>
+<label>補足・守ってほしいルール<textarea id="notes" rows="4" placeholder="例：主人公は35歳の日本人女性。オフィスは無機質で、セリフは短く。"></textarea></label>
+<label>作業モード<select id="workflow"><option value="full">ネタを考え、最良案で10枚分すべての完成プロンプトを作る</option><option value="ideas">ネタ案だけ10本考える（まだ個別プロンプトを作らない）</option><option value="specific">このテーマで10枚分の完成プロンプトを作る</option></select></label>
+<div class="notice">ClaudeがGitHubの非公開ファイルを読めない場合は、必要な共通設定や案件データを別途共有してください。画風の参考画像も、画像を直接渡せるとより正確です。</div>
+</div><div class="output"><div class="output-head"><strong>Claudeに渡す指示文</strong><span id="outputStatus">完成版プロンプト</span></div><textarea id="claudePrompt" readonly spellcheck="false" rows="22"></textarea><div class="actions"><button id="copy" class="cta" type="button">指示文をコピー ⧉</button><button id="download" class="outline" type="button">.txt で保存</button></div></div></div>
+</section>
+<section class="section endnote"><h2>制作の役割分担</h2><div class="steps"><div><span>GROKBOT</span><h3>参考投稿を収集</h3><p>本文・投稿画像・反応・リンクを保存。すでにある生データは上書きしません。</p></div><div><span>CLAUDE</span><h3>アイデアと10枚の台本</h3><p>各話の演出、人物、文字、個別画像生成プロンプトを完成させます。</p></div><div><span>IMAGE BOT</span><h3>指定された画像だけ生成</h3><p>最初は共通設定を読み込み待機。その後、画像を1枚ずつ生成します。</p></div></div></section>
+</main><footer>REFERENCE IMAGES / X投稿データのアーカイブ <span>画風だけを参考にして新しい作品を制作</span></footer>
+</div><div id="toast" role="status" aria-live="polite" hidden></div></body></html>
