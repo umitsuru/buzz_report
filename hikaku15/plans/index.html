@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#000">
+<title>投稿案 — 比較シリーズ データベース</title>
+<style>
+  *{box-sizing:border-box;min-width:0}
+  html,body{margin:0;background:#000;color:#e6e6e6;font:15px/1.7 "Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif}
+  a{color:#9dc3f0}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 14px}
+  header{position:sticky;top:0;z-index:5;background:rgba(0,0,0,.92);backdrop-filter:blur(6px);border-bottom:1px solid #222}
+  .top{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;padding:12px 0 10px}
+  h1{font-size:18px;margin:0;font-weight:700}
+  .site-nav{display:flex;gap:6px;flex-wrap:wrap}
+  .site-nav a{padding:6px 14px;border-radius:999px;border:1px solid #333;background:#151515;color:#ccc;text-decoration:none;font-size:13px}
+  .site-nav a.on{background:#e6e6e6;color:#000;border-color:#e6e6e6;font-weight:700}
+  main{padding:18px 0 80px}
+  .lead{color:#aaa;font-size:14px;margin:0 0 16px}
+  .plans{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin:0 0 24px}
+  .plan{display:grid;grid-template-columns:92px 1fr;gap:12px;align-items:center;background:#0d0d0d;border:1px solid #232323;border-radius:14px;padding:10px;text-decoration:none;color:inherit;cursor:pointer;text-align:left;font:inherit}
+  .plan.on{border-color:#e6e6e6}
+  .plan img{width:92px;height:92px;object-fit:cover;border-radius:10px;background:#111}
+  .plan b{display:block;font-size:15px;line-height:1.45;color:#fff}
+  .plan small{display:block;color:#999;font-size:12px}
+  .no{display:inline-block;font-size:13px;font-weight:700;background:#e6e6e6;color:#000;border-radius:6px;padding:0 7px;margin-right:6px}
+  .detail{background:#0d0d0d;border:1px solid #232323;border-radius:16px;padding:16px}
+  .dh{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline}
+  .dh h2{font-size:19px;margin:0;flex:1 1 100%}
+  .dh span{font-size:13px;color:#aaa}
+  .dh span b{color:#fff}
+  .box{margin:16px 0 0;border:1px solid #2c2c2c;border-radius:12px;padding:12px 14px;background:#121212}
+  .box h3{margin:0 0 8px;font-size:15px}
+  .range{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:14px}
+  .range select{font:inherit;font-size:16px;background:#1b1b1b;color:#eee;border:1px solid #444;border-radius:8px;padding:6px 8px}
+  .range button,.cp{min-height:44px;padding:0 16px;border-radius:10px;border:0;background:#e6e6e6;color:#000;font:inherit;font-weight:700;cursor:pointer}
+  .cp.ok,.range button.ok{background:#7fd1a8}
+  textarea{width:100%;margin-top:10px;font:13px/1.6 ui-monospace,Menlo,monospace;background:#000;color:#ddd;border:1px solid #333;border-radius:8px;padding:10px;resize:vertical}
+  .note{font-size:12px;color:#888;margin:6px 0 0}
+  .tabs{display:flex;gap:6px;overflow-x:auto;margin:16px 0 10px;padding-bottom:4px}
+  .tabs a{flex:none;display:grid;place-items:center;min-width:44px;height:44px;padding:0 12px;border-radius:10px;border:1px solid #333;background:#151515;color:#ddd;text-decoration:none;font-weight:700}
+  .card{border:1px solid #2c2c2c;border-radius:12px;margin:0 0 12px;overflow:hidden;scroll-margin-top:120px}
+  .ch{display:flex;align-items:center;gap:10px;padding:10px 12px;background:#151515}
+  .ch h4{flex:1;margin:0;font-size:15px}
+  .ch h4 small{display:block;color:#888;font-weight:400;font-size:12px}
+  pre{margin:0;padding:12px 14px;white-space:pre-wrap;word-break:break-word;font:14px/1.75 "Hiragino Sans","Noto Sans JP",sans-serif;max-height:300px;overflow:auto;color:#ddd}
+  .card.open pre{max-height:none}
+  .more{display:block;width:100%;min-height:40px;border:0;border-top:1px solid #2c2c2c;background:#101010;color:#999;font:inherit;font-size:13px;cursor:pointer}
+  .ref{display:flex;gap:10px;align-items:center;margin-top:10px;font-size:13px;color:#aaa}
+  .ref img{width:120px;height:80px;object-fit:cover;border-radius:8px}
+  .msg{color:#999;text-align:center;padding:60px 10px}
+  @media(max-width:600px){.ch{flex-wrap:wrap}.cp{width:100%}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap top">
+    <h1>比較シリーズ データベース</h1>
+    <nav class="site-nav" aria-label="サイト内">
+      <a href="../">参考投稿</a>
+      <a href="../studio/">画風カタログ</a>
+      <a href="./" class="on">投稿案</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <p class="lead">Claudeが作った10枚漫画のプロンプトです。番号で ChatGPT のボットに「投稿案No.1の3〜5枚目を作って」と伝えると、ボットがここのファイルを読んで生成します。</p>
+  <div class="plans" id="plans"><p class="msg">読み込み中…</p></div>
+  <div id="detail"></div>
+</main>
+
+<script>
+{
+const BASE = 'https://umitsuru.github.io/buzz_report/hikaku15/plans/';
+const plansEl = document.getElementById('plans'), detail = document.getElementById('detail');
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let plans = [], styles = {}, cur = null, files = [];
+
+async function getJSON(u){const r=await fetch(u,{cache:'no-store'});if(!r.ok)throw new Error(u+' '+r.status);return r.json()}
+async function getText(u){const r=await fetch(u,{cache:'no-store'});if(!r.ok)throw new Error(u+' '+r.status);return r.text()}
+
+async function copy(text){
+  try{await navigator.clipboard.writeText(text);return true}catch(e){}
+  const ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();
+  let ok=false;try{ok=document.execCommand('copy')}catch(e){}ta.remove();return ok;
+}
+function flash(b, ok, label){b.textContent=ok?'コピーしました':'コピーできませんでした';b.classList.toggle('ok',ok);setTimeout(()=>{b.textContent=label;b.classList.remove('ok')},1800)}
+
+function cover(p){const s=styles[p.gafu_id];return s&&s.cover?'../studio/'+s.cover:''}
+
+function renderList(){
+  plansEl.innerHTML = plans.slice().sort((a,b)=>b.no-a.no).map(p=>`
+    <button class="plan ${cur&&cur.no===p.no?'on':''}" data-no="${p.no}">
+      ${cover(p)?`<img src="${esc(cover(p))}" alt="" loading="lazy">`:'<span></span>'}
+      <span><b><span class="no">No.${p.no}</span>${esc(p.title)}</b>
+      <small>${esc(p.gafu_id)}・${p.pages}枚・${esc(p.aspect_ratio)}・${esc(p.created)}</small>
+      <small>${esc(p.status||'')}</small></span>
+    </button>`).join('') || '<p class="msg">まだ投稿案がありません。</p>';
+}
+
+function command(from, to){
+  const p=cur, nums=[]; for(let i=from;i<=to;i++)nums.push(i);
+  const pad=n=>String(n).padStart(2,'0'), base=BASE+p.folder+'/';
+  const range = from===to ? `${from}枚目` : (from===1&&to===p.pages ? `全${p.pages}枚` : `${from}〜${to}枚目`);
+  return `投稿案No.${p.no}「${p.title}」の${range}を作ってください。
+
+1. まず共通設定を読んでください（この時点では画像を作らない）
+${base}common.md
+
+2. 次のページを、上から順に1ページにつき1枚ずつ生成してください
+${nums.map(n=>`${n}/${p.pages}：${base}${pad(n)}.md`).join('\n')}
+
+画風の参考画像（${p.gafu_id}）：
+${styles[p.gafu_id]&&styles[p.gafu_id].cover?styles[p.gafu_id].cover.replace(/^\.\.\//,'https://umitsuru.github.io/buzz_report/hikaku15/'):'（画風カタログを参照）'}`;
+}
+
+async function open(no){
+  cur = plans.find(p=>p.no===no); if(!cur) return;
+  renderList();
+  detail.innerHTML='<p class="msg">読み込み中…</p>';
+  const base='./'+cur.folder+'/';
+  let proj={};try{proj=await getJSON(base+'project.json')}catch(e){}
+  const names=['common',...Array.from({length:cur.pages},(_,i)=>String(i+1).padStart(2,'0'))];
+  files = await Promise.all(names.map(async n=>{try{return {n,text:await getText(base+n+'.md')}}catch(e){return {n,text:'（読み込めませんでした）'}}}));
+  const opts=Array.from({length:cur.pages},(_,i)=>`<option value="${i+1}">${i+1}</option>`).join('');
+  const st=styles[cur.gafu_id];
+  detail.innerHTML=`
+  <section class="detail">
+    <div class="dh"><h2><span class="no">No.${cur.no}</span>${esc(cur.title)}</h2>
+      <span>画風 <b>${esc(cur.gafu_id)}</b> ${esc(cur.style_name)}</span><span><b>${esc(cur.aspect_ratio)}</b>・${cur.pages}枚</span><span>${esc(cur.status||'')}</span>
+      <span><a href="https://github.com/umitsuru/buzz_report/tree/main/hikaku15/plans/${esc(cur.folder)}" target="_blank" rel="noopener noreferrer">GitHubで開く</a></span></div>
+    ${st?`<div class="ref"><img src="../studio/${esc(st.cover)}" alt=""><span>画風の参考：${esc(st.title)}（${esc(st.author||'')}）<br><a href="../studio/#styles">画風カタログで見る</a></span></div>`:''}
+    <div class="box">
+      <h3>ChatGPTのボットへの指示を作る</h3>
+      <div class="range">
+        <label><select id="from" aria-label="何枚目から">${opts}</select> 枚目から</label>
+        <label><select id="to" aria-label="何枚目まで">${opts}</select> 枚目まで</label>
+        <button type="button" id="all">全部</button>
+        <button type="button" id="copyCmd">指示をコピー</button>
+      </div>
+      <textarea id="cmd" rows="9" readonly></textarea>
+      <p class="note">ボットには「投稿案No.${cur.no}の3〜5枚目を作って」と短く送るだけでも通じます。ボットがファイルを読めないときは、下のコピーボタンで中身を直接貼ってください。</p>
+    </div>
+    <nav class="tabs" aria-label="プロンプト">${files.map(f=>`<a href="#f-${f.n}">${f.n==='common'?'共通':+f.n}</a>`).join('')}</nav>
+    ${files.map(f=>{
+      const t=f.text.match(/^#\s*(.+)$/m);
+      return `<section class="card" id="f-${f.n}"><div class="ch"><h4>${esc(t?t[1]:f.n)}<small>${f.n}.md・${f.text.length.toLocaleString()}文字</small></h4><button class="cp" data-n="${f.n}">コピー</button></div><pre>${esc(f.text)}</pre><button class="more" data-n="${f.n}">全文を表示</button></section>`}).join('')}
+  </section>`;
+  const from=document.getElementById('from'), to=document.getElementById('to'), cmd=document.getElementById('cmd');
+  to.value=cur.pages;
+  const upd=()=>{if(+to.value<+from.value)to.value=from.value;cmd.value=command(+from.value,+to.value)};
+  from.onchange=upd;to.onchange=upd;upd();
+  document.getElementById('all').onclick=()=>{from.value=1;to.value=cur.pages;upd()};
+  document.getElementById('copyCmd').onclick=async e=>flash(e.currentTarget,await copy(cmd.value),'指示をコピー');
+  history.replaceState(null,'','#plan-'+cur.no);
+}
+
+plansEl.addEventListener('click',e=>{const b=e.target.closest('.plan');if(b)open(+b.dataset.no)});
+detail.addEventListener('click',async e=>{
+  const b=e.target.closest('button'); if(!b||!b.dataset.n) return;
+  if(b.classList.contains('more')){const c=b.closest('.card');c.classList.toggle('open');b.textContent=c.classList.contains('open')?'折りたたむ':'全文を表示';return}
+  const f=files.find(x=>x.n===b.dataset.n); flash(b,await copy(f.text),'コピー');
+});
+
+(async()=>{
+  try{
+    plans = await getJSON('./index.json');
+    try{const s=await getJSON('../studio/styles.json');(s.styles||[]).forEach(x=>styles[x.id]=x)}catch(e){}
+    renderList();
+    const m=location.hash.match(/plan-(\d+)/);
+    const first = m ? +m[1] : (plans.length ? Math.max(...plans.map(p=>p.no)) : null);
+    if(first) open(first);
+  }catch(e){plansEl.innerHTML='<p class="msg">投稿案を読み込めませんでした。</p>'}
+})();
+}
+</script>
+</body>
+</html>

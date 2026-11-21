@@ -1,0 +1,101 @@
+{
+  "plan_no": 1,
+  "folder": "001",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/001/",
+  "project": "メンズエステの電話受付バイトを始めた35歳主婦の話",
+  "created": "2026-11-21",
+  "made_by": "Claude",
+  "image_count": 10,
+  "aspect_ratio": "3:4",
+  "panels_per_page": 3,
+  "initial_mode": "wait_for_explicit_generate_command",
+  "bot_instruction": "このフォルダは制作データです。読み込んだだけでは画像を生成しないこと。ユーザーが「投稿案No.1の〇枚目（または〇〜〇枚目）を作って」と指示したときだけ、最初に common.md を読み（画像は作らない）、次に指定されたページの NN.md を1つずつ読んで、1ページにつき1枚生成する。10枚を1枚にまとめない。生成ごとに、それまでの画像と同じ人物・線・色を保つ。生成後に右上の番号と画像内の文字を確認する。",
+  "fiction_notice": "登場人物・店・出来事はすべて架空の創作。実在の店舗や業界全体の実態を示すものではない。登場人物はすべて成人。性的な描写はしない。",
+  "reference_posts": [
+    {
+      "gafu_id": "GAFU-07",
+      "no": 9,
+      "folder": "hikaku15/posts/20261120_2123249941921542289",
+      "url": "https://x.com/edamaru666/status/2123249941921542289",
+      "title": "不倫がバレるパターン。",
+      "author": "@edamaru666",
+      "used_for": "画風（線・顔立ち・塗り・配色・背景の密度・吹き出しの形）。人物・構図・セリフ・物語は使わない"
+    }
+  ],
+  "style": {
+    "gafu_id": "GAFU-07",
+    "name": "現代の写実寄りアニメイラスト・会話劇",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261120_2123249941921542289/img/01.jpg",
+    "defined_in": "common.md",
+    "catalog": "https://umitsuru.github.io/buzz_report/hikaku15/studio/#styles"
+  },
+  "phone_numbers": {
+    "常連客（4枚目）": "090-1111-1234",
+    "PTA会長（7枚目）": "090-2222-5678",
+    "夫（10枚目）": "080-3333-0000"
+  },
+  "common_file": "common.md",
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/10",
+      "title": "35歳・パートを探した夜",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/10",
+      "title": "研修・魔法のひと言",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/10",
+      "title": "初日・50回目の「健全です」",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/10",
+      "title": "27回目の「初めて」さん",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/10",
+      "title": "「一番若い子で」",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/10",
+      "title": "「写真と同じ子ですよね？」",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/10",
+      "title": "聞き覚えのある声",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/10",
+      "title": "PTA会議の会長",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/10",
+      "title": "夫の何気ない質問",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/10",
+      "title": "夫の「初めて」",
+      "file": "10.md"
+    }
+  ],
+  "wording_fallback": "ChatGPTが「裏オプありますか？」（3枚目）を描くのを断った場合は、「特別なサービスありますか？」に置き換える。"
+}

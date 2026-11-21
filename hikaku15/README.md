@@ -2,7 +2,10 @@
 
 Xの「上下で比べる15枚の画像シリーズ」の参考投稿を集める棚です。公開サイトのナビやページからはリンクしません。
 
-閲覧ページ：https://umitsuru.github.io/buzz_report/hikaku15/ （`posts/` の中身を自動で読み込んで表示します）
+サイト（上のメニューで行き来できます）
+- 参考投稿：https://umitsuru.github.io/buzz_report/hikaku15/ （`posts/` の中身を自動で読み込んで表示）
+- 画風カタログ：https://umitsuru.github.io/buzz_report/hikaku15/studio/ （GAFU-01〜10）
+- 投稿案：https://umitsuru.github.io/buzz_report/hikaku15/plans/ （Claudeが作った10枚漫画のプロンプト。説明は `plans/README.md`）
 
 ## 役割分担
 
@@ -11,7 +14,7 @@ Xの「上下で比べる15枚の画像シリーズ」の参考投稿を集め�
 | グロッキー（Grok bot） | 投稿を探して、**生データ（本文・数字・画像・返信）をそのまま保存するだけ**。分析・要約・感想は書かない |
 | Claude | 画像を見て分析し、`analysis.md`・`catalog.md`・`neta.md` を書く。新ネタを考える |
 
-グロッキーは `index.html`・`analysis.md`・`catalog.md`・`neta.md` に触れないでください。
+グロッキーは `index.html`・`analysis.md`・`catalog.md`・`neta.md`・`studio/`・`plans/` に触れないでください。
 
 ## フォルダ構成
 
@@ -21,6 +24,8 @@ hikaku15/
 ├─ index.html           閲覧ページ（Claudeが管理）
 ├─ catalog.md           全投稿の一覧と傾向（Claudeが更新）
 ├─ neta.md              既出ネタ・制作中ネタ・提案済みネタ（Claudeが更新）
+├─ studio/              画風カタログ（GAFU-01〜10）
+├─ plans/               投稿案（10枚漫画のプロンプト。Claudeが管理）
 └─ posts/
    └─ 20261120_1234567890123456789/   ← 収集日（JST）_元投稿のID
       ├─ raw.json       グロッキーが書く生データ

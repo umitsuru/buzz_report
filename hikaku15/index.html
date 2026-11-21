@@ -16,6 +16,9 @@
   .top{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;padding:12px 0 8px}
   h1{font-size:18px;margin:0;font-weight:700;letter-spacing:.02em}
   .links{display:flex;gap:12px;font-size:13px}
+  .site-nav{display:flex;gap:6px;flex-wrap:wrap}
+  .site-nav a{padding:6px 14px;border-radius:999px;border:1px solid #333;background:#151515;color:#ccc;text-decoration:none;font-size:13px}
+  .site-nav a.on{background:#e6e6e6;color:#000;border-color:#e6e6e6;font-weight:700}
   .bar{display:flex;flex-wrap:wrap;gap:8px;padding:0 0 12px}
   .bar button{background:#151515;color:#ccc;border:1px solid #333;border-radius:999px;padding:5px 12px;font:inherit;font-size:13px;cursor:pointer}
   .bar button.on{background:#e6e6e6;color:#000;border-color:#e6e6e6}
@@ -67,8 +70,12 @@
   <div class="wrap">
     <div class="top">
       <h1>比較シリーズ データベース</h1>
+      <nav class="site-nav" aria-label="サイト内">
+        <a href="./" class="on">参考投稿</a>
+        <a href="./studio/">画風カタログ</a>
+        <a href="./plans/">投稿案</a>
+      </nav>
       <div class="links">
-        <a href="./studio/" style="color:#ffcf78;font-weight:800">画風図鑑・制作スタジオ（10種類） ↗</a>
         <a href="https://github.com/umitsuru/buzz_report/blob/main/hikaku15/catalog.md" target="_blank" rel="noopener noreferrer">一覧と傾向</a>
         <a href="https://github.com/umitsuru/buzz_report/blob/main/hikaku15/neta.md" target="_blank" rel="noopener noreferrer">ネタ帳</a>
       </div>
