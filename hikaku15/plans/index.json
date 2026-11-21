@@ -42,12 +42,12 @@
     "folder": "004",
     "title": "スタバでバレる。「リア充」と「コミュ障」",
     "created": "2026-11-21",
-    "gafu_id": "No.18",
-    "style_name": "ビジネス解説漫画風（参考投稿No.18）",
+    "gafu_id": "S-01",
+    "style_name": "浮世絵×現代（オリジナル画風S-01）",
     "pages": 10,
     "aspect_ratio": "1:1",
     "format": "B",
     "status": "プロンプト完成・画像未生成",
-    "cover": "./004/ref/01.jpg"
+    "cover": "../studio/originals/S-01.jpg"
   }
 ]
