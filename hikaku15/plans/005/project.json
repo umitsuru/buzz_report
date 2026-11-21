@@ -1,0 +1,99 @@
+{
+  "plan_no": 5,
+  "folder": "005",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/005/",
+  "project": "職場にいる、なんで結婚できたか分からない変なおじさん10選",
+  "created": "2026-11-21",
+  "made_by": "ChatGPT",
+  "format": "C",
+  "format_name": "横長3:2・図鑑1枚絵（1ページ1人物・コマ割りなし）",
+  "image_count": 10,
+  "aspect_ratio": "3:2",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "bot_instruction": "これは画像生成ボット向けの制作データです。共通設定だけを読んだ段階では画像を生成しないでください。ユーザーが「投稿案No.5の〇枚目（または〇〜〇枚目）を作って」と明示したときだけcommon.mdと対応するNN.mdを読み込んで、1ページ1人・1画像ずつ生成してください。各ページは独立の横長3:2。右上にn/10。参考投稿No.58の画像を実際に確認した場合だけ一般的な画風の特徴を反映し、参照元の具体的な顔・セリフ・構図をコピーしない。画像が開けないときは憶測で画風を断定しない。",
+  "fiction_notice": "10人の人物はすべて架空の既婚成人で、会社や言動も創作。結婚の有無や年齢だけを人格の善悪と結びつけない。参考No.58の具体的な登場人物やセリフは再利用しない。",
+  "series_note": "参考投稿No.58は『婚活にいるヤバい男20選』。収集メタデータでは19画像、1〜14は1200×800、15〜19は1097×1200。今回の作品は人物図鑑形式の10枚、横長3:2で独自の10キャラクター。",
+  "reference_posts": [
+    {
+      "no": 58,
+      "folder": "hikaku15/posts/20261121_2123974687944253458",
+      "url": "https://x.com/haku_health/status/2123974687944253458",
+      "title": "婚活にいるヤバい男20選",
+      "author": "@haku_health",
+      "images_collected": 19,
+      "used_for": "人物図鑑型の発想と実際の画風参考。ただし線・色・塗りなどは生成時に画像を直接観察して言語化。固有の顔・構図・セリフの複製は不可。"
+    }
+  ],
+  "style": {
+    "gafu_id": "",
+    "ref_post_no": 58,
+    "name": "参考投稿No.58『婚活にいるヤバい男20選』の画風を画像参照",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261121_2123974687944253458/img/01.jpg",
+    "reference_gallery": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261121_2123974687944253458/",
+    "defined_in": "common.md",
+    "visual_verification": "画像のピクセルは本作成時点では未確認。生成時に直接確認すること。"
+  },
+  "common_file": "common.md",
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/10",
+      "title": "「5分だけ」が90分になる男",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/10",
+      "title": "武勇伝をExcelで管理する男",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/10",
+      "title": "コピー機に話しかける男",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/10",
+      "title": "ダジャレの採点を要求する男",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/10",
+      "title": "妻の弁当をプレゼンする男",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/10",
+      "title": "チャットの返信を電話で伝える男",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/10",
+      "title": "空調を体感で支配する男",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/10",
+      "title": "仕事のミスを星に聞く男",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/10",
+      "title": "結婚記念日を社内に告知する男",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/10",
+      "title": "奥さんからの電話で人格が変わる男",
+      "file": "10.md"
+    }
+  ]
+}
