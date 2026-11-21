@@ -10,25 +10,33 @@
   "image_count": 10,
   "aspect_ratio": "1:1",
   "initial_mode": "wait_for_explicit_generate_command",
-  "bot_instruction": "このフォルダを読み込んだだけでは画像を生成しないこと。ユーザーが「投稿案No.4の〇枚目（または〇〜〇枚目）を作って」と明示したときだけ、common.mdを読んで共通設定を理解し、指定されたNN.mdを読み、1ページにつき画像を1枚だけ生成。各回の右上にはn/10を配置し、左「リア充」3人組・右「コミュ障」大地を全10枚で固定する。GAFU-09を参照し、元作品の固有の構図はコピーしない。生成済み画像があれば同じ顔・服・線・色を保つ。生成後にセリフと番号を確認する。",
+  "bot_instruction": "このフォルダを読み込んだだけでは画像を生成しないこと。ユーザーが「投稿案No.4の〇枚目（または〇〜〇枚目）を作って」と明示したときだけ、common.mdを読んで共通設定を理解し、指定されたNN.mdを読み、1ページにつき画像を1枚だけ生成。各回の右上にはn/10を配置し、左「リア充」3人組・右「コミュ障」大地を全10枚で固定する。参考投稿No.18の画風（plans/004/ref/ の画像）を参照し、元作品の固有の構図はコピーしない。生成済み画像があれば同じ顔・服・線・色を保つ。生成後にセリフと番号を確認する。",
   "fiction_notice": "人物や出来事は創作。実在チェーンのスターバックスを舞台にするが、実在客・店員のモデルや架空の店内特典は含めない。コミュニケーションの得手不得手を人格や能力の優劣として描かない。",
   "series_note": "「〇〇でバレる。」の左右比較形式を採用し、リア充3人組と人見知りの一人客の温度差を描く。後半は写真を通じて交流が生まれる。",
   "reference_posts": [
     {
-      "gafu_id": "GAFU-09",
-      "folder": "hikaku15/posts/20261120_2123619172274020594",
-      "url": "https://x.com/edamaru666/status/2123619172274020594",
-      "title": "焼肉きんぐでバレる。ヤンキー家族（隠れ貧乏）と陰キャ家族（隠れ金持ち）",
-      "author": "@edamaru666",
-      "used_for": "一般的な線・色・陰影・表情・視認性の参考。原作の人物・セリフ・構図・展開は複製しない。"
+      "post_no": 18,
+      "folder": "hikaku15/posts/20261121_2122538016489263464",
+      "url": "https://x.com/gon_career/status/2122538016489263464",
+      "title": "面接でバレる育ちの悪さ。",
+      "author": "@gon_career",
+      "used_for": "画風（線・顔の描き方・フラットな塗り・配色・背景の密度・黄色い効果線・タイトルと番号の置き方）。人物・セリフ・物語・構図は使わない",
+      "note": "元の投稿は収集データから消えたため、参考画像5枚を plans/004/ref/ に保存"
     }
   ],
   "style": {
-    "gafu_id": "GAFU-09",
-    "name": "焼肉きんぐ家族比較の参考画風（GAFU-09）",
-    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261120_2123619172274020594/img/01.jpg",
+    "gafu_id": "No.18",
+    "name": "ビジネス解説漫画風（参考投稿No.18）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/004/ref/01.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/004/ref/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/004/ref/02.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/004/ref/03.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/004/ref/04.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/004/ref/05.jpg"
+    ],
     "defined_in": "common.md",
-    "catalog": "https://umitsuru.github.io/buzz_report/hikaku15/studio/#styles"
+    "style_history": "最初はGAFU-09で作成。2026/11/21に参考投稿No.18へ変更"
   },
   "common_file": "common.md",
   "pages": [
