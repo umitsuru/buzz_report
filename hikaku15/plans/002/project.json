@@ -13,21 +13,30 @@
   "bot_instruction": "このフォルダは制作データです。読み込んだだけでは画像を生成しないこと。ユーザーが「投稿案No.2の〇枚目（または〇〜〇枚目）を作って」と指示したときだけ、最初に common.md を読み（画像は作らない）、次に指定されたページの NN.md を1つずつ読んで、1ページにつき1枚生成する。10枚を1枚にまとめない。生成ごとに、それまでの画像と同じ人物・線・色を保つ。生成後に右上の番号と画像内の文字を確認する。",
   "fiction_notice": "登場人物・会社・式場はすべて架空の創作。性的な描写はしない。",
   "series_note": "スシロー版（10枚・正方形1枚絵）がバズったことを受けた別バージョン。参考投稿No.4（結婚式でバレる、友人編）とは人物・展開を重ねない",
-  "reference_posts": [],
-  "style_history": "最初は参考投稿No.54（昭和レトロ漫画風）で作成。2026/11/21にオリジナル画風S-04へ変更",
+  "reference_posts": [
+    {
+      "no": 57,
+      "folder": "hikaku15/posts/20261121_2123917337174884430",
+      "url": "https://x.com/umitsuru_fire/status/2123917337174884430",
+      "title": "スシローでバレる。隠れ貧乏と隠れ金持ち",
+      "author": "@umitsuru_fire",
+      "used_for": "画風（線・顔の描き方・誇張の仕方・淡い塗り・配色・背景の密度・ラベルの黒い札と矢印・ページ番号の形）。人物・構図・セリフ・物語は使わない"
+    }
+  ],
+  "style_history": "参考投稿No.54の昭和レトロ漫画風 → オリジナル画風S-04 → 2026/11/21に参考投稿No.57（スシロー版）へ変更",
   "style": {
-    "gafu_id": "S-04",
-    "original_style": "S-04",
-    "name": "テレビの再現VTR（オリジナル画風S-04）",
-    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/studio/originals/S-04.jpg",
-    "defined_in": "common.md",
-    "old_reference_images": [
+    "gafu_id": "No.57",
+    "ref_post_no": 57,
+    "name": "スシロー版と同じ淡い水彩イラスト風（参考投稿No.57）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/002/ref/01.jpg",
+    "reference_images": [
       "https://umitsuru.github.io/buzz_report/hikaku15/plans/002/ref/01.jpg",
       "https://umitsuru.github.io/buzz_report/hikaku15/plans/002/ref/02.jpg",
       "https://umitsuru.github.io/buzz_report/hikaku15/plans/002/ref/03.jpg",
       "https://umitsuru.github.io/buzz_report/hikaku15/plans/002/ref/04.jpg",
       "https://umitsuru.github.io/buzz_report/hikaku15/plans/002/ref/05.jpg"
-    ]
+    ],
+    "defined_in": "common.md"
   },
   "common_file": "common.md",
   "pages": [

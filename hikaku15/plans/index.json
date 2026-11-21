@@ -16,13 +16,13 @@
     "folder": "002",
     "title": "結婚式でバレる。「隠れ貧乏」と「隠れ金持ち」（親戚編）",
     "created": "2026-11-21",
-    "gafu_id": "S-04",
-    "style_name": "テレビの再現VTR（オリジナル画風S-04）",
+    "gafu_id": "No.57",
+    "style_name": "スシロー版と同じ淡い水彩イラスト風（参考投稿No.57）",
     "pages": 10,
     "aspect_ratio": "1:1",
     "format": "B",
     "status": "プロンプト完成・画像未生成",
-    "cover": "../studio/originals/S-04.jpg"
+    "cover": "./002/ref/01.jpg"
   },
   {
     "no": 3,
