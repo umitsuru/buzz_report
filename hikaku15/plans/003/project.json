@@ -12,21 +12,21 @@
   "initial_mode": "wait_for_explicit_generate_command",
   "bot_instruction": "このフォルダは制作データです。読み込んだだけでは画像を生成しないこと。ユーザーが「投稿案No.3の〇枚目（または〇〜〇枚目）を作って」と指示したときだけ、最初に common.md を読み（画像は作らない）、project.json の参考画像を確認し、次に指定されたページの NN.md を1つずつ読んで、1ページにつき1枚生成する。10枚を1枚にまとめない。生成ごとに、それまでの画像と同じ人物・線・色を保つ。生成後に右上の番号と画像内の文字を確認する。",
   "fiction_notice": "登場人物・出来事はすべて架空の創作。実在のお店の実話や決まりを示すものではない。店名は看板の文字だけで、公式ロゴやキャラクターは描かない。",
-  "history": "2026/11/21：ChatGPTが作った「しゃぶ葉でバレる」を、Claudeが「コメダ珈琲でバレる」に作り替え",
+  "history": "2026/11/21：ChatGPTが作った「しゃぶ葉でバレる」を、Claudeが「コメダ珈琲でバレる」に作り替え（画風No.8）。同日、画風をNo.35に変更し、下の説明を状況説明の文章に、4・5枚目を修正",
   "reference_posts": [
     {
-      "post_no": 8,
-      "folder": "hikaku15/posts/20261120_2123556983316074660",
-      "url": "https://x.com/yamatsullu/status/2123556983316074660",
-      "title": "タワマンカップルの人生 vs 田舎のマイルドヤンキーの人生",
-      "author": "@yamatsullu",
-      "used_for": "画風（太い線とハッチング、写実寄りの濃い顔、暖色と寒色の対比、細かい背景、黒枠と下の帯、黒い四角のラベルと番号）。人物・構図・セリフ・物語は使わない"
+      "post_no": 35,
+      "folder": "hikaku15/posts/20261121_2123159316408791273",
+      "url": "https://x.com/hukugyou_maniaa/status/2123159316408791273",
+      "title": "MEGAドンキでわかる育ちの悪さ",
+      "author": "@hukugyou_maniaa",
+      "used_for": "画風（均一な線、きれいなアニメ顔、フラットな塗り、明るい配色、細かい背景、オレンジの丸の番号、小さな状況説明の文字）。人物・構図・セリフ・物語は使わない"
     }
   ],
   "style": {
-    "gafu_id": "No.8",
-    "ref_post_no": 8,
-    "name": "90年代青年誌の濃い劇画風（参考投稿No.8）",
+    "gafu_id": "No.35",
+    "ref_post_no": 35,
+    "name": "今どきのすっきりしたアニメイラスト（参考投稿No.35）",
     "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/003/ref/01.jpg",
     "reference_images": [
       "https://umitsuru.github.io/buzz_report/hikaku15/plans/003/ref/01.jpg",
