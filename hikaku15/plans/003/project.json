@@ -2,94 +2,101 @@
   "plan_no": 3,
   "folder": "003",
   "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/003/",
-  "project": "しゃぶ葉でバレる。「隠れ貧乏」と「隠れ金持ち」",
+  "project": "コメダ珈琲でバレる。「老害夫婦」と「品の良い老夫婦」",
   "created": "2026-11-21",
-  "made_by": "ChatGPT",
+  "made_by": "Claude",
   "format": "B",
-  "format_name": "正方形1:1・1枚絵（コマ割りなし）",
+  "format_name": "正方形1:1・1枚絵",
   "image_count": 10,
   "aspect_ratio": "1:1",
   "initial_mode": "wait_for_explicit_generate_command",
-  "bot_instruction": "このフォルダは制作データです。読み込んだだけでは画像を生成しないこと。ユーザーが「投稿案No.3の〇枚目（または〇〜〇枚目）を作って」と明示したときのみ、最初に common.md を読んで設定を把握し（この時点では画像を作らない）、指定された NN.md を1ページずつ読み、1ページにつき正方形の1枚絵を生成する。10枚をコラージュにしない。全ページで同一の2家族・左右の配置・画風・文字ルールを守る。生成後に右上のページ番号と画像内文字を確認する。",
-  "fiction_notice": "比較対象の家族・会話・会社・出来事は創作。しゃぶ葉は実在チェーンの名称だが、未確認の店内ルールや割引を事実として描写しない。食べ放題の範囲内の追加注文を課金扱いしない。",
-  "series_note": "スシローでバレる型の別舞台。食べ放題の注文量、セルフコーナー、子どもへの接し方、食事の楽しみ方を対比する。片方の家族を貧しさだけで笑わない。",
+  "bot_instruction": "このフォルダは制作データです。読み込んだだけでは画像を生成しないこと。ユーザーが「投稿案No.3の〇枚目（または〇〜〇枚目）を作って」と指示したときだけ、最初に common.md を読み（画像は作らない）、project.json の参考画像を確認し、次に指定されたページの NN.md を1つずつ読んで、1ページにつき1枚生成する。10枚を1枚にまとめない。生成ごとに、それまでの画像と同じ人物・線・色を保つ。生成後に右上の番号と画像内の文字を確認する。",
+  "fiction_notice": "登場人物・出来事はすべて架空の創作。実在のお店の実話や決まりを示すものではない。店名は看板の文字だけで、公式ロゴやキャラクターは描かない。",
+  "history": "2026/11/21：ChatGPTが作った「しゃぶ葉でバレる」を、Claudeが「コメダ珈琲でバレる」に作り替え",
   "reference_posts": [
     {
-      "gafu_id": "GAFU-09",
-      "folder": "hikaku15/posts/20261120_2123619172274020594",
-      "url": "https://x.com/edamaru666/status/2123619172274020594",
-      "title": "焼肉きんぐでバレる。ヤンキー家族（隠れ貧乏）と陰キャ家族（隠れ金持ち）",
-      "author": "@edamaru666",
-      "used_for": "線・塗り・色・人物の顔立ちと表情・背景密度・ラベルの視認性を観察する画風参照。人物、セリフ、固有の構図と展開は複製しない。"
+      "post_no": 8,
+      "folder": "hikaku15/posts/20261120_2123556983316074660",
+      "url": "https://x.com/yamatsullu/status/2123556983316074660",
+      "title": "タワマンカップルの人生 vs 田舎のマイルドヤンキーの人生",
+      "author": "@yamatsullu",
+      "used_for": "画風（太い線とハッチング、写実寄りの濃い顔、暖色と寒色の対比、細かい背景、黒枠と下の帯、黒い四角のラベルと番号）。人物・構図・セリフ・物語は使わない"
     }
   ],
   "style": {
-    "gafu_id": "GAFU-09",
-    "name": "焼肉家族・思わぬ格差（実際のX投稿画像を参照）",
-    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261120_2123619172274020594/img/01.jpg",
-    "defined_in": "common.md",
-    "catalog": "https://umitsuru.github.io/buzz_report/hikaku15/studio/#styles"
+    "gafu_id": "No.8",
+    "ref_post_no": 8,
+    "name": "90年代青年誌の濃い劇画風（参考投稿No.8）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/003/ref/01.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/003/ref/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/003/ref/02.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/003/ref/03.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/003/ref/04.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/003/ref/05.jpg"
+    ],
+    "defined_in": "common.md"
   },
   "common_file": "common.md",
   "pages": [
     {
       "page": 1,
       "label": "1/10",
-      "title": "入店・「元を取るぞ！」",
+      "title": "開店前",
       "file": "01.md"
     },
     {
       "page": 2,
       "label": "2/10",
-      "title": "コース選び・家族4人分",
+      "title": "席えらび",
       "file": "02.md"
     },
     {
       "page": 3,
       "label": "3/10",
-      "title": "最初の肉注文・皿の山",
+      "title": "モーニング",
       "file": "03.md"
     },
     {
       "page": 4,
       "label": "4/10",
-      "title": "野菜コーナー・山盛り競争",
+      "title": "豆菓子",
       "file": "04.md"
     },
     {
       "page": 5,
       "label": "5/10",
-      "title": "薬味とタレ・全部試したい",
+      "title": "店員を呼ぶ",
       "file": "05.md"
     },
     {
       "page": 6,
       "label": "6/10",
-      "title": "子どもの「もうお腹いっぱい」",
+      "title": "運ばれてきたデザート",
       "file": "06.md"
     },
     {
       "page": 7,
       "label": "7/10",
-      "title": "ソフトクリーム・高く盛りすぎ",
+      "title": "昼のピーク",
       "file": "07.md"
     },
     {
       "page": 8,
       "label": "8/10",
-      "title": "残り時間・食べきれる？",
+      "title": "孫",
       "file": "08.md"
     },
     {
       "page": 9,
       "label": "9/10",
-      "title": "会計・鳴った仕事の電話",
+      "title": "お会計",
       "file": "09.md"
     },
     {
       "page": 10,
       "label": "10/10",
-      "title": "帰り道・お肉の社長",
+      "title": "その夜",
       "file": "10.md"
     }
   ]
