@@ -204,6 +204,15 @@ document.getElementById('lbx').onclick=lbClose;
 document.getElementById('lbp').onclick=()=>{lbI=(lbI-1+lbSet.length)%lbSet.length;lbShow()};
 document.getElementById('lbn2').onclick=()=>{lbI=(lbI+1)%lbSet.length;lbShow()};
 document.getElementById('lb').addEventListener('click',e=>{if(e.target.id==='lb')lbClose()});
+document.addEventListener('keydown',e=>{
+  if(!document.getElementById('lb').classList.contains('open'))return;
+  if(e.key==='ArrowRight'){lbI=(lbI+1)%lbSet.length;lbShow();e.preventDefault()}
+  if(e.key==='ArrowLeft'){lbI=(lbI-1+lbSet.length)%lbSet.length;lbShow();e.preventDefault()}
+  if(e.key==='Escape')lbClose();
+});
+let lbX=null;
+document.getElementById('lb').addEventListener('touchstart',e=>{lbX=e.touches[0].clientX},{passive:true});
+document.getElementById('lb').addEventListener('touchend',e=>{if(lbX==null)return;const dx=e.changedTouches[0].clientX-lbX;lbX=null;if(Math.abs(dx)>40){lbI=(lbI+(dx<0?1:-1)+lbSet.length)%lbSet.length;lbShow()}});
 plansEl.addEventListener('click',e=>{const b=e.target.closest('.plan');if(b)open(+b.dataset.no)});
 detail.addEventListener('click',async e=>{
   const b=e.target.closest('button'); if(!b||!b.dataset.n) return;
