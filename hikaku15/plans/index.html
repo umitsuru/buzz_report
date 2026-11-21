@@ -109,6 +109,7 @@ const pad2=n=>String(n).padStart(2,'0');
 const imgCache={};
 async function genImages(p){
   if(imgCache[p.no])return imgCache[p.no];
+  if(p.images_stale) return imgCache[p.no]=Array(p.pages).fill(null); // Preserve obsolete images without displaying them as new output
   const r=await Promise.all(Array.from({length:p.pages},async(_,i)=>{const u=`./${p.folder}/images/${pad2(i+1)}.jpg`;try{const x=await fetch(u,{method:'HEAD',cache:'no-store'});return x.ok?u:null}catch(e){return null}}));
   return imgCache[p.no]=r;
 }
