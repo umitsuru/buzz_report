@@ -1,0 +1,53 @@
+{
+  "id": "2123288078244852132",
+  "url": "https://x.com/gon_career/status/2123288078244852132",
+  "own": false,
+  "collected_at": "2026-11-21T13:55:10+09:00",
+  "author": {
+    "name": "ごん",
+    "handle": "@gon_career",
+    "followers": 83157
+  },
+  "posted_at": "2026-11-19T14:31:41+09:00",
+  "metrics": {
+    "views": 133383,
+    "likes": 376,
+    "reposts": 24,
+    "quotes": 5,
+    "replies": 2,
+    "bookmarks": 70
+  },
+  "text": "会社でわかる、民度の低さ。",
+  "thread": [
+    {
+      "id": "2123288078244852132",
+      "text": "会社でわかる、民度の低さ。",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg"
+      ]
+    }
+  ],
+  "image_count": 10,
+  "top_replies": [
+    {
+      "text": "誰かがやってくれるから。\n誰かがやってくれていたから、\n自分はやらなくてもいいんだと、\nそれが蔓延して伝播して誰1人として、\nいつもやっていた人もやらなくなっていく。",
+      "likes": 1
+    }
+  ],
+  "top_quotes": [
+    {
+      "text": "https://t.co/Z7EX1843hT #民度の低さ 会社 \nhttps://t.co/Kmvp1Pv8tg\nhttps://t.co/T2ldkeHTSq",
+      "likes": 0
+    }
+  ],
+  "note": "画像10枚はすべて元投稿1件に添付されている（API の attachments に10件、JPEG 1254×1254px）。投稿者本人の画像付きセルフリプは検索で見つからなかった。本文は表示部分のみで、API本文末尾のリンク https://t.co/tu2VJVqlUs https://t.co/urzEUhfc6O は除いた。この投稿は別の投稿を引用している（https://x.com/i/status/2123249920060559792）。返信は返信数2件のうち投稿者本人の分を除く1件を取得（返信への返信を含む。検索で取れた分だけで全件ではない）。引用は取得できた1件だけで、引用数5件の一部（API の引用一覧には無関係な投稿が多く混ざっていた）。数字は 2026-11-21 13:55頃 JST 時点。動画なし。"
+}

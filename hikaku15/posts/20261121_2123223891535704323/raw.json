@@ -1,0 +1,89 @@
+{
+  "id": "2123223891535704323",
+  "url": "https://x.com/mogi_invest/status/2123223891535704323",
+  "own": false,
+  "collected_at": "2026-11-21T13:55:10+09:00",
+  "author": {
+    "name": "もぎ",
+    "handle": "@mogi_invest",
+    "followers": 86118
+  },
+  "posted_at": "2026-11-19T10:16:37+09:00",
+  "metrics": {
+    "views": 3666195,
+    "likes": 3157,
+    "reposts": 113,
+    "quotes": 20,
+    "replies": 17,
+    "bookmarks": 602
+  },
+  "text": "↑生まれる前\n\n↓生まれた後",
+  "thread": [
+    {
+      "id": "2123223891535704323",
+      "text": "↑生まれる前\n\n↓生まれた後",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg"
+      ]
+    }
+  ],
+  "image_count": 10,
+  "top_replies": [
+    {
+      "text": "平和だなぁと見てたら9枚目よく見てから血の気引いちまった",
+      "likes": 38
+    },
+    {
+      "text": "これは平和だな",
+      "likes": 17
+    },
+    {
+      "text": "子育てに関する解像度が低すぎる\n2枚目みたいな状況はなく、実際はトイレ行かなくて大丈夫か確認して出発したにも関わらず、出発して数分後に「パパ、トイレ〜」",
+      "likes": 3
+    },
+    {
+      "text": "お父さんいつの間に3本腕になったんや",
+      "likes": 3
+    },
+    {
+      "text": "腕が3本!?",
+      "likes": 2
+    },
+    {
+      "text": "ほっこり",
+      "likes": 1
+    },
+    {
+      "text": "元々正反対な生き物なので、文句言ってもしかたない",
+      "likes": 0
+    },
+    {
+      "text": "9枚目手が3つある😨",
+      "likes": 0
+    },
+    {
+      "text": "奥さんとこうなりたかったな…",
+      "likes": 0
+    },
+    {
+      "text": "https://t.co/nnkXdAAtL6",
+      "likes": 0
+    }
+  ],
+  "top_quotes": [
+    {
+      "text": "https://t.co/BIXlG9QoyK\n子育て\nhttps://t.co/OZkUUYUkWt\nhttps://t.co/cXmeBDvh4m",
+      "likes": 0
+    }
+  ],
+  "note": "画像10枚はすべて元投稿1件に添付されている（API の attachments に10件、JPEG 1254×1254px）。投稿者本人の画像付きセルフリプは検索で見つからなかった。本文は表示部分のみで、API本文末尾のリンク https://t.co/X7EFCgLfa5 https://t.co/A6vQWHH3Vy は除いた。この投稿は別の投稿を引用している（https://x.com/i/status/2122525142056128657）。返信は返信数17件のうち投稿者本人の分を除く15件を取得（返信への返信を含む。検索で取れた分だけで全件ではない）。引用は取得できた1件だけで、引用数20件の一部（API の引用一覧には無関係な投稿が多く混ざっていた）。数字は 2026-11-21 13:55頃 JST 時点。動画なし。"
+}
