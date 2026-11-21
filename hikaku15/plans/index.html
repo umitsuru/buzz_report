@@ -158,7 +158,7 @@ async function open(no){
   detail.innerHTML=`
   <section class="detail">
     <div class="dh"><h2><span class="no">No.${cur.no}</span>${esc(cur.title)}</h2>
-      <span>画風 <b>${esc(cur.gafu_id||'')}</b> ${esc(cur.style_name)}</span><span>形式<b>${esc(cur.format||'')}</b>（${cur.format==='B'?'正方形1枚絵':cur.format==='C'?'1人ずつの人物図鑑1枚絵':'3:4・3コマ'}）</span><span><b>${esc(cur.aspect_ratio)}</b>・${cur.pages}枚</span><span>${esc(cur.status||'')}</span>
+      <span>画風 <b>${esc(cur.gafu_id||'')}</b> ${esc(cur.style_name)}</span><span>形式<b>${esc(cur.format||'')}</b>（${esc(cur.format_name||(cur.format==='B'?'正方形1枚絵':cur.format==='C'?'1人ずつの人物図鑑1枚絵':'3:4・3コマ'))}）</span><span><b>${esc(cur.aspect_ratio)}</b>・${cur.pages}枚</span><span>${esc(cur.status||'')}</span>
       <span><a href="https://github.com/umitsuru/buzz_report/tree/main/hikaku15/plans/${esc(cur.folder)}" target="_blank" rel="noopener noreferrer">GitHubで開く</a></span></div>
     ${st?`<div class="ref"><img src="../studio/${esc(st.cover)}" alt=""><span>画風の参考：${esc(st.title)}（${esc(st.author||'')}）<br><a href="../studio/#styles">画風カタログで見る</a></span></div>`:(cur.cover?`<div class="ref"><img src="${esc(cover(cur))}" alt=""><span>画風の参考：${esc(cur.style_name)}<br><a href="../">参考投稿で見る</a></span></div>`:'')}
     <div class="box">

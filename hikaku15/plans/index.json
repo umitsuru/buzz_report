@@ -9,7 +9,8 @@
     "pages": 10,
     "aspect_ratio": "3:4",
     "status": "プロンプト完成・画像未生成",
-    "format": "A"
+    "format": "A",
+    "format_name": "3:4・1ページ3コマ"
   },
   {
     "no": 2,
@@ -22,7 +23,8 @@
     "aspect_ratio": "1:1",
     "format": "B",
     "status": "プロンプト完成・画像未生成",
-    "cover": "./002/ref/01.jpg"
+    "cover": "./002/ref/01.jpg",
+    "format_name": "正方形1:1・1枚絵"
   },
   {
     "no": 3,
@@ -35,7 +37,8 @@
     "aspect_ratio": "1:1",
     "format": "B",
     "status": "プロンプト完成・画像未生成",
-    "cover": "./003/ref/01.jpg"
+    "cover": "./003/ref/01.jpg",
+    "format_name": "正方形1:1・1枚絵"
   },
   {
     "no": 4,
@@ -48,7 +51,8 @@
     "aspect_ratio": "1:1",
     "format": "B",
     "status": "プロンプト完成・画像未生成",
-    "cover": "../studio/originals/S-01.jpg"
+    "cover": "../studio/originals/S-01.jpg",
+    "format_name": "正方形1:1・1枚絵（コマ割りなし）"
   },
   {
     "no": 5,
@@ -60,7 +64,8 @@
     "pages": 10,
     "aspect_ratio": "1:1",
     "format": "C",
-    "status": "プロンプト修正済み・再生成待ち（既存01.jpgあり）"
+    "status": "プロンプト修正済み・再生成待ち（既存01.jpgあり）",
+    "format_name": "正方形1:1・ヘタウマ人物図鑑1枚絵（1ページ1人・コマ割りなし）"
   },
   {
     "no": 6,
@@ -73,6 +78,21 @@
     "aspect_ratio": "1:1",
     "format": "A",
     "status": "プロンプト完成・画像未生成",
-    "cover": "./006/ref/01.jpg"
+    "cover": "./006/ref/01.jpg",
+    "format_name": "正方形1:1・1ページ3コマ（参考投稿No.48と同じ形）"
+  },
+  {
+    "no": 7,
+    "folder": "007",
+    "title": "誕生日は1日違い。学年は1年違い。",
+    "created": "2026-11-21",
+    "gafu_id": "S-02",
+    "style_name": "ドット絵RPG（オリジナル画風S-02）",
+    "pages": 15,
+    "aspect_ratio": "4:5",
+    "format": "上下比較",
+    "format_name": "縦長4:5・上下2コマ",
+    "status": "プロンプト完成・画像未生成",
+    "cover": "../studio/originals/S-02.jpg"
   }
 ]
