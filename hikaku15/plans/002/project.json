@@ -1,0 +1,96 @@
+{
+  "plan_no": 2,
+  "folder": "002",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/002/",
+  "project": "結婚式でバレる。「隠れ貧乏」と「隠れ金持ち」（親戚編）",
+  "created": "2026-11-21",
+  "made_by": "Claude",
+  "format": "B",
+  "format_name": "正方形1:1・1枚絵",
+  "image_count": 10,
+  "aspect_ratio": "1:1",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "bot_instruction": "このフォルダは制作データです。読み込んだだけでは画像を生成しないこと。ユーザーが「投稿案No.2の〇枚目（または〇〜〇枚目）を作って」と指示したときだけ、最初に common.md を読み（画像は作らない）、次に指定されたページの NN.md を1つずつ読んで、1ページにつき1枚生成する。10枚を1枚にまとめない。生成ごとに、それまでの画像と同じ人物・線・色を保つ。生成後に右上の番号と画像内の文字を確認する。",
+  "fiction_notice": "登場人物・会社・式場はすべて架空の創作。性的な描写はしない。",
+  "series_note": "スシロー版（10枚・正方形1枚絵）がバズったことを受けた別バージョン。参考投稿No.4（結婚式でバレる、友人編）とは人物・展開を重ねない",
+  "reference_posts": [
+    {
+      "no": 54,
+      "folder": "hikaku15/posts/20261121_2123884087769457018",
+      "url": "https://x.com/AIkikue/status/2123884087769457018",
+      "title": "40年でこんなに変わった、結婚式。 昭和↑ 令和↓",
+      "author": "@AIkikue",
+      "used_for": "画風（線・髪の描き込み・顔立ち・塗り・配色・背景の密度・タイトル帯とラベルと注釈ボックスの形）。人物・構図・セリフ・物語は使わない"
+    }
+  ],
+  "style": {
+    "gafu_id": "",
+    "ref_post_no": 54,
+    "name": "昭和レトロ漫画のカラー原画風",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261121_2123884087769457018/img/01.jpg",
+    "defined_in": "common.md"
+  },
+  "common_file": "common.md",
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/10",
+      "title": "受付でご祝儀を渡すとき",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/10",
+      "title": "親族控室で待つとき",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/10",
+      "title": "親族紹介のとき",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/10",
+      "title": "乾杯のとき",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/10",
+      "title": "料理が出たとき",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/10",
+      "title": "余興の時間",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/10",
+      "title": "新郎の父があいさつに来たとき",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/10",
+      "title": "花嫁の手紙",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/10",
+      "title": "引き出物を受け取るとき",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/10",
+      "title": "帰りの車の中で",
+      "file": "10.md"
+    }
+  ]
+}

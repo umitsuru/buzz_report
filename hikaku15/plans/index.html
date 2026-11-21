@@ -89,14 +89,14 @@ async function copy(text){
 }
 function flash(b, ok, label){b.textContent=ok?'コピーしました':'コピーできませんでした';b.classList.toggle('ok',ok);setTimeout(()=>{b.textContent=label;b.classList.remove('ok')},1800)}
 
-function cover(p){const s=styles[p.gafu_id];return s&&s.cover?'../studio/'+s.cover:''}
+function cover(p){if(p.cover)return p.cover.replace(/^\.\.\//,'../');const s=styles[p.gafu_id];return s&&s.cover?'../studio/'+s.cover:''}
 
 function renderList(){
   plansEl.innerHTML = plans.slice().sort((a,b)=>b.no-a.no).map(p=>`
     <button class="plan ${cur&&cur.no===p.no?'on':''}" data-no="${p.no}">
       ${cover(p)?`<img src="${esc(cover(p))}" alt="" loading="lazy">`:'<span></span>'}
       <span><b><span class="no">No.${p.no}</span>${esc(p.title)}</b>
-      <small>形式${esc(p.format||'')}・${esc(p.gafu_id)}・${p.pages}枚・${esc(p.aspect_ratio)}・${esc(p.created)}</small>
+      <small>形式${esc(p.format||'')}・${esc(p.gafu_id||p.style_name)}・${p.pages}枚・${esc(p.aspect_ratio)}・${esc(p.created)}</small>
       <small>${esc(p.status||'')}</small></span>
     </button>`).join('') || '<p class="msg">まだ投稿案がありません。</p>';
 }
@@ -113,8 +113,8 @@ ${base}common.md
 2. 次のページを、上から順に1ページにつき1枚ずつ生成してください
 ${nums.map(n=>`${n}/${p.pages}：${base}${pad(n)}.md`).join('\n')}
 
-画風の参考画像（${p.gafu_id}）：
-${styles[p.gafu_id]&&styles[p.gafu_id].cover?styles[p.gafu_id].cover.replace(/^\.\.\//,'https://umitsuru.github.io/buzz_report/hikaku15/'):'（画風カタログを参照）'}`;
+画風の参考画像（${p.gafu_id||p.style_name}）：
+${(p.cover||(styles[p.gafu_id]&&styles[p.gafu_id].cover)||'').replace(/^\.\.\//,'https://umitsuru.github.io/buzz_report/hikaku15/')||'（画風カタログを参照）'}`;
 }
 
 async function open(no){
@@ -130,9 +130,9 @@ async function open(no){
   detail.innerHTML=`
   <section class="detail">
     <div class="dh"><h2><span class="no">No.${cur.no}</span>${esc(cur.title)}</h2>
-      <span>画風 <b>${esc(cur.gafu_id)}</b> ${esc(cur.style_name)}</span><span>形式<b>${esc(cur.format||'')}</b>（${cur.format==='B'?'正方形1枚絵':'3:4・3コマ'}）</span><span><b>${esc(cur.aspect_ratio)}</b>・${cur.pages}枚</span><span>${esc(cur.status||'')}</span>
+      <span>画風 <b>${esc(cur.gafu_id||'')}</b> ${esc(cur.style_name)}</span><span>形式<b>${esc(cur.format||'')}</b>（${cur.format==='B'?'正方形1枚絵':'3:4・3コマ'}）</span><span><b>${esc(cur.aspect_ratio)}</b>・${cur.pages}枚</span><span>${esc(cur.status||'')}</span>
       <span><a href="https://github.com/umitsuru/buzz_report/tree/main/hikaku15/plans/${esc(cur.folder)}" target="_blank" rel="noopener noreferrer">GitHubで開く</a></span></div>
-    ${st?`<div class="ref"><img src="../studio/${esc(st.cover)}" alt=""><span>画風の参考：${esc(st.title)}（${esc(st.author||'')}）<br><a href="../studio/#styles">画風カタログで見る</a></span></div>`:''}
+    ${st?`<div class="ref"><img src="../studio/${esc(st.cover)}" alt=""><span>画風の参考：${esc(st.title)}（${esc(st.author||'')}）<br><a href="../studio/#styles">画風カタログで見る</a></span></div>`:(cur.cover?`<div class="ref"><img src="${esc(cover(cur))}" alt=""><span>画風の参考：${esc(cur.style_name)}<br><a href="../">参考投稿で見る</a></span></div>`:'')}
     <div class="box">
       <h3>ChatGPTのボットへの指示を作る</h3>
       <div class="range">
