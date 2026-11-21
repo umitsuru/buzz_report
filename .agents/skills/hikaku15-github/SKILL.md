@@ -28,7 +28,7 @@ description: >
 4. **各ページの独立プロンプト**：1ページに1枚。番号 `n/10`、そのページの具体的な人物・服装・動作・表情・背景・吹き出し・オチ・注意点を明示。単なる概要ではなく、画像生成ボットが個別に使える完成版にする。
 5. **JSONの整合性**：`project.json` の `plan_no`、`folder`、`project`、`format`、`aspect_ratio`、`image_count`、`pages`、`style` を一致させる。`index.json` の当該番号を更新し、**他の番号を上書きしない**。
 6. **安全な書き込み**：更新対象のBlob SHAを取得し、`update_file` で既存のUTF-8テキストを書き換える。新規ファイルに `create_file` を使う。更新時に競合が起きたら最新を再取得して差分を確認する。
-7. **画像は別管理**：ユーザーが生成を明示しない限り画像を作らない。古い `images/NN.jpg` は無断削除・上書きしない。新プロンプトと絵柄が食い違う場合はその事実を報告する。
+7. **画像は別管理**：ユーザーが生成を明示しない限り画像を作らない。古い `images/NN.jpg` は無断削除・上書きしない。新プロンプトと絵柄が食い違う場合はその事実を報告する。旧画像を隠す必要がある場合は `index.json` の対象プランへ `images_stale: true` を入れる（`plans/index.html` は旧画像を非表示にする）。**再生成が完了したら `images_stale` を外す／falseにして表示を再開する**。
 8. **確認**：対象の `common.md`、ページファイル、`project.json`、`index.json` を読み直し、最新の条件が含まれるかチェック。必要に応じてGitHub Pagesの公開ワークフローを確認し、`in_progress` と `success` を区別する。
 9. **報告**：更新に成功した場合だけコミット結果と以下のURLを提示。
    - 一覧：`https://umitsuru.github.io/buzz_report/hikaku15/plans/#plan-X`
