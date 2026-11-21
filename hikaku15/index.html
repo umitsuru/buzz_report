@@ -344,8 +344,12 @@
       const loaded = await Promise.all(folders.map(f => loadPost(f).catch(() => null)));
       posts = loaded.filter(Boolean);
       // 投稿番号：集めた順（collected_at → フォルダ名）に No.1 から。並べ替えや絞り込みでは変わらない
+      // 番号は posts/numbers.json の固定番号。載っていない新しい投稿だけ、集めた順に最大番号+1から仮に振る
+      let fixed = {};
+      try { const r = await fetch(REL + '/numbers.json', {cache: 'no-store'}); if (r.ok) fixed = (await r.json()).numbers || {}; } catch (e) {}
+      let mx = Math.max(0, ...Object.values(fixed));
       posts.slice().sort((x, y) => (x.raw.collected_at || '').localeCompare(y.raw.collected_at || '') || x.folder.localeCompare(y.folder))
-        .forEach((p, i) => { p.no = i + 1; });
+        .forEach(p => { p.no = fixed[p.folder] || ++mx; });
       render();
     } catch (e) {
       list.textContent = '';

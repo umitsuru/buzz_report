@@ -79,7 +79,7 @@
   <div class="grid" id="orig"><p class="msg">読み込み中…</p></div>
 
   <h2 id="posts">集めた投稿の画風</h2>
-  <p class="lead">番号は「参考投稿」と同じです。Claudeには「画風は No.54 で」、ChatGPTには「この画風で指示をコピー」で貼り付けて使います。</p>
+  <p class="lead">番号は「参考投稿」と同じで、投稿が整理で消えても変わりません（欠番になります）。Claudeには「画風は No.54 で」、ChatGPTには「この画風で指示をコピー」で貼り付けて使います。</p>
   <div class="bar">
     <input type="search" id="q" placeholder="タイトル・作者で探す" aria-label="投稿を探す">
     <button data-sort="no" class="on">番号順</button>
@@ -196,7 +196,9 @@ async function folders(){
     const loaded=await Promise.all(fs.map(async f=>{try{const r=await fetch(`../posts/${f}/raw.json`,{cache:'no-store'});if(!r.ok)return null;const raw=await r.json();const fl=files(raw);return {folder:f,raw,files:fl,gafu:gafu[f]}}catch(e){return null}}));
     posts=loaded.filter(Boolean);
     // 番号は「参考投稿」ページと同じ：集めた順（collected_at → フォルダ名）
-    posts.slice().sort((a,b)=>(a.raw.collected_at||'').localeCompare(b.raw.collected_at||'')||a.folder.localeCompare(b.folder)).forEach((p,i)=>p.no=i+1);
+    let fixed={};try{const r=await fetch('../posts/numbers.json',{cache:'no-store'});if(r.ok)fixed=(await r.json()).numbers||{}}catch(e){}
+    let mx=Math.max(0,...Object.values(fixed));
+    posts.slice().sort((a,b)=>(a.raw.collected_at||'').localeCompare(b.raw.collected_at||'')||a.folder.localeCompare(b.folder)).forEach(p=>{p.no=fixed[p.folder]||++mx});
     posts=posts.filter(p=>p.files.length);
     renderPosts();
   }catch(e){$('grid').innerHTML='<p class="msg">投稿を読み込めませんでした。少し時間をおいて開き直してください。</p>'}
