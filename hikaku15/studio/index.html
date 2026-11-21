@@ -1,58 +1,205 @@
 <!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#0c0f12">
-<title>X漫画 制作スタジオ — 実際の投稿から画風を選ぶ</title>
-<link rel="stylesheet" href="./studio.css?v=20261121-1"><script src="./app.js?v=20261121-1" defer></script>
-</head><body>
-<div class="layout">
-<header class="topbar">
-  <a href="../" class="logo"><span class="mark">✦</span><span><strong>X MANGA STUDIO</strong><small>実際のX漫画から画風を選ぶ</small></span></a>
-  <nav><a href="../">参考投稿</a><a href="./" aria-current="page"><strong>画風カタログ</strong></a><a href="../plans/">投稿案</a><a href="https://github.com/umitsuru/buzz_report/tree/main/hikaku15" target="_blank" rel="noopener noreferrer">GitHub原本 ↗</a></nav>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#000">
+<title>画風カタログ — 比較シリーズ データベース</title>
+<style>
+  *{box-sizing:border-box;min-width:0}
+  html,body{margin:0;background:#000;color:#e6e6e6;font:15px/1.7 "Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif}
+  a{color:#9dc3f0}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 14px}
+  header{position:sticky;top:0;z-index:5;background:rgba(0,0,0,.92);backdrop-filter:blur(6px);border-bottom:1px solid #222}
+  .top{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;padding:12px 0 10px}
+  h1{font-size:18px;margin:0;font-weight:700}
+  .site-nav{display:flex;gap:6px;flex-wrap:wrap}
+  .site-nav a{padding:6px 14px;border-radius:999px;border:1px solid #333;background:#151515;color:#ccc;text-decoration:none;font-size:13px}
+  .site-nav a.on{background:#e6e6e6;color:#000;border-color:#e6e6e6;font-weight:700}
+  .jump{display:flex;gap:6px;flex-wrap:wrap;padding:0 0 10px}
+  .jump a{font-size:13px;color:#aaa}
+  main{padding:16px 0 80px}
+  h2{font-size:18px;margin:26px 0 4px;scroll-margin-top:110px}
+  .lead{color:#aaa;font-size:14px;margin:0 0 14px}
+  .bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 14px}
+  .bar input[type=search]{flex:1 1 220px;font:inherit;font-size:16px;background:#151515;color:#eee;border:1px solid #333;border-radius:10px;padding:8px 12px}
+  .bar button{background:#151515;color:#ccc;border:1px solid #333;border-radius:999px;padding:6px 12px;font:inherit;font-size:13px;cursor:pointer}
+  .bar button.on{background:#e6e6e6;color:#000;border-color:#e6e6e6}
+  .count{font-size:13px;color:#888}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+  .card{background:#0d0d0d;border:1px solid #232323;border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+  .card.own{border-color:#6b5a1e}
+  .cover{position:relative;display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:2px;aspect-ratio:4/3;background:#111;border:0;padding:0;cursor:zoom-in}
+  .cover img{width:100%;height:100%;object-fit:cover;display:block}
+  .cover img:first-child{grid-row:1/3}
+  .badge{position:absolute;left:8px;top:8px;background:#e6e6e6;color:#000;font-weight:800;font-size:18px;line-height:1;border-radius:8px;padding:6px 10px}
+  .gafu{position:absolute;right:8px;top:8px;background:rgba(0,0,0,.75);color:#ffcf78;font-size:11px;border-radius:6px;padding:2px 6px}
+  .body{padding:10px 12px 12px;display:flex;flex-direction:column;gap:4px;flex:1}
+  .body b{font-size:14px;line-height:1.45;color:#fff}
+  .body small{color:#999;font-size:12px}
+  .acts{display:flex;gap:8px;margin-top:auto;padding-top:8px;flex-wrap:wrap}
+  .acts button{flex:1;min-height:40px;border:0;border-radius:10px;background:#e6e6e6;color:#000;font:inherit;font-weight:700;font-size:13px;cursor:pointer}
+  .acts button.sub{background:#1d1d1d;color:#ddd;border:1px solid #333;flex:0 0 auto;padding:0 12px}
+  .acts button.ok{background:#7fd1a8}
+  .orig .cover{grid-template-columns:1fr;grid-template-rows:1fr;aspect-ratio:1/1}
+  .ph{display:grid;place-items:center;text-align:center;color:#777;font-size:13px;padding:16px;background:repeating-linear-gradient(45deg,#111 0 12px,#151515 12px 24px)}
+  .hook{color:#ffcf78;font-size:13px}
+  .spec{white-space:pre-wrap;font-size:12px;color:#bbb;margin:4px 0 0;max-height:7.5em;overflow:hidden}
+  .card.open .spec{max-height:none}
+  /* 拡大表示 */
+  #lb{position:fixed;inset:0;background:#000;display:none;z-index:20;align-items:center;justify-content:center}
+  #lb.open{display:flex}
+  #lb img{max-width:100vw;max-height:100vh;object-fit:contain}
+  #lb .n{position:fixed;top:10px;left:50%;transform:translateX(-50%);font-size:14px;background:rgba(40,40,40,.8);padding:2px 10px;border-radius:999px}
+  #lb button{position:fixed;background:rgba(40,40,40,.75);color:#fff;border:0;border-radius:999px;width:44px;height:44px;font-size:22px;cursor:pointer}
+  #lbx{top:8px;right:8px}#lbp{left:8px;top:50%}#lbn2{right:8px;top:50%}
+  #toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#e6e6e6;color:#000;padding:8px 16px;border-radius:999px;font-size:14px;z-index:30}
+  .msg{color:#999;text-align:center;padding:40px 10px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap top">
+    <h1>比較シリーズ データベース</h1>
+    <nav class="site-nav" aria-label="サイト内">
+      <a href="../">参考投稿</a>
+      <a href="./" class="on">画風カタログ</a>
+      <a href="../plans/">投稿案</a>
+    </nav>
+  </div>
+  <div class="wrap jump"><a href="#posts">集めた投稿の画風</a>・<a href="#originals">オリジナル画風（S-01〜）</a></div>
 </header>
-<main>
-<section class="hero"><div><span class="overline">GROKBOT COLLECTION × CLAUDE PROMPT MAKER</span>
-<h1>実際の投稿を見て、<br><em>次の漫画を作る。</em></h1>
-<p>Grokbotが集めた連続漫画の画像から、好みの<strong>画風</strong>を選択。選んだ投稿を参考資料として、Claudeにネタ出しと10枚それぞれの完成プロンプトを依頼できます。</p>
-<div class="hero-links"><a href="#styles" class="cta">画風10種類を見る ↘</a><a href="#claude" class="outline">Claude用の指示へ</a></div>
-</div><aside class="hero-note"><div class="stamp">10<br><span>SLIDES</span></div><div>REFERENCE → IDEA → 10 PROMPTS</div><p>参考投稿の構図やセリフをコピーするのではなく、画風の特徴だけを制作に活かします。</p></aside></section>
-<section class="countstrip"><div><strong id="countPosts">—</strong><small>収集済み投稿</small></div><div><strong id="countImages">—</strong><small>参考画像</small></div><div><strong>10</strong><small>個別プロンプト作成</small></div><span class="right">投稿データはGrokbotの保存フォルダから読み込みます</span></section>
-<section id="styles" class="section style-library">
-<header class="section-heading">
-<div><p class="overline">01 / GAFU STYLE LIBRARY</p><h2>画風図鑑 — まずは10種類</h2><p>Grokbotが保存したXの実際の投稿画像を見て、画風を選択。各カードから10枚前後のスライドも確認できます。</p></div>
-<div class="shown" id="styleCount">10 STYLE REFERENCES</div>
-</header>
-<div class="style-tools"><span class="style-hint">参考投稿の画風を選びます。選択したIDは固定で、今後ボットへの指示に利用できます。</span><label class="sr-only" for="styleFilter">画風を絞り込む</label><select id="styleFilter"><option value="">すべての画風</option><option value="自分">自分の投稿だけ</option><option value="逆転・比較">逆転・比較</option><option value="人生比較">人生比較</option><option value="疑惑・ドラマ">疑惑・ドラマ</option><option value="日常の違和感">日常の違和感</option></select></div>
-<div id="styleCards" class="style-cards"><p class="load">10種類の実画像を読み込み中です…</p></div>
-<div class="style-selected" id="styleSelected" aria-live="polite">
-<div class="selected-heading"><span>YOUR SELECTED STYLE</span><strong id="styleSelectedLabel">画風を選んでください</strong></div>
-<div class="selected-style-body">
-<div class="style-selected-media"><img id="styleMainImage" alt="選択中の画風参考画像" loading="lazy"><span id="styleMainIndex">1 / 10</span></div>
-<div class="style-selected-details">
-<p class="style-id" id="styleSelectedId">GAFU-01</p>
-<p id="styleSourceInfo" class="style-subinfo"></p>
-<p class="style-explain">この画像は、すでにXに投稿された参考作品です。描き手の技法を勝手に断定せず、画像生成時には参照画像そのものから「線・色・陰影・人物表現」を分析してもらいます。</p>
-<div id="styleThumbs" class="style-thumbs"></div>
-<div class="style-actions"><button type="button" id="copyStyleCommand" class="cta">この画風を使う指示をコピー ⧉</button><a id="styleXLink" class="outline" target="_blank" rel="noopener noreferrer" href="#">元のX投稿を見る ↗</a></div>
-<div class="style-note">固定IDで指定できます。例：「GAFU-08で10枚の漫画を作って」。既存の人物・セリフ・構図そのものは模倣せず、新しい作品を制作します。</div>
-</div></div></div>
-</section>
+<main class="wrap">
+  <h2 id="posts">集めた投稿の画風</h2>
+  <p class="lead">番号は「参考投稿」と同じです。Claudeには「画風は No.54 で」、ChatGPTには「この画風で指示をコピー」で貼り付けて使います。</p>
+  <div class="bar">
+    <input type="search" id="q" placeholder="タイトル・作者で探す" aria-label="投稿を探す">
+    <button data-sort="no" class="on">番号順</button>
+    <button data-sort="views">表示回数順</button>
+    <button id="own">自分の投稿だけ</button>
+    <span class="count" id="count"></span>
+  </div>
+  <div class="grid" id="grid"><p class="msg">読み込み中…</p></div>
 
-<section id="posts" class="section"><!-- Grokbot post feed --><header class="section-heading"><div><p class="overline">01 / REFERENCE GALLERY</p><h2>どの投稿の画風にする？</h2><p>実際のX投稿の画像を使った参考一覧です。X上の投稿と一緒に確認できます。</p></div><div id="shownCount" class="shown"></div></header>
-<div class="filters"><label class="sr-only" for="query">投稿を検索</label><input id="query" type="search" placeholder="投稿タイトル、作者、キーワードで検索"><label class="sr-only" for="sort">並べ替え</label><select id="sort"><option value="views">表示回数順</option><option value="new">新着順</option><option value="likes">いいね順</option></select><label class="check"><input type="checkbox" id="own">自分の投稿のみ</label></div>
-<div id="cards" class="cards"><p class="load">投稿を読み込んでいます…</p></div><p id="loadError" class="warning" hidden></p>
-</section>
-<section class="section selected" id="selected"><header class="section-heading"><div><p class="overline">02 / SELECTED REFERENCE</p><h2>選択した画風の参考画像</h2></div><span class="selected-dot">● 選択中</span></header>
-<div class="selected-grid"><div class="visual"><img id="heroImage" alt="選択中の参考画像" loading="lazy"><span id="heroPage" class="page-chip">1 / 10</span></div><div class="selected-copy"><h3 id="selectedTitle">作品を選択してください</h3><div id="selectedMeta" class="muted"></div><p id="selectedText" class="selected-text"></p><p class="help">下の画像をクリックすると、Claudeに渡す参考画像のページを変更できます。画風参考は元投稿全体ですが、選んだ1枚を主な参照にします。</p><div id="thumbs" class="thumbs"></div><div class="links"><a id="xLink" href="#" target="_blank" rel="noopener noreferrer">Xの元投稿を見る ↗</a><a id="archiveLink" href="#" target="_blank" rel="noopener noreferrer">収集データを見る ↗</a></div></div></div>
-</section>
-<section class="section" id="claude"><header class="section-heading"><div><p class="overline">03 / CLAUDE PROMPT BUILDER</p><h2>Claudeに10枚のプロンプトを作らせる</h2><p>条件を入力してコピーするだけ。共通設定とは別に、10枚すべての個別プロンプトを作らせます。</p></div></header>
-<div class="builder"><div class="inputs">
-<label>企画・テーマ（未定でも可）<textarea id="idea" rows="3" placeholder="例：女性用風俗店の経理担当が体験する不思議な日常"></textarea></label>
-<label>作品の方向性<select id="tone"><option value="シュールなブラックコメディ。知らない人が「へぇ」と感じるリアルな裏方あるある">シュールな職場あるある</option><option value="意外な展開とオチがあるサスペンス寄りのエンタメ">不穏なサスペンス</option><option value="価値観の違いを対比する、起承転結のある人生比較ドラマ">人生・比較ストーリー</option><option value="温かく少し切ない、共感できる実録コミックエッセイ">実録コミックエッセイ</option></select></label>
-<div class="two"><label>画像枚数<select id="pages"><option value="10">10枚</option><option value="15">15枚</option></select></label><label>縦横比<select id="ratio"><option value="3:4">3:4（縦長）</option><option value="1:1">1:1（正方形）</option><option value="4:3">4:3（横長）</option></select></label></div>
-<label>補足・守ってほしいルール<textarea id="notes" rows="4" placeholder="例：主人公は35歳の日本人女性。オフィスは無機質で、セリフは短く。"></textarea></label>
-<label>作業モード<select id="workflow"><option value="full">ネタを考え、最良案で10枚分すべての完成プロンプトを作る</option><option value="ideas">ネタ案だけ10本考える（まだ個別プロンプトを作らない）</option><option value="specific">このテーマで10枚分の完成プロンプトを作る</option></select></label>
-<div class="notice">ClaudeがGitHubの非公開ファイルを読めない場合は、必要な共通設定や案件データを別途共有してください。画風の参考画像も、画像を直接渡せるとより正確です。</div>
-</div><div class="output"><div class="output-head"><strong>Claudeに渡す指示文</strong><span id="outputStatus">完成版プロンプト</span></div><textarea id="claudePrompt" readonly spellcheck="false" rows="22"></textarea><div class="actions"><button id="copy" class="cta" type="button">指示文をコピー ⧉</button><button id="download" class="outline" type="button">.txt で保存</button></div></div></div>
-</section>
-<section class="section endnote"><h2>制作の役割分担</h2><div class="steps"><div><span>GROKBOT</span><h3>参考投稿を収集</h3><p>本文・投稿画像・反応・リンクを保存。すでにある生データは上書きしません。</p></div><div><span>CLAUDE</span><h3>アイデアと10枚の台本</h3><p>各話の演出、人物、文字、個別画像生成プロンプトを完成させます。</p></div><div><span>IMAGE BOT</span><h3>指定された画像だけ生成</h3><p>最初は共通設定を読み込み待機。その後、画像を1枚ずつ生成します。</p></div></div></section>
-</main><footer>REFERENCE IMAGES / X投稿データのアーカイブ <span>画風だけを参考にして新しい作品を制作</span></footer>
-</div><div id="toast" role="status" aria-live="polite" hidden></div></body></html>
+  <h2 id="originals">オリジナル画風（S-01〜S-05）</h2>
+  <p class="lead">Claudeが考えた、まだXで見かけない画風です。「見本のプロンプトをコピー」をChatGPTに貼ると、同じ場面（回転寿司のタッチパネル）で見本を1枚作れます。見本画像ができたらClaudeに渡すと、ここに載せます。</p>
+  <div class="grid" id="orig"><p class="msg">読み込み中…</p></div>
+</main>
+
+<div id="lb" aria-hidden="true"><span class="n" id="lbc"></span><button id="lbx" aria-label="閉じる">×</button><button id="lbp" aria-label="前へ">‹</button><img id="lbi" alt=""><button id="lbn2" aria-label="次へ">›</button></div>
+<div id="toast" hidden></div>
+
+<script>
+{
+const REPO='umitsuru/buzz_report', SITE='https://umitsuru.github.io/buzz_report/hikaku15/';
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=v=>{v=Number(v);if(!isFinite(v))return'—';return v>=10000?(Math.round(v/1000)/10).toLocaleString('ja-JP')+'万':v.toLocaleString('ja-JP')};
+let posts=[],gafu={},origs=[],sort='no',ownOnly=false;
+
+function toast(s){const t=$('toast');t.textContent=s;t.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>t.hidden=true,2200)}
+async function copy(text,btn,label){
+  let ok=false;try{await navigator.clipboard.writeText(text);ok=true}catch(e){
+    const ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{ok=document.execCommand('copy')}catch(e){}ta.remove()}
+  toast(ok?'コピーしました':'コピーできませんでした');
+  if(btn){btn.classList.toggle('ok',ok);btn.textContent=ok?'コピーしました':label;setTimeout(()=>{btn.textContent=label;btn.classList.remove('ok')},1800)}
+}
+
+// 拡大表示
+let set=[],idx=0;
+const show=()=>{$('lbi').src=set[idx];$('lbc').textContent=(idx+1)+' / '+set.length};
+const openLb=(s,i)=>{set=s;idx=i;show();$('lb').classList.add('open');document.body.style.overflow='hidden'};
+const closeLb=()=>{$('lb').classList.remove('open');document.body.style.overflow='';$('lbi').src=''};
+const mv=d=>{idx=(idx+d+set.length)%set.length;show()};
+$('lbx').onclick=closeLb;$('lbp').onclick=()=>mv(-1);$('lbn2').onclick=()=>mv(1);
+$('lb').addEventListener('click',e=>{if(e.target.id==='lb')closeLb()});
+document.addEventListener('keydown',e=>{if(!$('lb').classList.contains('open'))return;if(e.key==='Escape')closeLb();if(e.key==='ArrowLeft')mv(-1);if(e.key==='ArrowRight')mv(1)});
+let sx=null;$('lb').addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});
+$('lb').addEventListener('touchend',e=>{if(sx==null)return;const dx=e.changedTouches[0].clientX-sx;sx=null;if(Math.abs(dx)>40)mv(dx<0?1:-1)});
+
+const files=raw=>{let f=(raw.thread||[]).flatMap(t=>t.images||[]).map(x=>x.replace(/^img\//,''));if(!f.length&&raw.image_count)f=Array.from({length:raw.image_count},(_,i)=>String(i+1).padStart(2,'0')+'.jpg');return f};
+const titleOf=raw=>(raw.text||'（本文なし）').split('\n').map(s=>s.trim()).filter(Boolean).join(' ').slice(0,70);
+
+function styleCmd(p){
+  return `【画風】参考投稿No.${p.no}「${titleOf(p.raw)}」（${p.raw.author?.handle||''}）${p.gafu?'　※画風ID '+p.gafu:''}
+参考画像（1枚目）：${SITE}posts/${p.folder}/img/${p.files[0]}
+全画像：https://github.com/${REPO}/tree/main/hikaku15/posts/${p.folder}
+元のX投稿：${p.raw.url||''}
+画像を直接見て、線・配色・塗り・陰影・顔の描き方・表情・背景の密度・文字やコマの特徴だけを取り出し、オリジナルの画風指定にしてください。元の人物・セリフ・物語・構図はコピーしないでください。画像を開けない場合は、推測せずにそう伝えてください。`;
+}
+
+function renderPosts(){
+  const q=$('q').value.trim().toLowerCase();
+  let arr=posts.filter(p=>(!ownOnly||p.raw.own)&&(!q||(titleOf(p.raw)+' '+(p.raw.author?.handle||'')+' '+(p.raw.author?.name||'')).toLowerCase().includes(q)));
+  arr.sort((a,b)=>sort==='views'?(Number(b.raw.metrics?.views)||0)-(Number(a.raw.metrics?.views)||0):b.no-a.no);
+  $('count').textContent=arr.length+'件';
+  $('grid').innerHTML=arr.map(p=>{
+    const m=[0,Math.floor(p.files.length/2),p.files.length-1];
+    return `<article class="card ${p.raw.own?'own':''}">
+      <button class="cover" data-no="${p.no}" aria-label="No.${p.no}の画像を拡大">
+        ${m.map(i=>`<img src="../posts/${esc(p.folder)}/img/${esc(p.files[i])}" alt="" loading="lazy">`).join('')}
+        <span class="badge">No.${p.no}</span>${p.gafu?`<span class="gafu">${esc(p.gafu)}</span>`:''}
+      </button>
+      <div class="body"><b>${esc(titleOf(p.raw))}</b>
+        <small>${esc(p.raw.author?.handle||'')}・${p.files.length}枚・表示${fmt(p.raw.metrics?.views)}${p.raw.own?'・自分':''}</small>
+        <div class="acts"><button data-cmd="${p.no}">この画風で指示をコピー</button><button class="sub" data-no="${p.no}">全画像</button></div>
+      </div></article>`}).join('')||'<p class="msg">見つかりませんでした。</p>';
+}
+
+function renderOrig(){
+  $('orig').innerHTML=origs.map(s=>`
+    <article class="card orig" id="${esc(s.id)}">
+      ${s.has?`<button class="cover" data-oimg="${esc(s.id)}" aria-label="${esc(s.id)}の見本を拡大"><img src="./${esc(s.image)}" alt="" loading="lazy"><span class="badge">${esc(s.id)}</span></button>`
+        :`<div class="cover ph"><span class="badge">${esc(s.id)}</span>見本画像はまだありません<br>（ChatGPTで作ってClaudeへ）</div>`}
+      <div class="body"><b>${esc(s.name)}</b><span class="hook">${esc(s.hook)}</span>
+        <small>${esc(s.why)}</small>
+        <p class="spec">${esc(s.spec)}</p>
+        <div class="acts"><button data-osp="${esc(s.id)}">見本のプロンプトをコピー</button><button class="sub" data-ocmd="${esc(s.id)}">画風指定をコピー</button><button class="sub" data-more="${esc(s.id)}">全文</button></div>
+      </div></article>`).join('');
+}
+
+document.body.addEventListener('click',e=>{
+  const b=e.target.closest('button');if(!b)return;
+  const P=n=>posts.find(p=>p.no===+n);
+  if(b.dataset.cmd)return copy(styleCmd(P(b.dataset.cmd)),b,'この画風で指示をコピー');
+  if(b.dataset.no){const p=P(b.dataset.no);return openLb(p.files.map(f=>`../posts/${p.folder}/img/${f}`),0)}
+  const O=id=>origs.find(s=>s.id===id);
+  if(b.dataset.oimg)return openLb(['./'+O(b.dataset.oimg).image],0);
+  if(b.dataset.osp)return copy(O(b.dataset.osp).sample_prompt,b,'見本のプロンプトをコピー');
+  if(b.dataset.ocmd){const s=O(b.dataset.ocmd);return copy(`【画風】オリジナル画風 ${s.id}「${s.name}」\n${s.spec}`,b,'画風指定をコピー')}
+  if(b.dataset.more){const c=b.closest('.card');c.classList.toggle('open');b.textContent=c.classList.contains('open')?'閉じる':'全文';return}
+  if(b.dataset.sort){sort=b.dataset.sort;document.querySelectorAll('[data-sort]').forEach(x=>x.classList.toggle('on',x===b));return renderPosts()}
+  if(b.id==='own'){ownOnly=!ownOnly;b.classList.toggle('on',ownOnly);return renderPosts()}
+});
+$('q').addEventListener('input',renderPosts);
+
+async function folders(){
+  try{const r=await fetch('../posts/index.json',{cache:'no-store'});if(r.ok){const j=await r.json();if(Array.isArray(j)&&j.length)return j}}catch(e){}
+  const r=await fetch(`https://api.github.com/repos/${REPO}/contents/hikaku15/posts?ref=main`,{cache:'no-store'});
+  if(!r.ok)throw Error('GitHub API '+r.status);
+  return (await r.json()).filter(x=>x.type==='dir').map(x=>x.name);
+}
+
+(async()=>{
+  try{const s=await (await fetch('./styles.json',{cache:'no-store'})).json();(s.styles||[]).forEach(x=>gafu[x.folder]=x.id)}catch(e){}
+  try{
+    const o=await (await fetch('./original_styles.json',{cache:'no-store'})).json();origs=o.styles||[];
+    await Promise.all(origs.map(async s=>{try{const r=await fetch('./'+s.image,{method:'HEAD',cache:'no-store'});s.has=r.ok}catch(e){s.has=false}}));
+    renderOrig();
+  }catch(e){$('orig').innerHTML='<p class="msg">オリジナル画風を読み込めませんでした。</p>'}
+  try{
+    const fs=await folders();
+    const loaded=await Promise.all(fs.map(async f=>{try{const r=await fetch(`../posts/${f}/raw.json`,{cache:'no-store'});if(!r.ok)return null;const raw=await r.json();const fl=files(raw);return {folder:f,raw,files:fl,gafu:gafu[f]}}catch(e){return null}}));
+    posts=loaded.filter(Boolean);
+    // 番号は「参考投稿」ページと同じ：集めた順（collected_at → フォルダ名）
+    posts.slice().sort((a,b)=>(a.raw.collected_at||'').localeCompare(b.raw.collected_at||'')||a.folder.localeCompare(b.folder)).forEach((p,i)=>p.no=i+1);
+    posts=posts.filter(p=>p.files.length);
+    renderPosts();
+  }catch(e){$('grid').innerHTML='<p class="msg">投稿を読み込めませんでした。少し時間をおいて開き直してください。</p>'}
+})();
+}
+</script>
+</body>
+</html>
