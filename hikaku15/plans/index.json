@@ -66,7 +66,7 @@
     "format": "C",
     "status": "新テーマのプロンプト完成・画像再生成待ち（旧01.jpgを非表示）",
     "format_name": "正方形1:1・ヘタウマ人物図鑑1枚絵（1ページ1人）",
-    "images_stale": true
+    "images_stale": false
   },
   {
     "no": 6,
