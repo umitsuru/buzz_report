@@ -20,15 +20,23 @@
       "url": "https://x.com/AIkikue/status/2123884087769457018",
       "title": "40年でこんなに変わった、結婚式。 昭和↑ 令和↓",
       "author": "@AIkikue",
-      "used_for": "画風（線・髪の描き込み・顔立ち・塗り・配色・背景の密度・タイトル帯とラベルと注釈ボックスの形）。人物・構図・セリフ・物語は使わない"
+      "used_for": "画風（線・髪の描き込み・顔立ち・塗り・配色・背景の密度・タイトル帯とラベルと注釈ボックスの形）。人物・構図・セリフ・物語は使わない",
+      "note": "元の参考投稿は収集データから削除されたため、画風の参考画像5枚を plans/002/ref/ に保存"
     }
   ],
   "style": {
     "gafu_id": "",
     "ref_post_no": 54,
     "name": "昭和レトロ漫画のカラー原画風",
-    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261121_2123884087769457018/img/01.jpg",
-    "defined_in": "common.md"
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/002/ref/01.jpg",
+    "defined_in": "common.md",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/002/ref/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/002/ref/02.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/002/ref/03.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/002/ref/04.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/002/ref/05.jpg"
+    ]
   },
   "common_file": "common.md",
   "pages": [

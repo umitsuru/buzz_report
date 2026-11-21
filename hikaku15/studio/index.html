@@ -43,6 +43,8 @@
   .acts button{flex:1;min-height:40px;border:0;border-radius:10px;background:#e6e6e6;color:#000;font:inherit;font-weight:700;font-size:13px;cursor:pointer}
   .acts button.sub{background:#1d1d1d;color:#ddd;border:1px solid #333;flex:0 0 auto;padding:0 12px}
   .acts button.ok{background:#7fd1a8}
+  .orig .acts button:first-child{flex:1 1 100%}
+  .orig .acts button.sub{flex:1 1 0}
   .orig .cover{grid-template-columns:1fr;grid-template-rows:1fr;aspect-ratio:1/1}
   .ph{display:grid;place-items:center;text-align:center;color:#777;font-size:13px;padding:16px;background:repeating-linear-gradient(45deg,#111 0 12px,#151515 12px 24px)}
   .hook{color:#ffcf78;font-size:13px}
@@ -69,9 +71,13 @@
       <a href="../plans/">投稿案</a>
     </nav>
   </div>
-  <div class="wrap jump"><a href="#posts">集めた投稿の画風</a>・<a href="#originals">オリジナル画風（S-01〜）</a></div>
+  <div class="wrap jump"><a href="#originals">オリジナル画風（S-01〜）</a>・<a href="#posts">集めた投稿の画風</a></div>
 </header>
 <main class="wrap">
+  <h2 id="originals">オリジナル画風（S-01〜S-05）</h2>
+  <p class="lead">Claudeが考えた、まだXで見かけない画風です。「見本のプロンプトをコピー」をChatGPTに貼ると、同じ場面（回転寿司のタッチパネル）で見本を1枚作れます。画像をタップすると大きく見られます。使うときは「画風指定をコピー」か、Claudeに「画風は S-02 で」と番号で伝えてください。</p>
+  <div class="grid" id="orig"><p class="msg">読み込み中…</p></div>
+
   <h2 id="posts">集めた投稿の画風</h2>
   <p class="lead">番号は「参考投稿」と同じです。Claudeには「画風は No.54 で」、ChatGPTには「この画風で指示をコピー」で貼り付けて使います。</p>
   <div class="bar">
@@ -82,10 +88,6 @@
     <span class="count" id="count"></span>
   </div>
   <div class="grid" id="grid"><p class="msg">読み込み中…</p></div>
-
-  <h2 id="originals">オリジナル画風（S-01〜S-05）</h2>
-  <p class="lead">Claudeが考えた、まだXで見かけない画風です。「見本のプロンプトをコピー」をChatGPTに貼ると、同じ場面（回転寿司のタッチパネル）で見本を1枚作れます。見本画像ができたらClaudeに渡すと、ここに載せます。</p>
-  <div class="grid" id="orig"><p class="msg">読み込み中…</p></div>
 </main>
 
 <div id="lb" aria-hidden="true"><span class="n" id="lbc"></span><button id="lbx" aria-label="閉じる">×</button><button id="lbp" aria-label="前へ">‹</button><img id="lbi" alt=""><button id="lbn2" aria-label="次へ">›</button></div>

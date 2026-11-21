@@ -142,7 +142,7 @@ ${base}common.md
 ${nums.map(n=>`${n}/${p.pages}：${base}${pad(n)}.md`).join('\n')}
 
 画風の参考画像（${p.gafu_id||p.style_name}）：
-${(p.cover||(styles[p.gafu_id]&&styles[p.gafu_id].cover)||'').replace(/^\.\.\//,'https://umitsuru.github.io/buzz_report/hikaku15/')||'（画風カタログを参照）'}`;
+${cover(p)?new URL(cover(p),BASE).href:'（画風カタログを参照）'}`;
 }
 
 async function open(no){
