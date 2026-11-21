@@ -49,5 +49,18 @@
     "format": "B",
     "status": "プロンプト完成・画像未生成",
     "cover": "../studio/originals/S-01.jpg"
+  },
+  {
+    "no": 5,
+    "folder": "005",
+    "title": "職場にいる、なんで結婚できたか分からない変なおじさん10選",
+    "created": "2026-11-21",
+    "gafu_id": "",
+    "style_name": "参考投稿No.58「婚活にいるヤバい男20選」の画風",
+    "pages": 10,
+    "aspect_ratio": "3:2",
+    "format": "C",
+    "status": "プロンプト完成・画像未生成",
+    "cover": "../posts/20261121_2123974687944253458/img/01.jpg"
   }
 ]
