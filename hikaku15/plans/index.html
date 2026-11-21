@@ -96,7 +96,7 @@ function renderList(){
     <button class="plan ${cur&&cur.no===p.no?'on':''}" data-no="${p.no}">
       ${cover(p)?`<img src="${esc(cover(p))}" alt="" loading="lazy">`:'<span></span>'}
       <span><b><span class="no">No.${p.no}</span>${esc(p.title)}</b>
-      <small>${esc(p.gafu_id)}・${p.pages}枚・${esc(p.aspect_ratio)}・${esc(p.created)}</small>
+      <small>形式${esc(p.format||'')}・${esc(p.gafu_id)}・${p.pages}枚・${esc(p.aspect_ratio)}・${esc(p.created)}</small>
       <small>${esc(p.status||'')}</small></span>
     </button>`).join('') || '<p class="msg">まだ投稿案がありません。</p>';
 }
@@ -130,7 +130,7 @@ async function open(no){
   detail.innerHTML=`
   <section class="detail">
     <div class="dh"><h2><span class="no">No.${cur.no}</span>${esc(cur.title)}</h2>
-      <span>画風 <b>${esc(cur.gafu_id)}</b> ${esc(cur.style_name)}</span><span><b>${esc(cur.aspect_ratio)}</b>・${cur.pages}枚</span><span>${esc(cur.status||'')}</span>
+      <span>画風 <b>${esc(cur.gafu_id)}</b> ${esc(cur.style_name)}</span><span>形式<b>${esc(cur.format||'')}</b>（${cur.format==='B'?'正方形1枚絵':'3:4・3コマ'}）</span><span><b>${esc(cur.aspect_ratio)}</b>・${cur.pages}枚</span><span>${esc(cur.status||'')}</span>
       <span><a href="https://github.com/umitsuru/buzz_report/tree/main/hikaku15/plans/${esc(cur.folder)}" target="_blank" rel="noopener noreferrer">GitHubで開く</a></span></div>
     ${st?`<div class="ref"><img src="../studio/${esc(st.cover)}" alt=""><span>画風の参考：${esc(st.title)}（${esc(st.author||'')}）<br><a href="../studio/#styles">画風カタログで見る</a></span></div>`:''}
     <div class="box">
