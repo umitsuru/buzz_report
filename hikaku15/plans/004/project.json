@@ -1,0 +1,96 @@
+{
+  "plan_no": 4,
+  "folder": "004",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/004/",
+  "project": "スタバでバレる。「リア充」と「コミュ障」",
+  "created": "2026-11-21",
+  "made_by": "ChatGPT",
+  "format": "B",
+  "format_name": "正方形1:1・1枚絵（コマ割りなし）",
+  "image_count": 10,
+  "aspect_ratio": "1:1",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "bot_instruction": "このフォルダを読み込んだだけでは画像を生成しないこと。ユーザーが「投稿案No.4の〇枚目（または〇〜〇枚目）を作って」と明示したときだけ、common.mdを読んで共通設定を理解し、指定されたNN.mdを読み、1ページにつき画像を1枚だけ生成。各回の右上にはn/10を配置し、左「リア充」3人組・右「コミュ障」大地を全10枚で固定する。GAFU-09を参照し、元作品の固有の構図はコピーしない。生成済み画像があれば同じ顔・服・線・色を保つ。生成後にセリフと番号を確認する。",
+  "fiction_notice": "人物や出来事は創作。実在チェーンのスターバックスを舞台にするが、実在客・店員のモデルや架空の店内特典は含めない。コミュニケーションの得手不得手を人格や能力の優劣として描かない。",
+  "series_note": "「〇〇でバレる。」の左右比較形式を採用し、リア充3人組と人見知りの一人客の温度差を描く。後半は写真を通じて交流が生まれる。",
+  "reference_posts": [
+    {
+      "gafu_id": "GAFU-09",
+      "folder": "hikaku15/posts/20261120_2123619172274020594",
+      "url": "https://x.com/edamaru666/status/2123619172274020594",
+      "title": "焼肉きんぐでバレる。ヤンキー家族（隠れ貧乏）と陰キャ家族（隠れ金持ち）",
+      "author": "@edamaru666",
+      "used_for": "一般的な線・色・陰影・表情・視認性の参考。原作の人物・セリフ・構図・展開は複製しない。"
+    }
+  ],
+  "style": {
+    "gafu_id": "GAFU-09",
+    "name": "焼肉きんぐ家族比較の参考画風（GAFU-09）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261120_2123619172274020594/img/01.jpg",
+    "defined_in": "common.md",
+    "catalog": "https://umitsuru.github.io/buzz_report/hikaku15/studio/#styles"
+  },
+  "common_file": "common.md",
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/10",
+      "title": "入店・声の大きさが違う",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/10",
+      "title": "メニュー・迷う理由が違う",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/10",
+      "title": "注文・スマホが命綱",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/10",
+      "title": "受け取り・自分で決めた名前",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/10",
+      "title": "席選び・窓際と壁際",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/10",
+      "title": "写真・映えのための30分",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/10",
+      "title": "集合写真・全員が入らない",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/10",
+      "title": "ひと言・撮りましょうか",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/10",
+      "title": "写真の腕前・まさかの逆転",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/10",
+      "title": "帰り際・リア充が1人増えた",
+      "file": "10.md"
+    }
+  ]
+}
