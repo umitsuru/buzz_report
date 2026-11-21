@@ -83,6 +83,7 @@
   }
   showStylePage(0);
   document.querySelectorAll('.gafu-card').forEach(x=>x.classList.toggle('on',x.dataset.id===s.id));
+  const counterpart=posts.find(p=>p.folder===s.folder);if(counterpart&&currentPost?.folder!==s.folder)selectPost(counterpart,false);
   const url=new URL(location.href);url.searchParams.set('gafu',s.id);history.replaceState(null,'',url.toString());
   if(scroll)$('styleSelected').scrollIntoView({behavior:'smooth',block:'start'});
  }
@@ -143,7 +144,7 @@
   $('selectedText').textContent=raw.text||'';$('xLink').href=raw.url;$('archiveLink').href=postDir(p.folder);
   const thumbs=$('thumbs');thumbs.replaceChildren();
   p.files.forEach((file,i)=>{let b=el('button'),im=el('img'),num=el('span',null,i+1);b.type='button';im.loading='lazy';im.src=img(p.folder,file);im.alt='';b.append(im,num);b.onclick=()=>{showPostSlide(i);const s=styles.find(x=>x.folder===p.folder);if(s){chooseStyle(s.id,false);showStylePage(i);}};thumbs.append(b);});
-  showPostSlide(0);const matching=styles.find(x=>x.folder===p.folder);if(matching)chooseStyle(matching.id,false);
+  showPostSlide(0);const matching=styles.find(x=>x.folder===p.folder);if(matching&&selected?.id!==matching.id)chooseStyle(matching.id,false);
   renderPosts();if(scroll)$('selected').scrollIntoView({behavior:'smooth',block:'start'});
  }
  function renderPosts(){
@@ -164,7 +165,7 @@
  async function initPosts(){
   try{const folders=await folderNames();posts=(await Promise.all(folders.map(f=>loadPost(f).catch(()=>null)))).filter(Boolean);
    $('countPosts').textContent=posts.length;$('countImages').textContent=posts.reduce((a,p)=>a+p.files.length,0);
-   renderPosts();if(posts.length)selectPost(posts[0],false);
+   renderPosts();if(posts.length)selectPost(posts.find(p=>p.folder===selected?.folder)||posts[0],false);
   }catch(e){$('cards').textContent='';$('loadError').hidden=false;$('loadError').textContent='収集した投稿の一覧を読み込めませんでした。GitHub APIか保存先の公開状態を確認してください。';console.error(e);}
  }
  $('styleFilter').addEventListener('change',renderStyles);
