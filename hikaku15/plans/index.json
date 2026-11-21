@@ -76,11 +76,11 @@
     "gafu_id": "No.48",
     "style_name": "ざらっとした劇画風コメディ（参考投稿No.48と同じ）",
     "pages": 10,
-    "aspect_ratio": "1:1",
+    "aspect_ratio": "3:4",
     "format": "A",
     "status": "プロンプト完成・画像未生成",
     "cover": "./006/ref/01.jpg",
-    "format_name": "正方形1:1・1ページ3コマ（参考投稿No.48と同じ形）"
+    "format_name": "縦長3:4・1ページ3コマ（参考投稿No.48の形を縦長に）"
   },
   {
     "no": 7,
