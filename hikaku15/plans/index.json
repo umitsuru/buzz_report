@@ -108,6 +108,7 @@
     "format": "上下比較",
     "format_name": "正方形1:1・上段平成／下段令和・20枚",
     "status": "プロンプト完成・画像未生成",
-    "cover": "../posts/20261121_2123886600761520325/img/01.png"
+    "cover": "../posts/20261121_2123886600761520325/img/01.png",
+    "reference_role": "composition"
   }
 ]
