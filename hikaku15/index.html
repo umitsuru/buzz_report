@@ -134,13 +134,13 @@
   // フォルダ一覧：posts/index.json があればそれを、なければ GitHub API を使う
   async function listFolders() {
     try {
-      const r = await fetch(REL + '/index.json', {cache: 'no-store'});
+      const r = await fetch(REL + '/index.json', {cache: 'no-cache'});
       if (r.ok) {
         const j = await r.json();
         if (Array.isArray(j) && j.length) return j;
       }
     } catch (e) {}
-    const r = await fetch(`https://api.github.com/repos/${REPO}/contents/${DIR}?ref=main`, {cache: 'no-store'});
+    const r = await fetch(`https://api.github.com/repos/${REPO}/contents/${DIR}?ref=main`, {cache: 'default'});
     if (!r.ok) throw new Error('GitHub API ' + r.status);
     const j = await r.json();
     return j.filter(x => x.type === 'dir').map(x => x.name);
@@ -197,12 +197,12 @@
 
   async function loadPost(folder) {
     const base = `${REL}/${folder}/`;
-    const r = await fetch(base + 'raw.json', {cache: 'no-store'});
+    const r = await fetch(base + 'raw.json', {cache: 'default'});
     if (!r.ok) return null;
     const raw = await r.json();
     let analysis = null;
     try {
-      const a = await fetch(base + 'analysis.md', {cache: 'no-store'});
+      const a = await fetch(base + 'analysis.md', {cache: 'default'});
       if (a.ok) analysis = await a.text();
     } catch (e) {}
     let theme = '';
@@ -346,7 +346,7 @@
       // 投稿番号：集めた順（collected_at → フォルダ名）に No.1 から。並べ替えや絞り込みでは変わらない
       // 番号は posts/numbers.json の固定番号。載っていない新しい投稿だけ、集めた順に最大番号+1から仮に振る
       let fixed = {};
-      try { const r = await fetch(REL + '/numbers.json', {cache: 'no-store'}); if (r.ok) fixed = (await r.json()).numbers || {}; } catch (e) {}
+      try { const r = await fetch(REL + '/numbers.json', {cache: 'default'}); if (r.ok) fixed = (await r.json()).numbers || {}; } catch (e) {}
       let mx = Math.max(0, ...Object.values(fixed));
       posts.slice().sort((x, y) => (x.raw.collected_at || '').localeCompare(y.raw.collected_at || '') || x.folder.localeCompare(y.folder))
         .forEach(p => { p.no = fixed[p.folder] || ++mx; });
