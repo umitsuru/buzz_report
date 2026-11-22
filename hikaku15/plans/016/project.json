@@ -6,7 +6,7 @@
   "created": "2026-11-22",
   "made_by": "Claude",
   "format": "LINE",
-  "format_name": "横長3:2・LINE風トーク画面の切り抜き・15枚",
+  "format_name": "横長3:2・LINEのトーク画面（水色の背景・緑と白の吹き出し）・15枚",
   "image_count": 15,
   "aspect_ratio": "3:2",
   "initial_mode": "wait_for_explicit_generate_command",
@@ -25,7 +25,7 @@
   "style": {
     "gafu_id": "No.60",
     "ref_post_no": 60,
-    "name": "LINE風トーク画面の切り抜き（参考投稿No.60の形式）",
+    "name": "本物のLINEに近いトーク画面（形式は参考投稿No.60）",
     "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/016/ref/01.jpg",
     "reference_images": [
       "https://umitsuru.github.io/buzz_report/hikaku15/plans/016/ref/01.jpg",
@@ -127,6 +127,8 @@
   ],
   "wording_fallback": {
     "ラブホ": "断られたら「ホテル」",
-    "ゴム": "断られたら「何買ったの？笑」だけにする"
-  }
+    "ゴム": "断られたら「何買ったの？笑」だけにする",
+    "ラブホテルの写真": "断られたら、ネオンのついた派手なホテルの外観（料金の看板だけ）にする"
+  },
+  "history": "2026/11/22作成。同日、LINEの見た目（水色の背景、自分＝緑、相手＝白）と、相手の名前「パパ」だけを出す形に変更"
 }
