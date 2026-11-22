@@ -140,5 +140,19 @@
     "status": "プロンプト完成・画像未生成",
     "cover": "./010/ref/01.jpg",
     "source": "claude-buzz-text No.188（うみつる、332万表示）"
+  },
+  {
+    "no": 11,
+    "folder": "011",
+    "title": "歯医者でヤバい患者10選",
+    "created": "2026-11-22",
+    "gafu_id": "No.64",
+    "style_name": "すっきりした漫画イラスト＋極太の縦書き（参考投稿No.64）",
+    "pages": 10,
+    "aspect_ratio": "1:1",
+    "format": "C",
+    "format_name": "正方形1:1・1枚1人の「ヤバい客」図鑑",
+    "status": "プロンプト完成・画像未生成",
+    "cover": "./011/ref/01.jpg"
   }
 ]
