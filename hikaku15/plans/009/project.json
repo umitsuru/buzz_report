@@ -1,104 +1,105 @@
 {
-  "plan_no": 9,
-  "folder": "009",
-  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/009/",
-  "project": "送迎ドライバーから見た「平成のデリヘル嬢と令和のデリヘル嬢」10の違い",
-  "created": "2026-11-21",
-  "updated": "2026-11-22",
-  "made_by": "ChatGPT",
-  "format": "上下比較",
-  "format_name": "正方形1:1・上段平成2008／下段令和2026・送迎ドライバー目線・10枚",
-  "image_count": 10,
-  "aspect_ratio": "1:1",
-  "initial_mode": "wait_for_explicit_generate_command",
-  "bot_instruction": "共通設定を読んだだけでは画像生成しない。ユーザーが投稿案No.9の画像化を明示した場合は最新版common.mdと01.md〜10.mdの指定ページを読み、1枚ずつ正方形1:1、上段平成2008・下段令和2026、右上n/10、参考画風No.65のダークでざらついた写実青年漫画風を守る。主人公は送迎ドライバー誠司（平成29歳、令和47歳）の車内視点と成人女性キャスト2人（美咲・玲奈）。ホテル帰りの会話や送迎車内の俗っぽい冗談を描き、具体的な性的行為は描かない。指定セリフ・タイトル・運転手の心の声を改変しない。以前のNo.9の旧20枚・旧画像は使わず新10枚をimages/01.jpg〜10.jpgへ保存し、全枚成功後にimages_staleを解除。失敗した場合は保存済みと報告しない。",
-  "fiction_notice": "すべて架空の成人女性・成人男性の登場人物と架空の夜の繁華街・送迎業務。送迎ドライバーの誇張した主観によるフィクション。実在の店舗・女性の秘密の暴露ではない。性的な行為や裸を描かない。",
-  "series_note": "従来20枚の一般的な平成令和の女性の違いから、全10枚の『デリヘル送迎ドライバーから見た時代比較』へ全面改訂。参考画風はNo.65『デリヘル送迎ドライバーになると分かること』に変更。旧20枚の画像は新プロンプトと合わないため差し替えまで非表示。過去の構成No.59は今回使わない。",
-  "reference_posts": [
-    {
-      "no": 65,
-      "folder": "hikaku15/posts/20261122_2124274238635102644",
-      "url": "https://x.com/umitsuru_fire/status/2124274238635102644",
-      "title": "デリヘル送迎ドライバーになると分かること",
-      "author": "@umitsuru_fire",
-      "images_collected": 10,
-      "used_for": "夜のネオンや雨、送迎車の車内、疲れた運転手の表情、ざらついた写実青年漫画の画風を参照。投稿の人物・セリフ・具体的な構図はコピーしない。"
-    }
+ "plan_no": 9,
+ "folder": "009",
+ "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/009/",
+ "project": "送迎ドライバーから見た「平成のデリヘル嬢と令和のデリヘル嬢」10の違い",
+ "created": "2026-11-21",
+ "updated": "2026-11-22",
+ "made_by": "ChatGPT",
+ "format": "上下比較",
+ "format_name": "正方形1:1・上段平成2008／下段令和2026・送迎ドライバー目線・10枚",
+ "image_count": 10,
+ "aspect_ratio": "1:1",
+ "initial_mode": "wait_for_explicit_generate_command",
+ "bot_instruction": "共通設定を読んだだけでは画像生成しない。ユーザーが投稿案No.9の画像化を明示した場合は最新版common.mdと01.md〜10.mdの指定ページを読み、1枚ずつ正方形1:1、上段平成2008・下段令和2026、右上n/10、参考画風No.65のダークでざらついた写実青年漫画風を守る。主人公は送迎ドライバー誠司（平成29歳、令和47歳）の車内視点と成人女性キャスト2人（美咲・玲奈）。ホテル帰りの会話や送迎車内の俗っぽい冗談を描き、具体的な性的行為は描かない。指定セリフ・タイトル・運転手の心の声を改変しない。以前のNo.9の旧20枚・旧画像は使わず新10枚をimages/01.jpg〜10.jpgへ保存し、全枚成功後にimages_staleを解除。失敗した場合は保存済みと報告しない。",
+ "fiction_notice": "すべて架空の成人女性・成人男性の登場人物と架空の夜の繁華街・送迎業務。送迎ドライバーの誇張した主観によるフィクション。実在の店舗・女性の秘密の暴露ではない。性的な行為や裸を描かない。",
+ "series_note": "従来20枚の一般的な平成令和の女性の違いから、全10枚の『デリヘル送迎ドライバーから見た時代比較』へ全面改訂。参考画風はNo.65『デリヘル送迎ドライバーになると分かること』に変更。旧20枚の画像は新プロンプトと合わないため差し替えまで非表示。過去の構成No.59は今回使わない。",
+ "reference_posts": [
+  {
+   "no": 65,
+   "folder": "hikaku15/posts/20261122_2124274238635102644",
+   "url": "https://x.com/umitsuru_fire/status/2124274238635102644",
+   "title": "デリヘル送迎ドライバーになると分かること",
+   "author": "@umitsuru_fire",
+   "images_collected": 10,
+   "used_for": "夜のネオンや雨、送迎車の車内、疲れた運転手の表情、ざらついた写実青年漫画の画風を参照。投稿の人物・セリフ・具体的な構図はコピーしない。"
+  }
+ ],
+ "style": {
+  "gafu_id": "No.65",
+  "ref_post_no": 65,
+  "name": "暗いネオン街・送迎車内・映画的な陰影と粒子を持つ写実寄り青年漫画（参考No.65）",
+  "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261122_2124274238635102644/img/01.jpg",
+  "reference_images": [
+   "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261122_2124274238635102644/img/02.jpg",
+   "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261122_2124274238635102644/img/05.jpg"
   ],
-  "style": {
-    "gafu_id": "No.65",
-    "ref_post_no": 65,
-    "name": "暗いネオン街・送迎車内・映画的な陰影と粒子を持つ写実寄り青年漫画（参考No.65）",
-    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261122_2124274238635102644/img/01.jpg",
-    "reference_images": [
-      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261122_2124274238635102644/img/02.jpg",
-      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261122_2124274238635102644/img/05.jpg"
-    ],
-    "reference_role": "画風の参考。既存投稿の具体的な登場人物・セリフ・場面はコピーしない。",
-    "defined_in": "common.md",
-    "visual_verification": "参考No.65の実際の01・02・05・08・10.jpgを確認済み。雨の繁華街、送迎車、ざらついた映画的な写実画風を識別。"
+  "reference_role": "画風の参考。既存投稿の具体的な登場人物・セリフ・場面はコピーしない。",
+  "defined_in": "common.md",
+  "visual_verification": "参考No.65の実際の01・02・05・08・10.jpgを確認済み。雨の繁華街、送迎車、ざらついた映画的な写実画風を識別。"
+ },
+ "common_file": "common.md",
+ "pages": [
+  {
+   "page": 1,
+   "label": "1/10",
+   "title": "車に乗って、最初のひと言",
+   "file": "01.md"
   },
-  "common_file": "common.md",
-  "pages": [
-    {
-      "page": 1,
-      "label": "1/10",
-      "title": "乗り込む姿からして違う",
-      "file": "01.md"
-    },
-    {
-      "page": 2,
-      "label": "2/10",
-      "title": "ホテル帰りの第一声",
-      "file": "02.md"
-    },
-    {
-      "page": 3,
-      "label": "3/10",
-      "title": "宣材写真と実物の差",
-      "file": "03.md"
-    },
-    {
-      "page": 4,
-      "label": "4/10",
-      "title": "車に残る匂い",
-      "file": "04.md"
-    },
-    {
-      "page": 5,
-      "label": "5/10",
-      "title": "延長連絡の温度差",
-      "file": "05.md"
-    },
-    {
-      "page": 6,
-      "label": "6/10",
-      "title": "待機時間の使い方",
-      "file": "06.md"
-    },
-    {
-      "page": 7,
-      "label": "7/10",
-      "title": "衣装トラブルの持ち込み先",
-      "file": "07.md"
-    },
-    {
-      "page": 8,
-      "label": "8/10",
-      "title": "一晩の稼ぎの使い道",
-      "file": "08.md"
-    },
-    {
-      "page": 9,
-      "label": "9/10",
-      "title": "送迎車での距離感",
-      "file": "09.md"
-    },
-    {
-      "page": 10,
-      "label": "10/10",
-      "title": "時代が変わっても最後は同じ",
-      "file": "10.md"
-    }
-  ]
+  {
+   "page": 2,
+   "label": "2/10",
+   "title": "お客の悪口",
+   "file": "02.md"
+  },
+  {
+   "page": 3,
+   "label": "3/10",
+   "title": "宣材写真と、実物",
+   "file": "03.md"
+  },
+  {
+   "page": 4,
+   "label": "4/10",
+   "title": "年齢のサバ読み",
+   "file": "04.md"
+  },
+  {
+   "page": 5,
+   "label": "5/10",
+   "title": "稼いだお金の溶かし先",
+   "file": "05.md"
+  },
+  {
+   "page": 6,
+   "label": "6/10",
+   "title": "お客の「社長」",
+   "file": "06.md"
+  },
+  {
+   "page": 7,
+   "label": "7/10",
+   "title": "待機中のごはん",
+   "file": "07.md"
+  },
+  {
+   "page": 8,
+   "label": "8/10",
+   "title": "家族や彼氏にバレる理由",
+   "file": "08.md"
+  },
+  {
+   "page": 9,
+   "label": "9/10",
+   "title": "この仕事、辞めたら",
+   "file": "09.md"
+  },
+  {
+   "page": 10,
+   "label": "10/10",
+   "title": "時代が変わっても最後は同じ",
+   "file": "10.md"
+  }
+ ],
+ "history": "2026/11/22：Claudeが1〜9枚目のネタ・セリフ・下の帯のツッコミを書き直し（画風とレイアウトはそのまま）"
 }
