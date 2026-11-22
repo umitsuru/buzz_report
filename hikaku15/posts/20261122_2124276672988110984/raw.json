@@ -1,0 +1,47 @@
+{
+  "id": "2124276672988110984",
+  "url": "https://x.com/kotowaza_manga/status/2124276672988110984",
+  "own": false,
+  "collected_at": "2026-11-22T16:47:05+09:00",
+  "author": {
+    "name": "ことわざ漫画劇場",
+    "handle": "@kotowaza_manga",
+    "followers": 1141
+  },
+  "posted_at": "2026-11-22T08:00:00+09:00",
+  "metrics": {
+    "views": 464256,
+    "likes": 1321,
+    "reposts": 56,
+    "quotes": 12,
+    "replies": 10,
+    "bookmarks": 232
+  },
+  "text": "義を見てせざるは勇無きなり",
+  "thread": [
+    {
+      "id": "2124276672988110984",
+      "text": "義を見てせざるは勇無きなり",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg",
+        "11.jpg",
+        "12.jpg",
+        "13.jpg",
+        "14.jpg"
+      ]
+    }
+  ],
+  "image_count": 14,
+  "top_replies": [],
+  "top_quotes": [],
+  "note": "画像14枚はすべて元投稿1件に添付されている（API の attachments に14件、すべてJPEG 1024×1536px）。投稿者本人の画像付きセルフリプは検索で見つからなかった。本文は表示部分のみで、API本文末尾の画像リンク https://t.co/PxW8ycbMgB は除いた。引用している投稿はない。今回は投稿本体だけを保存し、返信と引用は取得していない（top_replies と top_quotes は空）。数字は 2026-11-22 16:47頃 JST 時点。動画なし。"
+}
