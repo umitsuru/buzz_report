@@ -65,6 +65,8 @@
   #lb .n{position:fixed;top:10px;left:50%;transform:translateX(-50%);font-size:14px;background:rgba(40,40,40,.8);padding:2px 10px;border-radius:999px}
   #lb button{position:fixed;background:rgba(40,40,40,.75);color:#fff;border:0;border-radius:999px;width:44px;height:44px;font-size:22px;cursor:pointer}
   #lbx{top:8px;right:8px}#lbp{left:8px;top:50%}#lbn2{right:8px;top:50%}
+  .mk{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;margin-right:4px;vertical-align:middle;color:#fff;white-space:nowrap}
+  .mk.claude{background:#D97757}.mk.chatgpt{background:#10A37F}
   #lb{touch-action:none;overflow:hidden}
   #lb img{transform-origin:0 0;will-change:transform;user-select:none;-webkit-user-drag:none}
   #lbo{position:fixed;left:50%;bottom:12px;transform:translateX(-50%);font-size:13px;color:#fff;background:rgba(40,40,40,.85);padding:6px 14px;border-radius:999px;text-decoration:none;z-index:2}
@@ -93,7 +95,7 @@
   </div>
 </header>
 <main class="wrap">
-  <p class="lead">Claudeが作った10枚漫画のプロンプトです。番号で ChatGPT のボットに「投稿案No.1の3〜5枚目を作って」と伝えると、ボットがここのファイルを読んで生成します。</p>
+  <p class="lead">ClaudeとChatGPTが作った漫画のプロンプトです。番号の横のマーク（<span class="mk claude">Claude</span><span class="mk chatgpt">ChatGPT</span>）で、どちらが作ったか分かります。番号で ChatGPT のボットに「投稿案No.1の3〜5枚目を作って」と伝えると、ボットがここのファイルを読んで生成します。</p>
   <div class="plans" id="plans"><p class="msg">読み込み中…</p></div>
   <div id="detail"></div>
 </main>
@@ -134,6 +136,8 @@ let lbSet=[],lbI=0;
 const lbShow=()=>{const im=document.getElementById('lbi');im.src=lbSet[lbI];document.getElementById('lbo').href=lbSet[lbI];document.getElementById('lbc').textContent=(lbI+1)+' / '+lbSet.length;if(window.zReset)zReset()};
 function lbOpen(set,i){lbSet=set;lbI=i;lbShow();document.getElementById('lb').classList.add('open')}
 function lbClose(){document.getElementById('lb').classList.remove('open');document.getElementById('lbi').src=''}
+// だれが作った投稿案か（index.json の maker。書かれていなければ ChatGPT のボットが作ったものとみなす）
+function makerBadge(p){const m=(p.maker||'chatgpt');const c='<span class="mk claude" title="Claudeが作成">Claude</span>',g='<span class="mk chatgpt" title="ChatGPTが作成">ChatGPT</span>';if(m==='claude')return c;if(m==='chatgpt')return g;return g+'<span style="font-size:11px;color:#888;margin-right:4px">→</span>'+c}
 function cover(p){if(p.cover)return p.cover.replace(/^\.\.\//,'../');const s=styles[p.gafu_id];return s&&s.cover?'../studio/'+s.cover:''}
 
 function renderList(){
@@ -142,7 +146,7 @@ function renderList(){
   plansEl.innerHTML = plans.slice().sort((a,b)=>b.no-a.no).map(p=>`
     <button class="plan ${cur&&cur.no===p.no?'on':''}" data-no="${p.no}">
       ${cover(p)?`<img src="${esc(cover(p))}" alt="" loading="lazy">`:'<span></span>'}
-      <span><b><span class="no">No.${p.no}</span>${esc(p.title)}</b>
+      <span><b><span class="no">No.${p.no}</span>${makerBadge(p)}${esc(p.title)}</b>
       <small>形式${esc(p.format||'')}・${esc(p.gafu_id||p.style_name)}・${p.pages}枚・${esc(p.aspect_ratio)}・${esc(p.created)}</small>
       <small>${esc(p.status||'')} <span class="pill" data-gc="${p.no}"></span></small></span>
     </button>`).join('') || '<p class="msg">まだ投稿案がありません。</p>';
@@ -176,7 +180,7 @@ async function open(no){
   const st=styles[cur.gafu_id];
   detail.innerHTML=`
   <section class="detail">
-    <div class="dh"><h2><span class="no">No.${cur.no}</span>${esc(cur.title)}</h2>
+    <div class="dh"><h2><span class="no">No.${cur.no}</span>${makerBadge(cur)}${esc(cur.title)}</h2>
       <span>画風 <b>${esc(cur.gafu_id||'')}</b> ${esc(cur.style_name)}</span><span>形式<b>${esc(cur.format||'')}</b>（${esc(cur.format_name||(cur.format==='B'?'正方形1枚絵':cur.format==='C'?'1人ずつの人物図鑑1枚絵':'3:4・3コマ'))}）</span><span><b>${esc(cur.aspect_ratio)}</b>・${cur.pages}枚</span><span>${esc(cur.status||'')}</span>
       <span><a href="https://github.com/umitsuru/buzz_report/tree/main/hikaku15/plans/${esc(cur.folder)}" target="_blank" rel="noopener noreferrer">GitHubで開く</a></span></div>
     ${cur.reference_note?`<p class="note">${esc(cur.reference_note)}</p>`:''}

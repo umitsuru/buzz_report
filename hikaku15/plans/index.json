@@ -10,7 +10,8 @@
     "aspect_ratio": "3:4",
     "status": "プロンプト完成・画像未生成",
     "format": "A",
-    "format_name": "3:4・1ページ3コマ"
+    "format_name": "3:4・1ページ3コマ",
+    "maker": "claude"
   },
   {
     "no": 2,
@@ -24,7 +25,8 @@
     "format": "B",
     "status": "プロンプト完成・画像未生成",
     "cover": "./002/ref/01.jpg",
-    "format_name": "正方形1:1・1枚絵"
+    "format_name": "正方形1:1・1枚絵",
+    "maker": "claude"
   },
   {
     "no": 3,
@@ -38,7 +40,8 @@
     "format": "B",
     "status": "画風変更・画像を全部作り直し待ち（11/22）",
     "cover": "./003/ref/S-04.jpg",
-    "format_name": "正方形1:1・1枚絵"
+    "format_name": "正方形1:1・1枚絵",
+    "maker": "claude"
   },
   {
     "no": 4,
@@ -52,7 +55,8 @@
     "format": "B",
     "status": "プロンプト完成・画像未生成",
     "cover": "../studio/originals/S-01.jpg",
-    "format_name": "正方形1:1・1枚絵（コマ割りなし）"
+    "format_name": "正方形1:1・1枚絵（コマ割りなし）",
+    "maker": "chatgpt"
   },
   {
     "no": 5,
@@ -66,7 +70,8 @@
     "format": "C",
     "status": "プロンプト改訂・画像未生成（11/22）",
     "format_name": "正方形1:1・人物図鑑（キュビスム風）",
-    "images_stale": false
+    "images_stale": false,
+    "maker": "chatgpt+claude"
   },
   {
     "no": 6,
@@ -80,7 +85,8 @@
     "format": "A",
     "status": "プロンプト完成・画像未生成",
     "cover": "./006/ref/01.jpg",
-    "format_name": "縦長3:4・1ページ3コマ（参考投稿No.48の形を縦長に）"
+    "format_name": "縦長3:4・1ページ3コマ（参考投稿No.48の形を縦長に）",
+    "maker": "claude"
   },
   {
     "no": 7,
@@ -94,7 +100,8 @@
     "format": "上下比較",
     "format_name": "縦長4:5・上下2コマ",
     "status": "2・3・6・11枚目を作り直し待ち（11/22）",
-    "cover": "../studio/originals/S-02.jpg"
+    "cover": "../studio/originals/S-02.jpg",
+    "maker": "claude"
   },
   {
     "no": 8,
@@ -109,7 +116,8 @@
     "format_name": "縦長3:4・上段平成／下段令和・16枚",
     "status": "16枚に変更・名前入り札を追加・画像を全部作り直し待ち（11/22）",
     "cover": "../posts/20261121_2123886600761520325/img/01.png",
-    "reference_role": "composition"
+    "reference_role": "composition",
+    "maker": "chatgpt+claude"
   },
   {
     "no": 9,
@@ -124,7 +132,8 @@
     "format_name": "正方形1:1・上段平成2008／下段令和2026・全20枚",
     "status": "プロンプト完成・画像未生成",
     "reference_role": "composition",
-    "reference_note": "参考投稿No.59は番号表への収録が未確認。ユーザーの説明と承認済み構成をもとにした創作。"
+    "reference_note": "参考投稿No.59は番号表への収録が未確認。ユーザーの説明と承認済み構成をもとにした創作。",
+    "maker": "chatgpt"
   },
   {
     "no": 10,
@@ -139,7 +148,8 @@
     "format_name": "正方形1:1・1枚絵（筆文字の見出し＋ナレーション）",
     "status": "プロンプト完成・画像未生成",
     "cover": "./010/ref/01.jpg",
-    "source": "claude-buzz-text No.188（うみつる、332万表示）"
+    "source": "claude-buzz-text No.188（うみつる、332万表示）",
+    "maker": "claude"
   },
   {
     "no": 11,
@@ -154,7 +164,8 @@
     "format_name": "正方形1:1・1枚1人の「ヤバい入院患者」図鑑",
     "status": "ネタ・ツッコミ全10枚改訂済み／旧画像10枚は非表示・再生成待ち",
     "cover": "./011/ref/style06_01.jpg",
-    "images_stale": false
+    "images_stale": false,
+    "maker": "claude"
   },
   {
     "no": 12,
@@ -168,7 +179,8 @@
     "format": "C",
     "format_name": "正方形1:1・1枚1人の「ヤバい会員」図鑑",
     "status": "プロンプト完成・画像未生成",
-    "cover": "./012/ref/01.jpg"
+    "cover": "./012/ref/01.jpg",
+    "maker": "claude"
   },
   {
     "no": 13,
@@ -183,7 +195,8 @@
     "format_name": "正方形1:1・女性20人の人物図鑑・1枚1人・コマ割りなし",
     "status": "プロンプト完成・画像未生成",
     "cover": "../posts/20261122_2124246479783309638/img/01.jpg",
-    "reference_role": "composition"
+    "reference_role": "composition",
+    "maker": "chatgpt"
   },
   {
     "no": 14,
@@ -197,7 +210,8 @@
     "format": "LINE",
     "format_name": "横長3:2・LINE風トーク画面・15枚",
     "status": "プロンプト完成・画像未生成",
-    "cover": "./014/ref/01.jpg"
+    "cover": "./014/ref/01.jpg",
+    "maker": "claude"
   },
   {
     "no": 15,
@@ -211,7 +225,8 @@
     "format": "LINE",
     "format_name": "横長3:2・LINE風トーク画面・15枚",
     "status": "プロンプト完成・画像未生成",
-    "cover": "./015/ref/01.jpg"
+    "cover": "./015/ref/01.jpg",
+    "maker": "claude"
   },
   {
     "no": 16,
@@ -225,6 +240,7 @@
     "format": "LINE",
     "format_name": "横長3:2・LINE風トーク画面・15枚",
     "status": "プロンプト完成・画像未生成",
-    "cover": "./016/ref/01.jpg"
+    "cover": "./016/ref/01.jpg",
+    "maker": "claude"
   }
 ]
