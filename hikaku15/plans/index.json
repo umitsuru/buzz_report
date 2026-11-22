@@ -290,5 +290,20 @@
     "status": "プロンプト完成・画像未生成",
     "cover": "./019/ref/01.jpg",
     "maker": "claude"
+  },
+  {
+    "no": 20,
+    "folder": "020",
+    "title": "2コマ漫画10本（大人のネタ編）",
+    "created": "2026-11-22",
+    "gafu_id": "No.72",
+    "style_name": "素人っぽいちょっと下手でゆるい2コマ漫画（参考投稿No.72）",
+    "pages": 10,
+    "aspect_ratio": "3:4",
+    "format": "2koma",
+    "format_name": "縦長3:4・タイトル枠＋縦2コマ・1枚1本",
+    "status": "プロンプト完成・画像未生成",
+    "cover": "./020/ref/01.jpg",
+    "maker": "claude"
   }
 ]

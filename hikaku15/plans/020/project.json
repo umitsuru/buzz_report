@@ -1,0 +1,104 @@
+{
+  "plan_no": 20,
+  "folder": "020",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/020/",
+  "project": "2コマ漫画10本（大人のネタ編）",
+  "created": "2026-11-22",
+  "made_by": "Claude",
+  "format": "2koma",
+  "format_name": "縦長3:4・タイトル枠＋縦2コマ・1枚1本・10枚",
+  "image_count": 10,
+  "aspect_ratio": "3:4",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像で画風と形式を確認したあと、01.md から10.md まで順に1枚ずつ、縦長3:4で生成する。絵は上手に描きすぎず、素人っぽいちょっと下手で雑な画風にする。",
+  "history": "2026/11/22作成（No.17と同じ画風・形式の下ネタ編）",
+  "fiction_notice": "登場人物はすべて架空の成人（10本目の子どもは湯船から顔と肩だけ）。下ネタはセリフと小物だけで、性的な描写・裸・下着姿は描かない。",
+  "wording_fallback": {
+    "ゴム": "箱には文字を入れず、ハートの絵だけにする",
+    "ジェル（業務用 2L）": "断られたら「品名：マッサージジェル（業務用 2L）」",
+    "性欲": "断られたら問診票の質問を「最近、夜は元気ですか？」にする"
+  },
+  "reference_posts": [
+    {
+      "no": 72,
+      "folder": "hikaku15/posts/20261122_2124072831478866011",
+      "url": "https://x.com/i/status/2124072831478866011",
+      "title": "お気に入りの2コマ漫画20本",
+      "views": 8305151,
+      "used_for": "形式と画風（タイトル枠＋縦2コマ、ゆるい線のフラットな絵）"
+    }
+  ],
+  "style": {
+    "gafu_id": "No.72",
+    "ref_post_no": 72,
+    "name": "素人っぽいちょっと下手でゆるい2コマ漫画（参考投稿No.72）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/020/ref/01.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/020/ref/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/020/ref/06.jpg"
+    ],
+    "defined_in": "common.md"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/10",
+      "title": "察しが良すぎるコンビニ店員",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/10",
+      "title": "正直すぎる予測変換",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/10",
+      "title": "家族で共有しているネット通販",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/10",
+      "title": "ラブホの部屋選び",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/10",
+      "title": "賢者タイムのAIスピーカー",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/10",
+      "title": "夫婦で書く健康診断の問診票",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/10",
+      "title": "勝負下着を干す夫",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/10",
+      "title": "ベッドの下から出てきたもの",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/10",
+      "title": "声が大きすぎる隣の部屋",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/10",
+      "title": "一緒にお風呂に入りたい夫",
+      "file": "10.md"
+    }
+  ]
+}
