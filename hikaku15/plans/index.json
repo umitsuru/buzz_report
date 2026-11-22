@@ -122,18 +122,19 @@
   {
     "no": 9,
     "folder": "009",
-    "title": "平成のデリヘル嬢と令和のデリヘル嬢。20の違い",
+    "title": "送迎ドライバーから見た「平成のデリヘル嬢と令和のデリヘル嬢」10の違い",
     "created": "2026-11-21",
-    "gafu_id": "",
-    "style_name": "美麗で色っぽい写実寄り青年漫画カラー（参考No.59は未収録・構成参照）",
-    "pages": 20,
+    "gafu_id": "No.65",
+    "style_name": "参考No.65の暗いネオン街・送迎車・写実寄り青年漫画",
+    "pages": 10,
     "aspect_ratio": "1:1",
     "format": "上下比較",
-    "format_name": "正方形1:1・上段平成2008／下段令和2026・全20枚",
-    "status": "プロンプト完成・画像未生成",
-    "reference_role": "composition",
-    "reference_note": "参考投稿No.59は番号表への収録が未確認。ユーザーの説明と承認済み構成をもとにした創作。",
-    "maker": "chatgpt"
+    "format_name": "正方形1:1・上段平成／下段令和・送迎ドライバー目線・全10枚",
+    "status": "送迎ドライバー目線の10枚版へ全面改訂／旧20枚の画像は再生成待ち",
+    "reference_role": "style",
+    "maker": "chatgpt",
+    "cover": "../posts/20261122_2124274238635102644/img/01.jpg",
+    "images_stale": true
   },
   {
     "no": 10,
