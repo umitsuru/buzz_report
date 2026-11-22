@@ -242,5 +242,20 @@
     "status": "縮尺の指定を追加・画像を全部作り直し待ち（3:2で生成→トリミング）",
     "cover": "./016/ref/01.jpg",
     "maker": "claude"
+  },
+  {
+    "no": 17,
+    "folder": "017",
+    "title": "2コマ漫画10本",
+    "created": "2026-11-22",
+    "gafu_id": "No.72",
+    "style_name": "ゆるい線のフラットな2コマ漫画（参考投稿No.72）",
+    "pages": 10,
+    "aspect_ratio": "3:4",
+    "format": "2koma",
+    "format_name": "縦長3:4・タイトル枠＋縦2コマ・1枚1本",
+    "status": "プロンプト完成・画像未生成",
+    "cover": "./017/ref/01.jpg",
+    "maker": "claude"
   }
 ]

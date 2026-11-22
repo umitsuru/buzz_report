@@ -1,0 +1,98 @@
+{
+  "plan_no": 17,
+  "folder": "017",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/017/",
+  "project": "2コマ漫画10本",
+  "created": "2026-11-22",
+  "made_by": "Claude",
+  "format": "2koma",
+  "format_name": "縦長3:4・タイトル枠＋縦2コマ・1枚1本・10枚",
+  "image_count": 10,
+  "aspect_ratio": "3:4",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像で画風と形式を確認したあと、01.md から10.md まで順に1枚ずつ、縦長3:4で生成する。",
+  "fiction_notice": "登場人物はすべて架空。実在の人物・企業・キャラクターとは関係ない。",
+  "reference_posts": [
+    {
+      "no": 72,
+      "folder": "hikaku15/posts/20261122_2124072831478866011",
+      "url": "https://x.com/i/status/2124072831478866011",
+      "title": "お気に入りの2コマ漫画20本",
+      "views": 8305151,
+      "used_for": "形式と画風（タイトル枠＋縦2コマ、ゆるい線のフラットな絵）"
+    }
+  ],
+  "style": {
+    "gafu_id": "No.72",
+    "ref_post_no": 72,
+    "name": "ゆるい線とくすんだパステルのフラットな2コマ漫画（参考投稿No.72）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/017/ref/01.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/017/ref/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/017/ref/06.jpg"
+    ],
+    "defined_in": "common.md"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/10",
+      "title": "全部わかってるAIアシスタント",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/10",
+      "title": "疑いが強すぎるセルフレジ",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/10",
+      "title": "既読が早すぎる母",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/10",
+      "title": "サプライズに慣れすぎた彼女",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/10",
+      "title": "深夜の冷蔵庫の前で開かれる会議",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/10",
+      "title": "静かにしてほしい図書館",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/10",
+      "title": "鍵、閉めたっけ？",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/10",
+      "title": "正直すぎる占い師",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/10",
+      "title": "地元に帰ってきた男",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/10",
+      "title": "推しが心配してくる課金",
+      "file": "10.md"
+    }
+  ]
+}
