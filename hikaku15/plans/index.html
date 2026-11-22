@@ -65,6 +65,17 @@
   #lb .n{position:fixed;top:10px;left:50%;transform:translateX(-50%);font-size:14px;background:rgba(40,40,40,.8);padding:2px 10px;border-radius:999px}
   #lb button{position:fixed;background:rgba(40,40,40,.75);color:#fff;border:0;border-radius:999px;width:44px;height:44px;font-size:22px;cursor:pointer}
   #lbx{top:8px;right:8px}#lbp{left:8px;top:50%}#lbn2{right:8px;top:50%}
+  #lb{touch-action:none;overflow:hidden}
+  #lb img{transform-origin:0 0;will-change:transform;user-select:none;-webkit-user-drag:none}
+  #lbo{position:fixed;left:50%;bottom:12px;transform:translateX(-50%);font-size:13px;color:#fff;background:rgba(40,40,40,.85);padding:6px 14px;border-radius:999px;text-decoration:none;z-index:2}
+  #lbh{position:fixed;left:50%;top:44px;transform:translateX(-50%);font-size:12px;color:#bbb;pointer-events:none}
+  @media (max-width:640px){
+    .gen{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+    .gen button{aspect-ratio:auto}
+    .gen img{height:auto;object-fit:contain}
+    #lbp,#lbn2{top:auto;bottom:10px}
+    #lbo{bottom:14px}
+  }
   .ref img{width:120px;height:80px;object-fit:cover;border-radius:8px}
   .msg{color:#999;text-align:center;padding:60px 10px}
   @media(max-width:600px){.ch{flex-wrap:wrap}.cp{width:100%}}
@@ -86,7 +97,7 @@
   <div class="plans" id="plans"><p class="msg">読み込み中…</p></div>
   <div id="detail"></div>
 </main>
-<div id="lb" aria-hidden="true"><span class="n" id="lbc"></span><button id="lbx" aria-label="閉じる">×</button><button id="lbp" aria-label="前へ">‹</button><img id="lbi" alt=""><button id="lbn2" aria-label="次へ">›</button></div>
+<div id="lb" aria-hidden="true"><span class="n" id="lbc"></span><span id="lbh">ダブルタップ・ピンチで拡大</span><a id="lbo" href="#" target="_blank" rel="noopener">画像だけを開く</a><button id="lbx" aria-label="閉じる">×</button><button id="lbp" aria-label="前へ">‹</button><img id="lbi" alt=""><button id="lbn2" aria-label="次へ">›</button></div>
 
 <script>
 {
@@ -114,7 +125,7 @@ async function genImages(p){
   return imgCache[p.no]=r;
 }
 let lbSet=[],lbI=0;
-const lbShow=()=>{document.getElementById('lbi').src=lbSet[lbI];document.getElementById('lbc').textContent=(lbI+1)+' / '+lbSet.length};
+const lbShow=()=>{const im=document.getElementById('lbi');im.src=lbSet[lbI];document.getElementById('lbo').href=lbSet[lbI];document.getElementById('lbc').textContent=(lbI+1)+' / '+lbSet.length;if(window.zReset)zReset()};
 function lbOpen(set,i){lbSet=set;lbI=i;lbShow();document.getElementById('lb').classList.add('open')}
 function lbClose(){document.getElementById('lb').classList.remove('open');document.getElementById('lbi').src=''}
 function cover(p){if(p.cover)return p.cover.replace(/^\.\.\//,'../');const s=styles[p.gafu_id];return s&&s.cover?'../studio/'+s.cover:''}
@@ -162,7 +173,7 @@ async function open(no){
       <span>画風 <b>${esc(cur.gafu_id||'')}</b> ${esc(cur.style_name)}</span><span>形式<b>${esc(cur.format||'')}</b>（${esc(cur.format_name||(cur.format==='B'?'正方形1枚絵':cur.format==='C'?'1人ずつの人物図鑑1枚絵':'3:4・3コマ'))}）</span><span><b>${esc(cur.aspect_ratio)}</b>・${cur.pages}枚</span><span>${esc(cur.status||'')}</span>
       <span><a href="https://github.com/umitsuru/buzz_report/tree/main/hikaku15/plans/${esc(cur.folder)}" target="_blank" rel="noopener noreferrer">GitHubで開く</a></span></div>
     ${cur.reference_note?`<p class="note">${esc(cur.reference_note)}</p>`:''}
-    ${st?`<div class="ref"><img src="../studio/${esc(st.cover)}" alt=""><span>画風の参考：${esc(st.title)}（${esc(st.author||'')}）<br><a href="../studio/#styles">画風カタログで見る</a></span></div>`:(cur.cover?`<div class="ref"><img src="${esc(cover(cur))}" alt=""><span>${cur.reference_role==='composition'?'構成の参考':'画風の参考'}：${esc(cur.style_name)}<br><a href="../">参考投稿で見る</a></span></div>`:'')}
+    ${st?`<div class="ref"><img src="../studio/${esc(st.cover)}" alt="画風の参考" style="cursor:zoom-in" onclick="lbOpen([this.src],0)"><span>画風の参考：${esc(st.title)}（${esc(st.author||'')}）<br><a href="../studio/#styles">画風カタログで見る</a></span></div>`:(cur.cover?`<div class="ref"><img src="${esc(cover(cur))}" alt=""><span>${cur.reference_role==='composition'?'構成の参考':'画風の参考'}：${esc(cur.style_name)}<br><a href="../">参考投稿で見る</a></span></div>`:'')}
     <div class="box">
       <h3>生成した画像 <span class="pill" id="gcount"></span></h3>
       <div class="gen" id="gen"></div>
@@ -205,16 +216,42 @@ async function open(no){
 document.getElementById('lbx').onclick=lbClose;
 document.getElementById('lbp').onclick=()=>{lbI=(lbI-1+lbSet.length)%lbSet.length;lbShow()};
 document.getElementById('lbn2').onclick=()=>{lbI=(lbI+1)%lbSet.length;lbShow()};
-document.getElementById('lb').addEventListener('click',e=>{if(e.target.id==='lb')lbClose()});
+document.getElementById('lb').addEventListener('click',e=>{if(e.target.id==='lb'&&!document.getElementById('lbi').style.transform)lbClose()});
 document.addEventListener('keydown',e=>{
   if(!document.getElementById('lb').classList.contains('open'))return;
   if(e.key==='ArrowRight'){lbI=(lbI+1)%lbSet.length;lbShow();e.preventDefault()}
   if(e.key==='ArrowLeft'){lbI=(lbI-1+lbSet.length)%lbSet.length;lbShow();e.preventDefault()}
   if(e.key==='Escape')lbClose();
 });
-let lbX=null;
-document.getElementById('lb').addEventListener('touchstart',e=>{lbX=e.touches[0].clientX},{passive:true});
-document.getElementById('lb').addEventListener('touchend',e=>{if(lbX==null)return;const dx=e.changedTouches[0].clientX-lbX;lbX=null;if(Math.abs(dx)>40){lbI=(lbI+(dx<0?1:-1)+lbSet.length)%lbSet.length;lbShow()}});
+// 拡大表示：ダブルタップ・ダブルクリックで拡大／縮小、ピンチで拡大、拡大中は指でドラッグして移動。等倍のときだけ左右スワイプでページ送り
+(()=>{
+  const lb=document.getElementById('lb'), im=document.getElementById('lbi');
+  let sc=1,tx=0,ty=0,base=null,pts=new Map(),start=null,lastTap=0,moved=false;
+  const apply=()=>{im.style.transform=sc===1?'':`translate(${tx}px,${ty}px) scale(${sc})`};
+  const rect0=()=>{const t=im.style.transform;im.style.transform='';const r=im.getBoundingClientRect();im.style.transform=t;return r};
+  const clamp=()=>{if(sc<=1){sc=1;tx=0;ty=0;return}const r=rect0(),w=r.width*sc,h=r.height*sc,W=innerWidth,H=innerHeight;
+    const minX=Math.min(0,W-w)-r.left, maxX=Math.max(0,W-w)-r.left+ (w<W?0:0), minY=Math.min(0,H-h)-r.top, maxY=Math.max(0,H-h)-r.top;
+    if(w<=W)tx=(W-w)/2-r.left;else tx=Math.min(-r.left,Math.max(W-w-r.left,tx));
+    if(h<=H)ty=(H-h)/2-r.top;else ty=Math.min(-r.top,Math.max(H-h-r.top,ty))};
+  const zoomAt=(cx,cy,ns)=>{const r=rect0();const px=(cx-r.left-tx)/sc,py=(cy-r.top-ty)/sc;sc=Math.max(1,Math.min(6,ns));tx=cx-r.left-px*sc;ty=cy-r.top-py*sc;clamp();apply()};
+  window.zReset=()=>{sc=1;tx=0;ty=0;apply()};
+  let lastType='mouse';lb.addEventListener('pointerdown',e=>{lastType=e.pointerType},true);
+  im.addEventListener('dblclick',e=>{e.preventDefault();if(lastType!=='mouse')return;sc>1?zReset():zoomAt(e.clientX,e.clientY,2.5)});
+  lb.addEventListener('wheel',e=>{if(!lb.classList.contains('open'))return;e.preventDefault();zoomAt(e.clientX,e.clientY,sc*(e.deltaY<0?1.2:1/1.2))},{passive:false});
+  lb.addEventListener('pointerdown',e=>{if(e.target.closest('button,a'))return;pts.set(e.pointerId,{x:e.clientX,y:e.clientY});moved=false;
+    if(pts.size===1)start={x:e.clientX,y:e.clientY,tx,ty};
+    if(pts.size===2){const [a,b]=[...pts.values()];base={d:Math.hypot(a.x-b.x,a.y-b.y),sc,cx:(a.x+b.x)/2,cy:(a.y+b.y)/2}}});
+  lb.addEventListener('pointermove',e=>{if(!pts.has(e.pointerId))return;pts.set(e.pointerId,{x:e.clientX,y:e.clientY});
+    if(pts.size===2&&base){const [a,b]=[...pts.values()];moved=true;zoomAt(base.cx,base.cy,base.sc*Math.hypot(a.x-b.x,a.y-b.y)/base.d);base.sc=sc;base.d=Math.hypot(a.x-b.x,a.y-b.y)}
+    else if(pts.size===1&&start&&sc>1){const dx=e.clientX-start.x,dy=e.clientY-start.y;if(Math.abs(dx)+Math.abs(dy)>4)moved=true;tx=start.tx+dx;ty=start.ty+dy;clamp();apply()}});
+  const up=e=>{if(!pts.has(e.pointerId))return;const p0=start;pts.delete(e.pointerId);
+    if(pts.size===1){const p=[...pts.values()][0];start={x:p.x,y:p.y,tx,ty};base=null;return}
+    if(pts.size>0)return; base=null;
+    if(p0&&sc===1){const dx=e.clientX-p0.x,dy=e.clientY-p0.y;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)){lbI=(lbI+(dx<0?1:-1)+lbSet.length)%lbSet.length;lbShow();start=null;return}}
+    if(e.pointerType!=='mouse'&&!moved&&p0&&Math.abs(e.clientX-p0.x)<10){const now=Date.now();if(now-lastTap<300){sc>1?zReset():zoomAt(e.clientX,e.clientY,2.5);lastTap=0}else lastTap=now}
+    start=null};
+  lb.addEventListener('pointerup',up);lb.addEventListener('pointercancel',up);
+})();
 plansEl.addEventListener('click',e=>{const b=e.target.closest('.plan');if(b)open(+b.dataset.no)});
 detail.addEventListener('click',async e=>{
   const b=e.target.closest('button'); if(!b||!b.dataset.n) return;
