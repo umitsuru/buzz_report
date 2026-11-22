@@ -67,6 +67,14 @@
   #lbx{top:8px;right:8px}#lbp{left:8px;top:50%}#lbn2{right:8px;top:50%}
   .mk{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;margin-right:4px;vertical-align:middle;color:#fff;white-space:nowrap}
   .mk.claude{background:#D97757}.mk.chatgpt{background:#10A37F}
+  .ed{font-size:11px;color:#aaa;margin-left:2px;white-space:nowrap}
+  .mk.o{background:transparent;border:1px solid currentColor;font-weight:600;padding:0 6px}
+  .mk.o.claude{color:#E8916F}.mk.o.chatgpt{color:#2BC39A}
+  .hist{margin:6px 0 0;padding:0;list-style:none;font-size:13px;line-height:1.7}
+  .hist li{display:grid;grid-template-columns:auto auto 1fr;gap:4px 8px;align-items:start;padding:4px 0;border-bottom:1px solid rgba(255,255,255,.06)}.hist time{color:#999;font-variant-numeric:tabular-nums;white-space:nowrap}
+  .hist li>.mk{margin:2px 0 0;justify-self:start}.hist li>span:last-child{min-width:0;overflow-wrap:anywhere}
+  @media (max-width:640px){.hist li{grid-template-columns:auto 1fr}.hist li>span:last-child{grid-column:1/-1}}
+  .hist .k{color:#999;font-size:11px;white-space:nowrap}
   #lb{touch-action:none;overflow:hidden}
   #lb img{transform-origin:0 0;will-change:transform;user-select:none;-webkit-user-drag:none}
   #lbo{position:fixed;left:50%;bottom:12px;transform:translateX(-50%);font-size:13px;color:#fff;background:rgba(40,40,40,.85);padding:6px 14px;border-radius:999px;text-decoration:none;z-index:2}
@@ -140,13 +148,44 @@ function lbClose(){document.getElementById('lb').classList.remove('open');docume
 function makerBadge(p){const m=(p.maker||'chatgpt');const c='<span class="mk claude" title="Claudeが作成">Claude</span>',g='<span class="mk chatgpt" title="ChatGPTが作成">ChatGPT</span>';if(m==='claude')return c;if(m==='chatgpt')return g;return g+'<span style="font-size:11px;color:#888;margin-right:4px">→</span>'+c}
 function cover(p){if(p.cover)return p.cover.replace(/^\.\.\//,'../');const s=styles[p.gafu_id];return s&&s.cover?'../studio/'+s.cover:''}
 
+
+// 修正の履歴：GitHubの保存履歴から、投稿案ごとに「だれが何を直したか」を出す（1回読み込んで10分おぼえる）
+// 作者名が Claude → Claude、umitsuru → ChatGPTのボット
+let HIST=null;
+function planNosOf(msg){const out=new Set();let m;const re1=/plans\/0*(\d{1,3})\b/g;while((m=re1.exec(msg)))out.add(+m[1]);
+  const re2=/No\.(\d+)((?:\s*[〜~～・、,\-]\s*\d+)*)/g;while((m=re2.exec(msg))){const a=+m[1];out.add(a);const rest=m[2];if(rest){const nums=rest.match(/\d+/g).map(Number);const isRange=/[〜~～\-]/.test(rest)&&nums.length===1;if(isRange)for(let i=a;i<=nums[0];i++)out.add(i);else nums.forEach(n=>out.add(n))}}
+  return [...out]}
+async function loadHist(){
+  if(HIST)return HIST;
+  try{const v=JSON.parse(sessionStorage.getItem('hist')||'null');if(v&&Date.now()-v.t<10*60*1000)return HIST=v.h}catch(e){}
+  const h=[];
+  for(let page=1;page<=3;page++){
+    let r;try{r=await fetch(`https://api.github.com/repos/umitsuru/buzz_report/commits?path=hikaku15/plans&per_page=100&page=${page}`)}catch(e){break}
+    if(!r.ok)break;const arr=await r.json();
+    arr.forEach(c=>{const msg=(c.commit.message||'').split('\n')[0];const an=(c.commit.author&&c.commit.author.name)||'';
+      const who=/^claude$/i.test(an)||/Co-Authored-By: Claude/i.test(c.commit.message||'')?'claude':'chatgpt';
+      h.push({t:c.commit.author.date,who,msg,img:/の画像$|枚目の画像|images?\b/i.test(msg)&&!/プロンプト|prompt/i.test(msg),nos:planNosOf(msg)})});
+    if(arr.length<100)break;
+  }
+  try{sessionStorage.setItem('hist',JSON.stringify({t:Date.now(),h}))}catch(e){}
+  return HIST=h;
+}
+function histOf(no){return (HIST||[]).filter(x=>x.nos.includes(no))}
+function editorBadges(no){const l=histOf(no);if(!l.length)return '';const t0=Math.min(...l.map(x=>+new Date(x.t)));const ed=new Set(l.filter(x=>!x.img&&(+new Date(x.t)-t0)>15*60*1000).map(x=>x.who));if(!ed.size)return '';
+  return '<span class="ed">修正</span>'+(ed.has('claude')?'<span class="mk o claude">Claude</span>':'')+(ed.has('chatgpt')?'<span class="mk o chatgpt">ChatGPT</span>':'')}
+function histHTML(no){const list=histOf(no);if(!HIST)return '<p class="msg">履歴を読み込み中…</p>';if(!list.length)return '<p class="msg">記録はまだありません。</p>';
+  // 同じ人が同じ時間帯（10分以内）に続けた保存は1行にまとめる
+  const g=[];list.forEach(x=>{const last=g[g.length-1];if(last&&last.who===x.who&&last.img===x.img&&Math.abs(new Date(last.t)-new Date(x.t))<10*60*1000){last.n++;return}g.push({...x,n:1})});
+  const fmt=t=>{const d=new Date(t);return (d.getMonth()+1)+'/'+d.getDate()+' '+String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')};
+  return '<ul class="hist">'+g.map(x=>`<li><time>${fmt(x.t)}</time>${x.who==='claude'?'<span class="mk claude">Claude</span>':'<span class="mk chatgpt">ChatGPT</span>'}<span>${x.img?'<span class="k">画像</span> ':''}${esc(x.msg)}${x.n>1?` <span class="k">ほか${x.n-1}件</span>`:''}</span></li>`).join('')+'</ul>'}
+
 function renderList(){
   // 一覧では画像を調べない（開いたことのある投稿案だけ、おぼえている枚数を出す）
   setTimeout(()=>plans.forEach(p=>{const g=imgSaved(p),el=document.querySelector(`[data-gc="${p.no}"]`);if(el){if(!g){el.textContent='';return}const n=g.filter(Boolean).length;el.textContent='画像 '+n+'/'+p.pages;el.classList.toggle('full',n===p.pages)}}));
   plansEl.innerHTML = plans.slice().sort((a,b)=>b.no-a.no).map(p=>`
     <button class="plan ${cur&&cur.no===p.no?'on':''}" data-no="${p.no}">
       ${cover(p)?`<img src="${esc(cover(p))}" alt="" loading="lazy">`:'<span></span>'}
-      <span><b><span class="no">No.${p.no}</span>${makerBadge(p)}${esc(p.title)}</b>
+      <span><b><span class="no">No.${p.no}</span>${makerBadge(p)}${esc(p.title)}</b> <span data-ed="${p.no}">${editorBadges(p.no)}</span>
       <small>形式${esc(p.format||'')}・${esc(p.gafu_id||p.style_name)}・${p.pages}枚・${esc(p.aspect_ratio)}・${esc(p.created)}</small>
       <small>${esc(p.status||'')} <span class="pill" data-gc="${p.no}"></span></small></span>
     </button>`).join('') || '<p class="msg">まだ投稿案がありません。</p>';
@@ -185,6 +224,10 @@ async function open(no){
       <span><a href="https://github.com/umitsuru/buzz_report/tree/main/hikaku15/plans/${esc(cur.folder)}" target="_blank" rel="noopener noreferrer">GitHubで開く</a></span></div>
     ${cur.reference_note?`<p class="note">${esc(cur.reference_note)}</p>`:''}
     ${st?`<div class="ref"><img src="../studio/${esc(st.cover)}" alt="画風の参考" style="cursor:zoom-in" onclick="lbOpen([this.src],0)"><span>画風の参考：${esc(st.title)}（${esc(st.author||'')}）<br><a href="../studio/#styles">画風カタログで見る</a></span></div>`:(cur.cover?`<div class="ref"><img src="${esc(cover(cur))}" alt=""><span>${cur.reference_role==='composition'?'構成の参考':'画風の参考'}：${esc(cur.style_name)}<br><a href="../">参考投稿で見る</a></span></div>`:'')}
+    <div class="box">
+      <h3>作成と修正の履歴 <span style="font-size:12px;font-weight:400;color:#999">作成：${makerBadge(cur)}</span></h3>
+      <div id="hist">${histHTML(cur.no)}</div>
+    </div>
     <div class="box">
       <h3>生成した画像 <span class="pill" id="gcount"></span> <button class="cp" id="grecheck" style="font-size:12px">画像を再確認</button></h3>
       <div class="gen" id="gen"></div>
@@ -277,6 +320,7 @@ detail.addEventListener('click',async e=>{
     plans = await getJSON('./index.json');
     try{const s=await getJSON('../studio/styles.json');(s.styles||[]).forEach(x=>styles[x.id]=x)}catch(e){}
     renderList();
+    loadHist().then(()=>{document.querySelectorAll('[data-ed]').forEach(el=>el.innerHTML=editorBadges(+el.dataset.ed));const h=document.getElementById('hist');if(h&&cur)h.innerHTML=histHTML(cur.no)});
     const m=location.hash.match(/plan-(\d+)/);
     const first = m ? +m[1] : (plans.length ? Math.max(...plans.map(p=>p.no)) : null);
     if(first) open(first);
