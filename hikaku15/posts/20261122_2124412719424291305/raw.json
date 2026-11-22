@@ -1,0 +1,49 @@
+{
+  "id": "2124412719424291305",
+  "url": "https://x.com/mochidosukoi/status/2124412719424291305",
+  "own": false,
+  "collected_at": "2026-11-22T20:59:57+09:00",
+  "author": {
+    "name": "神谷もち",
+    "handle": "@mochidosukoi",
+    "followers": 69593
+  },
+  "posted_at": "2026-11-22T17:00:36+09:00",
+  "metrics": {
+    "views": 556590,
+    "likes": 2489,
+    "reposts": 39,
+    "quotes": 6,
+    "replies": 16,
+    "bookmarks": 638
+  },
+  "text": "優しくて大人しいと思っていた娘が\nお友達のことをつねっていました",
+  "thread": [
+    {
+      "id": "2124412719424291305",
+      "text": "優しくて大人しいと思っていた娘が\nお友達のことをつねっていました",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg",
+        "11.jpg",
+        "12.jpg",
+        "13.jpg",
+        "14.jpg",
+        "15.jpg",
+        "16.jpg"
+      ]
+    }
+  ],
+  "image_count": 16,
+  "top_replies": [],
+  "top_quotes": [],
+  "note": "画像16枚はすべて元投稿1件に添付されている（API の attachments に16件、すべてJPEG 1250×1847px）。投稿者本人の画像付きセルフリプは検索で見つからなかった。本文は表示部分のみで、API本文末尾の画像リンク https://t.co/2Y7MvtvKwu は除いた。引用している投稿はない。今回は投稿本体だけを保存し、返信と引用は取得していない（top_replies と top_quotes は空）。数字は 2026-11-22 20:59頃 JST 時点。動画なし。"
+}
