@@ -1,0 +1,49 @@
+{
+  "id": "2124287955430969347",
+  "url": "https://x.com/hikaru_hackjpn/status/2124287955430969347",
+  "own": false,
+  "collected_at": "2026-11-22T14:30:48+09:00",
+  "author": {
+    "name": "戸村光",
+    "handle": "@hikaru_hackjpn",
+    "followers": 151483
+  },
+  "posted_at": "2026-11-22T08:44:50+09:00",
+  "metrics": {
+    "views": 1186961,
+    "likes": 1531,
+    "reposts": 169,
+    "quotes": 23,
+    "replies": 43,
+    "bookmarks": 456
+  },
+  "text": "平成のパワハラ\n令和のパワハラ",
+  "thread": [
+    {
+      "id": "2124287955430969347",
+      "text": "平成のパワハラ\n令和のパワハラ",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg",
+        "11.jpg",
+        "12.jpg",
+        "13.jpg",
+        "14.jpg",
+        "15.jpg",
+        "16.jpg"
+      ]
+    }
+  ],
+  "image_count": 16,
+  "top_replies": [],
+  "top_quotes": [],
+  "note": "画像16枚はすべて元投稿1件に添付されている（API の attachments に16件、すべてJPEG。サイズは1枚目 3200×3200px、2枚目 1254×1254px、3〜14枚目 3200×3200px、15〜16枚目 1254×1254px）。投稿者本人の画像付きセルフリプは検索で見つからなかった。本文は表示部分のみで、API本文末尾の画像リンク https://t.co/55BoWrAqun は除いた。引用している投稿はない。今回は投稿本体だけを保存し、返信と引用は取得していない（top_replies と top_quotes は空）。数字は 2026-11-22 14:30頃 JST 時点。動画なし。"
+}
