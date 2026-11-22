@@ -1,0 +1,159 @@
+{
+  "plan_no": 19,
+  "folder": "019",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/019/",
+  "project": "理想が高い30歳が、結婚相談所で現実を知った話",
+  "created": "2026-11-22",
+  "made_by": "Claude",
+  "format": "story2",
+  "format_name": "縦長2:3・1枚2コマのブログ漫画・20枚",
+  "image_count": 20,
+  "aspect_ratio": "2:3",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像で画風を確認したあと、01.md から20.md まで順に1枚ずつ、縦長2:3・上下2コマで生成する。",
+  "fiction_notice": "登場人物はすべて架空の成人。実在の人物・相談所とは関係ない。",
+  "reference_posts": [
+    {
+      "no": 71,
+      "folder": "hikaku15/posts/20261122_2124412719424291305",
+      "url": "https://x.com/i/status/2124412719424291305",
+      "title": "優しくて大人しいと思っていた娘がお友達のことをつねっていました",
+      "views": 556590,
+      "used_for": "画風と展開（面談の席で、落ち着いた相手が事実を出し、主人公が否定→逆ギレ→最後のひと言で現実を知る）"
+    }
+  ],
+  "style": {
+    "gafu_id": "No.71",
+    "ref_post_no": 71,
+    "name": "ブログ漫画風（太い線・演出背景・縦書きの吹き出し、参考投稿No.71）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/019/ref/01.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/019/ref/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/019/ref/07.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/019/ref/11.jpg"
+    ],
+    "defined_in": "common.md"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/20",
+      "title": "1枚目",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/20",
+      "title": "2枚目",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/20",
+      "title": "3枚目",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/20",
+      "title": "4枚目",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/20",
+      "title": "5枚目",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/20",
+      "title": "6枚目",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/20",
+      "title": "7枚目",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/20",
+      "title": "8枚目",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/20",
+      "title": "9枚目",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/20",
+      "title": "10枚目",
+      "file": "10.md"
+    },
+    {
+      "page": 11,
+      "label": "11/20",
+      "title": "11枚目",
+      "file": "11.md"
+    },
+    {
+      "page": 12,
+      "label": "12/20",
+      "title": "12枚目",
+      "file": "12.md"
+    },
+    {
+      "page": 13,
+      "label": "13/20",
+      "title": "13枚目",
+      "file": "13.md"
+    },
+    {
+      "page": 14,
+      "label": "14/20",
+      "title": "14枚目",
+      "file": "14.md"
+    },
+    {
+      "page": 15,
+      "label": "15/20",
+      "title": "15枚目",
+      "file": "15.md"
+    },
+    {
+      "page": 16,
+      "label": "16/20",
+      "title": "16枚目",
+      "file": "16.md"
+    },
+    {
+      "page": 17,
+      "label": "17/20",
+      "title": "17枚目",
+      "file": "17.md"
+    },
+    {
+      "page": 18,
+      "label": "18/20",
+      "title": "18枚目",
+      "file": "18.md"
+    },
+    {
+      "page": 19,
+      "label": "19/20",
+      "title": "19枚目",
+      "file": "19.md"
+    },
+    {
+      "page": 20,
+      "label": "20/20",
+      "title": "20枚目",
+      "file": "20.md"
+    }
+  ]
+}

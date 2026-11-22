@@ -263,6 +263,22 @@
   {
     "no": 18,
     "folder": "018",
+    "title": "日常がひっくり返る！シュールな2コマ漫画10本",
+    "created": "2026-11-22",
+    "gafu_id": "No.72",
+    "style_name": "シンプルな線・淡いフラットカラーの日常系シュール漫画（参考No.72は形式の参考）",
+    "pages": 10,
+    "aspect_ratio": "3:4",
+    "format": "2koma",
+    "format_name": "縦長3:4・タイトル帯＋縦2コマ・前振りと逆転オチ・全10枚",
+    "status": "プロンプト完成・画像未生成",
+    "reference_role": "composition",
+    "cover": "../posts/20261122_2124072831478866011/img/01.jpg",
+    "maker": "chatgpt"
+  },
+  {
+    "no": 19,
+    "folder": "019",
     "title": "理想が高い30歳が、結婚相談所で現実を知った話",
     "created": "2026-11-22",
     "gafu_id": "No.71",
@@ -272,7 +288,7 @@
     "format": "story2",
     "format_name": "縦長2:3・1枚2コマのブログ漫画・20枚",
     "status": "プロンプト完成・画像未生成",
-    "cover": "./018/ref/01.jpg",
+    "cover": "./019/ref/01.jpg",
     "maker": "claude"
   }
 ]
