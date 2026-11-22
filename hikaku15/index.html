@@ -36,6 +36,7 @@
   .kpi{display:flex;flex-wrap:wrap;gap:6px 14px;margin:8px 0 10px;font-size:13px;color:#ccc}
   .kpi b{color:#fff;font-size:15px}
   .imgs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+  .more-posts{display:block;width:100%;margin:16px 0 40px;padding:14px;font:inherit;font-size:15px;font-weight:700;border-radius:12px;border:1px solid #444;background:#1b1b1b;color:#eee;cursor:pointer}
   @media(min-width:760px){ .imgs{grid-template-columns:repeat(5,1fr);gap:8px} }
   .imgs button{padding:0;border:0;background:#111;border-radius:8px;overflow:hidden;aspect-ratio:1/1;cursor:zoom-in;position:relative}
   .imgs img{width:100%;height:100%;object-fit:cover;display:block}
@@ -266,7 +267,10 @@
       set.forEach((src, i) => {
         const b = el('button');
         b.setAttribute('aria-label', `${i + 1}枚目を拡大`);
-        const img = el('img'); img.src = src; img.loading = 'lazy'; img.alt = `${i + 1}枚目`;
+        // 一覧には小さいサムネイル（thumb/）を使い、大きい画像は拡大したときだけ読み込む。サムネイルがなければ元の画像
+        const img = el('img'); img.loading = 'lazy'; img.decoding = 'async'; img.alt = `${i + 1}枚目`;
+        img.src = p.base + 'thumb/' + p.files[i].replace(/\.(png|webp|jpeg)$/i, '.jpg');
+        img.onerror = () => { img.onerror = null; img.src = src; };
         b.appendChild(img); b.appendChild(el('span', null, i + 1));
         b.onclick = () => lbOpen(set, i);
         g.appendChild(b);
@@ -324,7 +328,18 @@
     list.textContent = '';
     count.textContent = `${arr.length}件`;
     if (!arr.length) { list.appendChild(el('p', 'msg', ownOnly ? '自分の投稿はまだありません。' : 'まだ投稿がありません。グロッキーが集めると、ここに並びます。')); return; }
-    arr.forEach(p => list.appendChild(card(p)));
+    // 重くならないよう、最初は10件だけ並べ、「もっと見る」で10件ずつ足す
+    const PAGE = 10; let shown = 0;
+    const more = el('button', 'more-posts');
+    const addMore = () => {
+      arr.slice(shown, shown + PAGE).forEach(p => list.insertBefore(card(p), more));
+      shown = Math.min(arr.length, shown + PAGE);
+      more.textContent = `もっと見る（残り${arr.length - shown}件）`;
+      more.style.display = shown < arr.length ? '' : 'none';
+    };
+    more.onclick = addMore;
+    list.appendChild(more);
+    addMore();
   }
 
   document.getElementById('bar').addEventListener('click', e => {
