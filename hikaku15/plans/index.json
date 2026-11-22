@@ -209,7 +209,7 @@
     "aspect_ratio": "可変",
     "format": "LINE",
     "format_name": "LINEのトーク画面・画像ごとに上下をトリミング・15枚",
-    "status": "画像15枚あり（Claudeがトリミング済み、元画像は raw/）",
+    "status": "縮尺の指定を追加・画像を全部作り直し待ち（3:2で生成→トリミング）",
     "cover": "./014/ref/01.jpg",
     "maker": "claude"
   },
@@ -224,7 +224,7 @@
     "aspect_ratio": "可変",
     "format": "LINE",
     "format_name": "LINEのトーク画面・画像ごとに上下をトリミング・15枚",
-    "status": "画像15枚あり（Claudeがトリミング済み、元画像は raw/）",
+    "status": "縮尺の指定を追加・画像を全部作り直し待ち（3:2で生成→トリミング）",
     "cover": "./015/ref/01.jpg",
     "maker": "claude"
   },
@@ -239,7 +239,7 @@
     "aspect_ratio": "可変",
     "format": "LINE",
     "format_name": "LINEのトーク画面・画像ごとに上下をトリミング・15枚",
-    "status": "画像15枚あり（Claudeがトリミング済み、元画像は raw/）",
+    "status": "縮尺の指定を追加・画像を全部作り直し待ち（3:2で生成→トリミング）",
     "cover": "./016/ref/01.jpg",
     "maker": "claude"
   }
