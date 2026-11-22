@@ -1,159 +1,163 @@
 {
-  "plan_no": 8,
-  "folder": "008",
-  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/008/",
-  "project": "平成の女性ヤンキーと令和の女性ヤンキー。20の違い",
-  "created": "2026-11-21",
-  "made_by": "ChatGPT",
-  "format": "上下比較",
-  "format_name": "縦長3:4・上下2段比較（平成2002／令和2026）・全20枚",
-  "image_count": 20,
-  "aspect_ratio": "3:4",
-  "initial_mode": "wait_for_explicit_generate_command",
-  "bot_instruction": "これは全20枚の制作データです。読み込んだだけでは画像生成しない。ユーザーが『投稿案No.8の1〜4枚目を作って』など指定したときだけ、common.mdと指定NN.mdを読んで1ページにつき縦長3:4の1画像を制作する。上段平成2002の亜希22歳、下段令和2026の莉央22歳を全ページで固定し、20/20では2026年の亜希46歳も下段に入れる。共通設定の美麗な写実寄りカラー青年漫画風を守り、右上はn/20、上下の固定ラベル、セリフを正確に描く。20枚を1枚にまとめない。ほかのページは作らない。",
-  "fiction_notice": "登場人物の亜希、莉央、家族関係はすべて創作。2002年/2026年の生活様式は時代の雰囲気を使ったフィクションであり、各時代の全女性を表さない。成人の架空人物のみ。性描写・露骨な露出や違法行為の美化は行わない。",
-  "series_note": "参考投稿No.55は『↑平成のヤンキー↓令和のヤンキー』で、収集済み画像は20枚・正方形に近いPNG。女性成人版の独自20場面を制作。最後は平成側の女性が令和側の母親であると分かる親子オチ。参考投稿の画像そのものの細部は本企画作成時点では確認していない。 今回、画像生成時のアスペクト比を正方形1:1から縦長3:4へ変更した（参照投稿画像の縦横比は変更していない）。",
-  "reference_posts": [
-    {
-      "no": 55,
-      "folder": "hikaku15/posts/20261121_2123886600761520325",
-      "url": "https://x.com/i_have_a_pun/status/2123886600761520325",
-      "title": "↑平成のヤンキー↓令和のヤンキー",
-      "author": "@i_have_a_pun",
-      "images_collected": 20,
-      "used_for": "平成と令和を上下に並べる20枚の比較という形式だけを参照。人物・画風・固有のシーン・台詞を複製しない。"
-    }
-  ],
-  "style": {
-    "gafu_id": "",
-    "ref_post_no": 55,
-    "name": "写実に近い美麗な大人向け青年漫画カラー（自然な色気・繊細な肌と髪）",
-    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261121_2123886600761520325/img/01.png",
-    "reference_role": "上下比較の形式参考のみ。絵柄は共通設定の独自スタイルを優先する。",
-    "defined_in": "common.md",
-    "visual_verification": "No.55の投稿本文と収集画像ファイルは確認。各画像の画素・具体的な描写は未確認。"
+ "plan_no": 8,
+ "folder": "008",
+ "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/008/",
+ "project": "平成のヤンキー女と令和のヤンキー女。20の違い",
+ "created": "2026-11-21",
+ "made_by": "ChatGPT → Claude（2026/11/22 全面改訂）",
+ "format": "上下比較",
+ "format_name": "縦長3:4・上下2段比較（平成2002／令和2026）・全20枚",
+ "image_count": 20,
+ "aspect_ratio": "3:4",
+ "initial_mode": "wait_for_explicit_generate_command",
+ "bot_instruction": "読み込んだだけでは画像を生成しない。『投稿案No.8のa〜b枚目を作って』と言われたら common.md と NN.md を読み、1ページにつき縦長3:4の画像を1枚作る。上段＝平成2002の亜希、下段＝令和2026の莉央。青年誌のお色気ギャグ漫画風だが、性的な描写や露出はしない。テーマ、n/20、札、セリフ、各段のツッコミを正確に描く。",
+ "fiction_notice": "亜希、莉央、家族関係はすべて創作の成人。下品さはセリフと小物だけで出し、性的な描写、露出、暴力や違法行為の美化はしない。",
+ "reference_posts": [
+  {
+   "no": 55,
+   "folder": "hikaku15/posts/20261121_2123886600761520325",
+   "url": "https://x.com/i_have_a_pun/status/2123886600761520325",
+   "title": "↑平成のヤンキー↓令和のヤンキー",
+   "author": "@i_have_a_pun",
+   "images_collected": 20,
+   "used_for": "平成と令和を上下に並べる20枚の比較という形式だけを参照。人物・画風・固有のシーン・台詞を複製しない。"
+  }
+ ],
+ "style": {
+  "gafu_id": "",
+  "name": "青年誌のお色気ギャグ漫画風（カラー）",
+  "reference_image": "",
+  "defined_in": "common.md",
+  "note": "色気は顔・表情・しぐさだけ。露出や性的な場面は描かない"
+ },
+ "common_file": "common.md",
+ "pages": [
+  {
+   "page": 1,
+   "label": "1/20",
+   "title": "初対面のあいさつ",
+   "file": "01.md"
   },
-  "common_file": "common.md",
-  "pages": [
-    {
-      "page": 1,
-      "label": "1/20",
-      "title": "登場しただけで分かる",
-      "file": "01.md"
-    },
-    {
-      "page": 2,
-      "label": "2/20",
-      "title": "髪型を仕上げる朝",
-      "file": "02.md"
-    },
-    {
-      "page": 3,
-      "label": "3/20",
-      "title": "目元の気合い",
-      "file": "03.md"
-    },
-    {
-      "page": 4,
-      "label": "4/20",
-      "title": "足元の戦闘力",
-      "file": "04.md"
-    },
-    {
-      "page": 5,
-      "label": "5/20",
-      "title": "アクセの主張",
-      "file": "05.md"
-    },
-    {
-      "page": 6,
-      "label": "6/20",
-      "title": "カバンの中身",
-      "file": "06.md"
-    },
-    {
-      "page": 7,
-      "label": "7/20",
-      "title": "仲間との集合連絡",
-      "file": "07.md"
-    },
-    {
-      "page": 8,
-      "label": "8/20",
-      "title": "プリクラの盛り方",
-      "file": "08.md"
-    },
-    {
-      "page": 9,
-      "label": "9/20",
-      "title": "自分の部屋",
-      "file": "09.md"
-    },
-    {
-      "page": 10,
-      "label": "10/20",
-      "title": "怒ったときの顔",
-      "file": "10.md"
-    },
-    {
-      "page": 11,
-      "label": "11/20",
-      "title": "ネイルへの執念",
-      "file": "11.md"
-    },
-    {
-      "page": 12,
-      "label": "12/20",
-      "title": "バイト中の素顔",
-      "file": "12.md"
-    },
-    {
-      "page": 13,
-      "label": "13/20",
-      "title": "恋愛相談の夜",
-      "file": "13.md"
-    },
-    {
-      "page": 14,
-      "label": "14/20",
-      "title": "遅刻した相手を待つ",
-      "file": "14.md"
-    },
-    {
-      "page": 15,
-      "label": "15/20",
-      "title": "地元の夏祭り",
-      "file": "15.md"
-    },
-    {
-      "page": 16,
-      "label": "16/20",
-      "title": "カラオケでの一曲",
-      "file": "16.md"
-    },
-    {
-      "page": 17,
-      "label": "17/20",
-      "title": "友情の証",
-      "file": "17.md"
-    },
-    {
-      "page": 18,
-      "label": "18/20",
-      "title": "夜の勝負服",
-      "file": "18.md"
-    },
-    {
-      "page": 19,
-      "label": "19/20",
-      "title": "将来の夢",
-      "file": "19.md"
-    },
-    {
-      "page": 20,
-      "label": "20/20",
-      "title": "24年越しの正体",
-      "file": "20.md"
-    }
-  ]
+  {
+   "page": 2,
+   "label": "2/20",
+   "title": "たまり場",
+   "file": "02.md"
+  },
+  {
+   "page": 3,
+   "label": "3/20",
+   "title": "眉毛",
+   "file": "03.md"
+  },
+  {
+   "page": 4,
+   "label": "4/20",
+   "title": "吸ってるもの",
+   "file": "04.md"
+  },
+  {
+   "page": 5,
+   "label": "5/20",
+   "title": "愛車",
+   "file": "05.md"
+  },
+  {
+   "page": 6,
+   "label": "6/20",
+   "title": "ケンカの売り方",
+   "file": "06.md"
+  },
+  {
+   "page": 7,
+   "label": "7/20",
+   "title": "仲間の呼び出し",
+   "file": "07.md"
+  },
+  {
+   "page": 8,
+   "label": "8/20",
+   "title": "彼氏の条件",
+   "file": "08.md"
+  },
+  {
+   "page": 9,
+   "label": "9/20",
+   "title": "プリクラの落書き",
+   "file": "09.md"
+  },
+  {
+   "page": 10,
+   "label": "10/20",
+   "title": "お金の稼ぎ方",
+   "file": "10.md"
+  },
+  {
+   "page": 11,
+   "label": "11/20",
+   "title": "飲み会",
+   "file": "11.md"
+  },
+  {
+   "page": 12,
+   "label": "12/20",
+   "title": "地元への愛",
+   "file": "12.md"
+  },
+  {
+   "page": 13,
+   "label": "13/20",
+   "title": "元カレの名前",
+   "file": "13.md"
+  },
+  {
+   "page": 14,
+   "label": "14/20",
+   "title": "ガンのつけ方",
+   "file": "14.md"
+  },
+  {
+   "page": 15,
+   "label": "15/20",
+   "title": "夏祭りの浴衣",
+   "file": "15.md"
+  },
+  {
+   "page": 16,
+   "label": "16/20",
+   "title": "カラオケ",
+   "file": "16.md"
+  },
+  {
+   "page": 17,
+   "label": "17/20",
+   "title": "お金の借り方",
+   "file": "17.md"
+  },
+  {
+   "page": 18,
+   "label": "18/20",
+   "title": "勝負服",
+   "file": "18.md"
+  },
+  {
+   "page": 19,
+   "label": "19/20",
+   "title": "将来の夢",
+   "file": "19.md"
+  },
+  {
+   "page": 20,
+   "label": "20/20",
+   "title": "24年後",
+   "file": "20.md"
+  }
+ ],
+ "wording_fallback": {
+  "夜露死苦": "そのまま使う（落書きの文字）",
+  "タカシ命": "入れ墨で断られたら、二の腕のタトゥーシールとして描く",
+  "イッキ！イッキ！イッキ！": "断られたら「まだまだ飲めるっしょ！」",
+  "タバコ": "断られたら、ガムやキャンディの棒に置き換える"
+ },
+ "existing_image_notice": "前のバージョンの画像は old_v1/ に退避。images/ は新しいプロンプトで作り直す。"
 }
