@@ -1,0 +1,122 @@
+{
+  "plan_no": 21,
+  "folder": "021",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/021/",
+  "project": "サキュバスと賢者",
+  "created": "2026-11-22",
+  "made_by": "Claude",
+  "format": "story",
+  "format_name": "縦長2:3・白黒漫画・1枚2〜3コマ・13枚",
+  "image_count": 13,
+  "aspect_ratio": "2:3",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像で画風を確認したあと、01.md から13.md まで順に1枚ずつ、縦長2:3の白黒漫画で生成する。",
+  "fiction_notice": "登場人物はすべて架空の成人。下ネタは言葉だけで、性的な描写・露出はしない。",
+  "reference_posts": [
+    {
+      "no": 69,
+      "folder": "hikaku15/posts/20261122_2124427669462773787",
+      "url": "https://x.com/i/status/2124427669462773787",
+      "title": "メデューサとゴーレム",
+      "views": 761549,
+      "used_for": "画風と話の骨組み（呪いを持つ女×それが効かない男、傷の過去、守る宣言、能力が自分に返るオチ）"
+    }
+  ],
+  "style": {
+    "gafu_id": "No.69",
+    "ref_post_no": 69,
+    "name": "白黒のすっきりしたデジタル漫画（参考投稿No.69）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/021/ref/01.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/021/ref/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/021/ref/04.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/021/ref/13.jpg"
+    ],
+    "defined_in": "common.md"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/13",
+      "title": "1枚目",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/13",
+      "title": "2枚目",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/13",
+      "title": "3枚目",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/13",
+      "title": "4枚目",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/13",
+      "title": "5枚目",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/13",
+      "title": "6枚目",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/13",
+      "title": "7枚目",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/13",
+      "title": "8枚目",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/13",
+      "title": "9枚目",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/13",
+      "title": "10枚目",
+      "file": "10.md"
+    },
+    {
+      "page": 11,
+      "label": "11/13",
+      "title": "11枚目",
+      "file": "11.md"
+    },
+    {
+      "page": 12,
+      "label": "12/13",
+      "title": "12枚目",
+      "file": "12.md"
+    },
+    {
+      "page": 13,
+      "label": "13/13",
+      "title": "13枚目",
+      "file": "13.md"
+    }
+  ],
+  "wording_fallback": {
+    "賢者タイム": "断られたら「賢者モード」",
+    "精気": "断られたら「生気」",
+    "吸われてやる": "断られたら「何度でもそばにいてやる」"
+  }
+}
