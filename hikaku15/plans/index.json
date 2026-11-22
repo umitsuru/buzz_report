@@ -11,7 +11,17 @@
     "status": "プロンプト完成・画像未生成",
     "format": "A",
     "format_name": "3:4・1ページ3コマ",
-    "maker": "claude"
+    "maker": "claude",
+    "posted": {
+      "account": "やまつる",
+      "at": "2026-11-21T15:10:00+09:00",
+      "via": "Postiz",
+      "postiz_id": "cmwq01psu0g0gpf06swx55roh",
+      "text": "業界未経験の三十路主婦がメンズエステの電話受付バイトをやってみた",
+      "url": null,
+      "impressions": null,
+      "impressions_at": null
+    }
   },
   {
     "no": 2,
@@ -150,7 +160,17 @@
     "status": "プロンプト完成・画像未生成",
     "cover": "./010/ref/01.jpg",
     "source": "claude-buzz-text No.188（うみつる、332万表示）",
-    "maker": "claude"
+    "maker": "claude",
+    "posted": {
+      "account": "やまつる",
+      "at": "2026-11-22T13:20:00+09:00",
+      "via": "Postiz",
+      "postiz_id": "cmwrbq3dm069urx0674nnrp4z",
+      "text": "夫がコンドーム１年分に当選した。",
+      "url": null,
+      "impressions": null,
+      "impressions_at": null
+    }
   },
   {
     "no": 11,
@@ -181,7 +201,16 @@
     "format_name": "正方形1:1・1枚1人の「ヤバい会員」図鑑",
     "status": "プロンプト完成・画像未生成",
     "cover": "./012/ref/01.jpg",
-    "maker": "claude"
+    "maker": "claude",
+    "posted": {
+      "account": "うみつる",
+      "at": "2026-11-22T14:25:00+09:00",
+      "via": "Chrome（引用ポスト）",
+      "url": "https://x.com/umitsuru_fire/status/2124374852736045124",
+      "text": "結婚相談所でヤバい会員20選",
+      "impressions": null,
+      "impressions_at": null
+    }
   },
   {
     "no": 13,
@@ -228,7 +257,17 @@
     "format_name": "LINEのトーク画面・画像ごとに上下をトリミング・15枚",
     "status": "縮尺の指定を追加・画像を全部作り直し待ち（3:2で生成→トリミング）",
     "cover": "./015/ref/01.jpg",
-    "maker": "claude"
+    "maker": "claude",
+    "posted": {
+      "account": "うみつる",
+      "at": "2026-11-23T07:40:00+09:00",
+      "via": "Postiz",
+      "postiz_id": "cmwsf07dd0im4pk07ptisse6f",
+      "text": "不倫夫の誤爆LINE",
+      "url": null,
+      "impressions": null,
+      "impressions_at": null
+    }
   },
   {
     "no": 16,

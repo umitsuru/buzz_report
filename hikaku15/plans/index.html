@@ -67,12 +67,17 @@
   #lbx{top:8px;right:8px}#lbp{left:8px;top:50%}#lbn2{right:8px;top:50%}
   .mk{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;margin-right:4px;vertical-align:middle;color:#fff;white-space:nowrap}
   .mk.claude{background:#D97757}.mk.chatgpt{background:#10A37F}
+  .ptabs{display:flex;gap:8px;margin:0 0 12px}
+  .ptabs button{font:inherit;font-size:14px;font-weight:700;padding:8px 16px;border-radius:999px;border:1px solid #444;background:#1b1b1b;color:#ccc;cursor:pointer}
+  .ptabs button.on{background:#eee;color:#111;border-color:#eee}
+  .posted{display:inline-flex;flex-wrap:wrap;gap:4px 8px;align-items:center;font-size:12px;color:#ddd;background:#1f2a1f;border:1px solid #2f5a2f;border-radius:8px;padding:3px 8px;margin-top:4px}
+  .posted b{color:#7fe08a}.posted .imp{color:#ffd76a;font-weight:700}
   .backbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:4px 0 14px}
   .backbar button{font:inherit;font-size:14px;padding:8px 14px;border-radius:999px;border:1px solid #444;background:#1b1b1b;color:#eee;cursor:pointer}
   .backbar button.back{background:#eee;color:#111;border-color:#eee;font-weight:700}
   .backbar button:disabled{opacity:.35;cursor:default}
   .backbar .sp{flex:1}
-  body.v-detail #plans, body.v-detail .lead{display:none}
+  body.v-detail #plans, body.v-detail .lead, body.v-detail #ptabs{display:none}
   body.v-list #detail{display:none}
   .ed{font-size:11px;color:#aaa;margin-left:2px;white-space:nowrap}
   .mk.o{background:transparent;border:1px solid currentColor;font-weight:600;padding:0 6px}
@@ -109,6 +114,7 @@
 </header>
 <main class="wrap">
   <p class="lead" id="lead">ClaudeとChatGPTが作った漫画のプロンプトです。番号の横のマーク（<span class="mk claude">Claude</span><span class="mk chatgpt">ChatGPT</span>）で、どちらが作ったか分かります。番号で ChatGPT のボットに「投稿案No.1の3〜5枚目を作って」と伝えると、ボットがここのファイルを読んで生成します。</p>
+  <div class="ptabs" id="ptabs"><button data-tab="todo" class="on">未投稿</button><button data-tab="done">投稿済み</button></div>
   <div class="plans" id="plans"><p class="msg">読み込み中…</p></div>
   <div id="detail"></div>
 </main>
@@ -185,16 +191,26 @@ function histHTML(no){const list=histOf(no);if(!HIST)return '<p class="msg">履�
   const fmt=t=>{const d=new Date(t);return (d.getMonth()+1)+'/'+d.getDate()+' '+String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')};
   return '<ul class="hist">'+g.map(x=>`<li><time>${fmt(x.t)}</time>${x.who==='claude'?'<span class="mk claude">Claude</span>':'<span class="mk chatgpt">ChatGPT</span>'}<span>${x.img?'<span class="k">画像</span> ':''}${esc(x.msg)}${x.n>1?` <span class="k">ほか${x.n-1}件</span>`:''}</span></li>`).join('')+'</ul>'}
 
+// 投稿済み：index.json の posted（account, at, url, impressions, impressions_at）。表示回数はグロッキーが1日2回、投稿から48時間まで更新する
+let tab=(()=>{try{return sessionStorage.getItem('ptab')||'todo'}catch(e){return 'todo'}})();
+const fmtN=v=>v==null?'—':(v>=10000?(Math.round(v/1000)/10)+'万':Number(v).toLocaleString('ja-JP'));
+const fmtT=t=>{if(!t)return '';const d=new Date(t);return (d.getMonth()+1)+'/'+d.getDate()+' '+String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')};
+function postedHTML(p){const q=p.posted;if(!q)return '';
+  const link=q.url?` <a href="${esc(q.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation()">ポストを開く</a>`:'';
+  return `<span class="posted"><b>投稿済み</b>${esc(q.account||'')}・${fmtT(q.at)}<span class="imp">表示 ${fmtN(q.impressions)}</span>${q.impressions_at?`<span style="color:#999">（${fmtT(q.impressions_at)}時点）</span>`:''}${link}</span>`}
 function renderList(){
+  const done=plans.filter(p=>p.posted).length;
+  const tb=document.getElementById('ptabs');if(tb){tb.querySelector('[data-tab="todo"]').textContent=`未投稿（${plans.length-done}）`;tb.querySelector('[data-tab="done"]').textContent=`投稿済み（${done}）`;tb.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.tab===tab))}
   // 一覧では画像を調べない（開いたことのある投稿案だけ、おぼえている枚数を出す）
   setTimeout(()=>plans.forEach(p=>{const g=imgSaved(p),el=document.querySelector(`[data-gc="${p.no}"]`);if(el){if(!g){el.textContent='';return}const n=g.filter(Boolean).length;el.textContent='画像 '+n+'/'+p.pages;el.classList.toggle('full',n===p.pages)}}));
-  plansEl.innerHTML = plans.slice().sort((a,b)=>b.no-a.no).map(p=>`
+  const shown = plans.filter(p=>tab==='done'?!!p.posted:!p.posted).sort((a,b)=>tab==='done'?String(b.posted.at).localeCompare(String(a.posted.at)):b.no-a.no);
+  plansEl.innerHTML = shown.map(p=>`
     <button class="plan ${cur&&cur.no===p.no?'on':''}" data-no="${p.no}">
       ${cover(p)?`<img src="${esc(cover(p))}" alt="" loading="lazy">`:'<span></span>'}
       <span><b><span class="no">No.${p.no}</span>${makerBadge(p)}${esc(p.title)}</b> <span data-ed="${p.no}">${editorBadges(p.no)}</span>
       <small>形式${esc(p.format||'')}・${esc(p.gafu_id||p.style_name)}・${p.pages}枚・${esc(p.aspect_ratio)}・${esc(p.created)}</small>
-      <small>${esc(p.status||'')} <span class="pill" data-gc="${p.no}"></span></small></span>
-    </button>`).join('') || '<p class="msg">まだ投稿案がありません。</p>';
+      ${p.posted?postedHTML(p):`<small>${esc(p.status||'')} <span class="pill" data-gc="${p.no}"></span></small>`}</span>
+    </button>`).join('') || `<p class="msg">${tab==='done'?'投稿済みの投稿案はまだありません。':'未投稿の投稿案はありません。'}</p>`;
 }
 
 function command(from, to){
@@ -233,7 +249,7 @@ async function open(no,push){
   const st=styles[cur.gafu_id];
   detail.innerHTML=backBar()+`
   <section class="detail">
-    <div class="dh"><h2><span class="no">No.${cur.no}</span>${makerBadge(cur)}${esc(cur.title)}</h2>
+    <div class="dh"><h2><span class="no">No.${cur.no}</span>${makerBadge(cur)}${esc(cur.title)}</h2>${postedHTML(cur)}
       <span>画風 <b>${esc(cur.gafu_id||'')}</b> ${esc(cur.style_name)}</span><span>形式<b>${esc(cur.format||'')}</b>（${esc(cur.format_name||(cur.format==='B'?'正方形1枚絵':cur.format==='C'?'1人ずつの人物図鑑1枚絵':'3:4・3コマ'))}）</span><span><b>${esc(cur.aspect_ratio)}</b>・${cur.pages}枚</span><span>${esc(cur.status||'')}</span>
       <span><a href="https://github.com/umitsuru/buzz_report/tree/main/hikaku15/plans/${esc(cur.folder)}" target="_blank" rel="noopener noreferrer">GitHubで開く</a></span></div>
     ${cur.reference_note?`<p class="note">${esc(cur.reference_note)}</p>`:''}
@@ -322,6 +338,7 @@ document.addEventListener('keydown',e=>{
     start=null};
   lb.addEventListener('pointerup',up);lb.addEventListener('pointercancel',up);
 })();
+document.getElementById('ptabs').addEventListener('click',e=>{const b=e.target.closest('[data-tab]');if(!b)return;tab=b.dataset.tab;try{sessionStorage.setItem('ptab',tab)}catch(e){}renderList();window.scrollTo(0,0)});
 plansEl.addEventListener('click',e=>{const b=e.target.closest('.plan');if(b){window.__fromList=true;open(+b.dataset.no)}});
 detail.addEventListener('click',e=>{const b=e.target.closest('[data-nav]');if(!b||b.disabled)return;e.stopPropagation();
   if(b.dataset.nav==='list')showList();else open(+b.dataset.nav)},true);
