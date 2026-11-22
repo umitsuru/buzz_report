@@ -61,7 +61,7 @@
   .pill.full{background:#16351f;color:#7fd1a8}
   #lb{position:fixed;inset:0;background:#000;display:none;z-index:20;align-items:center;justify-content:center}
   #lb.open{display:flex}
-  #lb img{max-width:100vw;max-height:100vh;object-fit:contain}
+  #lb img{max-width:100vw;max-height:calc(100vh - 116px);object-fit:contain}
   #lb .n{position:fixed;top:10px;left:50%;transform:translateX(-50%);font-size:14px;background:rgba(40,40,40,.8);padding:2px 10px;border-radius:999px}
   #lb button{position:fixed;background:rgba(40,40,40,.75);color:#fff;border:0;border-radius:999px;width:44px;height:44px;font-size:22px;cursor:pointer}
   #lbx{top:8px;right:8px}#lbp{left:8px;top:50%}#lbn2{right:8px;top:50%}
@@ -84,14 +84,12 @@
   .hist .k{color:#999;font-size:11px;white-space:nowrap}
   #lb{touch-action:none;overflow:hidden}
   #lb img{transform-origin:0 0;will-change:transform;user-select:none;-webkit-user-drag:none}
-  #lbo{position:fixed;left:50%;bottom:12px;transform:translateX(-50%);font-size:13px;color:#fff;background:rgba(40,40,40,.85);padding:6px 14px;border-radius:999px;text-decoration:none;z-index:2}
-  #lbh{position:fixed;left:50%;top:44px;transform:translateX(-50%);font-size:12px;color:#bbb;pointer-events:none}
+  #lbh{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);font-size:12px;color:#888;pointer-events:none;white-space:nowrap}
   @media (max-width:640px){
     .gen{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
     .gen button{aspect-ratio:auto}
     .gen img{height:auto;object-fit:contain}
     #lbp,#lbn2{top:auto;bottom:10px}
-    #lbo{bottom:14px}
   }
   .ref img{width:120px;height:80px;object-fit:cover;border-radius:8px}
   .msg{color:#999;text-align:center;padding:60px 10px}
@@ -114,7 +112,7 @@
   <div class="plans" id="plans"><p class="msg">読み込み中…</p></div>
   <div id="detail"></div>
 </main>
-<div id="lb" aria-hidden="true"><span class="n" id="lbc"></span><span id="lbh">ダブルタップ・ピンチで拡大</span><a id="lbo" href="#" target="_blank" rel="noopener">画像だけを開く</a><button id="lbx" aria-label="閉じる">×</button><button id="lbp" aria-label="前へ">‹</button><img id="lbi" alt=""><button id="lbn2" aria-label="次へ">›</button></div>
+<div id="lb" aria-hidden="true"><span class="n" id="lbc"></span><span id="lbh">ダブルタップ・ピンチで拡大</span><button id="lbx" aria-label="閉じる">×</button><button id="lbp" aria-label="前へ">‹</button><img id="lbi" alt=""><button id="lbn2" aria-label="次へ">›</button></div>
 
 <script>
 {
@@ -148,7 +146,7 @@ async function genImages(p,force){
   return imgCache[p.no]=r;
 }
 let lbSet=[],lbI=0;
-const lbShow=()=>{const im=document.getElementById('lbi');im.src=lbSet[lbI];document.getElementById('lbo').href=lbSet[lbI];document.getElementById('lbc').textContent=(lbI+1)+' / '+lbSet.length;if(window.zReset)zReset()};
+const lbShow=()=>{const im=document.getElementById('lbi');im.src=lbSet[lbI];document.getElementById('lbc').textContent=(lbI+1)+' / '+lbSet.length;if(window.zReset)zReset()};
 function lbOpen(set,i){lbSet=set;lbI=i;lbShow();document.getElementById('lb').classList.add('open')}
 function lbClose(){document.getElementById('lb').classList.remove('open');document.getElementById('lbi').src=''}
 // だれが作った投稿案か（index.json の maker。書かれていなければ ChatGPT のボットが作ったものとみなす）
