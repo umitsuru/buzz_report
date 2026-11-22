@@ -1,0 +1,99 @@
+{
+  "plan_no": 18,
+  "folder": "018",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/018/",
+  "project": "日常がひっくり返る！シュールな2コマ漫画10本",
+  "created": "2026-11-22",
+  "made_by": "ChatGPT",
+  "format": "2koma",
+  "format_name": "縦長3:4・タイトル帯＋縦2コマ・1枚1本・全10枚",
+  "image_count": 10,
+  "aspect_ratio": "3:4",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "bot_instruction": "common.mdを読んだだけでは画像生成を開始しない。ユーザーが『投稿案No.18の1〜10枚目を作って』などの指定をした場合だけ、01.mdから10.mdの指定範囲を順番に読み、縦長3:4の上下2コマ漫画を1ページにつき1枚ずつ制作。上にタイトル帯、右上n/10。各話は独立、上コマが前振り、下コマが意外なオチ。人物の輪郭はシンプルでフラットカラー、濃い枠線・読みやすい吹き出し。正しい文字とコマ数、指定の小物を厳守し、参考No.72の具体的なネタやキャラを複製しない。画像の保存が許可されGitHub書込可能ならimages/NN.jpgに対応させ、保存結果を確認してから報告。",
+  "fiction_notice": "登場する人物、会社、アプリ、事件・会見は全て架空のシュールコメディ。参考投稿No.72の具体的な人物・文章・場面は使用せず、一般的な2コマの形式のみ参考とする。",
+  "series_note": "先ほどユーザーが了承した『家族みたいな会社』から『褒められて伸びる新人』までの10本をそのまま収録。No.17は他の2コマ漫画が既存登録済みのため上書きせず、独立したNo.18として収録する。画像は未生成。",
+  "reference_posts": [
+    {
+      "no": 72,
+      "folder": "hikaku15/posts/20261122_2124072831478866011",
+      "url": "https://x.com/tomo_yuki2525/status/2124072831478866011",
+      "title": "お気に入りの2コマ漫画20本",
+      "author": "@tomo_yuki2525",
+      "images_collected": 20,
+      "used_for": "短いタイトル帯と上下2コマの前振り・予想外のオチという汎用形式だけを参照。具体的なネタ・登場人物・画像は複製しない。"
+    }
+  ],
+  "style": {
+    "gafu_id": "",
+    "name": "日常系のシンプルなシュール漫画・くっきりしたペン線・淡いフラットカラー（独自画風）",
+    "ref_post_no": 72,
+    "reference_role": "2コマ漫画の構成のみ参考。今回の人物造形・色・レイアウト詳細は独自指定。",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261122_2124072831478866011/img/01.jpg",
+    "defined_in": "common.md",
+    "visual_verification": "参考No.72の20枚は確認済み。元投稿の具体的な場面・台詞の再利用はしない。"
+  },
+  "common_file": "common.md",
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/10",
+      "title": "家族みたいな会社",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/10",
+      "title": "絶対に外さない占い師",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/10",
+      "title": "優秀すぎるAI秘書",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/10",
+      "title": "キャッシュレス時代の強盗",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/10",
+      "title": "猫語翻訳アプリ",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/10",
+      "title": "タイムマシンで説教",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/10",
+      "title": "上司の本音が分かる翻訳機",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/10",
+      "title": "先回りしすぎる謝罪会見",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/10",
+      "title": "一人になりたい男",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/10",
+      "title": "褒められて伸びる新人",
+      "file": "10.md"
+    }
+  ]
+}
