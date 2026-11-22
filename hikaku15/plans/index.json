@@ -144,16 +144,16 @@
   {
     "no": 11,
     "folder": "011",
-    "title": "歯医者でヤバい患者10選",
+    "title": "病院でヤバい入院患者10選",
     "created": "2026-11-22",
-    "gafu_id": "No.64",
-    "style_name": "すっきりした漫画イラスト＋極太の縦書き（参考投稿No.64）",
+    "gafu_id": "No.6",
+    "style_name": "写実寄りの青年漫画・ペン線と網かけ（参考投稿No.6）",
     "pages": 10,
     "aspect_ratio": "1:1",
     "format": "C",
-    "format_name": "正方形1:1・1枚1人の「ヤバい客」図鑑",
+    "format_name": "正方形1:1・1枚1人の「ヤバい入院患者」図鑑",
     "status": "プロンプト完成・画像未生成",
-    "cover": "./011/ref/01.jpg"
+    "cover": "./011/ref/style06_01.jpg"
   },
   {
     "no": 12,
