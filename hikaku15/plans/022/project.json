@@ -1,0 +1,84 @@
+{
+  "plan_no": 22,
+  "folder": "022",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/022/",
+  "project": "インターホンの留守録に映っていた変な人10選",
+  "created": "2026-11-23",
+  "made_by": "Claude",
+  "format": "doorbell",
+  "format_name": "横長3:2・インターホンの録画画面＋下の解説の帯・10枚",
+  "image_count": 10,
+  "aspect_ratio": "3:2",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像（S-10）で画風を確認したあと、01.md から10.md まで順に1枚ずつ、横長3:2で生成する。",
+  "fiction_notice": "登場人物はすべて架空の成人。実在の人物・団体・会社とは関係ない。社名やロゴは描かない。",
+  "reference_posts": [],
+  "style": {
+    "gafu_id": "S-10",
+    "name": "防犯カメラの映像（オリジナル画風S-10）を玄関のインターホンカメラに応用",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/022/ref/S-10.jpg",
+    "defined_in": "common.md"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/10",
+      "title": "受信料の集金っぽい人",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/10",
+      "title": "宗教の勧誘の2人組",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/10",
+      "title": "屋根の点検業者",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/10",
+      "title": "置き配をつまみ食いする配達員",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/10",
+      "title": "置き配を持っていこうとした近所の人",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/10",
+      "title": "毎週ピンポンダッシュしていく人",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/10",
+      "title": "2年前に別れた元カレ",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/10",
+      "title": "合鍵を持っていない義母",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/10",
+      "title": "鍵をなくして泣く夫",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/10",
+      "title": "インターホンを鏡にする隣の奥さん",
+      "file": "10.md"
+    }
+  ]
+}
