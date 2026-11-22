@@ -10,7 +10,8 @@
   "image_count": 10,
   "aspect_ratio": "3:4",
   "initial_mode": "wait_for_explicit_generate_command",
-  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像で画風と形式を確認したあと、01.md から10.md まで順に1枚ずつ、縦長3:4で生成する。",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像で画風と形式を確認したあと、01.md から10.md まで順に1枚ずつ、縦長3:4で生成する。絵は上手に描きすぎず、素人っぽいちょっと下手で雑な画風にする。",
+  "history": "2026/11/22作成。同日、絵が上手すぎたため、素人っぽいちょっと下手な画風に変更して作り直し",
   "fiction_notice": "登場人物はすべて架空。実在の人物・企業・キャラクターとは関係ない。",
   "reference_posts": [
     {
@@ -25,7 +26,7 @@
   "style": {
     "gafu_id": "No.72",
     "ref_post_no": 72,
-    "name": "ゆるい線とくすんだパステルのフラットな2コマ漫画（参考投稿No.72）",
+    "name": "素人っぽいちょっと下手でゆるい2コマ漫画（参考投稿No.72）",
     "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/017/ref/01.jpg",
     "reference_images": [
       "https://umitsuru.github.io/buzz_report/hikaku15/plans/017/ref/01.jpg",
