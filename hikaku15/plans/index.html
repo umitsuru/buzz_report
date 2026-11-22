@@ -171,7 +171,8 @@ async function loadHist(){
   return HIST=h;
 }
 function histOf(no){return (HIST||[]).filter(x=>x.nos.includes(no))}
-function editorBadges(no){const l=histOf(no);if(!l.length)return '';const t0=Math.min(...l.map(x=>+new Date(x.t)));const ed=new Set(l.filter(x=>!x.img&&(+new Date(x.t)-t0)>15*60*1000).map(x=>x.who));if(!ed.size)return '';
+// 作った人と違うAIが修正したときだけ「修正」を出す
+function editorBadges(no){const l=histOf(no);if(!l.length)return '';const p=plans.find(x=>x.no===no)||{};const mk=String(p.maker||'chatgpt');const t0=Math.min(...l.map(x=>+new Date(x.t)));const ed=new Set(l.filter(x=>!x.img&&(+new Date(x.t)-t0)>15*60*1000&&!mk.includes(x.who)).map(x=>x.who));if(!ed.size)return '';
   return '<span class="ed">修正</span>'+(ed.has('claude')?'<span class="mk o claude">Claude</span>':'')+(ed.has('chatgpt')?'<span class="mk o chatgpt">ChatGPT</span>':'')}
 function histHTML(no){const list=histOf(no);if(!HIST)return '<p class="msg">履歴を読み込み中…</p>';if(!list.length)return '<p class="msg">記録はまだありません。</p>';
   // 同じ人が同じ時間帯（10分以内）に続けた保存は1行にまとめる
