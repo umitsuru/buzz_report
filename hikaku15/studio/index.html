@@ -74,8 +74,9 @@
   <div class="wrap jump"><a href="#originals">オリジナル画風（S-01〜）</a>・<a href="#posts">集めた投稿の画風</a></div>
 </header>
 <main class="wrap">
-  <h2 id="originals">オリジナル画風（S-01〜S-15）</h2>
-  <p class="lead">Claudeが考えた、まだXで見かけない画風です。「見本のプロンプトをコピー」をChatGPTに貼ると、同じ場面（回転寿司のタッチパネル）で見本を1枚作れます。画像をタップすると大きく見られます。使うときは「画風指定をコピー」か、Claudeに「画風は S-02 で」と番号で伝えてください。</p>
+  <h2 id="originals">オリジナル画風（S-01〜S-25）</h2>
+  <p class="lead">ClaudeとChatGPTによるオリジナル画風案です。<b>S-16〜S-25が新規追加の10種類</b>。「見本のプロンプト」で共通の回転寿司シーンを制作でき、「画風指定」で作品に適用できます。新規10種類には画像生成・GitHub保存までを伝える「Botへの指示」も用意しました。実際の拡散を保証するものではありません。</p>
+  <div class="bar"><button id="copyNew10Bot" type="button">S-16〜S-25の見本10枚を作るBot指示をコピー</button><a href="./originals_bot_instructions.md" target="_blank" rel="noopener noreferrer">Bot用の作業手順書</a></div>
   <div class="grid" id="orig"><p class="msg">読み込み中…</p></div>
 
   <h2 id="posts">集めた投稿の画風</h2>
@@ -154,11 +155,12 @@ function renderOrig(){
   $('orig').innerHTML=origs.map(s=>`
     <article class="card orig" id="${esc(s.id)}">
       ${s.has?`<button class="cover" data-oimg="${esc(s.id)}" aria-label="${esc(s.id)}の見本を拡大"><img src="./${esc(s.image)}" alt="" loading="lazy"><span class="badge">${esc(s.id)}</span></button>`
-        :`<div class="cover ph"><span class="badge">${esc(s.id)}</span>見本画像はまだありません<br>（ChatGPTで作ってClaudeへ）</div>`}
+        :`<div class="cover ph"><span class="badge">${esc(s.id)}</span>見本画像は生成待ち<br>（プロンプトから作成できます）</div>`}
       <div class="body"><b>${esc(s.name)}</b><span class="hook">${esc(s.hook)}</span>
         <small>${esc(s.why)}</small>
+        ${s.use_cases?`<small>向いている投稿：${esc(s.use_cases)}</small>`:""}
         <p class="spec">${esc(s.spec)}</p>
-        <div class="acts"><button data-osp="${esc(s.id)}">見本のプロンプトをコピー</button><button class="sub" data-ocmd="${esc(s.id)}">画風指定をコピー</button><button class="sub" data-more="${esc(s.id)}">全文</button></div>
+        <div class="acts"><button data-osp="${esc(s.id)}">見本のプロンプトをコピー</button><button class="sub" data-ocmd="${esc(s.id)}">画風指定をコピー</button>${s.bot_prompt?`<button class="sub" data-obot="${esc(s.id)}">Botへの指示をコピー</button>`:""}<button class="sub" data-more="${esc(s.id)}">全文</button></div>
       </div></article>`).join('');
 }
 
@@ -170,11 +172,16 @@ document.body.addEventListener('click',e=>{
   const O=id=>origs.find(s=>s.id===id);
   if(b.dataset.oimg)return openLb(['./'+O(b.dataset.oimg).image],0);
   if(b.dataset.osp)return copy(O(b.dataset.osp).sample_prompt,b,'見本のプロンプトをコピー');
+  if(b.dataset.obot){const z=O(b.dataset.obot);return copy(z.bot_prompt,b,'Botへの指示をコピー')}
   if(b.dataset.ocmd){const s=O(b.dataset.ocmd);return copy(`【画風】オリジナル画風 ${s.id}「${s.name}」\n${s.spec}`,b,'画風指定をコピー')}
   if(b.dataset.more){const c=b.closest('.card');c.classList.toggle('open');b.textContent=c.classList.contains('open')?'閉じる':'全文';return}
   if(b.dataset.sort){sort=b.dataset.sort;document.querySelectorAll('[data-sort]').forEach(x=>x.classList.toggle('on',x===b));return renderPosts()}
   if(b.id==='own'){ownOnly=!ownOnly;b.classList.toggle('on',ownOnly);return renderPosts()}
 });
+$('copyNew10Bot').onclick=()=>{
+  const prompt='【ChatGPT画像生成Botへの指示｜S-16〜S-25見本10枚】\n対象：umitsuru/buzz_report の hikaku15/studio/original_styles.json\n1. S-16〜S-25を順番に読み、それぞれの sample_prompt に沿って正方形1:1の見本画像を1枚ずつ、合計10枚生成する。各画風の spec を厳守し、全画像の場面・セリフを共通にする。\n2. 画像は各IDに対応する originals/S-16.jpg〜S-25.jpg として保存する。1つの画像に10画風を並べない。S-01〜S-15の画像や画風定義は変更しない。\n3. GitHubへの書込みが利用できる場合だけコミットし、URLと成否を報告する。書込みが使えない場合は保存したと主張しない。\n4. 詳細手順：https://github.com/umitsuru/buzz_report/blob/main/hikaku15/studio/originals_bot_instructions.md';
+  return copy(prompt,$('copyNew10Bot'),'S-16〜S-25の見本10枚を作るBot指示をコピー');
+};
 $('q').addEventListener('input',renderPosts);
 
 async function folders(){
@@ -187,7 +194,7 @@ async function folders(){
 (async()=>{
   try{const s=await (await fetch('./styles.json',{cache:'default'})).json();(s.styles||[]).forEach(x=>gafu[x.folder]=x.id)}catch(e){}
   try{
-    const o=await (await fetch('./original_styles.json',{cache:'default'})).json();origs=o.styles||[];
+    const o=await (await fetch('./original_styles.json',{cache:'no-store'})).json();origs=o.styles||[];
     await Promise.all(origs.map(async s=>{try{const r=await fetch('./'+s.image,{method:'HEAD'});s.has=r.ok}catch(e){s.has=false}}));
     renderOrig();
   }catch(e){$('orig').innerHTML='<p class="msg">オリジナル画風を読み込めませんでした。</p>'}
