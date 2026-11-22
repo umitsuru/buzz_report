@@ -2,98 +2,158 @@
   "plan_no": 18,
   "folder": "018",
   "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/018/",
-  "project": "日常がひっくり返る！シュールな2コマ漫画10本",
+  "project": "理想が高い30歳が、結婚相談所で現実を知った話",
   "created": "2026-11-22",
-  "made_by": "ChatGPT",
-  "format": "2koma",
-  "format_name": "縦長3:4・タイトル帯＋縦2コマ・1枚1本・全10枚",
-  "image_count": 10,
-  "aspect_ratio": "3:4",
+  "made_by": "Claude",
+  "format": "story2",
+  "format_name": "縦長2:3・1枚2コマのブログ漫画・20枚",
+  "image_count": 20,
+  "aspect_ratio": "2:3",
   "initial_mode": "wait_for_explicit_generate_command",
-  "bot_instruction": "common.mdを読んだだけでは画像生成を開始しない。ユーザーが『投稿案No.18の1〜10枚目を作って』などの指定をした場合だけ、01.mdから10.mdの指定範囲を順番に読み、縦長3:4の上下2コマ漫画を1ページにつき1枚ずつ制作。上にタイトル帯、右上n/10。各話は独立、上コマが前振り、下コマが意外なオチ。人物の輪郭はシンプルでフラットカラー、濃い枠線・読みやすい吹き出し。正しい文字とコマ数、指定の小物を厳守し、参考No.72の具体的なネタやキャラを複製しない。画像の保存が許可されGitHub書込可能ならimages/NN.jpgに対応させ、保存結果を確認してから報告。",
-  "fiction_notice": "登場する人物、会社、アプリ、事件・会見は全て架空のシュールコメディ。参考投稿No.72の具体的な人物・文章・場面は使用せず、一般的な2コマの形式のみ参考とする。",
-  "series_note": "先ほどユーザーが了承した『家族みたいな会社』から『褒められて伸びる新人』までの10本をそのまま収録。No.17は他の2コマ漫画が既存登録済みのため上書きせず、独立したNo.18として収録する。画像は未生成。",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像で画風を確認したあと、01.md から20.md まで順に1枚ずつ、縦長2:3・上下2コマで生成する。",
+  "fiction_notice": "登場人物はすべて架空の成人。実在の人物・相談所とは関係ない。",
   "reference_posts": [
     {
-      "no": 72,
-      "folder": "hikaku15/posts/20261122_2124072831478866011",
-      "url": "https://x.com/tomo_yuki2525/status/2124072831478866011",
-      "title": "お気に入りの2コマ漫画20本",
-      "author": "@tomo_yuki2525",
-      "images_collected": 20,
-      "used_for": "短いタイトル帯と上下2コマの前振り・予想外のオチという汎用形式だけを参照。具体的なネタ・登場人物・画像は複製しない。"
+      "no": 71,
+      "folder": "hikaku15/posts/20261122_2124412719424291305",
+      "url": "https://x.com/i/status/2124412719424291305",
+      "title": "優しくて大人しいと思っていた娘がお友達のことをつねっていました",
+      "views": 556590,
+      "used_for": "画風と展開（面談の席で、落ち着いた相手が事実を出し、主人公が否定→逆ギレ→最後のひと言で現実を知る）"
     }
   ],
   "style": {
-    "gafu_id": "",
-    "name": "日常系のシンプルなシュール漫画・くっきりしたペン線・淡いフラットカラー（独自画風）",
-    "ref_post_no": 72,
-    "reference_role": "2コマ漫画の構成のみ参考。今回の人物造形・色・レイアウト詳細は独自指定。",
-    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261122_2124072831478866011/img/01.jpg",
-    "defined_in": "common.md",
-    "visual_verification": "参考No.72の20枚は確認済み。元投稿の具体的な場面・台詞の再利用はしない。"
+    "gafu_id": "No.71",
+    "ref_post_no": 71,
+    "name": "ブログ漫画風（太い線・演出背景・縦書きの吹き出し、参考投稿No.71）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/018/ref/01.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/018/ref/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/018/ref/07.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/018/ref/11.jpg"
+    ],
+    "defined_in": "common.md"
   },
-  "common_file": "common.md",
   "pages": [
     {
       "page": 1,
-      "label": "1/10",
-      "title": "家族みたいな会社",
+      "label": "1/20",
+      "title": "1枚目",
       "file": "01.md"
     },
     {
       "page": 2,
-      "label": "2/10",
-      "title": "絶対に外さない占い師",
+      "label": "2/20",
+      "title": "2枚目",
       "file": "02.md"
     },
     {
       "page": 3,
-      "label": "3/10",
-      "title": "優秀すぎるAI秘書",
+      "label": "3/20",
+      "title": "3枚目",
       "file": "03.md"
     },
     {
       "page": 4,
-      "label": "4/10",
-      "title": "キャッシュレス時代の強盗",
+      "label": "4/20",
+      "title": "4枚目",
       "file": "04.md"
     },
     {
       "page": 5,
-      "label": "5/10",
-      "title": "猫語翻訳アプリ",
+      "label": "5/20",
+      "title": "5枚目",
       "file": "05.md"
     },
     {
       "page": 6,
-      "label": "6/10",
-      "title": "タイムマシンで説教",
+      "label": "6/20",
+      "title": "6枚目",
       "file": "06.md"
     },
     {
       "page": 7,
-      "label": "7/10",
-      "title": "上司の本音が分かる翻訳機",
+      "label": "7/20",
+      "title": "7枚目",
       "file": "07.md"
     },
     {
       "page": 8,
-      "label": "8/10",
-      "title": "先回りしすぎる謝罪会見",
+      "label": "8/20",
+      "title": "8枚目",
       "file": "08.md"
     },
     {
       "page": 9,
-      "label": "9/10",
-      "title": "一人になりたい男",
+      "label": "9/20",
+      "title": "9枚目",
       "file": "09.md"
     },
     {
       "page": 10,
-      "label": "10/10",
-      "title": "褒められて伸びる新人",
+      "label": "10/20",
+      "title": "10枚目",
       "file": "10.md"
+    },
+    {
+      "page": 11,
+      "label": "11/20",
+      "title": "11枚目",
+      "file": "11.md"
+    },
+    {
+      "page": 12,
+      "label": "12/20",
+      "title": "12枚目",
+      "file": "12.md"
+    },
+    {
+      "page": 13,
+      "label": "13/20",
+      "title": "13枚目",
+      "file": "13.md"
+    },
+    {
+      "page": 14,
+      "label": "14/20",
+      "title": "14枚目",
+      "file": "14.md"
+    },
+    {
+      "page": 15,
+      "label": "15/20",
+      "title": "15枚目",
+      "file": "15.md"
+    },
+    {
+      "page": 16,
+      "label": "16/20",
+      "title": "16枚目",
+      "file": "16.md"
+    },
+    {
+      "page": 17,
+      "label": "17/20",
+      "title": "17枚目",
+      "file": "17.md"
+    },
+    {
+      "page": 18,
+      "label": "18/20",
+      "title": "18枚目",
+      "file": "18.md"
+    },
+    {
+      "page": 19,
+      "label": "19/20",
+      "title": "19枚目",
+      "file": "19.md"
+    },
+    {
+      "page": 20,
+      "label": "20/20",
+      "title": "20枚目",
+      "file": "20.md"
     }
   ]
 }
