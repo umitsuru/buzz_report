@@ -1,0 +1,132 @@
+{
+  "plan_no": 15,
+  "folder": "015",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/015/",
+  "project": "不倫夫が、妻にLINEを誤爆した",
+  "created": "2026-11-22",
+  "made_by": "Claude",
+  "format": "LINE",
+  "format_name": "横長3:2・LINE風トーク画面の切り抜き・15枚",
+  "image_count": 15,
+  "aspect_ratio": "3:2",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像で形式を確認したあと、01.md から15.md まで順に1枚ずつ、横長3:2で生成する。",
+  "fiction_notice": "登場人物はすべて架空の成人。実在の人物・店・ホテルとは関係ない創作のやりとり。",
+  "reference_posts": [
+    {
+      "no": 60,
+      "folder": "hikaku15/posts/20261122_2124099470648602642",
+      "url": "https://x.com/i/status/2124099470648602642",
+      "title": "ドラレコ見てみるね←降参ポイントw（浮気男と彼女のLINE）",
+      "views": 3995505,
+      "used_for": "形式のみ（LINE風のトーク画面を横長に切り抜いた画像の連作、既読・時刻・応答なし）"
+    }
+  ],
+  "style": {
+    "gafu_id": "No.60",
+    "ref_post_no": 60,
+    "name": "LINE風トーク画面の切り抜き（参考投稿No.60の形式）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/015/ref/01.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/015/ref/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/015/ref/10.jpg"
+    ],
+    "defined_in": "common.md"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/15",
+      "title": "1枚目",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/15",
+      "title": "2枚目",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/15",
+      "title": "3枚目",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/15",
+      "title": "4枚目",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/15",
+      "title": "5枚目",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/15",
+      "title": "6枚目",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/15",
+      "title": "7枚目",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/15",
+      "title": "8枚目",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/15",
+      "title": "9枚目",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/15",
+      "title": "10枚目",
+      "file": "10.md"
+    },
+    {
+      "page": 11,
+      "label": "11/15",
+      "title": "11枚目",
+      "file": "11.md"
+    },
+    {
+      "page": 12,
+      "label": "12/15",
+      "title": "12枚目",
+      "file": "12.md"
+    },
+    {
+      "page": 13,
+      "label": "13/15",
+      "title": "13枚目",
+      "file": "13.md"
+    },
+    {
+      "page": 14,
+      "label": "14/15",
+      "title": "14枚目",
+      "file": "14.md"
+    },
+    {
+      "page": 15,
+      "label": "15/15",
+      "title": "15枚目",
+      "file": "15.md"
+    }
+  ],
+  "wording_fallback": {
+    "ラブホ": "断られたら「ホテル」",
+    "ゴム": "断られたら「何買ったの？笑」だけにする"
+  }
+}

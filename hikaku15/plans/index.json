@@ -183,5 +183,47 @@
     "status": "プロンプト完成・画像未生成",
     "cover": "../posts/20261122_2124246479783309638/img/01.jpg",
     "reference_role": "composition"
+  },
+  {
+    "no": 14,
+    "folder": "014",
+    "title": "不倫夫の位置情報を、妻が実況した",
+    "created": "2026-11-22",
+    "gafu_id": "No.60",
+    "style_name": "LINE風トーク画面の切り抜き（参考投稿No.60）",
+    "pages": 15,
+    "aspect_ratio": "3:2",
+    "format": "LINE",
+    "format_name": "横長3:2・LINE風トーク画面・15枚",
+    "status": "プロンプト完成・画像未生成",
+    "cover": "./014/ref/01.jpg"
+  },
+  {
+    "no": 15,
+    "folder": "015",
+    "title": "不倫夫が、妻にLINEを誤爆した",
+    "created": "2026-11-22",
+    "gafu_id": "No.60",
+    "style_name": "LINE風トーク画面の切り抜き（参考投稿No.60）",
+    "pages": 15,
+    "aspect_ratio": "3:2",
+    "format": "LINE",
+    "format_name": "横長3:2・LINE風トーク画面・15枚",
+    "status": "プロンプト完成・画像未生成",
+    "cover": "./015/ref/01.jpg"
+  },
+  {
+    "no": 16,
+    "folder": "016",
+    "title": "夫が「今日、抜いてくる」とLINEしてきた",
+    "created": "2026-11-22",
+    "gafu_id": "No.60",
+    "style_name": "LINE風トーク画面の切り抜き（参考投稿No.60）",
+    "pages": 15,
+    "aspect_ratio": "3:2",
+    "format": "LINE",
+    "format_name": "横長3:2・LINE風トーク画面・15枚",
+    "status": "プロンプト完成・画像未生成",
+    "cover": "./016/ref/01.jpg"
   }
 ]
