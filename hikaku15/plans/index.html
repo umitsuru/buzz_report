@@ -67,6 +67,13 @@
   #lbx{top:8px;right:8px}#lbp{left:8px;top:50%}#lbn2{right:8px;top:50%}
   .mk{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;margin-right:4px;vertical-align:middle;color:#fff;white-space:nowrap}
   .mk.claude{background:#D97757}.mk.chatgpt{background:#10A37F}
+  .backbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:4px 0 14px}
+  .backbar button{font:inherit;font-size:14px;padding:8px 14px;border-radius:999px;border:1px solid #444;background:#1b1b1b;color:#eee;cursor:pointer}
+  .backbar button.back{background:#eee;color:#111;border-color:#eee;font-weight:700}
+  .backbar button:disabled{opacity:.35;cursor:default}
+  .backbar .sp{flex:1}
+  body.v-detail #plans, body.v-detail .lead{display:none}
+  body.v-list #detail{display:none}
   .ed{font-size:11px;color:#aaa;margin-left:2px;white-space:nowrap}
   .mk.o{background:transparent;border:1px solid currentColor;font-weight:600;padding:0 6px}
   .mk.o.claude{color:#E8916F}.mk.o.chatgpt{color:#2BC39A}
@@ -91,7 +98,7 @@
   @media(max-width:600px){.ch{flex-wrap:wrap}.cp{width:100%}}
 </style>
 </head>
-<body>
+<body class="v-list">
 <header>
   <div class="wrap top">
     <h1>比較シリーズ データベース</h1>
@@ -103,7 +110,7 @@
   </div>
 </header>
 <main class="wrap">
-  <p class="lead">ClaudeとChatGPTが作った漫画のプロンプトです。番号の横のマーク（<span class="mk claude">Claude</span><span class="mk chatgpt">ChatGPT</span>）で、どちらが作ったか分かります。番号で ChatGPT のボットに「投稿案No.1の3〜5枚目を作って」と伝えると、ボットがここのファイルを読んで生成します。</p>
+  <p class="lead" id="lead">ClaudeとChatGPTが作った漫画のプロンプトです。番号の横のマーク（<span class="mk claude">Claude</span><span class="mk chatgpt">ChatGPT</span>）で、どちらが作ったか分かります。番号で ChatGPT のボットに「投稿案No.1の3〜5枚目を作って」と伝えると、ボットがここのファイルを読んで生成します。</p>
   <div class="plans" id="plans"><p class="msg">読み込み中…</p></div>
   <div id="detail"></div>
 </main>
@@ -208,9 +215,17 @@ ${p.reference_role==='composition'?'構成の参考画像（画風は共通設�
 ${cover(p)?new URL(cover(p),BASE).href:(p.reference_note||'（画風カタログを参照）')}`;
 }
 
-async function open(no){
+let listScroll=0;
+function backBar(){const order=plans.slice().sort((a,b)=>b.no-a.no);const i=order.findIndex(p=>p.no===cur.no);const newer=order[i-1],older=order[i+1];
+  return `<div class="backbar"><button class="back" data-nav="list">← 投稿案の一覧に戻る</button><span class="sp"></span>
+  <button data-nav="${newer?newer.no:''}" ${newer?'':'disabled'}>‹ No.${newer?newer.no:''}</button><button data-nav="${older?older.no:''}" ${older?'':'disabled'}>No.${older?older.no:''} ›</button></div>`}
+function showList(push){document.body.classList.remove('v-detail');document.body.classList.add('v-list');cur=null;renderList();
+  if(push!==false&&location.hash)history.pushState(null,'',location.pathname);window.scrollTo(0,listScroll)}
+async function open(no,push){
   cur = plans.find(p=>p.no===no); if(!cur) return;
-  renderList();
+  if(document.body.classList.contains('v-list'))listScroll=window.scrollY;
+  document.body.classList.remove('v-list');document.body.classList.add('v-detail');window.scrollTo(0,0);
+  if(push!==false&&location.hash!=='#plan-'+no)history.pushState({plan:no},'','#plan-'+no);
   detail.innerHTML='<p class="msg">読み込み中…</p>';
   const base='./'+cur.folder+'/';
   let proj={};try{proj=await getJSON(base+'project.json')}catch(e){}
@@ -218,7 +233,7 @@ async function open(no){
   files = await Promise.all(names.map(async n=>{try{return {n,text:await getText(base+n+'.md')}}catch(e){return {n,text:'（読み込めませんでした）'}}}));
   const opts=Array.from({length:cur.pages},(_,i)=>`<option value="${i+1}">${i+1}</option>`).join('');
   const st=styles[cur.gafu_id];
-  detail.innerHTML=`
+  detail.innerHTML=backBar()+`
   <section class="detail">
     <div class="dh"><h2><span class="no">No.${cur.no}</span>${makerBadge(cur)}${esc(cur.title)}</h2>
       <span>画風 <b>${esc(cur.gafu_id||'')}</b> ${esc(cur.style_name)}</span><span>形式<b>${esc(cur.format||'')}</b>（${esc(cur.format_name||(cur.format==='B'?'正方形1枚絵':cur.format==='C'?'1人ずつの人物図鑑1枚絵':'3:4・3コマ'))}）</span><span><b>${esc(cur.aspect_ratio)}</b>・${cur.pages}枚</span><span>${esc(cur.status||'')}</span>
@@ -266,8 +281,8 @@ async function open(no){
     document.getElementById('gen').onclick=e=>{const b=e.target.closest('[data-gi]');if(!b)return;const list=g.filter(Boolean);lbOpen(list,list.indexOf(g[+b.dataset.gi]))};
   });
   showGen(false);
+  detail.insertAdjacentHTML('beforeend',backBar());
   document.getElementById('grecheck').onclick=()=>{document.getElementById('gcount').textContent='確認中…';showGen(true)};
-  history.replaceState(null,'','#plan-'+cur.no);
 }
 
 document.getElementById('lbx').onclick=lbClose;
@@ -309,7 +324,10 @@ document.addEventListener('keydown',e=>{
     start=null};
   lb.addEventListener('pointerup',up);lb.addEventListener('pointercancel',up);
 })();
-plansEl.addEventListener('click',e=>{const b=e.target.closest('.plan');if(b)open(+b.dataset.no)});
+plansEl.addEventListener('click',e=>{const b=e.target.closest('.plan');if(b){window.__fromList=true;open(+b.dataset.no)}});
+detail.addEventListener('click',e=>{const b=e.target.closest('[data-nav]');if(!b||b.disabled)return;e.stopPropagation();
+  if(b.dataset.nav==='list')showList();else open(+b.dataset.nav)},true);
+window.addEventListener('popstate',()=>{const m=location.hash.match(/plan-(\d+)/);if(m)open(+m[1],false);else showList(false)});
 detail.addEventListener('click',async e=>{
   const b=e.target.closest('button'); if(!b||!b.dataset.n) return;
   if(b.classList.contains('more')){const c=b.closest('.card');c.classList.toggle('open');b.textContent=c.classList.contains('open')?'折りたたむ':'全文を表示';return}
@@ -323,8 +341,7 @@ detail.addEventListener('click',async e=>{
     renderList();
     loadHist().then(()=>{document.querySelectorAll('[data-ed]').forEach(el=>el.innerHTML=editorBadges(+el.dataset.ed));const h=document.getElementById('hist');if(h&&cur)h.innerHTML=histHTML(cur.no)});
     const m=location.hash.match(/plan-(\d+)/);
-    const first = m ? +m[1] : (plans.length ? Math.max(...plans.map(p=>p.no)) : null);
-    if(first) open(first);
+    if(m) open(+m[1],false); else showList(false);
   }catch(e){plansEl.innerHTML='<p class="msg">投稿案を読み込めませんでした。</p>'}
 })();
 }
