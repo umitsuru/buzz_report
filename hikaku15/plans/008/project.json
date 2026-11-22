@@ -2,15 +2,15 @@
  "plan_no": 8,
  "folder": "008",
  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/008/",
- "project": "平成のヤンキー女と令和のヤンキー女。20の違い",
+ "project": "平成のヤンキー女と令和のヤンキー女。16の違い",
  "created": "2026-11-21",
  "made_by": "ChatGPT → Claude（2026/11/22 全面改訂）",
  "format": "上下比較",
- "format_name": "縦長3:4・上下2段比較（平成2002／令和2026）・全20枚",
- "image_count": 20,
+ "format_name": "縦長3:4・上下2段比較（平成2002／令和2026）・全16枚",
+ "image_count": 16,
  "aspect_ratio": "3:4",
  "initial_mode": "wait_for_explicit_generate_command",
- "bot_instruction": "読み込んだだけでは画像を生成しない。『投稿案No.8のa〜b枚目を作って』と言われたら common.md と NN.md を読み、1ページにつき縦長3:4の画像を1枚作る。上段＝平成2002の亜希、下段＝令和2026の莉央。青年誌のお色気ギャグ漫画風だが、性的な描写や露出はしない。テーマ、n/20、札、セリフ、各段のツッコミを正確に描く。",
+ "bot_instruction": "読み込んだだけでは画像を生成しない。『投稿案No.8のa〜b枚目を作って』と言われたら common.md と NN.md を読み、1ページにつき縦長3:4の画像を1枚作る。上段＝平成2002の亜希、下段＝令和2026の莉央。青年誌のお色気ギャグ漫画風だが、性的な描写や露出はしない。テーマ、n/16、名前入りの札、セリフ、各段のツッコミを正確に描く。",
  "fiction_notice": "亜希、莉央、家族関係はすべて創作の成人。下品さはセリフと小物だけで出し、性的な描写、露出、暴力や違法行為の美化はしない。",
  "reference_posts": [
   {
@@ -34,123 +34,99 @@
  "pages": [
   {
    "page": 1,
-   "label": "1/20",
+   "label": "1/16",
    "title": "初対面のあいさつ",
    "file": "01.md"
   },
   {
    "page": 2,
-   "label": "2/20",
+   "label": "2/16",
    "title": "たまり場",
    "file": "02.md"
   },
   {
    "page": 3,
-   "label": "3/20",
+   "label": "3/16",
    "title": "眉毛",
    "file": "03.md"
   },
   {
    "page": 4,
-   "label": "4/20",
+   "label": "4/16",
    "title": "吸ってるもの",
    "file": "04.md"
   },
   {
    "page": 5,
-   "label": "5/20",
+   "label": "5/16",
    "title": "愛車",
    "file": "05.md"
   },
   {
    "page": 6,
-   "label": "6/20",
+   "label": "6/16",
    "title": "ケンカの売り方",
    "file": "06.md"
   },
   {
    "page": 7,
-   "label": "7/20",
-   "title": "仲間の呼び出し",
+   "label": "7/16",
+   "title": "プリクラの落書き",
    "file": "07.md"
   },
   {
    "page": 8,
-   "label": "8/20",
-   "title": "彼氏の条件",
+   "label": "8/16",
+   "title": "飲み会",
    "file": "08.md"
   },
   {
    "page": 9,
-   "label": "9/20",
-   "title": "プリクラの落書き",
+   "label": "9/16",
+   "title": "地元への愛",
    "file": "09.md"
   },
   {
    "page": 10,
-   "label": "10/20",
-   "title": "お金の稼ぎ方",
+   "label": "10/16",
+   "title": "元カレの名前",
    "file": "10.md"
   },
   {
    "page": 11,
-   "label": "11/20",
-   "title": "飲み会",
+   "label": "11/16",
+   "title": "ガンのつけ方",
    "file": "11.md"
   },
   {
    "page": 12,
-   "label": "12/20",
-   "title": "地元への愛",
+   "label": "12/16",
+   "title": "夏祭りの浴衣",
    "file": "12.md"
   },
   {
    "page": 13,
-   "label": "13/20",
-   "title": "元カレの名前",
+   "label": "13/16",
+   "title": "カラオケ",
    "file": "13.md"
   },
   {
    "page": 14,
-   "label": "14/20",
-   "title": "ガンのつけ方",
+   "label": "14/16",
+   "title": "お金の借り方",
    "file": "14.md"
   },
   {
    "page": 15,
-   "label": "15/20",
-   "title": "夏祭りの浴衣",
+   "label": "15/16",
+   "title": "将来の夢",
    "file": "15.md"
   },
   {
    "page": 16,
-   "label": "16/20",
-   "title": "カラオケ",
-   "file": "16.md"
-  },
-  {
-   "page": 17,
-   "label": "17/20",
-   "title": "お金の借り方",
-   "file": "17.md"
-  },
-  {
-   "page": 18,
-   "label": "18/20",
-   "title": "勝負服",
-   "file": "18.md"
-  },
-  {
-   "page": 19,
-   "label": "19/20",
-   "title": "将来の夢",
-   "file": "19.md"
-  },
-  {
-   "page": 20,
-   "label": "20/20",
+   "label": "16/16",
    "title": "24年後",
-   "file": "20.md"
+   "file": "16.md"
   }
  ],
  "wording_fallback": {
@@ -159,5 +135,6 @@
   "イッキ！イッキ！イッキ！": "断られたら「まだまだ飲めるっしょ！」",
   "タバコ": "断られたら、ガムやキャンディの棒に置き換える"
  },
- "existing_image_notice": "前のバージョンの画像は old_v1/ に退避。images/ は新しいプロンプトで作り直す。"
+ "existing_image_notice": "11/22の20枚版の画像は削除済み。images/01.jpg〜16.jpg を新しいプロンプトで作り直す。",
+ "history": "2026/11/22：ChatGPT版をClaudeが全面改訂（20枚）。同日、旧7・8・10・18枚目を削除して16枚に。全ページに名前入りの札を追加、旧19枚目（将来の夢）は手が崩れたため作り直し"
 }
