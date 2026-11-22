@@ -168,5 +168,20 @@
     "format_name": "正方形1:1・1枚1人の「ヤバい会員」図鑑",
     "status": "プロンプト完成・画像未生成",
     "cover": "./012/ref/01.jpg"
+  },
+  {
+    "no": 13,
+    "folder": "013",
+    "title": "結婚相談所でヤバい女性客20選",
+    "created": "2026-11-22",
+    "gafu_id": "No.64",
+    "style_name": "写実寄り・表情誇張のカラー青年漫画（参考No.64は人物図鑑の形式）",
+    "pages": 20,
+    "aspect_ratio": "1:1",
+    "format": "C",
+    "format_name": "正方形1:1・女性20人の人物図鑑・1枚1人・コマ割りなし",
+    "status": "プロンプト完成・画像未生成",
+    "cover": "../posts/20261122_2124246479783309638/img/01.jpg",
+    "reference_role": "composition"
   }
 ]
