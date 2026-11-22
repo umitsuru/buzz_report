@@ -28,6 +28,41 @@
 ・各ページは指定された吹き出しだけ。指定のない吹き出しや文字は足さない
 ・1ページの吹き出しは上から下へ、指定の順番に並べる
 
+【トリミング（この投稿案だけ。画像ごとに比率が変わる）】
+・本物のLINEのスクショを切り抜いたように、メッセージ以外の余計な余白がない画像にする。比率は画像ごとに違ってよい
+・1枚目：上のLINEの帯（「＜」と「パパ」）から、最後の吹き出しの下までを残す
+・2枚目以降：上の帯は描かない。メッセージのやりとりの部分だけを残す
+・手順：まず横長3:2で生成する（上下の余白は水色の背景だけにする）。生成した画像を、Python（Pillow）で次のように加工してから保存する。上下の余白を切り、メッセージとメッセージの間の空きすぎも、本物のLINEと同じくらいの間隔に詰める。左右は切らない
+```python
+from PIL import Image
+im = Image.open("生成した画像.png").convert("RGB")
+w, h = im.size
+bg = im.getpixel((5, h // 2))            # 背景の水色を左端から取る
+def is_bg(y):                             # その行がほぼ背景色だけか
+    px = [im.getpixel((x, y)) for x in range(0, w, 4)]
+    return sum(sum(abs(a - b) for a, b in zip(p, bg)) > 40 for p in px) < len(px) * 0.01
+rows = [is_bg(y) for y in range(h)]
+top = rows.index(False)
+bot = h - 1 - rows[::-1].index(False)
+pad, gap = int(w * 0.02), int(w * 0.022)  # 上下の余白／メッセージ間の空きの上限
+keep = list(range(max(0, top - pad), top))
+y = top
+while y <= bot:
+    if rows[y]:
+        e = y
+        while e <= bot and rows[e]: e += 1
+        keep += list(range(y, y + min(e - y, gap))); y = e
+    else:
+        keep.append(y); y += 1
+keep += list(range(bot + 1, min(h, bot + 1 + pad)))
+out = Image.new("RGB", (w, len(keep)))
+for i, yy in enumerate(keep):
+    out.paste(im.crop((0, yy, w, yy + 1)), (0, i))
+out.save("NN.jpg", quality=92)
+```
+・1枚目は、上のLINEの帯が背景と違う色なので、そのまま帯から残る。帯が切れた場合は、上は切らずに下だけ切る
+・各ページの「切り抜き後の比率の目安」と大きくずれた（縦に余白が残りすぎた）ときは、もう一度だけ切り直す
+
 【1枚目だけ】
 ・画面のいちばん上に、LINEのトーク画面の上の帯（背景と同じ水色の細い帯）。左に「＜」、中央より左寄りに太い黒い文字で相手の名前「パパ」だけを出す。右側に、虫めがね・電話・三本線の小さなアイコン。妻（自分）の名前は出さない
 

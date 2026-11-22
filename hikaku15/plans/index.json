@@ -221,10 +221,10 @@
     "gafu_id": "No.60",
     "style_name": "本物のLINEに近いトーク画面（形式は参考投稿No.60）",
     "pages": 15,
-    "aspect_ratio": "3:2",
+    "aspect_ratio": "可変",
     "format": "LINE",
-    "format_name": "横長3:2・LINEのトーク画面（本物に近いデザイン）・15枚",
-    "status": "LINEの見た目に変更・画像を全部作り直し待ち（11/22）",
+    "format_name": "LINEのトーク画面・画像ごとに上下をトリミング・15枚",
+    "status": "画像15枚あり（Claudeがトリミング済み、元画像は raw/）",
     "cover": "./015/ref/01.jpg",
     "maker": "claude"
   },
@@ -236,10 +236,10 @@
     "gafu_id": "No.60",
     "style_name": "本物のLINEに近いトーク画面（形式は参考投稿No.60）",
     "pages": 15,
-    "aspect_ratio": "3:2",
+    "aspect_ratio": "可変",
     "format": "LINE",
-    "format_name": "横長3:2・LINEのトーク画面（本物に近いデザイン）・15枚",
-    "status": "LINEの見た目に変更・画像を全部作り直し待ち（11/22）",
+    "format_name": "LINEのトーク画面・画像ごとに上下をトリミング・15枚",
+    "status": "画像15枚あり（Claudeがトリミング済み、元画像は raw/）",
     "cover": "./016/ref/01.jpg",
     "maker": "claude"
   }

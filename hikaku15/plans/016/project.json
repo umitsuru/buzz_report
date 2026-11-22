@@ -6,11 +6,11 @@
   "created": "2026-11-22",
   "made_by": "Claude",
   "format": "LINE",
-  "format_name": "横長3:2・LINEのトーク画面（水色の背景・緑と白の吹き出し）・15枚",
+  "format_name": "LINEのトーク画面・画像ごとに上下をトリミング（生成は3:2）・15枚",
   "image_count": 15,
-  "aspect_ratio": "3:2",
+  "aspect_ratio": "可変（生成は3:2→上下をトリミング）",
   "initial_mode": "wait_for_explicit_generate_command",
-  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像で形式を確認したあと、01.md から15.md まで順に1枚ずつ、横長3:2で生成する。",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。01.md から15.md まで順に1枚ずつ、横長3:2で生成し、common.md の【トリミング】の手順で上下の余白を切り取ってから images/NN.jpg に保存する。",
   "fiction_notice": "登場人物はすべて架空の成人。実在の人物・店・ホテルとは関係ない創作のやりとり。",
   "reference_posts": [
     {
@@ -38,91 +38,106 @@
       "page": 1,
       "label": "1/15",
       "title": "1枚目",
-      "file": "01.md"
+      "file": "01.md",
+      "crop_ratio_hint": "1.82:1"
     },
     {
       "page": 2,
       "label": "2/15",
       "title": "2枚目",
-      "file": "02.md"
+      "file": "02.md",
+      "crop_ratio_hint": "2.5:1"
     },
     {
       "page": 3,
       "label": "3/15",
       "title": "3枚目",
-      "file": "03.md"
+      "file": "03.md",
+      "crop_ratio_hint": "1.76:1"
     },
     {
       "page": 4,
       "label": "4/15",
       "title": "4枚目",
-      "file": "04.md"
+      "file": "04.md",
+      "crop_ratio_hint": "1.76:1"
     },
     {
       "page": 5,
       "label": "5/15",
       "title": "5枚目",
-      "file": "05.md"
+      "file": "05.md",
+      "crop_ratio_hint": "1.76:1"
     },
     {
       "page": 6,
       "label": "6/15",
       "title": "6枚目",
-      "file": "06.md"
+      "file": "06.md",
+      "crop_ratio_hint": "2.5:1"
     },
     {
       "page": 7,
       "label": "7/15",
       "title": "7枚目",
-      "file": "07.md"
+      "file": "07.md",
+      "crop_ratio_hint": "2.5:1"
     },
     {
       "page": 8,
       "label": "8/15",
       "title": "8枚目",
-      "file": "08.md"
+      "file": "08.md",
+      "crop_ratio_hint": "1.76:1"
     },
     {
       "page": 9,
       "label": "9/15",
       "title": "9枚目",
-      "file": "09.md"
+      "file": "09.md",
+      "crop_ratio_hint": "2.5:1"
     },
     {
       "page": 10,
       "label": "10/15",
       "title": "10枚目",
-      "file": "10.md"
+      "file": "10.md",
+      "crop_ratio_hint": "2.5:1"
     },
     {
       "page": 11,
       "label": "11/15",
       "title": "11枚目",
-      "file": "11.md"
+      "file": "11.md",
+      "crop_ratio_hint": "1.3:1"
     },
     {
       "page": 12,
       "label": "12/15",
       "title": "12枚目",
-      "file": "12.md"
+      "file": "12.md",
+      "crop_ratio_hint": "1.76:1"
     },
     {
       "page": 13,
       "label": "13/15",
       "title": "13枚目",
-      "file": "13.md"
+      "file": "13.md",
+      "crop_ratio_hint": "1.76:1"
     },
     {
       "page": 14,
       "label": "14/15",
       "title": "14枚目",
-      "file": "14.md"
+      "file": "14.md",
+      "crop_ratio_hint": "1.1:1"
     },
     {
       "page": 15,
       "label": "15/15",
       "title": "15枚目",
-      "file": "15.md"
+      "file": "15.md",
+      "crop_ratio_hint": "1.76:1"
     }
   ],
   "wording_fallback": {
