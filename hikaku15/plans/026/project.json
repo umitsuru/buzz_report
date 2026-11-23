@@ -1,0 +1,116 @@
+{
+  "plan_no": 26,
+  "folder": "026",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/026/",
+  "project": "海外ドラマを見すぎた30歳",
+  "created": "2026-11-23",
+  "made_by": "Claude",
+  "format": "doll_photo",
+  "format_name": "正方形1:1・着せかえ人形のミニチュア写真風・下に2行の字幕・15枚",
+  "image_count": 15,
+  "aspect_ratio": "1:1",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像（参考投稿No.86）で写真の雰囲気と字幕の入れ方を確認したあと（人形そのものは似せない）、01.md から15.md まで順に1枚ずつ、正方形1:1で生成する。",
+  "fiction_notice": "主人公はオリジナルの人形。市販の有名な人形やキャラクターに似せない。実在の人物・作品・会社とは関係ない。",
+  "reference_posts": [
+    "参考投稿No.86（20261123_2124498753810047265）の構成と写真の雰囲気"
+  ],
+  "style": {
+    "gafu_id": "No.86",
+    "name": "着せかえ人形のミニチュア写真風（オリジナルの人形）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261123_2124498753810047265/img/01.jpg",
+    "defined_in": "common.md"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/15",
+      "title": "朝、窓を開けて「グッモーニン」とつぶやく",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/15",
+      "title": "アボカドトーストを作ったら、アボカドが真っ黒",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/15",
+      "title": "コンビニのコーヒーを持って、早歩きで出勤",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/15",
+      "title": "出社して「ハイ、みんな！」と手を振ったら全員無反応",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/15",
+      "title": "会議で「オーケー、それでいきましょう」と言って上司ににらまれる",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/15",
+      "title": "ランチはデスクでサラダ。ドレッシングがキーボードにこぼれる",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/15",
+      "title": "女子会でワインを頼もうとして、結局レモンサワー",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/15",
+      "title": "帰宅して、靴のまま上がりかけて我に返る",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/15",
+      "title": "紙の箱から箸で焼きそばを食べながら海外ドラマ",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/15",
+      "title": "ユニットバスでキャンドルとワイン。ひざが全部出てる",
+      "file": "10.md"
+    },
+    {
+      "page": 11,
+      "label": "11/15",
+      "title": "日曜の朝ラン。河川敷で3分で歩き出す",
+      "file": "11.md"
+    },
+    {
+      "page": 12,
+      "label": "12/15",
+      "title": "ブランチに誘える友だちがいなくて、1人でパンケーキ",
+      "file": "12.md"
+    },
+    {
+      "page": 13,
+      "label": "13/15",
+      "title": "ホームパーティーを開いたら、6畳に3人",
+      "file": "13.md"
+    },
+    {
+      "page": 14,
+      "label": "14/15",
+      "title": "デートの帰りにハグしようとして、相手が固まる",
+      "file": "14.md"
+    },
+    {
+      "page": 15,
+      "label": "15/15",
+      "title": "寝る前に「Dear Diary」と書いて、2行で寝落ち",
+      "file": "15.md"
+    }
+  ]
+}
