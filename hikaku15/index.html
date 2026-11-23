@@ -357,17 +357,47 @@
 
   (async () => {
     try {
-      const folders = await listFolders();
-      const loaded = await Promise.all(folders.map(f => loadPost(f).catch(() => null)));
+      // まず posts/bundle.json（全投稿の raw.json と analysis.md を1つにまとめたもの）を1回だけ読む。
+      // その後に増えたフォルダや、bundle.json がないときだけ、フォルダごとに読みに行く
+      let loaded = [];
+      try {
+        const b = await fetch(REL + '/bundle.json', {cache: 'no-cache'});
+        if (b.ok) {
+          const j = await b.json();
+          loaded = (j.posts || []).map(x => {
+            const theme = x.analysis ? ((x.analysis.match(/^#\s+(.+)$/m) || [])[1] || '').trim() : '';
+            return {folder: x.folder, base: `${REL}/${x.folder}/`, raw: x.raw, analysis: x.analysis, theme, date: x.folder.slice(0, 8), files: imageFiles(x.raw)};
+          });
+        }
+      } catch (e) {}
+      if (!loaded.length) {
+        const folders = await listFolders();
+        loaded = await Promise.all(folders.map(f => loadPost(f).catch(() => null)));
+      }
+      const fromBundle = loaded.length && !loaded.some(x => !x);
       posts = loaded.filter(Boolean);
       // 投稿番号：集めた順（collected_at → フォルダ名）に No.1 から。並べ替えや絞り込みでは変わらない
       // 番号は posts/numbers.json の固定番号。載っていない新しい投稿だけ、集めた順に最大番号+1から仮に振る
       let fixed = {};
       try { const r = await fetch(REL + '/numbers.json', {cache: 'default'}); if (r.ok) fixed = (await r.json()).numbers || {}; } catch (e) {}
-      let mx = Math.max(0, ...Object.values(fixed));
-      posts.slice().sort((x, y) => (x.raw.collected_at || '').localeCompare(y.raw.collected_at || '') || x.folder.localeCompare(y.folder))
-        .forEach(p => { p.no = fixed[p.folder] || ++mx; });
+      const numberAll = () => {
+        let mx = Math.max(0, ...Object.values(fixed));
+        posts.slice().sort((x, y) => (x.raw.collected_at || '').localeCompare(y.raw.collected_at || '') || x.folder.localeCompare(y.folder))
+          .forEach(p => { p.no = fixed[p.folder] || ++mx; });
+      };
+      numberAll();
       render();
+      // 表示したあとで、bundle.json にまだ入っていない新しい投稿がないか確かめる（あれば足して表示し直す）
+      if (fromBundle) setTimeout(async () => {
+        try {
+          const have = new Set(posts.map(p => p.folder));
+          const extra = (await listFolders()).filter(f => !have.has(f));
+          if (!extra.length) return;
+          const add = (await Promise.all(extra.map(f => loadPost(f).catch(() => null)))).filter(Boolean);
+          if (!add.length) return;
+          posts = posts.concat(add); numberAll(); render();
+        } catch (e) {}
+      }, 1500);
     } catch (e) {
       list.textContent = '';
       list.appendChild(el('p', 'msg', '一覧を読み込めませんでした。少し時間をおいて開き直してください。（' + e.message + '）'));
