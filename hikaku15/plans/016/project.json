@@ -6,7 +6,7 @@
   "created": "2026-11-22",
   "made_by": "Claude",
   "format": "LINE",
-  "format_name": "LINEのトーク画面・画像ごとに上下をトリミング（生成は3:2）・15枚",
+  "format_name": "LINEのトーク画面（ダークモード：黒い背景）・画像ごとに上下をトリミング（生成は3:2）・15枚",
   "image_count": 15,
   "aspect_ratio": "可変（生成は3:2→上下をトリミング）",
   "initial_mode": "wait_for_explicit_generate_command",
