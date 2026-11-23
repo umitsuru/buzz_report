@@ -6,11 +6,11 @@
   "created": "2026-11-22",
   "made_by": "Claude",
   "format": "story",
-  "format_name": "縦長2:3・白黒漫画・1枚2〜3コマ・13枚",
-  "image_count": 13,
+  "format_name": "縦長2:3・白黒漫画・1枚1〜3コマ・20枚",
+  "image_count": 20,
   "aspect_ratio": "2:3",
   "initial_mode": "wait_for_explicit_generate_command",
-  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像で画風を確認したあと、01.md から13.md まで順に1枚ずつ、縦長2:3の白黒漫画で生成する。",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像で画風を確認したあと、01.md から20.md まで順に1枚ずつ、縦長2:3の白黒漫画で生成する。",
   "fiction_notice": "登場人物はすべて架空の成人。下ネタは言葉だけで、性的な描写・露出はしない。",
   "reference_posts": [
     {
@@ -37,83 +37,126 @@
   "pages": [
     {
       "page": 1,
-      "label": "1/13",
+      "label": "1/20",
       "title": "1枚目",
       "file": "01.md"
     },
     {
       "page": 2,
-      "label": "2/13",
+      "label": "2/20",
       "title": "2枚目",
       "file": "02.md"
     },
     {
       "page": 3,
-      "label": "3/13",
+      "label": "3/20",
       "title": "3枚目",
       "file": "03.md"
     },
     {
       "page": 4,
-      "label": "4/13",
+      "label": "4/20",
       "title": "4枚目",
       "file": "04.md"
     },
     {
       "page": 5,
-      "label": "5/13",
+      "label": "5/20",
       "title": "5枚目",
       "file": "05.md"
     },
     {
       "page": 6,
-      "label": "6/13",
+      "label": "6/20",
       "title": "6枚目",
       "file": "06.md"
     },
     {
       "page": 7,
-      "label": "7/13",
+      "label": "7/20",
       "title": "7枚目",
       "file": "07.md"
     },
     {
       "page": 8,
-      "label": "8/13",
+      "label": "8/20",
       "title": "8枚目",
       "file": "08.md"
     },
     {
       "page": 9,
-      "label": "9/13",
+      "label": "9/20",
       "title": "9枚目",
       "file": "09.md"
     },
     {
       "page": 10,
-      "label": "10/13",
+      "label": "10/20",
       "title": "10枚目",
       "file": "10.md"
     },
     {
       "page": 11,
-      "label": "11/13",
+      "label": "11/20",
       "title": "11枚目",
       "file": "11.md"
     },
     {
       "page": 12,
-      "label": "12/13",
+      "label": "12/20",
       "title": "12枚目",
       "file": "12.md"
     },
     {
       "page": 13,
-      "label": "13/13",
+      "label": "13/20",
       "title": "13枚目",
       "file": "13.md"
+    },
+    {
+      "page": 14,
+      "label": "14/20",
+      "title": "14枚目",
+      "file": "14.md"
+    },
+    {
+      "page": 15,
+      "label": "15/20",
+      "title": "15枚目",
+      "file": "15.md"
+    },
+    {
+      "page": 16,
+      "label": "16/20",
+      "title": "16枚目",
+      "file": "16.md"
+    },
+    {
+      "page": 17,
+      "label": "17/20",
+      "title": "17枚目",
+      "file": "17.md"
+    },
+    {
+      "page": 18,
+      "label": "18/20",
+      "title": "18枚目",
+      "file": "18.md"
+    },
+    {
+      "page": 19,
+      "label": "19/20",
+      "title": "19枚目",
+      "file": "19.md"
+    },
+    {
+      "page": 20,
+      "label": "20/20",
+      "title": "20枚目",
+      "file": "20.md"
     }
   ],
+  "history": "2026/11/22に13枚で作成。2026/11/23、コマ割りを見直して20枚に増やし、村人を追い返す場面と、賢者タイムが終わるオチを追加（13枚版の画像は old_v1/ に移動）",
   "wording_fallback": {
     "賢者タイム": "断られたら「賢者モード」",
     "精気": "断られたら「生気」",

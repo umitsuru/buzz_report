@@ -359,10 +359,10 @@
     "created": "2026-11-22",
     "gafu_id": "No.69",
     "style_name": "白黒のすっきりしたデジタル漫画（参考投稿No.69）",
-    "pages": 13,
+    "pages": 20,
     "aspect_ratio": "2:3",
     "format": "story",
-    "format_name": "縦長2:3・白黒漫画・1枚2〜3コマ・13枚",
+    "format_name": "縦長2:3・白黒漫画・1枚1〜3コマ・20枚",
     "status": "プロンプト完成・画像未生成",
     "cover": "./021/ref/01.jpg",
     "maker": "claude"
