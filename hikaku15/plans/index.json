@@ -425,5 +425,20 @@
     "status": "プロンプト完成・画像未生成",
     "cover": "../posts/20261123_2124714284735426902/img/04.jpg",
     "maker": "claude"
+  },
+  {
+    "no": 25,
+    "folder": "025",
+    "title": "子どものいない夫婦と、子どもを3人産んだ夫婦",
+    "created": "2026-11-23",
+    "gafu_id": "No.80",
+    "style_name": "やわらかいアニメ調イラスト（参考投稿No.80に近い雰囲気）",
+    "pages": 20,
+    "aspect_ratio": "1:1",
+    "format": "hikaku_square",
+    "format_name": "正方形1:1・年齢の見出し＋上下2段の比較・20枚",
+    "status": "プロンプト完成・画像未生成",
+    "cover": "../posts/20261123_2124247730747002968/img/02.jpg",
+    "maker": "claude"
   }
 ]

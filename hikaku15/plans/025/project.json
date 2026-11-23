@@ -1,0 +1,146 @@
+{
+  "plan_no": 25,
+  "folder": "025",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/025/",
+  "project": "子どものいない夫婦と、子どもを3人産んだ夫婦",
+  "created": "2026-11-23",
+  "made_by": "Claude",
+  "format": "hikaku_square",
+  "format_name": "正方形1:1・年齢の見出し＋上下2段の比較・20枚",
+  "image_count": 20,
+  "aspect_ratio": "1:1",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像（参考投稿No.80）で画風とレイアウトを確認したあと（人物・セリフは真似しない）、01.md から20.md まで順に1枚ずつ、正方形1:1で生成する。",
+  "fiction_notice": "登場人物はすべて架空。実在の人物・団体・会社とは関係ない。どちらの生き方も見下さない。",
+  "reference_posts": [
+    "参考投稿No.80（20261123_2124247730747002968）の構成と画風の雰囲気"
+  ],
+  "style": {
+    "gafu_id": "No.80",
+    "name": "やわらかいアニメ調イラスト（参考投稿No.80に近い雰囲気）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261123_2124247730747002968/img/02.jpg",
+    "defined_in": "common.md"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/20",
+      "title": "28歳",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/20",
+      "title": "29歳",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/20",
+      "title": "30歳",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/20",
+      "title": "31歳",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/20",
+      "title": "32歳",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/20",
+      "title": "33歳",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/20",
+      "title": "35歳",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/20",
+      "title": "37歳",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/20",
+      "title": "40歳",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/20",
+      "title": "42歳",
+      "file": "10.md"
+    },
+    {
+      "page": 11,
+      "label": "11/20",
+      "title": "45歳",
+      "file": "11.md"
+    },
+    {
+      "page": 12,
+      "label": "12/20",
+      "title": "48歳",
+      "file": "12.md"
+    },
+    {
+      "page": 13,
+      "label": "13/20",
+      "title": "50歳",
+      "file": "13.md"
+    },
+    {
+      "page": 14,
+      "label": "14/20",
+      "title": "53歳",
+      "file": "14.md"
+    },
+    {
+      "page": 15,
+      "label": "15/20",
+      "title": "55歳",
+      "file": "15.md"
+    },
+    {
+      "page": 16,
+      "label": "16/20",
+      "title": "60歳",
+      "file": "16.md"
+    },
+    {
+      "page": 17,
+      "label": "17/20",
+      "title": "65歳",
+      "file": "17.md"
+    },
+    {
+      "page": 18,
+      "label": "18/20",
+      "title": "70歳",
+      "file": "18.md"
+    },
+    {
+      "page": 19,
+      "label": "19/20",
+      "title": "75歳",
+      "file": "19.md"
+    },
+    {
+      "page": 20,
+      "label": "20/20",
+      "title": "80歳",
+      "file": "20.md"
+    }
+  ]
+}
