@@ -1,0 +1,43 @@
+{
+  "id": "2124790070326829557",
+  "url": "https://x.com/y_haiku/status/2124790070326829557",
+  "own": false,
+  "collected_at": "2026-11-23T19:32:55+09:00",
+  "author": {
+    "name": "山田全自動",
+    "handle": "@y_haiku",
+    "followers": 179647
+  },
+  "posted_at": "2026-11-23T18:00:04+09:00",
+  "metrics": {
+    "views": 42126,
+    "likes": 628,
+    "reposts": 53,
+    "quotes": 4,
+    "replies": 12,
+    "bookmarks": 39
+  },
+  "text": "仕事辞めたい瞬間あるあるでござる",
+  "thread": [
+    {
+      "id": "2124790070326829557",
+      "text": "仕事辞めたい瞬間あるあるでござる",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg",
+        "09.jpg",
+        "10.jpg"
+      ]
+    }
+  ],
+  "image_count": 10,
+  "top_replies": [],
+  "top_quotes": [],
+  "note": "画像10枚はすべて元投稿1件に添付されている（API の attachments に10件、すべてJPEG 2160×2700px）。投稿者本人の画像付きセルフリプは検索で見つからなかった。本文は表示部分のみで、API本文末尾の画像リンク https://t.co/Ygbkc6ZlKL は除いた。引用している投稿はない。今回は投稿本体だけを保存し、返信と引用は取得していない（top_replies と top_quotes は空）。数字は 2026-11-23 19:32頃 JST 時点。動画なし。"
+}
