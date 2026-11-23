@@ -432,7 +432,14 @@
     "format_name": "正方形1:1・実写ドラマ風・左上に番号と場所と時刻・セリフ1つ・20枚",
     "status": "プロンプト完成・画像未生成",
     "cover": "../posts/20261123_2124714284735426902/img/04.jpg",
-    "maker": "claude"
+    "maker": "claude",
+    "posted": {
+      "account": "うみつる",
+      "at": "2026-11-24T07:51:00+09:00",
+      "via": "Claude in Chrome（参考投稿No.84の引用）",
+      "url": "https://x.com/umitsuru_fire/status/2124999233543733600",
+      "text": "不倫した父親の末路"
+    }
   },
   {
     "no": 25,
