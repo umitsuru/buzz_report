@@ -39,105 +39,105 @@
       "label": "1/15",
       "title": "1枚目",
       "file": "01.md",
-      "crop_ratio_hint": "1.82:1"
+      "crop_ratio_hint": "3.1:1"
     },
     {
       "page": 2,
       "label": "2/15",
       "title": "2枚目",
       "file": "02.md",
-      "crop_ratio_hint": "2.5:1"
+      "crop_ratio_hint": "2.92:1"
     },
     {
       "page": 3,
       "label": "3/15",
       "title": "3枚目",
       "file": "03.md",
-      "crop_ratio_hint": "1.76:1"
+      "crop_ratio_hint": "2.85:1"
     },
     {
       "page": 4,
       "label": "4/15",
       "title": "4枚目",
       "file": "04.md",
-      "crop_ratio_hint": "1.76:1"
+      "crop_ratio_hint": "2.85:1"
     },
     {
       "page": 5,
       "label": "5/15",
       "title": "5枚目",
       "file": "05.md",
-      "crop_ratio_hint": "1.76:1"
+      "crop_ratio_hint": "2.85:1"
     },
     {
       "page": 6,
       "label": "6/15",
       "title": "6枚目",
       "file": "06.md",
-      "crop_ratio_hint": "2.5:1"
+      "crop_ratio_hint": "3.41:1"
     },
     {
       "page": 7,
       "label": "7/15",
       "title": "7枚目",
       "file": "07.md",
-      "crop_ratio_hint": "2.5:1"
+      "crop_ratio_hint": "2.92:1"
     },
     {
       "page": 8,
       "label": "8/15",
       "title": "8枚目",
       "file": "08.md",
-      "crop_ratio_hint": "1.76:1"
+      "crop_ratio_hint": "2.85:1"
     },
     {
       "page": 9,
       "label": "9/15",
       "title": "9枚目",
       "file": "09.md",
-      "crop_ratio_hint": "2.5:1"
+      "crop_ratio_hint": "4.12:1"
     },
     {
       "page": 10,
       "label": "10/15",
       "title": "10枚目",
       "file": "10.md",
-      "crop_ratio_hint": "2.5:1"
+      "crop_ratio_hint": "4.12:1"
     },
     {
       "page": 11,
       "label": "11/15",
       "title": "11枚目",
       "file": "11.md",
-      "crop_ratio_hint": "1.3:1"
+      "crop_ratio_hint": "2.02:1"
     },
     {
       "page": 12,
       "label": "12/15",
       "title": "12枚目",
       "file": "12.md",
-      "crop_ratio_hint": "1.76:1"
+      "crop_ratio_hint": "2.85:1"
     },
     {
       "page": 13,
       "label": "13/15",
       "title": "13枚目",
       "file": "13.md",
-      "crop_ratio_hint": "1.76:1"
+      "crop_ratio_hint": "2.85:1"
     },
     {
       "page": 14,
       "label": "14/15",
       "title": "14枚目",
       "file": "14.md",
-      "crop_ratio_hint": "1.1:1"
+      "crop_ratio_hint": "1.79:1"
     },
     {
       "page": 15,
       "label": "15/15",
       "title": "15枚目",
       "file": "15.md",
-      "crop_ratio_hint": "1.76:1"
+      "crop_ratio_hint": "2.49:1"
     }
   ],
   "wording_fallback": {
