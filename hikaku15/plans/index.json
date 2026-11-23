@@ -402,6 +402,13 @@
     "format_name": "LINEのトーク画面・画像ごとに上下をトリミング・15枚",
     "status": "プロンプト完成・画像未生成",
     "cover": "./023/ref/01.jpg",
-    "maker": "claude"
+    "maker": "claude",
+    "posted": {
+      "account": "うみつる",
+      "at": "2026-11-23T16:43:00+09:00",
+      "via": "Claude in Chrome（No.15の引用）",
+      "url": "https://x.com/umitsuru_fire/status/2124770712175178026",
+      "text": "結婚前から、あやかって女と関係があった証拠残ってた"
+    }
   }
 ]
