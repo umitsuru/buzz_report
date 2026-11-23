@@ -381,5 +381,20 @@
     "status": "プロンプト完成・画像未生成",
     "cover": "./022/ref/S-10.jpg",
     "maker": "claude"
+  },
+  {
+    "no": 23,
+    "folder": "023",
+    "title": "5年前の古いスマホに、付き合ってた頃のLINEが残っていた",
+    "created": "2026-11-23",
+    "gafu_id": "No.60",
+    "style_name": "本物のLINEに近いトーク画面（形式は参考投稿No.60）",
+    "pages": 15,
+    "aspect_ratio": "可変",
+    "format": "LINE",
+    "format_name": "LINEのトーク画面・画像ごとに上下をトリミング・15枚",
+    "status": "プロンプト完成・画像未生成",
+    "cover": "./023/ref/01.jpg",
+    "maker": "claude"
   }
 ]
