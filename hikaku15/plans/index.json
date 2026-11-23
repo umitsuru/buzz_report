@@ -36,7 +36,14 @@
     "status": "プロンプト完成・画像未生成",
     "cover": "./002/ref/01.jpg",
     "format_name": "正方形1:1・1枚絵",
-    "maker": "claude"
+    "maker": "claude",
+    "posted": {
+      "account": "そらつる",
+      "at": "2026-11-23T09:52:00+09:00",
+      "via": "Postiz",
+      "postiz_id": "cmwsjoqm00jwnpk075togsaxz",
+      "text": "結婚式でバレる。\n\n「三流の親族」と「一流の親族」"
+    }
   },
   {
     "no": 3,
