@@ -485,5 +485,20 @@
     "status": "プロンプト完成・画像未生成",
     "cover": "../posts/20261122_2124459278681653543/img/04.jpg",
     "maker": "claude"
+  },
+  {
+    "no": 28,
+    "folder": "028",
+    "title": "妻が家出した（レス夫婦編）",
+    "created": "2026-11-23",
+    "gafu_id": "No.67",
+    "style_name": "白黒グレーのトーン漫画（参考投稿No.67に近い雰囲気）",
+    "pages": 20,
+    "aspect_ratio": "2:3",
+    "format": "story_manga",
+    "format_name": "縦長（2:3で生成）・白黒グレーのトーン漫画・1枚2〜3コマ・20枚",
+    "status": "プロンプト完成・画像未生成",
+    "cover": "../posts/20261122_2124410166171025623/img/04.jpg",
+    "maker": "claude"
   }
 ]
