@@ -1,0 +1,41 @@
+{
+  "id": "2124616409678557580",
+  "url": "https://x.com/Totsuka_Taks/status/2124616409678557580",
+  "own": false,
+  "collected_at": "2026-11-23T11:15:24+09:00",
+  "author": {
+    "name": "戸塚たくす（マンガ原作）",
+    "handle": "@Totsuka_Taks",
+    "followers": 18058
+  },
+  "posted_at": "2026-11-23T06:30:00+09:00",
+  "metrics": {
+    "views": 319109,
+    "likes": 817,
+    "reposts": 13,
+    "quotes": 2,
+    "replies": 3,
+    "bookmarks": 106
+  },
+  "text": "集合写真で私だけ顔がでかい理由が分かった",
+  "thread": [
+    {
+      "id": "2124616409678557580",
+      "text": "集合写真で私だけ顔がでかい理由が分かった",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg",
+        "05.jpg",
+        "06.jpg",
+        "07.jpg",
+        "08.jpg"
+      ]
+    }
+  ],
+  "image_count": 8,
+  "top_replies": [],
+  "top_quotes": [],
+  "note": "画像8枚はすべて元投稿1件に添付されている（API の attachments に8件、すべてJPEG 1024×1536px）。投稿者本人の画像付きセルフリプは検索で見つからなかった。本文は表示部分のみで、API本文末尾の画像リンク https://t.co/fAGBNSJ3hH は除いた。引用している投稿はない。今回は投稿本体だけを保存し、返信と引用は取得していない（top_replies と top_quotes は空）。数字は 2026-11-23 11:15頃 JST 時点。動画なし。"
+}
