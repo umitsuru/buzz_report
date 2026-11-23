@@ -304,14 +304,7 @@
     "format_name": "縦長3:4・タイトル枠＋縦2コマ・1枚1本",
     "status": "画風を素人っぽく変更・画像を全部作り直し待ち（旧画像は old_v1/）",
     "cover": "./017/ref/01.jpg",
-    "maker": "claude",
-    "posted": {
-      "account": "やまつる",
-      "at": "2026-11-23T11:08:00+09:00",
-      "via": "Postiz",
-      "postiz_id": "cmwsmbjkc0kgmrx065koubiq1",
-      "text": "これ、全部ある？"
-    }
+    "maker": "claude"
   },
   {
     "no": 18,
