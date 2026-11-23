@@ -410,5 +410,20 @@
       "url": "https://x.com/umitsuru_fire/status/2124770712175178026",
       "text": "結婚前から、あやかって女と関係があった証拠残ってた"
     }
+  },
+  {
+    "no": 24,
+    "folder": "024",
+    "title": "不倫した父親の末路",
+    "created": "2026-11-23",
+    "gafu_id": "S-14",
+    "style_name": "ヘタウマ真顔漫画（S-14）",
+    "pages": 20,
+    "aspect_ratio": "1:1",
+    "format": "story_square",
+    "format_name": "正方形1:1・左上に番号と場所と時刻・セリフ1つ・20枚",
+    "status": "プロンプト完成・画像未生成",
+    "cover": "./024/ref/S-14.jpg",
+    "maker": "claude"
   }
 ]
