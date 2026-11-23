@@ -416,14 +416,14 @@
     "folder": "024",
     "title": "不倫した父親の末路",
     "created": "2026-11-23",
-    "gafu_id": "S-14",
-    "style_name": "ヘタウマ真顔漫画（S-14）",
+    "gafu_id": "No.84",
+    "style_name": "実写ドラマのワンシーン風（参考投稿No.84に近い雰囲気）",
     "pages": 20,
     "aspect_ratio": "1:1",
     "format": "story_square",
-    "format_name": "正方形1:1・左上に番号と場所と時刻・セリフ1つ・20枚",
+    "format_name": "正方形1:1・実写ドラマ風・左上に番号と場所と時刻・セリフ1つ・20枚",
     "status": "プロンプト完成・画像未生成",
-    "cover": "./024/ref/S-14.jpg",
+    "cover": "../posts/20261123_2124714284735426902/img/04.jpg",
     "maker": "claude"
   }
 ]

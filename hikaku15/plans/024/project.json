@@ -6,19 +6,20 @@
   "created": "2026-11-23",
   "made_by": "Claude",
   "format": "story_square",
-  "format_name": "正方形1:1・1枚絵・左上に番号と場所と時刻・セリフ1つ・20枚",
+  "format_name": "正方形1:1・実写ドラマ風の1枚絵・左上に番号と場所と時刻・セリフ1つ・20枚",
   "image_count": 20,
   "aspect_ratio": "1:1",
   "initial_mode": "wait_for_explicit_generate_command",
-  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像（S-14）で画風を確認したあと、01.md から20.md まで順に1枚ずつ、正方形1:1で生成する。",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像（参考投稿No.84）で画風の雰囲気だけを確認したあと（人物・構図・セリフは真似しない）、01.md から20.md まで順に1枚ずつ、正方形1:1で生成する。",
   "fiction_notice": "登場人物はすべて架空。実在の人物・団体・会社とは関係ない。社名やロゴは描かない。",
   "reference_posts": [
-    "参考投稿No.84（20261123_2124714284735426902）の構成のみ"
+    "参考投稿No.84（20261123_2124714284735426902）の構成と画風の雰囲気"
   ],
+  "history": "2026/11/23にS-14ヘタウマ真顔で作成し、同日、参考投稿No.84に近い実写ドラマ風に変更",
   "style": {
-    "gafu_id": "S-14",
-    "name": "ヘタウマ真顔漫画（オリジナル画風S-14）",
-    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/studio/originals/S-14.jpg",
+    "gafu_id": "No.84",
+    "name": "実写ドラマのワンシーン風（参考投稿No.84に近い雰囲気）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261123_2124714284735426902/img/04.jpg",
     "defined_in": "common.md"
   },
   "pages": [
