@@ -515,5 +515,20 @@
     "status": "プロンプト完成・画像未生成",
     "cover": "../posts/20261123_2124616409678557580/img/01.jpg",
     "maker": "claude"
+  },
+  {
+    "no": 30,
+    "folder": "030",
+    "title": "離婚したい瞬間あるある",
+    "created": "2026-11-23",
+    "gafu_id": "No.85",
+    "style_name": "江戸風の和紙イラスト（参考投稿No.85に近い雰囲気）",
+    "pages": 20,
+    "aspect_ratio": "4:5",
+    "format": "aruaru_edo",
+    "format_name": "縦長4:5・江戸風の和紙イラスト・夫編9＋妻編10・20枚",
+    "status": "プロンプト完成・画像未生成",
+    "cover": "../posts/20261123_2124790070326829557/thumb/01.jpg",
+    "maker": "claude"
   }
 ]
