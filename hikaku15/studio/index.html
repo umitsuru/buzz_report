@@ -18,6 +18,7 @@
   .site-nav{display:flex;gap:6px;flex-wrap:wrap}
   .site-nav a{padding:6px 14px;border-radius:999px;border:1px solid #333;background:#151515;color:#ccc;text-decoration:none;font-size:13px}
   .site-nav a.on{background:#e6e6e6;color:#000;border-color:#e6e6e6;font-weight:700}
+  @media (max-width:480px){.site-nav{gap:4px;flex-wrap:nowrap}.site-nav a{padding:6px 9px;font-size:12px;white-space:nowrap}}
   .jump{display:flex;gap:6px;flex-wrap:wrap;padding:0 0 10px}
   .jump a{font-size:13px;color:#aaa}
   main{padding:16px 0 80px}
@@ -69,6 +70,7 @@
       <a href="../">参考投稿</a>
       <a href="./" class="on">画風カタログ</a>
       <a href="../plans/">投稿案</a>
+      <a href="../plans/?posted">投稿済み</a>
     </nav>
   </div>
   <div class="wrap jump"><a href="#originals">オリジナル画風（全10種）</a>・<a href="#posts">集めた投稿の画風</a></div>

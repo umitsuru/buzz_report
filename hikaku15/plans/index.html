@@ -18,6 +18,7 @@
   .site-nav{display:flex;gap:6px;flex-wrap:wrap}
   .site-nav a{padding:6px 14px;border-radius:999px;border:1px solid #333;background:#151515;color:#ccc;text-decoration:none;font-size:13px}
   .site-nav a.on{background:#e6e6e6;color:#000;border-color:#e6e6e6;font-weight:700}
+  @media (max-width:480px){.site-nav{gap:4px;flex-wrap:nowrap}.site-nav a{padding:6px 9px;font-size:12px;white-space:nowrap}}
   main{padding:18px 0 80px}
   .lead{color:#aaa;font-size:14px;margin:0 0 16px}
   .plans{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;margin:0 0 24px}
@@ -108,13 +109,14 @@
     <nav class="site-nav" aria-label="サイト内">
       <a href="../">参考投稿</a>
       <a href="../studio/">画風カタログ</a>
-      <a href="./" class="on">投稿案</a>
+      <a href="./" id="nav-todo">投稿案</a>
+      <a href="./?posted" id="nav-done">投稿済み</a>
     </nav>
   </div>
 </header>
 <main class="wrap">
   <p class="lead" id="lead">ClaudeとChatGPTが作った漫画のプロンプトです。番号の横のマーク（<span class="mk claude">Claude</span><span class="mk chatgpt">ChatGPT</span>）で、どちらが作ったか分かります。番号で ChatGPT のボットに「投稿案No.1の3〜5枚目を作って」と伝えると、ボットがここのファイルを読んで生成します。</p>
-  <div class="ptabs" id="ptabs"><button data-tab="todo" class="on">未投稿</button><button data-tab="done">投稿済み</button></div>
+  <div class="ptabs" id="ptabs" hidden></div>
   <div class="plans" id="plans"><p class="msg">読み込み中…</p></div>
   <div id="detail"></div>
 </main>
@@ -196,7 +198,10 @@ function histHTML(no){const list=histOf(no);if(!HIST)return '<p class="msg">履�
   return '<ul class="hist">'+g.slice(0,4).map(x=>`<li><time>${fmt(x.t)}</time>${x.who==='claude'?'<span class="mk claude">Claude</span>':'<span class="mk chatgpt">ChatGPT</span>'}<span>${x.img?'<span class="k">画像</span> ':''}${esc(x.msg)}${x.n>1?` <span class="k">ほか${x.n-1}件</span>`:''}</span></li>`).join('')+'</ul>'+(more>0?`<p class="msg" style="margin:4px 0 0;font-size:12px">それより前の履歴 ${more}件は省略</p>`:'')}
 
 // 投稿済み：index.json の posted（account, at, url, impressions, impressions_at）。表示回数はグロッキーが1日2回、投稿から48時間まで更新する
-let tab=(()=>{try{return sessionStorage.getItem('ptab')||'todo'}catch(e){return 'todo'}})();
+// 上のメニューの「投稿案」＝未投稿、「投稿済み」＝ ?posted のページ
+let tab=/[?&]posted\b/.test(location.search)?'done':'todo';
+document.getElementById(tab==='done'?'nav-done':'nav-todo').classList.add('on');
+if(tab==='done')document.title='投稿済み｜'+document.title;
 const fmtN=v=>v==null?'—':(v>=10000?(Math.round(v/1000)/10)+'万':Number(v).toLocaleString('ja-JP'));
 const fmtT=t=>{if(!t)return '';const d=new Date(t);return (d.getMonth()+1)+'/'+d.getDate()+' '+String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')};
 function postedHTML(p){const q=p.posted;if(!q)return '';
@@ -204,7 +209,7 @@ function postedHTML(p){const q=p.posted;if(!q)return '';
   return `<span class="posted"><b>投稿済み</b>${esc(q.account||'')}・${fmtT(q.at)}<span class="imp">表示 ${fmtN(q.impressions)}</span>${q.impressions_at?`<span style="color:#999">（${fmtT(q.impressions_at)}時点）</span>`:''}${link}</span>`}
 function renderList(){
   const done=plans.filter(p=>p.posted).length;
-  const tb=document.getElementById('ptabs');if(tb){tb.querySelector('[data-tab="todo"]').textContent=`未投稿（${plans.length-done}）`;tb.querySelector('[data-tab="done"]').textContent=`投稿済み（${done}）`;tb.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.tab===tab))}
+  const nd=document.getElementById('nav-done'),nt=document.getElementById('nav-todo');
   // 一覧では画像を調べない（開いたことのある投稿案だけ、おぼえている枚数を出す）
   setTimeout(()=>plans.forEach(p=>{const g=imgSaved(p),el=document.querySelector(`[data-gc="${p.no}"]`);if(el){if(!g){el.textContent='';return}const n=g.filter(Boolean).length;el.textContent='画像 '+n+'/'+p.pages;el.classList.toggle('full',n===p.pages)}}));
   const shown = plans.filter(p=>tab==='done'?!!p.posted:!p.posted).sort((a,b)=>tab==='done'?String(b.posted.at).localeCompare(String(a.posted.at)):b.no-a.no);
@@ -238,7 +243,7 @@ function backBar(){const order=plans.slice().sort((a,b)=>b.no-a.no);const i=orde
   return `<div class="backbar"><button class="back" data-nav="list">← 投稿案の一覧に戻る</button><span class="sp"></span>
   <button data-nav="${newer?newer.no:''}" ${newer?'':'disabled'}>‹ No.${newer?newer.no:''}</button><button data-nav="${older?older.no:''}" ${older?'':'disabled'}>No.${older?older.no:''} ›</button></div>`}
 function showList(push){document.body.classList.remove('v-detail');document.body.classList.add('v-list');cur=null;renderList();
-  if(push!==false&&location.hash)history.pushState(null,'',location.pathname);window.scrollTo(0,listScroll)}
+  if(push!==false&&location.hash)history.pushState(null,'',location.pathname+location.search);window.scrollTo(0,listScroll)}
 async function open(no,push){
   cur = plans.find(p=>p.no===no); if(!cur) return;
   if(document.body.classList.contains('v-list'))listScroll=window.scrollY;
@@ -342,7 +347,7 @@ document.addEventListener('keydown',e=>{
     start=null};
   lb.addEventListener('pointerup',up);lb.addEventListener('pointercancel',up);
 })();
-document.getElementById('ptabs').addEventListener('click',e=>{const b=e.target.closest('[data-tab]');if(!b)return;tab=b.dataset.tab;try{sessionStorage.setItem('ptab',tab)}catch(e){}renderList();window.scrollTo(0,0)});
+
 plansEl.addEventListener('click',e=>{const b=e.target.closest('.plan');if(b){window.__fromList=true;open(+b.dataset.no)}});
 detail.addEventListener('click',e=>{const b=e.target.closest('[data-nav]');if(!b||b.disabled)return;e.stopPropagation();
   if(b.dataset.nav==='list')showList();else open(+b.dataset.nav)},true);

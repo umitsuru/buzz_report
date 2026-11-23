@@ -19,6 +19,7 @@
   .site-nav{display:flex;gap:6px;flex-wrap:wrap}
   .site-nav a{padding:6px 14px;border-radius:999px;border:1px solid #333;background:#151515;color:#ccc;text-decoration:none;font-size:13px}
   .site-nav a.on{background:#e6e6e6;color:#000;border-color:#e6e6e6;font-weight:700}
+  @media (max-width:480px){.site-nav{gap:4px;flex-wrap:nowrap}.site-nav a{padding:6px 9px;font-size:12px;white-space:nowrap}}
   .bar{display:flex;flex-wrap:wrap;gap:8px;padding:0 0 12px}
   .bar button{background:#151515;color:#ccc;border:1px solid #333;border-radius:999px;padding:5px 12px;font:inherit;font-size:13px;cursor:pointer}
   .bar button.on{background:#e6e6e6;color:#000;border-color:#e6e6e6}
@@ -75,6 +76,7 @@
         <a href="./" class="on">参考投稿</a>
         <a href="./studio/">画風カタログ</a>
         <a href="./plans/">投稿案</a>
+        <a href="./plans/?posted">投稿済み</a>
       </nav>
       <div class="links">
         <a href="https://github.com/umitsuru/buzz_report/blob/main/hikaku15/catalog.md" target="_blank" rel="noopener noreferrer">一覧と傾向</a>
