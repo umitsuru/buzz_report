@@ -500,5 +500,20 @@
     "status": "プロンプト完成・画像未生成",
     "cover": "../posts/20261122_2124410166171025623/img/04.jpg",
     "maker": "claude"
+  },
+  {
+    "no": 29,
+    "folder": "029",
+    "title": "いつも「割り勘でいいよね？」と言う友達",
+    "created": "2026-11-23",
+    "gafu_id": "No.79",
+    "style_name": "暖色のカラー漫画（参考投稿No.79に近い雰囲気）",
+    "pages": 15,
+    "aspect_ratio": "2:3",
+    "format": "story_manga",
+    "format_name": "縦長2:3・暖色のカラー漫画・1枚2〜3コマ・15枚",
+    "status": "プロンプト完成・画像未生成",
+    "cover": "../posts/20261123_2124616409678557580/img/01.jpg",
+    "maker": "claude"
   }
 ]

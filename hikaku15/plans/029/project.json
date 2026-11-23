@@ -1,0 +1,116 @@
+{
+  "plan_no": 29,
+  "folder": "029",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/029/",
+  "project": "いつも「割り勘でいいよね？」と言う友達",
+  "created": "2026-11-23",
+  "made_by": "Claude",
+  "format": "story_manga",
+  "format_name": "縦長2:3・暖色のカラー漫画・1枚2〜3コマ・15枚",
+  "image_count": 15,
+  "aspect_ratio": "2:3",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像（参考投稿No.79）で画風を確認したあと（人物・セリフは真似しない）、01.md から15.md まで順に1枚ずつ、縦長2:3で生成する。",
+  "fiction_notice": "登場人物はすべて架空の成人。実在の人物・店・会社・アプリとは関係ない。",
+  "reference_posts": [
+    "参考投稿No.79（20261123_2124616409678557580）の画風と話の型"
+  ],
+  "style": {
+    "gafu_id": "No.79",
+    "name": "暖色のカラー漫画（参考投稿No.79に近い雰囲気）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261123_2124616409678557580/img/01.jpg",
+    "defined_in": "common.md"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/15",
+      "title": "1枚目",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/15",
+      "title": "2枚目",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/15",
+      "title": "3枚目",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/15",
+      "title": "4枚目",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/15",
+      "title": "5枚目",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/15",
+      "title": "6枚目",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/15",
+      "title": "7枚目",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/15",
+      "title": "8枚目",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/15",
+      "title": "9枚目",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/15",
+      "title": "10枚目",
+      "file": "10.md"
+    },
+    {
+      "page": 11,
+      "label": "11/15",
+      "title": "11枚目",
+      "file": "11.md"
+    },
+    {
+      "page": 12,
+      "label": "12/15",
+      "title": "12枚目",
+      "file": "12.md"
+    },
+    {
+      "page": 13,
+      "label": "13/15",
+      "title": "13枚目",
+      "file": "13.md"
+    },
+    {
+      "page": 14,
+      "label": "14/15",
+      "title": "14枚目",
+      "file": "14.md"
+    },
+    {
+      "page": 15,
+      "label": "15/15",
+      "title": "15枚目",
+      "file": "15.md"
+    }
+  ]
+}
