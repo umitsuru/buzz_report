@@ -1,0 +1,161 @@
+{
+  "plan_no": 31,
+  "folder": "031",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/031/",
+  "project": "弁護士事務所でヤバい依頼人20選",
+  "created": "2026-11-23",
+  "made_by": "Claude",
+  "format": "C",
+  "format_name": "正方形1:1・1枚1人の「ヤバい依頼人」図鑑（大きな縦書きのセリフ）",
+  "image_count": 20,
+  "aspect_ratio": "1:1",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像でタッチと構成を確認したあと、指示されたページの NN.md を1つずつ読み、1ページにつき正方形1:1で1枚だけ生成する。",
+  "fiction_notice": "登場人物はすべて架空の成人。実在の事務所・人物とは関係ない。ツッコミは笑いのためで、法律相談ではない。性的な描写はしない。",
+  "wording_fallback": {
+    "愛人": "断られたら「彼女」"
+  },
+  "reference_posts": [
+    {
+      "no": 64,
+      "folder": "hikaku15/posts/20261122_2124246479783309638",
+      "url": "https://x.com/i/status/2124246479783309638",
+      "title": "美容院でヤバい客20選",
+      "views": 6032567,
+      "used_for": "構成（1枚に1人、無茶な注文を大きな縦書き、店員の小さなツッコミ）と絵のタッチ"
+    }
+  ],
+  "style": {
+    "gafu_id": "No.64",
+    "ref_post_no": 64,
+    "name": "すっきりした漫画イラスト＋極太の縦書き（参考投稿No.64のタッチ）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/031/ref/01.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/031/ref/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/031/ref/08.jpg"
+    ],
+    "defined_in": "common.md"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/20",
+      "title": "夫の浮気で慰謝料1億。私も浮気中です",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/20",
+      "title": "隣の家の木が邪魔なので夜中に切っていいですか",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/20",
+      "title": "元カレにあげたバッグ、返してもらえます？",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/20",
+      "title": "飲酒運転で捕まったけど、ちょっとだけです",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/20",
+      "title": "悪口を書いた人を訴えたい。私は100件書きました",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/20",
+      "title": "離婚するけど、財産は全部ぼくのものにしたい",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/20",
+      "title": "不倫相手の奥さんに、慰謝料を請求したい",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/20",
+      "title": "養育費を払いたくないので、無職になります",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/20",
+      "title": "会社のお金を少し借りただけ。返すつもりでした",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/20",
+      "title": "姑の遺産、私の名前に書きかえられます？",
+      "file": "10.md"
+    },
+    {
+      "page": 11,
+      "label": "11/20",
+      "title": "家賃を3年払ってないのに、追い出されそうです",
+      "file": "11.md"
+    },
+    {
+      "page": 12,
+      "label": "12/20",
+      "title": "婚約破棄で訴えたい。付き合ってはいません",
+      "file": "12.md"
+    },
+    {
+      "page": 13,
+      "label": "13/20",
+      "title": "ネットで買った偽ブランド、本物として売りたい",
+      "file": "13.md"
+    },
+    {
+      "page": 14,
+      "label": "14/20",
+      "title": "近所がうるさい。うちは毎晩カラオケですけど",
+      "file": "14.md"
+    },
+    {
+      "page": 15,
+      "label": "15/20",
+      "title": "マッチングアプリの男に貢いだ500万、取り返したい",
+      "file": "15.md"
+    },
+    {
+      "page": 16,
+      "label": "16/20",
+      "title": "愛人に買った家、妻にバレずに取り戻したい",
+      "file": "16.md"
+    },
+    {
+      "page": 17,
+      "label": "17/20",
+      "title": "離婚届、夫の字をまねて出していいですか",
+      "file": "17.md"
+    },
+    {
+      "page": 18,
+      "label": "18/20",
+      "title": "遺産は全部長男に。ほかの子には内緒で",
+      "file": "18.md"
+    },
+    {
+      "page": 19,
+      "label": "19/20",
+      "title": "彼女と別れたいので、彼女を訴えてください",
+      "file": "19.md"
+    },
+    {
+      "page": 20,
+      "label": "20/20",
+      "title": "相談料、ツケでいいですか",
+      "file": "20.md"
+    }
+  ]
+}

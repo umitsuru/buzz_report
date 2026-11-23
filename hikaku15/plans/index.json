@@ -530,5 +530,20 @@
     "status": "プロンプト完成・画像未生成",
     "cover": "../posts/20261123_2124790070326829557/thumb/01.jpg",
     "maker": "claude"
+  },
+  {
+    "no": 31,
+    "folder": "031",
+    "title": "弁護士事務所でヤバい依頼人20選",
+    "created": "2026-11-23",
+    "gafu_id": "No.64",
+    "style_name": "すっきりした漫画イラスト＋極太の縦書き（参考投稿No.64・投稿案No.12と同じ）",
+    "pages": 20,
+    "aspect_ratio": "1:1",
+    "format": "C",
+    "format_name": "正方形1:1・1枚1人の「ヤバい依頼人」図鑑",
+    "status": "プロンプト完成・画像未生成",
+    "cover": "./031/ref/01.jpg",
+    "maker": "claude"
   }
 ]
