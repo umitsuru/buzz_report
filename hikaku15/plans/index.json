@@ -113,7 +113,7 @@
     "pages": 10,
     "aspect_ratio": "3:4",
     "format": "A",
-    "status": "プロンプト完成・画像未生成",
+    "status": "文字を作り直し待ち（吹き出しの改行位置・タイトルとナレーションの枠を文字の長さに。1回目の画像は images/old_v2）",
     "cover": "./006/ref/01.jpg",
     "format_name": "縦長3:4・1ページ3コマ（参考投稿No.48の形を縦長に）",
     "maker": "claude"
