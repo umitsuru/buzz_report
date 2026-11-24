@@ -39,110 +39,110 @@
       "label": "1/15",
       "title": "1枚目",
       "file": "01.md",
-      "crop_ratio_hint": "3.1:1"
+      "crop_ratio_hint": "1.32:1"
     },
     {
       "page": 2,
       "label": "2/15",
       "title": "2枚目",
       "file": "02.md",
-      "crop_ratio_hint": "2.85:1"
+      "crop_ratio_hint": "2.49:1"
     },
     {
       "page": 3,
       "label": "3/15",
       "title": "3枚目",
       "file": "03.md",
-      "crop_ratio_hint": "2.92:1"
+      "crop_ratio_hint": "4.12:1"
     },
     {
       "page": 4,
       "label": "4/15",
       "title": "4枚目",
       "file": "04.md",
-      "crop_ratio_hint": "1.97:1"
+      "crop_ratio_hint": "2.22:1"
     },
     {
       "page": 5,
       "label": "5/15",
       "title": "5枚目",
       "file": "05.md",
-      "crop_ratio_hint": "2.85:1"
+      "crop_ratio_hint": "2.49:1"
     },
     {
       "page": 6,
       "label": "6/15",
       "title": "6枚目",
       "file": "06.md",
-      "crop_ratio_hint": "1.79:1"
+      "crop_ratio_hint": "2.22:1"
     },
     {
       "page": 7,
       "label": "7/15",
       "title": "7枚目",
       "file": "07.md",
-      "crop_ratio_hint": "3.41:1"
+      "crop_ratio_hint": "4.12:1"
     },
     {
       "page": 8,
       "label": "8/15",
       "title": "8枚目",
       "file": "08.md",
-      "crop_ratio_hint": "2.85:1"
+      "crop_ratio_hint": "2.22:1"
     },
     {
       "page": 9,
       "label": "9/15",
       "title": "9枚目",
       "file": "09.md",
-      "crop_ratio_hint": "7.41:1"
+      "crop_ratio_hint": "1.97:1"
     },
     {
       "page": 10,
       "label": "10/15",
       "title": "10枚目",
       "file": "10.md",
-      "crop_ratio_hint": "3.41:1"
+      "crop_ratio_hint": "2.49:1"
     },
     {
       "page": 11,
       "label": "11/15",
       "title": "11枚目",
       "file": "11.md",
-      "crop_ratio_hint": "3.41:1"
+      "crop_ratio_hint": "4.12:1"
     },
     {
       "page": 12,
       "label": "12/15",
       "title": "12枚目",
       "file": "12.md",
-      "crop_ratio_hint": "4.12:1"
+      "crop_ratio_hint": "2.49:1"
     },
     {
       "page": 13,
       "label": "13/15",
       "title": "13枚目",
       "file": "13.md",
-      "crop_ratio_hint": "2.18:1"
+      "crop_ratio_hint": "2.49:1"
     },
     {
       "page": 14,
       "label": "14/15",
       "title": "14枚目",
       "file": "14.md",
-      "crop_ratio_hint": "2.07:1"
+      "crop_ratio_hint": "2.49:1"
     },
     {
       "page": 15,
       "label": "15/15",
       "title": "15枚目",
       "file": "15.md",
-      "crop_ratio_hint": "2.22:1"
+      "crop_ratio_hint": "2.49:1"
     }
   ],
   "wording_fallback": {
-    "ゴム": "断られたら「避妊具」",
-    "個包装の写真": "断られたら、写真をやめて文字だけにする"
+    "ゴム": "画像には出てこない（セリフにも直接は出さない）",
+    "穴": "そのまま"
   },
-  "history": "2026/11/24作成（テキスト投稿n126「毎回ゴムつけさせてたのに妊娠した」をLINEのやりとりに作り直し）"
+  "history": "2026/11/24作成（テキスト投稿n126をLINEに）。2026/11/25、リアル寄りに作り直し：問い詰めは前の晩に家で済み、LINEは翌朝、実家から出社した妻と、言い訳を続ける夫のやりとりにした（前の画像は images/old_v1）"
 }
