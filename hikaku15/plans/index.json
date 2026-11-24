@@ -306,7 +306,14 @@
     "format_name": "LINEのトーク画面・画像ごとに上下をトリミング・15枚",
     "status": "縮尺の指定を追加・画像を全部作り直し待ち（3:2で生成→トリミング）",
     "cover": "./016/ref/01.jpg",
-    "maker": "claude"
+    "maker": "claude",
+    "posted": {
+      "account": "うみつる",
+      "at": "2026-11-24T19:43:00+09:00",
+      "via": "Postiz",
+      "postiz_id": "cmwukhbub00ztp407nngn9yv1",
+      "text": "墓穴を掘るとはこのこと…"
+    }
   },
   {
     "no": 17,
