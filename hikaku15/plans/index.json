@@ -73,10 +73,17 @@
     "pages": 10,
     "aspect_ratio": "1:1",
     "format": "B",
-    "status": "プロンプト完成・画像未生成",
+    "status": "投稿済み",
     "cover": "../studio/originals/S-01.jpg",
     "format_name": "正方形1:1・1枚絵（コマ割りなし）",
-    "maker": "chatgpt"
+    "maker": "chatgpt",
+    "posted": {
+      "account": "うみつる",
+      "at": "2026-11-25T08:33:00+09:00",
+      "via": "Postiz",
+      "postiz_id": "cmwvbyspi0bpqp907hmhb3cwn",
+      "text": "スタバでバレる。「リア充」と「コミュ障」"
+    }
   },
   {
     "no": 5,
