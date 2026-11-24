@@ -2,7 +2,7 @@
   "plan_no": 38,
   "folder": "038",
   "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/038/",
-  "project": "実家に帰った妻から「カメラ、知らない女がいる」とLINEが来た",
+  "project": "実家から夫に「カメラ、知らない女がいる」とLINEした",
   "created": "2026-11-24",
   "made_by": "Claude",
   "format": "LINE",
@@ -140,11 +140,6 @@
       "crop_ratio_hint": "2.0:1"
     }
   ],
-  "timeline_crop": {
-    "first_message": "カメラ、知らない女がいる",
-    "visible_on_timeline": "知らない女がい",
-    "rule": "Xのタイムラインでは横長の1枚目の中央約34％（左から33〜67％）だけが見える。左の吹き出しの5〜11文字目が見える位置にくる（No.16の実績から計算）"
-  },
   "wording_fallback": {
     "ゴム": "断られたら、そのまま「ゴム」で通す（性的な絵は描かないと伝える）",
     "生でいいよね": "断られたら「生でいいよね？」は変えず、絵に性的な要素がないことを伝える",

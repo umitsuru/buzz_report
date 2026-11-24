@@ -2,7 +2,7 @@
   "plan_no": 35,
   "folder": "035",
   "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/035/",
-  "project": "彼女から「ゴムが3個ない」とLINEが来た",
+  "project": "付き合って3か月の彼氏に「ゴムが3個ない」とLINEした",
   "created": "2026-11-24",
   "made_by": "Claude",
   "format": "LINE",
@@ -140,11 +140,6 @@
       "crop_ratio_hint": "1.79:1"
     }
   ],
-  "timeline_crop": {
-    "first_message": "あのさ、ゴムが３個ない",
-    "visible_on_timeline": "ゴムが３個ない",
-    "rule": "Xのタイムラインでは横長の1枚目の中央約34％（左から33〜67％）だけが見える。左の吹き出しの5〜11文字目が見える位置にくる（No.16の実績から計算）"
-  },
   "wording_fallback": {
     "ゴム": "断られたら、そのまま「ゴム」で通す（性的な絵は描かないと伝える）",
     "生でいいよね": "断られたら「生でいいよね？」は変えず、絵に性的な要素がないことを伝える",

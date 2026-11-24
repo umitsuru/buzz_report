@@ -2,7 +2,7 @@
   "plan_no": 39,
   "folder": "039",
   "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/039/",
-  "project": "妻から「ゆうと、新しいママって誰」とLINEが来た",
+  "project": "夫に「ゆうと、新しいママって誰」とLINEした",
   "created": "2026-11-24",
   "made_by": "Claude",
   "format": "LINE",
@@ -140,11 +140,6 @@
       "crop_ratio_hint": "2.49:1"
     }
   ],
-  "timeline_crop": {
-    "first_message": "ゆうと、新しいママって誰",
-    "visible_on_timeline": "新しいママって",
-    "rule": "Xのタイムラインでは横長の1枚目の中央約34％（左から33〜67％）だけが見える。左の吹き出しの5〜11文字目が見える位置にくる（No.16の実績から計算）"
-  },
   "wording_fallback": {
     "ゴム": "断られたら、そのまま「ゴム」で通す（性的な絵は描かないと伝える）",
     "生でいいよね": "断られたら「生でいいよね？」は変えず、絵に性的な要素がないことを伝える",
