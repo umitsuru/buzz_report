@@ -586,5 +586,50 @@
     "status": "プロンプト完成・画像未生成",
     "cover": "./031/ref/01.jpg",
     "maker": "claude"
+  },
+  {
+    "no": 32,
+    "folder": "032",
+    "title": "夫の浮気相手から、DMが来た",
+    "created": "2026-11-24",
+    "gafu_id": "No.87",
+    "style_name": "XのDM風スクショ（ダークモード・自分は青）",
+    "pages": 11,
+    "aspect_ratio": "2:3",
+    "format": "x_dm",
+    "format_name": "XのDM風スクショ・縦長2:3・11枚",
+    "status": "プロンプト完成・画像未生成",
+    "cover": "../posts/20261124_2124846821587800542/thumb/01.jpg",
+    "maker": "claude"
+  },
+  {
+    "no": 33,
+    "folder": "033",
+    "title": "3年ぶりに元カレから深夜のDM",
+    "created": "2026-11-24",
+    "gafu_id": "No.87",
+    "style_name": "XのDM風スクショ（ダークモード・自分は青）",
+    "pages": 10,
+    "aspect_ratio": "2:3",
+    "format": "x_dm",
+    "format_name": "XのDM風スクショ・縦長2:3・10枚",
+    "status": "プロンプト完成・画像未生成",
+    "cover": "../posts/20261124_2124846821587800542/thumb/01.jpg",
+    "maker": "claude"
+  },
+  {
+    "no": 34,
+    "folder": "034",
+    "title": "フォロワー10万人になったら届いた「企業案件」のDM",
+    "created": "2026-11-24",
+    "gafu_id": "No.87",
+    "style_name": "XのDM風スクショ（ダークモード・自分は青）",
+    "pages": 10,
+    "aspect_ratio": "2:3",
+    "format": "x_dm",
+    "format_name": "XのDM風スクショ・縦長2:3・10枚",
+    "status": "プロンプト完成・画像未生成",
+    "cover": "../posts/20261124_2124846821587800542/thumb/01.jpg",
+    "maker": "claude"
   }
 ]
