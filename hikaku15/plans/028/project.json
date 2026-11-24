@@ -5,13 +5,14 @@
   "project": "妻が家出した",
   "created": "2026-11-23",
   "made_by": "Claude",
+  "history": "2026/11/23に20枚で作成。2026/11/24、40枚に作り直し（条件を厳しくし、夫の反省と変化を長く描く。夫を30代後半の見た目に。20枚版の画像は old_v1/）",
   "format": "story_manga",
-  "format_name": "縦長（2:3で生成）・白黒グレーのトーン漫画・1枚2〜3コマ・20枚",
-  "image_count": 20,
+  "format_name": "縦長（2:3で生成）・白黒グレーのトーン漫画・1枚2〜3コマ・40枚",
+  "image_count": 40,
   "aspect_ratio": "2:3",
   "initial_mode": "wait_for_explicit_generate_command",
-  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像（参考投稿No.67）で画風を確認したあと（人物・セリフは真似しない）、01.md から20.md まで順に1枚ずつ、縦長2:3で生成する。",
-  "fiction_notice": "登場人物は娘以外すべて架空の成人。実在の人物・会社とは関係ない。性的な描写はしない。",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像（参考投稿No.67）で画風を確認したあと（人物・セリフは真似しない）、01.md から40.md まで順に1枚ずつ、縦長2:3で生成する。",
+  "fiction_notice": "登場人物は娘以外すべて架空の成人。実在の人物・会社・サービスとは関係ない。性的な描写はしない。",
   "reference_posts": [
     "参考投稿No.67（20261122_2124410166171025623）の画風と話の型"
   ],
@@ -24,127 +25,248 @@
   "pages": [
     {
       "page": 1,
-      "label": "1/20",
+      "label": "1/40",
       "title": "1枚目",
       "file": "01.md"
     },
     {
       "page": 2,
-      "label": "2/20",
+      "label": "2/40",
       "title": "2枚目",
       "file": "02.md"
     },
     {
       "page": 3,
-      "label": "3/20",
+      "label": "3/40",
       "title": "3枚目",
       "file": "03.md"
     },
     {
       "page": 4,
-      "label": "4/20",
+      "label": "4/40",
       "title": "4枚目",
       "file": "04.md"
     },
     {
       "page": 5,
-      "label": "5/20",
+      "label": "5/40",
       "title": "5枚目",
       "file": "05.md"
     },
     {
       "page": 6,
-      "label": "6/20",
+      "label": "6/40",
       "title": "6枚目",
       "file": "06.md"
     },
     {
       "page": 7,
-      "label": "7/20",
+      "label": "7/40",
       "title": "7枚目",
       "file": "07.md"
     },
     {
       "page": 8,
-      "label": "8/20",
+      "label": "8/40",
       "title": "8枚目",
       "file": "08.md"
     },
     {
       "page": 9,
-      "label": "9/20",
+      "label": "9/40",
       "title": "9枚目",
       "file": "09.md"
     },
     {
       "page": 10,
-      "label": "10/20",
+      "label": "10/40",
       "title": "10枚目",
       "file": "10.md"
     },
     {
       "page": 11,
-      "label": "11/20",
+      "label": "11/40",
       "title": "11枚目",
       "file": "11.md"
     },
     {
       "page": 12,
-      "label": "12/20",
+      "label": "12/40",
       "title": "12枚目",
       "file": "12.md"
     },
     {
       "page": 13,
-      "label": "13/20",
+      "label": "13/40",
       "title": "13枚目",
       "file": "13.md"
     },
     {
       "page": 14,
-      "label": "14/20",
+      "label": "14/40",
       "title": "14枚目",
       "file": "14.md"
     },
     {
       "page": 15,
-      "label": "15/20",
+      "label": "15/40",
       "title": "15枚目",
       "file": "15.md"
     },
     {
       "page": 16,
-      "label": "16/20",
+      "label": "16/40",
       "title": "16枚目",
       "file": "16.md"
     },
     {
       "page": 17,
-      "label": "17/20",
+      "label": "17/40",
       "title": "17枚目",
       "file": "17.md"
     },
     {
       "page": 18,
-      "label": "18/20",
+      "label": "18/40",
       "title": "18枚目",
       "file": "18.md"
     },
     {
       "page": 19,
-      "label": "19/20",
+      "label": "19/40",
       "title": "19枚目",
       "file": "19.md"
     },
     {
       "page": 20,
-      "label": "20/20",
+      "label": "20/40",
       "title": "20枚目",
       "file": "20.md"
+    },
+    {
+      "page": 21,
+      "label": "21/40",
+      "title": "21枚目",
+      "file": "21.md"
+    },
+    {
+      "page": 22,
+      "label": "22/40",
+      "title": "22枚目",
+      "file": "22.md"
+    },
+    {
+      "page": 23,
+      "label": "23/40",
+      "title": "23枚目",
+      "file": "23.md"
+    },
+    {
+      "page": 24,
+      "label": "24/40",
+      "title": "24枚目",
+      "file": "24.md"
+    },
+    {
+      "page": 25,
+      "label": "25/40",
+      "title": "25枚目",
+      "file": "25.md"
+    },
+    {
+      "page": 26,
+      "label": "26/40",
+      "title": "26枚目",
+      "file": "26.md"
+    },
+    {
+      "page": 27,
+      "label": "27/40",
+      "title": "27枚目",
+      "file": "27.md"
+    },
+    {
+      "page": 28,
+      "label": "28/40",
+      "title": "28枚目",
+      "file": "28.md"
+    },
+    {
+      "page": 29,
+      "label": "29/40",
+      "title": "29枚目",
+      "file": "29.md"
+    },
+    {
+      "page": 30,
+      "label": "30/40",
+      "title": "30枚目",
+      "file": "30.md"
+    },
+    {
+      "page": 31,
+      "label": "31/40",
+      "title": "31枚目",
+      "file": "31.md"
+    },
+    {
+      "page": 32,
+      "label": "32/40",
+      "title": "32枚目",
+      "file": "32.md"
+    },
+    {
+      "page": 33,
+      "label": "33/40",
+      "title": "33枚目",
+      "file": "33.md"
+    },
+    {
+      "page": 34,
+      "label": "34/40",
+      "title": "34枚目",
+      "file": "34.md"
+    },
+    {
+      "page": 35,
+      "label": "35/40",
+      "title": "35枚目",
+      "file": "35.md"
+    },
+    {
+      "page": 36,
+      "label": "36/40",
+      "title": "36枚目",
+      "file": "36.md"
+    },
+    {
+      "page": 37,
+      "label": "37/40",
+      "title": "37枚目",
+      "file": "37.md"
+    },
+    {
+      "page": 38,
+      "label": "38/40",
+      "title": "38枚目",
+      "file": "38.md"
+    },
+    {
+      "page": 39,
+      "label": "39/40",
+      "title": "39枚目",
+      "file": "39.md"
+    },
+    {
+      "page": 40,
+      "label": "40/40",
+      "title": "40枚目",
+      "file": "40.md"
     }
   ],
   "wording_fallback": {
-    "セックスレス": "（言葉にしない。背を向ける夫・空いた枕・最後の便せんで表す）",
+    "大人の動画": "断られたら「夜の動画」",
+    "セックスレス": "（言葉にしない）",
     "寝室をひとつに戻して": "（そのまま。夫婦の和解の言葉として描く）"
   }
 }
