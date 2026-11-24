@@ -2,7 +2,7 @@
   "plan_no": 29,
   "folder": "029",
   "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/029/",
-  "project": "いつも「割り勘でいいよね？」と言う友達",
+  "project": "割り勘合コンで、友達が「パパ」を呼んだ結果",
   "created": "2026-11-23",
   "made_by": "Claude",
   "format": "story_manga",
@@ -11,15 +11,20 @@
   "aspect_ratio": "2:3",
   "initial_mode": "wait_for_explicit_generate_command",
   "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像（参考投稿No.79）で画風を確認したあと（人物・セリフは真似しない）、01.md から15.md まで順に1枚ずつ、縦長2:3で生成する。",
-  "fiction_notice": "登場人物はすべて架空の成人。実在の人物・店・会社・アプリとは関係ない。",
+  "history": "2026/11/23に『いつも割り勘でいいよねと言う友達』で作成。2026/11/24、合コンの話に全面的に作り直し（旧版の画像は old_v1/）",
+  "fiction_notice": "登場人物はすべて架空の成人。実在の人物・店・会社とは関係ない。性的な描写はしない。",
   "reference_posts": [
-    "参考投稿No.79（20261123_2124616409678557580）の画風と話の型"
+    "参考投稿No.79（20261123_2124616409678557580）の画風"
   ],
   "style": {
     "gafu_id": "No.79",
     "name": "暖色のカラー漫画（参考投稿No.79に近い雰囲気）",
     "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261123_2124616409678557580/img/01.jpg",
     "defined_in": "common.md"
+  },
+  "wording_fallback": {
+    "パパ活": "（言葉にしない。「パパ」とだけ言う）",
+    "パパ": "断られたら「おじさま」"
   },
   "pages": [
     {
