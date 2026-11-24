@@ -91,7 +91,14 @@
     "status": "プロンプト改訂・画像未生成（11/22）",
     "format_name": "正方形1:1・人物図鑑（キュビスム風）",
     "images_stale": false,
-    "maker": "chatgpt+claude"
+    "maker": "chatgpt+claude",
+    "posted": {
+      "account": "うみつる",
+      "at": "2026-11-24T12:24:00+09:00",
+      "via": "Postiz",
+      "postiz_id": "cmwu4rq2r0ahbnx07p24mjtyo",
+      "text": "職場にいる、個性的な独身女性10選"
+    }
   },
   {
     "no": 6,
@@ -137,7 +144,14 @@
     "status": "16枚に変更・名前入り札を追加・画像を全部作り直し待ち（11/22）",
     "cover": "../posts/20261121_2123886600761520325/img/01.png",
     "reference_role": "composition",
-    "maker": "chatgpt+claude"
+    "maker": "chatgpt+claude",
+    "posted": {
+      "account": "やまつる",
+      "at": "2026-11-24T12:24:00+09:00",
+      "via": "Postiz",
+      "postiz_id": "cmwu4rq3d0ahcnx07ddhegdbn",
+      "text": "↑平成のヤンキー女\n\n↓令和のヤンキー女"
+    }
   },
   {
     "no": 9,
