@@ -2,7 +2,7 @@
   "plan_no": 41,
   "folder": "041",
   "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/041/",
-  "project": "夫の音声入力LINEに、女の声まで入っていた",
+  "project": "夫が「今日、帰りに入れてくる」とLINEしてきた",
   "created": "2026-11-24",
   "made_by": "Claude",
   "format": "LINE",
@@ -46,42 +46,42 @@
       "label": "2/15",
       "title": "2枚目",
       "file": "02.md",
-      "crop_ratio_hint": "2.49:1"
+      "crop_ratio_hint": "3.41:1"
     },
     {
       "page": 3,
       "label": "3/15",
       "title": "3枚目",
       "file": "03.md",
-      "crop_ratio_hint": "3.41:1"
+      "crop_ratio_hint": "2.85:1"
     },
     {
       "page": 4,
       "label": "4/15",
       "title": "4枚目",
       "file": "04.md",
-      "crop_ratio_hint": "2.49:1"
+      "crop_ratio_hint": "2.85:1"
     },
     {
       "page": 5,
       "label": "5/15",
       "title": "5枚目",
       "file": "05.md",
-      "crop_ratio_hint": "4.12:1"
+      "crop_ratio_hint": "2.85:1"
     },
     {
       "page": 6,
       "label": "6/15",
       "title": "6枚目",
       "file": "06.md",
-      "crop_ratio_hint": "3.41:1"
+      "crop_ratio_hint": "2.49:1"
     },
     {
       "page": 7,
       "label": "7/15",
       "title": "7枚目",
       "file": "07.md",
-      "crop_ratio_hint": "2.85:1"
+      "crop_ratio_hint": "4.12:1"
     },
     {
       "page": 8,
@@ -95,54 +95,54 @@
       "label": "9/15",
       "title": "9枚目",
       "file": "09.md",
-      "crop_ratio_hint": "3.41:1"
+      "crop_ratio_hint": "4.12:1"
     },
     {
       "page": 10,
       "label": "10/15",
       "title": "10枚目",
       "file": "10.md",
-      "crop_ratio_hint": "2.49:1"
+      "crop_ratio_hint": "3.41:1"
     },
     {
       "page": 11,
       "label": "11/15",
       "title": "11枚目",
       "file": "11.md",
-      "crop_ratio_hint": "2.92:1"
+      "crop_ratio_hint": "2.02:1"
     },
     {
       "page": 12,
       "label": "12/15",
       "title": "12枚目",
       "file": "12.md",
-      "crop_ratio_hint": "2.73:1"
+      "crop_ratio_hint": "2.85:1"
     },
     {
       "page": 13,
       "label": "13/15",
       "title": "13枚目",
       "file": "13.md",
-      "crop_ratio_hint": "3.41:1"
+      "crop_ratio_hint": "1.97:1"
     },
     {
       "page": 14,
       "label": "14/15",
       "title": "14枚目",
       "file": "14.md",
-      "crop_ratio_hint": "2.85:1"
+      "crop_ratio_hint": "2.18:1"
     },
     {
       "page": 15,
       "label": "15/15",
       "title": "15枚目",
       "file": "15.md",
-      "crop_ratio_hint": "2.85:1"
+      "crop_ratio_hint": "1.96:1"
     }
   ],
   "timeline_crop": {
-    "first_message": "今帰る。やだ、帰らないで",
-    "visible_on_timeline": "やだ、帰らない",
+    "first_message": "今日、帰りに入れてくる",
+    "visible_on_timeline": "りに入れてくる",
     "rule": "Xのタイムラインでは横長の1枚目の中央約34％（左から33〜67％）だけが見える。左の吹き出しの5〜11文字目が見える位置にくる（No.16の実績から計算）"
   },
   "wording_fallback": {
