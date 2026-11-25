@@ -555,7 +555,7 @@
     "aspect_ratio": "2:3",
     "format": "story_manga",
     "format_name": "縦長（2:3で生成）・白黒グレーのトーン漫画・1枚2〜3コマ・40枚",
-    "status": "文字を作り直し待ち（改行位置の指定・便せんを手書きに・フォント指定。1回目の画像は images/old_v2）",
+    "status": "全40枚を作り直し待ち（絵柄・回想・LINE・家事の中身などを修正。前の画像は images/old_v4）",
     "cover": "../posts/20261122_2124410166171025623/img/04.jpg",
     "maker": "claude"
   },
