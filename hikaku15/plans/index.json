@@ -623,7 +623,7 @@
     "aspect_ratio": "2:3",
     "format": "x_dm",
     "format_name": "XのDM風スクショ・縦長2:3・10枚",
-    "status": "プロンプト完成・画像未生成",
+    "status": "2枚目以降を作り直し待ち（No.32と同じ、上が見切れた続きの切り抜きに変更）",
     "cover": "../posts/20261124_2124846821587800542/thumb/01.jpg",
     "maker": "claude"
   },
@@ -638,7 +638,7 @@
     "aspect_ratio": "2:3",
     "format": "x_dm",
     "format_name": "XのDM風スクショ・縦長2:3・10枚",
-    "status": "プロンプト完成・画像未生成",
+    "status": "2枚目以降を作り直し待ち（No.32と同じ、上が見切れた続きの切り抜きに変更）",
     "cover": "../posts/20261124_2124846821587800542/thumb/01.jpg",
     "maker": "claude"
   },

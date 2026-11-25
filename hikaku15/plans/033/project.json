@@ -6,7 +6,7 @@
   "created": "2026-11-24",
   "made_by": "Claude",
   "format": "x_dm",
-  "format_name": "XのDM風スクショ（ダークモード・自分は青い吹き出し）・縦長2:3・10枚",
+  "format_name": "XのDM風スクショ（ダークモード・自分は青い吹き出し）・縦長2:3・10枚（2枚目からは上が見切れた続きの切り抜き）",
   "image_count": 10,
   "aspect_ratio": "2:3",
   "initial_mode": "wait_for_explicit_generate_command",
@@ -82,5 +82,6 @@
       "title": "10枚目",
       "file": "10.md"
     }
-  ]
+  ],
+  "history": "2026/11/25、No.32と同じく2枚目以降を『上に前のページの吹き出しが見切れた、続きの切り抜き』に変更（前の画像は images/old_v1）"
 }
