@@ -2,12 +2,12 @@
   "plan_no": 35,
   "folder": "035",
   "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/035/",
-  "project": "付き合って3か月の彼氏に「ゴムが3個ない」とLINEした",
-  "created": "2026-11-24",
+  "project": "初エッチの翌日、彼から「ぷすっ」の話をされた",
+  "created": "2026-11-25",
   "made_by": "Claude",
   "format": "LINE",
-  "format_name": "LINEのトーク画面（ダークモード：黒い背景）・画像ごとに上下をトリミング（生成は3:2）・15枚",
-  "image_count": 15,
+  "format_name": "LINEのトーク画面（ダークモード：黒い背景）・画像ごとに上下をトリミング（生成は3:2）・12枚",
+  "image_count": 12,
   "aspect_ratio": "可変（生成は3:2→上下をトリミング）",
   "initial_mode": "wait_for_explicit_generate_command",
   "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。01.md から15.md まで順に1枚ずつ、横長3:2で生成し、common.md の【トリミング】の手順で上下の余白を切り取ってから images/NN.jpg に保存する。",
@@ -36,114 +36,98 @@
   "pages": [
     {
       "page": 1,
-      "label": "1/15",
+      "label": "1/12",
       "title": "1枚目",
       "file": "01.md",
       "crop_ratio_hint": "3.1:1"
     },
     {
       "page": 2,
-      "label": "2/15",
+      "label": "2/12",
       "title": "2枚目",
       "file": "02.md",
-      "crop_ratio_hint": "2.49:1"
-    },
-    {
-      "page": 3,
-      "label": "3/15",
-      "title": "3枚目",
-      "file": "03.md",
-      "crop_ratio_hint": "4.12:1"
-    },
-    {
-      "page": 4,
-      "label": "4/15",
-      "title": "4枚目",
-      "file": "04.md",
-      "crop_ratio_hint": "3.41:1"
-    },
-    {
-      "page": 5,
-      "label": "5/15",
-      "title": "5枚目",
-      "file": "05.md",
-      "crop_ratio_hint": "4.12:1"
-    },
-    {
-      "page": 6,
-      "label": "6/15",
-      "title": "6枚目",
-      "file": "06.md",
       "crop_ratio_hint": "2.85:1"
     },
     {
-      "page": 7,
-      "label": "7/15",
-      "title": "7枚目",
-      "file": "07.md",
-      "crop_ratio_hint": "2.92:1"
+      "page": 3,
+      "label": "3/12",
+      "title": "3枚目",
+      "file": "03.md",
+      "crop_ratio_hint": "3.41:1"
     },
     {
-      "page": 8,
-      "label": "8/15",
-      "title": "8枚目",
-      "file": "08.md",
+      "page": 4,
+      "label": "4/12",
+      "title": "4枚目",
+      "file": "04.md",
       "crop_ratio_hint": "2.49:1"
     },
     {
+      "page": 5,
+      "label": "5/12",
+      "title": "5枚目",
+      "file": "05.md",
+      "crop_ratio_hint": "2.85:1"
+    },
+    {
+      "page": 6,
+      "label": "6/12",
+      "title": "6枚目",
+      "file": "06.md",
+      "crop_ratio_hint": "2.49:1"
+    },
+    {
+      "page": 7,
+      "label": "7/12",
+      "title": "7枚目",
+      "file": "07.md",
+      "crop_ratio_hint": "2.49:1"
+    },
+    {
+      "page": 8,
+      "label": "8/12",
+      "title": "8枚目",
+      "file": "08.md",
+      "crop_ratio_hint": "2.85:1"
+    },
+    {
       "page": 9,
-      "label": "9/15",
+      "label": "9/12",
       "title": "9枚目",
       "file": "09.md",
-      "crop_ratio_hint": "2.4:1"
+      "crop_ratio_hint": "3.41:1"
     },
     {
       "page": 10,
-      "label": "10/15",
+      "label": "10/12",
       "title": "10枚目",
       "file": "10.md",
       "crop_ratio_hint": "2.85:1"
     },
     {
       "page": 11,
-      "label": "11/15",
+      "label": "11/12",
       "title": "11枚目",
       "file": "11.md",
-      "crop_ratio_hint": "2.85:1"
+      "crop_ratio_hint": "3.22:1"
     },
     {
       "page": 12,
-      "label": "12/15",
+      "label": "12/12",
       "title": "12枚目",
       "file": "12.md",
       "crop_ratio_hint": "4.12:1"
-    },
-    {
-      "page": 13,
-      "label": "13/15",
-      "title": "13枚目",
-      "file": "13.md",
-      "crop_ratio_hint": "2.49:1"
-    },
-    {
-      "page": 14,
-      "label": "14/15",
-      "title": "14枚目",
-      "file": "14.md",
-      "crop_ratio_hint": "2.85:1"
-    },
-    {
-      "page": 15,
-      "label": "15/15",
-      "title": "15枚目",
-      "file": "15.md",
-      "crop_ratio_hint": "1.79:1"
     }
   ],
-  "wording_fallback": {
-    "ゴム": "断られたら、そのまま「ゴム」で通す（性的な絵は描かないと伝える）",
-    "生でいいよね": "断られたら「生でいいよね？」は変えず、絵に性的な要素がないことを伝える",
-    "ラブホ": "使わない"
+  "timeline_crop": {
+    "first_message": "昨日の『ぷすっ』って音さ",
+    "visible_on_timeline": "ぷすっ』って音",
+    "rule": "Xのタイムラインでは横長の1枚目の中央約34％（左から33〜67％）だけが見える。左の吹き出しの5〜11文字目が見える位置にくる（No.16の実績から計算）"
   },
-  "history": "2026/11/24作成。バズったNo.16の1枚目（タイムラインでは「りに抜いてくる」だけが見えた）をもとに、1枚目の1つ目の吹き出しの5〜11文字目だけがタイムラインで見えるように設計"
+  "wording_fallback": {
+    "ラブホ": "断られたら「ホテル」",
+    "ゴム": "断られたら「何買ったの？笑」だけにする",
+    "ラブホテルの写真": "断られたら、ネオンのついた派手なホテルの外観（料金の看板だけ）にする"
+  },
+  "history": "2026/11/25作成（テキスト投稿n76をLINEのやりとりに。1枚目はXのタイムラインで真ん中だけ見える前提で作成。画像はClaudeが描画）"
 }
