@@ -180,11 +180,18 @@
     "aspect_ratio": "1:1",
     "format": "上下比較",
     "format_name": "正方形1:1・上段平成／下段令和・送迎ドライバー目線・全10枚",
-    "status": "1〜9枚目のネタとツッコミを書き直し・1〜9枚目の画像を作り直し待ち（10枚目はそのまま。旧画像は old_v1/）",
+    "status": "投稿済み",
     "reference_role": "style",
     "maker": "chatgpt",
     "cover": "../posts/20261122_2124274238635102644/img/01.jpg",
-    "images_stale": false
+    "images_stale": false,
+    "posted": {
+      "account": "そらつる",
+      "at": "2026-11-25T22:08:00+09:00",
+      "via": "Postiz",
+      "postiz_id": "cmww53kku0jxwp407gsyy4ind",
+      "text": "デリヘルの送迎ドライバーから見た、平成と令和の嬢の違い"
+    }
   },
   {
     "no": 10,
