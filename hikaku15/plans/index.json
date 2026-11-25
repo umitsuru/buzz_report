@@ -536,11 +536,11 @@
     "created": "2026-11-23",
     "gafu_id": "No.73",
     "style_name": "グレー＋くすんだ水色の女性向け漫画（参考投稿No.73に近い雰囲気）",
-    "pages": 17,
+    "pages": 20,
     "aspect_ratio": "2:3",
     "format": "story_manga",
     "format_name": "縦長2:3・グレー＋くすんだ水色の女性向け漫画・1枚2〜4コマ・17枚",
-    "status": "プロンプト完成・画像未生成",
+    "status": "20枚に作り直し・画像の作り直し待ち（17枚版は images/old_v1）",
     "cover": "../posts/20261122_2124459278681653543/img/04.jpg",
     "maker": "claude"
   },
