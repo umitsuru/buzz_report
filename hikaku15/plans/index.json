@@ -787,7 +787,7 @@
     "format": "story_manga",
     "format_name": "縦長2:3・グレー＋くすんだ水色の女性向け漫画・1枚2〜4コマ・17枚",
     "status": "プロンプト完成・画像未生成",
-    "cover": null,
+    "cover": "./027/images/01.jpg",
     "maker": "claude"
   }
 ]
