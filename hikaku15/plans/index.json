@@ -615,9 +615,16 @@
     "aspect_ratio": "2:3／可変",
     "format": "x_dm",
     "format_name": "XのDM風スクショ・縦長2:3・11枚",
-    "status": "画像完成（UIを実際のXのDMに合わせてClaudeが描画）",
+    "status": "投稿済み",
     "cover": "../posts/20261124_2124846821587800542/thumb/01.jpg",
-    "maker": "claude"
+    "maker": "claude",
+    "posted": {
+      "account": "うみつる",
+      "at": "2026-11-26T08:28:00+09:00",
+      "via": "Postiz",
+      "postiz_id": "cmwwr8wij0wz4p907af7cl27h",
+      "text": "夫の不倫相手からDMが届いた…"
+    }
   },
   {
     "no": 33,
