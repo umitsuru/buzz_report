@@ -622,16 +622,16 @@
   {
     "no": 33,
     "folder": "033",
-    "title": "3年ぶりに元カレから深夜のDM",
+    "title": "3年ぶりに元カレから深夜のLINE",
     "created": "2026-11-24",
     "gafu_id": "No.87",
-    "style_name": "XのDM風スクショ（ダークモード・自分は青）",
+    "style_name": "本物のLINEに近いトーク画面（ダークモード）",
     "pages": 10,
-    "aspect_ratio": "2:3",
-    "format": "x_dm",
-    "format_name": "XのDM風スクショ・縦長2:3・10枚",
-    "status": "2枚目以降を作り直し待ち（No.32と同じ、上が見切れた続きの切り抜きに変更）",
-    "cover": "../posts/20261124_2124846821587800542/thumb/01.jpg",
+    "aspect_ratio": "可変",
+    "format": "LINE",
+    "format_name": "LINEのトーク画面（ダークモード：黒い背景）・画像ごとに上下をトリミング（生成は3:2）・10枚",
+    "status": "画像完成（LINEに変更・Claudeが描画）",
+    "cover": "./033/images/01.jpg",
     "maker": "claude"
   },
   {

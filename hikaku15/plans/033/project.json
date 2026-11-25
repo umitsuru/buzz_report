@@ -2,23 +2,35 @@
   "plan_no": 33,
   "folder": "033",
   "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/033/",
-  "project": "3年ぶりに元カレから深夜のDM",
+  "project": "3年ぶりに元カレから深夜のLINE",
   "created": "2026-11-24",
   "made_by": "Claude",
-  "format": "x_dm",
-  "format_name": "XのDM風スクショ（ダークモード・自分は青い吹き出し）・縦長2:3・10枚（2枚目からは上が見切れた続きの切り抜き）",
+  "format": "LINE",
+  "format_name": "LINEのトーク画面（ダークモード：黒い背景）・画像ごとに上下をトリミング（生成は3:2）・10枚",
   "image_count": 10,
-  "aspect_ratio": "2:3",
+  "aspect_ratio": "可変（生成は3:2→上下をトリミング）",
   "initial_mode": "wait_for_explicit_generate_command",
-  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像（参考投稿No.87）でスクショの雰囲気を確認したあと（自分の吹き出しは紫ではなく青）、01.md から10.md まで順に1枚ずつ、縦長2:3で生成する。",
-  "fiction_notice": "登場人物はすべて架空の成人。実在の人物・会社・サービスとは関係ない。性的な絵は描かない。",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。01.md から15.md まで順に1枚ずつ、横長3:2で生成し、common.md の【トリミング】の手順で上下の余白を切り取ってから images/NN.jpg に保存する。",
+  "fiction_notice": "登場人物はすべて架空の成人。実在の人物・店・ホテルとは関係ない創作のやりとり。",
   "reference_posts": [
-    "参考投稿No.87（20261124_2124846821587800542）のスクショの形"
+    {
+      "no": 60,
+      "folder": "hikaku15/posts/20261122_2124099470648602642",
+      "url": "https://x.com/i/status/2124099470648602642",
+      "title": "ドラレコ見てみるね←降参ポイントw（浮気男と彼女のLINE）",
+      "views": 3995505,
+      "used_for": "形式のみ（LINE風のトーク画面を横長に切り抜いた画像の連作、既読・時刻・応答なし）"
+    }
   ],
   "style": {
-    "gafu_id": "No.87",
-    "name": "XのDM風スクショ（ダークモード）",
-    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261124_2124846821587800542/img/01.jpg",
+    "gafu_id": "No.60",
+    "ref_post_no": 60,
+    "name": "本物のLINEに近いトーク画面（形式は参考投稿No.60）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/033/ref/01.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/033/ref/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/033/ref/10.jpg"
+    ],
     "defined_in": "common.md"
   },
   "pages": [
@@ -26,62 +38,77 @@
       "page": 1,
       "label": "1/10",
       "title": "1枚目",
-      "file": "01.md"
+      "file": "01.md",
+      "crop_ratio_hint": "1.4:1"
     },
     {
       "page": 2,
       "label": "2/10",
       "title": "2枚目",
-      "file": "02.md"
+      "file": "02.md",
+      "crop_ratio_hint": "1.62:1"
     },
     {
       "page": 3,
       "label": "3/10",
       "title": "3枚目",
-      "file": "03.md"
+      "file": "03.md",
+      "crop_ratio_hint": "1.76:1"
     },
     {
       "page": 4,
       "label": "4/10",
       "title": "4枚目",
-      "file": "04.md"
+      "file": "04.md",
+      "crop_ratio_hint": "1.96:1"
     },
     {
       "page": 5,
       "label": "5/10",
       "title": "5枚目",
-      "file": "05.md"
+      "file": "05.md",
+      "crop_ratio_hint": "1.96:1"
     },
     {
       "page": 6,
       "label": "6/10",
       "title": "6枚目",
-      "file": "06.md"
+      "file": "06.md",
+      "crop_ratio_hint": "1.76:1"
     },
     {
       "page": 7,
       "label": "7/10",
       "title": "7枚目",
-      "file": "07.md"
+      "file": "07.md",
+      "crop_ratio_hint": "1.62:1"
     },
     {
       "page": 8,
       "label": "8/10",
       "title": "8枚目",
-      "file": "08.md"
+      "file": "08.md",
+      "crop_ratio_hint": "1.76:1"
     },
     {
       "page": 9,
       "label": "9/10",
       "title": "9枚目",
-      "file": "09.md"
+      "file": "09.md",
+      "crop_ratio_hint": "1.62:1"
     },
     {
       "page": 10,
       "label": "10/10",
       "title": "10枚目",
-      "file": "10.md"
+      "file": "10.md",
+      "crop_ratio_hint": "1.76:1"
     }
   ],
-  "history": "2026/11/25、No.32と同じく2枚目以降を『上に前のページの吹き出しが見切れた、続きの切り抜き』に変更（前の画像は images/old_v1）"
+  "wording_fallback": {
+    "ラブホ": "断られたら「ホテル」",
+    "ゴム": "断られたら「何買ったの？笑」だけにする",
+    "ラブホテルの写真": "断られたら、ネオンのついた派手なホテルの外観（料金の看板だけ）にする"
+  },
+  "history": "2026/11/24にXのDM風で作成。2026/11/25、LINEのやりとりに変更（画像はClaudeが描画。DM版の画像は images/old_v2）"
 }
