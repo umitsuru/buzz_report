@@ -1,0 +1,37 @@
+{
+  "id": "2125515253111026033",
+  "url": "https://x.com/siroyagishugo/status/2125515253111026033",
+  "own": false,
+  "collected_at": "2026-11-25T21:31:10+09:00",
+  "author": {
+    "name": "しろやぎ秋吾",
+    "handle": "@siroyagishugo",
+    "followers": 581246
+  },
+  "posted_at": "2026-11-25T18:01:41+09:00",
+  "metrics": {
+    "views": 100748,
+    "likes": 4386,
+    "reposts": 147,
+    "quotes": 6,
+    "replies": 12,
+    "bookmarks": 71
+  },
+  "text": "「少しだけ自分を好きになれた話」その1",
+  "thread": [
+    {
+      "id": "2125515253111026033",
+      "text": "「少しだけ自分を好きになれた話」その1",
+      "images": [
+        "01.jpg",
+        "02.jpg",
+        "03.jpg",
+        "04.jpg"
+      ]
+    }
+  ],
+  "image_count": 4,
+  "top_replies": [],
+  "top_quotes": [],
+  "note": "画像4枚はすべて元投稿1件に添付されている（API の attachments に4件、すべてJPEG。サイズ（px）は 01 1178×1178、02 1178×1178、03 1178×1178、04 1178×1178）。投稿者本人の画像付きセルフリプは検索で見つからなかった。本文は表示部分のみで、API本文末尾の画像リンク https://t.co/7k9O5CLqhv は除いた。引用している投稿はない。今回は投稿本体だけを保存し、返信と引用は取得していない（top_replies と top_quotes は空）。数字は 2026-11-25 21:31頃 JST 時点。動画なし。"
+}
