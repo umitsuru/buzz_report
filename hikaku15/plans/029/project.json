@@ -2,7 +2,7 @@
   "plan_no": 29,
   "folder": "029",
   "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/029/",
-  "project": "割り勘合コンで、友達が「パパ」を呼んだ結果",
+  "project": "デート代は、全部きっちり割り勘で",
   "created": "2026-11-23",
   "made_by": "Claude",
   "format": "story_manga",
@@ -11,7 +11,7 @@
   "aspect_ratio": "2:3",
   "initial_mode": "wait_for_explicit_generate_command",
   "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考画像（参考投稿No.79）で画風を確認したあと（人物・セリフは真似しない）、01.md から15.md まで順に1枚ずつ、縦長2:3で生成する。",
-  "history": "2026/11/23に『いつも割り勘でいいよねと言う友達』で作成。2026/11/24、合コンの話に全面的に作り直し（旧版の画像は old_v1/）",
+  "history": "2026/11/23に『いつも割り勘でいいよねと言う友達』で作成。2026/11/24、合コンの話に全面的に作り直し（旧版の画像は old_v1/） 2026/11/25、話を作り直し：合コンをやめ、テキスト投稿n106「男が払うデート代と、女が払うデート代」をもとに、彼氏の割り勘（ゴム代まで）にキレるサキの話に。セリフの改行位置を全部指定（前の画像は images/old_v2） 2026/11/25、話を作り直し：合コンをやめ、テキスト投稿n106「男が払うデート代と、女が払うデート代」をもとに、彼氏の割り勘（ゴム代まで）にキレるサキの話に。セリフの改行位置を全部指定（前の画像は images/old_v2）",
   "fiction_notice": "登場人物はすべて架空の成人。実在の人物・店・会社とは関係ない。性的な描写はしない。",
   "reference_posts": [
     "参考投稿No.79（20261123_2124616409678557580）の画風"
@@ -30,91 +30,91 @@
     {
       "page": 1,
       "label": "1/15",
-      "title": "1枚目",
+      "title": "夜の繁華街を歩く2人。",
       "file": "01.md"
     },
     {
       "page": 2,
       "label": "2/15",
-      "title": "2枚目",
+      "title": "ご飯",
       "file": "02.md"
     },
     {
       "page": 3,
       "label": "3/15",
-      "title": "3枚目",
+      "title": "映画",
       "file": "03.md"
     },
     {
       "page": 4,
       "label": "4/15",
-      "title": "4枚目",
+      "title": "ラブホのフロント",
       "file": "04.md"
     },
     {
       "page": 5,
       "label": "5/15",
-      "title": "5枚目",
+      "title": "部屋で",
       "file": "05.md"
     },
     {
       "page": 6,
       "label": "6/15",
-      "title": "6枚目",
+      "title": "電卓が動き出す",
       "file": "06.md"
     },
     {
       "page": 7,
       "label": "7/15",
-      "title": "7枚目",
+      "title": "回想①",
       "file": "07.md"
     },
     {
       "page": 8,
       "label": "8/15",
-      "title": "8枚目",
+      "title": "回想②",
       "file": "08.md"
     },
     {
       "page": 9,
       "label": "9/15",
-      "title": "9枚目",
+      "title": "回想③",
       "file": "09.md"
     },
     {
       "page": 10,
       "label": "10/15",
-      "title": "10枚目",
+      "title": "合計",
       "file": "10.md"
     },
     {
       "page": 11,
       "label": "11/15",
-      "title": "11枚目",
+      "title": "帰り道のLINE①",
       "file": "11.md"
     },
     {
       "page": 12,
       "label": "12/15",
-      "title": "12枚目",
+      "title": "帰り道のLINE②",
       "file": "12.md"
     },
     {
       "page": 13,
       "label": "13/15",
-      "title": "13枚目",
+      "title": "帰り道のLINE③",
       "file": "13.md"
     },
     {
       "page": 14,
       "label": "14/15",
-      "title": "14枚目",
+      "title": "帰り道のLINE④",
       "file": "14.md"
     },
     {
       "page": 15,
       "label": "15/15",
-      "title": "15枚目",
+      "title": "次のデート",
       "file": "15.md"
     }
   ]
