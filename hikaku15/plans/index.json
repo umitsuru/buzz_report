@@ -774,5 +774,20 @@
     "status": "プロンプト完成・画像未生成",
     "cover": "./042/ref/01.jpg",
     "maker": "claude"
+  },
+  {
+    "no": 43,
+    "folder": "043",
+    "title": "同じ課の、既婚者同士（40枚版）",
+    "created": "2026-11-26",
+    "gafu_id": "No.73",
+    "style_name": "グレー＋くすんだ水色の女性向け漫画（参考投稿No.73に近い雰囲気）",
+    "pages": 40,
+    "aspect_ratio": "2:3",
+    "format": "story_manga",
+    "format_name": "縦長2:3・グレー＋くすんだ水色の女性向け漫画・1枚2〜4コマ・17枚",
+    "status": "プロンプト完成・画像未生成",
+    "cover": null,
+    "maker": "claude"
   }
 ]
