@@ -608,7 +608,7 @@
     "aspect_ratio": "2:3／可変",
     "format": "x_dm",
     "format_name": "XのDM風スクショ・縦長2:3・11枚",
-    "status": "4枚目の作り直し待ち（指輪を日常の写真に）。11枚目は削除して全10枚",
+    "status": "画像完成（UIを実際のXのDMに合わせてClaudeが描画）",
     "cover": "../posts/20261124_2124846821587800542/thumb/01.jpg",
     "maker": "claude"
   },
