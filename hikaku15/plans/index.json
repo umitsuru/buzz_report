@@ -684,7 +684,17 @@
     "status": "画像完成（Claudeが描画）",
     "cover": "./035/images/01.jpg",
     "maker": "claude",
-    "timeline_hook": "の『ぷすっ』って音さ"
+    "timeline_hook": "の『ぷすっ』って音さ",
+    "posted": {
+      "account": "やまつる",
+      "at": "2026-11-27T07:00:00+09:00",
+      "via": "Postiz",
+      "postiz_id": "cmwy3jcs508ceo507r4p39aci",
+      "url": null,
+      "text": "研究の成果がすごかった…",
+      "impressions": null,
+      "impressions_at": null
+    }
   },
   {
     "no": 36,
