@@ -736,11 +736,11 @@
   {
     "no": 39,
     "folder": "039",
-    "title": "キャバを辞めると報告したら、太客から3年分の請求書が届いた",
+    "title": "初めて泊まった翌朝、彼から「背中の値札」のLINEが来た",
     "created": "2026-11-25",
     "gafu_id": "No.60",
     "style_name": "本物のLINEに近いトーク画面",
-    "pages": 10,
+    "pages": 12,
     "aspect_ratio": "可変",
     "format": "LINE",
     "format_name": "LINEのトーク画面・画像ごとに上下をトリミング（生成は3:2）・10枚",
