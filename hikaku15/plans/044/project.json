@@ -1,0 +1,163 @@
+{
+  "plan_no": 44,
+  "folder": "044",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/044/",
+  "project": "バカにできない「お局さん」ってこれ",
+  "created": "2026-11-27",
+  "made_by": "Claude",
+  "format": "C",
+  "format_name": "横長3:2・1枚絵＋極太の縦書き文字＋コメントのアイコン・20枚",
+  "image_count": 20,
+  "aspect_ratio": "3:2",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考投稿No.100の画像で形式を確認したあと、01.md から20.md まで順に1枚ずつ横長3:2で生成し、images/NN.jpg に保存する。全20枚を作る。",
+  "fiction_notice": "登場人物はすべて架空の成人。実在の会社・人物とは関係ない創作。",
+  "reference_posts": [
+    {
+      "no": 100,
+      "folder": "hikaku15/posts/20261127_2125786185457119382",
+      "url": "https://x.com/i/status/2125786185457119382",
+      "title": "バカにできない「窓際おじさん」ってこれ",
+      "views": 8062105,
+      "used_for": "形式（横長3:2、極太の縦書き文字＋白黒の写実漫画の1枚絵＋コメントのアイコン、19枚）。人物・文章・構図はコピーしない"
+    }
+  ],
+  "style": {
+    "gafu_id": "No.100",
+    "ref_post_no": 100,
+    "name": "白黒の写実寄り青年漫画＋極太の縦書き文字（形式は参考投稿No.100）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261127_2125786185457119382/img/01.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261127_2125786185457119382/img/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261127_2125786185457119382/img/07.jpg"
+    ],
+    "defined_in": "common.md"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/20",
+      "title": "朝のあいさつを二回に一回無視する",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/20",
+      "title": "経費精算は一円でも合わないと突き返す",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/20",
+      "title": "部長を「くん」付けで呼ぶ",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/20",
+      "title": "給湯室の名前のない私物は容赦なく捨てる",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/20",
+      "title": "新しいシステムに三回反対した",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/20",
+      "title": "ミスをすると無言で書類を机に置いていく",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/20",
+      "title": "電話の声が怖い",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/20",
+      "title": "書庫の鍵をなぜか一人だけ持っている",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/20",
+      "title": "飲み会には絶対に来ない",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/20",
+      "title": "社長の奥さんの誕生日を知っている",
+      "file": "10.md"
+    },
+    {
+      "page": 11,
+      "label": "11/20",
+      "title": "取引先の社長に「あら、太った？」と言える",
+      "file": "11.md"
+    },
+    {
+      "page": 12,
+      "label": "12/20",
+      "title": "異動してきた課長がまず最初にあいさつに行く",
+      "file": "12.md"
+    },
+    {
+      "page": 13,
+      "label": "13/20",
+      "title": "「それ、前にもやって失敗したわよ」が口ぐせ",
+      "file": "13.md"
+    },
+    {
+      "page": 14,
+      "label": "14/20",
+      "title": "新人が泣いていると黙って飴を置いていく",
+      "file": "14.md"
+    },
+    {
+      "page": 15,
+      "label": "15/20",
+      "title": "有休の申請に「ふーん」とだけ言う",
+      "file": "15.md"
+    },
+    {
+      "page": 16,
+      "label": "16/20",
+      "title": "インフルで三日休んだら会社が止まった",
+      "file": "16.md"
+    },
+    {
+      "page": 17,
+      "label": "17/20",
+      "title": "社長が唯一敬語で話す社員",
+      "file": "17.md"
+    },
+    {
+      "page": 18,
+      "label": "18/20",
+      "title": "後任を育てろと言われて五年たつ",
+      "file": "18.md"
+    },
+    {
+      "page": 19,
+      "label": "19/20",
+      "title": "定年まであと一年",
+      "file": "19.md"
+    },
+    {
+      "page": 20,
+      "label": "20/20",
+      "title": "全社員が定年の日を恐れている",
+      "file": "20.md"
+    }
+  ],
+  "wording_fallback": {
+    "無視する": "断られたら「スルーする」",
+    "容赦なく捨てる": "断られたら「迷わず捨てる」"
+  },
+  "history": "2026/11/27作成。参考投稿No.100（窓際おじさん）のお局さん版"
+}
