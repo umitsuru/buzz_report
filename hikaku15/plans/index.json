@@ -450,7 +450,17 @@
     "format_name": "横長3:2・インターホンの録画画面＋解説の帯",
     "status": "プロンプト完成・画像未生成",
     "cover": "./022/ref/S-10.jpg",
-    "maker": "claude"
+    "maker": "claude",
+    "posted": {
+      "account": "うみつる",
+      "at": "2026-11-27T07:19:00+09:00",
+      "via": "Postiz",
+      "postiz_id": "cmwy40e9d08hao5073xn9le3i",
+      "url": null,
+      "text": "インターフォンの留守録がたまってたので久しぶりに再生してみた…",
+      "impressions": null,
+      "impressions_at": null
+    }
   },
   {
     "no": 23,
