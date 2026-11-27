@@ -1,0 +1,199 @@
+{
+  "plan_no": 46,
+  "folder": "046",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/046/",
+  "project": "小説で食っていけると思った女の末路",
+  "created": "2026-11-27",
+  "made_by": "ChatGPT",
+  "format": "D",
+  "format_name": "正方形1:1・人生の末路20枚・年齢/タイトル/生活資金を表示（艶っぽい成人向け漫画）",
+  "image_count": 20,
+  "aspect_ratio": "1:1",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "bot_instruction": "これは完成プロンプトの登録です。common.mdを読んだ段階では画像生成しない。ユーザーが依頼したら最新common.mdを読み、次に01.mdから20.mdを順に1枚ずつ生成。正方形1:1、上端に丸いページ番号＋年齢＋タイトル、中央に1シーン、下端にラベル『生活資金』と指定の金額、必要時は会話を配置。元参考No.105の構成のみ参照し、絵柄は艶っぽい成人向け写実系青年漫画へ全面変更。女性主人公『紗季』の顔、左目下のほくろ、年齢ごとの自然な変化を統一。全20枚を個別生成し、GitHub書込可能なら images/01.jpg〜20.jpg へ保存する。未生成・未保存は成功と報告しない。",
+  "fiction_notice": "主人公・恋人・母・編集担当者・小説サイト・出版社・活動収支はすべて架空。成人登場人物のみ。官能的な雰囲気は非露骨、性行為・裸体は描かない。",
+  "series_note": "参考No.105『スロで食っていけると思った男の末路』の人生推移の見せ方を参照した完全新作。女性主人公が恋愛・官能小説のネット人気を過信し、会社を辞め、人生と人間関係の損失を抱える20枚。最後に自分の転落をネタにした文章が最も読まれる皮肉。下端の生活資金は貯金−借入残高という架空の概算指標。",
+  "reference_posts": [
+    {
+      "no": 105,
+      "folder": "hikaku15/posts/20261127_2125831922010243263",
+      "url": "https://x.com/junjun_zz_/status/2125831922010243263",
+      "title": "スロで食っていけると思った男の末路",
+      "author": "@junjun_zz_",
+      "images_collected": 20,
+      "used_for": "正方形、上帯の番号・年齢・タイトル、人生を時系列で追うシーン、下帯の累積数字という汎用構成のみ参考。元のキャラクターや物語、セリフ、絵柄は複製しない。"
+    }
+  ],
+  "style": {
+    "gafu_id": "",
+    "ref_post_no": 105,
+    "name": "写実寄りで少し官能的な大人向けカラー青年漫画（独自画風）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261127_2125831922010243263/img/01.jpg",
+    "reference_role": "レイアウトのみ。参考元の絵柄は使用しない。",
+    "defined_in": "common.md",
+    "visual_verification": "参照No.105の画像1,4,8,12,16,20を実際に確認。"
+  },
+  "common_file": "common.md",
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/20",
+      "title": "彼氏のひと言を、才能の証明だと思った",
+      "age": 27,
+      "living_funds": 3800000,
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/20",
+      "title": "一度だけランキング1位になった",
+      "age": 27,
+      "living_funds": 3818740,
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/20",
+      "title": "投げ銭1万8740円で『作家』を名乗った",
+      "age": 28,
+      "living_funds": 3750000,
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/20",
+      "title": "退職届を出した日が、ピークだった",
+      "age": 28,
+      "living_funds": 3100000,
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/20",
+      "title": "原稿より先に作家部屋を完成させた",
+      "age": 29,
+      "living_funds": 2700000,
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/20",
+      "title": "恋愛小説より、恋人の悪口が読まれた",
+      "age": 29,
+      "living_funds": 2150000,
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/20",
+      "title": "彼との夜までネタ帳に書き始めた",
+      "age": 30,
+      "living_funds": 1820000,
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/20",
+      "title": "彼が偶然、私の小説を読んだ",
+      "age": 30,
+      "living_funds": 1520000,
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/20",
+      "title": "『俺のこと書いた？』に答えられなかった",
+      "age": 30,
+      "living_funds": 1130000,
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/20",
+      "title": "官能寄りにしたら、閲覧数だけ跳ねた",
+      "age": 31,
+      "living_funds": 820000,
+      "file": "10.md"
+    },
+    {
+      "page": 11,
+      "label": "11/20",
+      "title": "読者が欲しいのは、私の話じゃなかった",
+      "age": 31,
+      "living_funds": 600000,
+      "file": "11.md"
+    },
+    {
+      "page": 12,
+      "label": "12/20",
+      "title": "『書籍化』の話に、80万円が必要だった",
+      "age": 32,
+      "living_funds": 390000,
+      "file": "12.md"
+    },
+    {
+      "page": 13,
+      "label": "13/20",
+      "title": "即売会で最初に来たのは、母だった",
+      "age": 32,
+      "living_funds": 140000,
+      "file": "13.md"
+    },
+    {
+      "page": 14,
+      "label": "14/20",
+      "title": "彼氏が最後に置いていったもの",
+      "age": 33,
+      "living_funds": -280000,
+      "file": "14.md"
+    },
+    {
+      "page": 15,
+      "label": "15/20",
+      "title": "面接で『空白の5年』を聞かれた",
+      "age": 34,
+      "living_funds": -620000,
+      "file": "15.md"
+    },
+    {
+      "page": 16,
+      "label": "16/20",
+      "title": "昼は倉庫、夜は恋愛小説を書く",
+      "age": 35,
+      "living_funds": -890000,
+      "file": "16.md"
+    },
+    {
+      "page": 17,
+      "label": "17/20",
+      "title": "一晩かけた原稿、報酬は3000円",
+      "age": 36,
+      "living_funds": -1200000,
+      "file": "17.md"
+    },
+    {
+      "page": 18,
+      "label": "18/20",
+      "title": "母へのLINEだけ、まだ売れっ子だった",
+      "age": 37,
+      "living_funds": -1620000,
+      "file": "18.md"
+    },
+    {
+      "page": 19,
+      "label": "19/20",
+      "title": "自分の転落を書いたら、一番読まれた",
+      "age": 38,
+      "living_funds": -1850000,
+      "file": "19.md"
+    },
+    {
+      "page": 20,
+      "label": "20/20",
+      "title": "いちばん売れた小説の、売上金",
+      "age": 40,
+      "living_funds": -1980000,
+      "file": "20.md"
+    }
+  ]
+}
