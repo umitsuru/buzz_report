@@ -10,7 +10,7 @@
   "image_count": 20,
   "aspect_ratio": "1:1",
   "initial_mode": "wait_for_explicit_generate_command",
-  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考投稿No.105の画像でレイアウトを確認したあと（絵柄はまねせず実写にする）、01.md から20.md まで順に1枚ずつ正方形で生成し、images/NN.jpg に保存する。全20枚を作る。",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。写真は新しく生成せず、assets/photo_NN.jpg（普通のChatGPTで作った実写）を使い、帯・吹き出し・会話・フォロワーの箱を01.md から20.md の指定どおりに重ねて正方形にし、images/NN.jpg に保存する。全20枚を作る。",
   "fiction_notice": "登場人物はすべて架空の成人。実在の人物・会社とは関係ない創作。",
   "reference_posts": [
     {
@@ -158,5 +158,5 @@
   "wording_fallback": {
     "インプレ乞食乙": "断られたら「インプレ稼ぎ乙」"
   },
-  "history": "2026/11/27作成。参考投稿No.105（スロで食っていけると思った男の末路）を、Xで食っていけると思った男の実写版にアレンジ"
+  "history": "2026/11/27作成。同日、写真は普通のChatGPTで作り（assets/photo_NN.jpg）、帯と文字はチャッピーが重ねる方式に変更。参考投稿No.105（スロで食っていけると思った男の末路）を、Xで食っていけると思った男の実写版にアレンジ"
 }
