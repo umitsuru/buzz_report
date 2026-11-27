@@ -10,7 +10,7 @@
   },
   "posted_at": "2026-11-26T21:06:49+09:00",
   "metrics": {
-    "views": 2029114,
+    "views": 2916094,
     "likes": 3897,
     "reposts": 68,
     "quotes": 11,
@@ -101,5 +101,6 @@
       "likes": 1
     }
   ],
-  "note": ""
+  "note": "",
+  "views_updated_at": "2026-11-27T21:39:03+09:00"
 }
