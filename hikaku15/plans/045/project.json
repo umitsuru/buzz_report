@@ -1,0 +1,162 @@
+{
+  "plan_no": 45,
+  "folder": "045",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/045/",
+  "project": "Xで食っていけると思った男の末路（実写版）",
+  "created": "2026-11-27",
+  "made_by": "Claude",
+  "format": "D",
+  "format_name": "正方形1:1・上の帯（番号・年齢・見出し）＋実写の写真＋下の帯（会話とフォロワーの箱）・20枚",
+  "image_count": 20,
+  "aspect_ratio": "1:1",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。参考投稿No.105の画像でレイアウトを確認したあと（絵柄はまねせず実写にする）、01.md から20.md まで順に1枚ずつ正方形で生成し、images/NN.jpg に保存する。全20枚を作る。",
+  "fiction_notice": "登場人物はすべて架空の成人。実在の人物・会社とは関係ない創作。",
+  "reference_posts": [
+    {
+      "no": 105,
+      "folder": "hikaku15/posts/20261127_2125831922010243263",
+      "url": "https://x.com/junjun_zz_/status/2125831922010243263",
+      "title": "スロで食っていけると思った男の末路",
+      "views": 7811844,
+      "used_for": "レイアウト（正方形、上の帯に番号・年齢・見出し、下の帯に会話と数字の箱、20枚で人生をたどる）。絵柄は実写に変える。人物・文章はコピーしない"
+    }
+  ],
+  "style": {
+    "gafu_id": "No.105",
+    "ref_post_no": 105,
+    "name": "実写（日本のドラマのワンシーン風）＋参考投稿No.105のレイアウト",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261127_2125831922010243263/img/01.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261127_2125831922010243263/img/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261127_2125831922010243263/img/19.jpg"
+    ],
+    "defined_in": "common.md"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/20",
+      "title": "27歳　会社員。何気ない投稿がバズる",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/20",
+      "title": "28歳　「Xで食っていける」と確信する",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/20",
+      "title": "28歳　会社を辞める",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/20",
+      "title": "29歳　初めての収益の振込",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/20",
+      "title": "29歳　起きてすぐ、インプレを見る",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/20",
+      "title": "30歳　インプレが落ちて、不機嫌になる",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/20",
+      "title": "30歳　アルゴリズムに文句を言う",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/20",
+      "title": "31歳　デート中も、通知が気になる",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/20",
+      "title": "31歳　他人のバズに嫉妬する",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/20",
+      "title": "32歳　「稼ぎ方」の講座を売り始める",
+      "file": "10.md"
+    },
+    {
+      "page": 11,
+      "label": "11/20",
+      "title": "32歳　彼女が出ていく",
+      "file": "11.md"
+    },
+    {
+      "page": 12,
+      "label": "12/20",
+      "title": "33歳　アカウントが凍結される",
+      "file": "12.md"
+    },
+    {
+      "page": 13,
+      "label": "13/20",
+      "title": "34歳　新しいアカウントで、ゼロから",
+      "file": "13.md"
+    },
+    {
+      "page": 14,
+      "label": "14/20",
+      "title": "35歳　コンビニの夜勤を始める",
+      "file": "14.md"
+    },
+    {
+      "page": 15,
+      "label": "15/20",
+      "title": "37歳　同窓会でも、ネタを探す",
+      "file": "15.md"
+    },
+    {
+      "page": 16,
+      "label": "16/20",
+      "title": "39歳　母が入院する",
+      "file": "16.md"
+    },
+    {
+      "page": 17,
+      "label": "17/20",
+      "title": "42歳　講座の元生徒に、抜かれる",
+      "file": "17.md"
+    },
+    {
+      "page": 18,
+      "label": "18/20",
+      "title": "45歳　スマホを置いても、通知の音が聞こえる",
+      "file": "18.md"
+    },
+    {
+      "page": 19,
+      "label": "19/20",
+      "title": "48歳　アカウントを消そうとして、やめる",
+      "file": "19.md"
+    },
+    {
+      "page": 20,
+      "label": "20/20",
+      "title": "50歳　今日も、インプレを見る",
+      "file": "20.md"
+    }
+  ],
+  "wording_fallback": {
+    "インプレ乞食乙": "断られたら「インプレ稼ぎ乙」"
+  },
+  "history": "2026/11/27作成。参考投稿No.105（スロで食っていけると思った男の末路）を、Xで食っていけると思った男の実写版にアレンジ"
+}
