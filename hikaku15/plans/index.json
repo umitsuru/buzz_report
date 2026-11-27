@@ -246,7 +246,17 @@
     "status": "ネタ・ツッコミ全10枚改訂済み／旧画像10枚は非表示・再生成待ち",
     "cover": "./011/ref/style06_01.jpg",
     "images_stale": false,
-    "maker": "claude"
+    "maker": "claude",
+    "posted": {
+      "account": "そらつる",
+      "at": "2026-11-27T22:25:00+09:00",
+      "via": "Postiz",
+      "postiz_id": "cmwz0jkyh0gwgql075x0frc1w",
+      "url": null,
+      "text": "病院でヤバい入院患者10選",
+      "impressions": null,
+      "impressions_at": null
+    }
   },
   {
     "no": 12,
