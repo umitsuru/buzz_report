@@ -61,7 +61,17 @@
     "status": "画風変更・画像を全部作り直し待ち（11/22）",
     "cover": "./003/ref/S-04.jpg",
     "format_name": "正方形1:1・1枚絵",
-    "maker": "claude"
+    "maker": "claude",
+    "posted": {
+      "account": "やまつる",
+      "at": "2026-11-28T07:06:00+09:00",
+      "via": "Postiz",
+      "postiz_id": "cmwzj6in80oquo507ndkw02hl",
+      "url": null,
+      "text": "コメダ珈琲に来る老害夫婦の末路",
+      "impressions": null,
+      "impressions_at": null
+    }
   },
   {
     "no": 4,
