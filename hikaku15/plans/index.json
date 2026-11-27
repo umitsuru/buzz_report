@@ -665,7 +665,17 @@
     "format_name": "LINEのトーク画面（ダークモード：黒い背景）・画像ごとに上下をトリミング（生成は3:2）・10枚",
     "status": "画像完成（LINEに変更・Claudeが描画）",
     "cover": "./033/images/01.jpg",
-    "maker": "claude"
+    "maker": "claude",
+    "posted": {
+      "account": "うみつる",
+      "at": "2026-11-27T12:55:00+09:00",
+      "via": "Postiz",
+      "postiz_id": "cmwyg6j0f0bh4o50716pqxgeu",
+      "url": null,
+      "text": "３年ぶりに元カレから深夜のLINEが来た…",
+      "impressions": null,
+      "impressions_at": null
+    }
   },
   {
     "no": 34,
