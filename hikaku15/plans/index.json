@@ -476,9 +476,16 @@
     "aspect_ratio": "2:3",
     "format": "story",
     "format_name": "縦長2:3・白黒漫画・1枚1〜3コマ・20枚",
-    "status": "プロンプト完成・画像未生成",
+    "status": "予約済み（やまつる 11/29 6:50）",
     "cover": "./021/ref/01.jpg",
-    "maker": "claude"
+    "maker": "claude",
+    "posted": {
+      "account": "やまつる",
+      "at": "2026-11-29T06:50:00+09:00",
+      "via": "Postiz（予約）",
+      "postiz_id": "cmx0gvvid08rrqv077f814lpe",
+      "text": "サキュバスと賢者"
+    }
   },
   {
     "no": 22,
