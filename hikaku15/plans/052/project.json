@@ -10,17 +10,10 @@
   "image_count": 12,
   "aspect_ratio": "1:1",
   "initial_mode": "wait_for_explicit_generate_command",
-  "generator": "チャッピー",
+  "generator": "普通のChatGPT（Chatモード）で12枚を同じ会話で生成し、チャッピーがそのまま images/ に保存",
   "bot_instruction": "common.md を読み（生成しない）、ref/ の参考画像で画風を確認してから、01.md〜12.md を1つずつ読んで1ページ1枚ずつ生成し、images/NN.jpg に保存する。全12枚を作る。文字は入れない。",
   "fiction_notice": "昔話のパロディ。登場人物はすべて架空。性的な描写・残酷な描写はしない。",
   "reference_posts": [
-    {
-      "post_no": 59,
-      "folder": "hikaku15/posts/20261121_2124062761646801382",
-      "title": "↑平成のキャバ嬢 ↓令和のキャバ嬢",
-      "author": "@i_have_a_pun",
-      "used_for": "画風だけ"
-    },
     {
       "post_no": 110,
       "folder": "hikaku15/posts/20261128_2126488495430455551",
@@ -30,13 +23,13 @@
     }
   ],
   "style": {
-    "gafu_id": "No.59",
-    "name": "写実寄りの美麗アニメイラスト（参考投稿No.59）",
+    "gafu_id": "No.110",
+    "name": "緻密なペン線＋淡い水彩の絵本風（セピア調）",
     "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/052/ref/01.jpg",
     "reference_images": [
       "https://umitsuru.github.io/buzz_report/hikaku15/plans/052/ref/01.jpg",
       "https://umitsuru.github.io/buzz_report/hikaku15/plans/052/ref/05.jpg",
-      "https://umitsuru.github.io/buzz_report/hikaku15/plans/052/ref/13.jpg"
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/052/ref/11.jpg"
     ],
     "defined_in": "common.md"
   },
@@ -114,5 +107,5 @@
       "file": "12.md"
     }
   ],
-  "history": "2026/11/28作成。同日、画風を参考投稿No.110から No.59（美麗アニメ）に変更"
+  "history": "2026/11/28作成。同日、画風をNo.59に変えて生成（old_v1/）、その後No.110の画風に戻し、普通のChatGPTで生成"
 }

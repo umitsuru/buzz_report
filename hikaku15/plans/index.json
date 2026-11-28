@@ -1025,13 +1025,13 @@
     "folder": "052",
     "title": "もしも浦島太郎が竜宮城から帰らなかったら",
     "created": "2026-11-28",
-    "gafu_id": "No.59",
-    "style_name": "写実寄りの美麗アニメイラスト（参考投稿No.59）",
+    "gafu_id": "No.110",
+    "style_name": "緻密なペン線＋淡い水彩の絵本風（セピア調）",
     "pages": 12,
     "aspect_ratio": "1:1",
     "format": "ehon",
     "format_name": "正方形1:1・文字なしの絵物語・12枚",
-    "status": "全12枚作成済み（チャッピー・画風No.59）",
+    "status": "No.110の画風で普通のChatGPTが生成中（No.59版は old_v1）",
     "maker": "claude"
   }
 ]
