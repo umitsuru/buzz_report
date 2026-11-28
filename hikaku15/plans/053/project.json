@@ -1,0 +1,140 @@
+{
+  "plan_no": 53,
+  "folder": "053",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/053/",
+  "project": "警察から電話。お相手は奥様ではないですね？",
+  "created": "2026-11-28",
+  "made_by": "Claude",
+  "format": "essay_manga",
+  "format_name": "正方形1:1・ゆるい手描き線画のマンガ・ナレーション＋吹き出し・16枚",
+  "image_count": 16,
+  "aspect_ratio": "1:1",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "generator": "チャッピー",
+  "bot_instruction": "common.md を読み（生成しない）、参考画像で画風を確認してから、01.md〜16.md を1つずつ読んで1ページ1枚ずつ生成し、images/NN.jpg に保存する。全16枚を作る。",
+  "fiction_notice": "登場人物はすべて架空。性的な描写はしない。",
+  "source_text": {
+    "site": "claude-buzz-text",
+    "no": 332,
+    "post_id": "n328",
+    "title": "警察から電話。お相手は奥様ではないですね？"
+  },
+  "reference_posts": [
+    {
+      "post_no": 112,
+      "folder": "hikaku15/posts/20261128_2126541979970363530",
+      "title": "離婚したい瞬間あるある",
+      "author": "@umitsuru_fire",
+      "used_for": "画風（投稿案No.30の画像）"
+    }
+  ],
+  "style": {
+    "gafu_id": "No.112",
+    "name": "ゆるい手描き線画のマンガ（参考投稿No.112＝投稿案No.30と同じ）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/030/images/02.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/030/images/02.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/030/images/11.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/030/images/13.jpg"
+    ],
+    "defined_in": "common.md"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/16",
+      "title": "知らない番号",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/16",
+      "title": "昨夜",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/16",
+      "title": "女性と",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/16",
+      "title": "奥様では",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/16",
+      "title": "関係ありますか",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/16",
+      "title": "誰から？",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/16",
+      "title": "近づく妻",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/16",
+      "title": "休日出勤",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/16",
+      "title": "警察署",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/16",
+      "title": "時間つぶし",
+      "file": "10.md"
+    },
+    {
+      "page": 11,
+      "label": "11/16",
+      "title": "おかえり",
+      "file": "11.md"
+    },
+    {
+      "page": 12,
+      "label": "12/16",
+      "title": "来なかった？",
+      "file": "12.md"
+    },
+    {
+      "page": 13,
+      "label": "13/16",
+      "title": "何時ごろ",
+      "file": "13.md"
+    },
+    {
+      "page": 14,
+      "label": "14/16",
+      "title": "ベンチ",
+      "file": "14.md"
+    },
+    {
+      "page": 15,
+      "label": "15/16",
+      "title": "なんで私を",
+      "file": "15.md"
+    },
+    {
+      "page": 16,
+      "label": "16/16",
+      "title": "確かめたかった",
+      "file": "16.md"
+    }
+  ]
+}

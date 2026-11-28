@@ -1043,5 +1043,19 @@
     "format_name": "正方形1:1・文字なしの絵物語・15枚",
     "status": "15枚に改訂・6〜15枚目を普通のChatGPTで生成中（12枚版は old_v2）",
     "maker": "claude"
+  },
+  {
+    "no": 53,
+    "folder": "053",
+    "title": "警察から電話。お相手は奥様ではないですね？",
+    "created": "2026-11-28",
+    "gafu_id": "No.112",
+    "style_name": "ゆるい手描き線画のマンガ（No.30と同じ）",
+    "pages": 16,
+    "aspect_ratio": "1:1",
+    "format": "essay_manga",
+    "format_name": "正方形1:1・ゆるい手描き線画のマンガ・ナレーション＋吹き出し・16枚",
+    "status": "プロンプト完成・チャッピーで生成待ち",
+    "maker": "claude"
   }
 ]
