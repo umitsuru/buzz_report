@@ -831,7 +831,17 @@
     "format_name": "LINEのトーク画面（ダークモード：黒い背景）・画像ごとに上下をトリミング（生成は3:2）・15枚",
     "status": "作り直し待ち（リアル寄りの構成に変更。構成確認用のClaude作成画像は preview/）",
     "cover": "./041/ref/01.jpg",
-    "maker": "claude"
+    "maker": "claude",
+    "posted": {
+      "account": "やまつる",
+      "at": "2026-11-28T10:02:00+09:00",
+      "via": "Postiz",
+      "postiz_id": "cmwzph3pz0qdno5077whbzsxb",
+      "url": null,
+      "text": "夫婦でもこれは許されないよね？",
+      "impressions": null,
+      "impressions_at": null
+    }
   },
   {
     "no": 42,
