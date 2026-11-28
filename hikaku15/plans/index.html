@@ -215,7 +215,7 @@ function renderList(){
   const shown = plans.filter(p=>tab==='done'?!!p.posted:!p.posted).sort((a,b)=>tab==='done'?String(b.posted.at).localeCompare(String(a.posted.at)):b.no-a.no);
   plansEl.innerHTML = shown.map(p=>`
     <button class="plan ${cur&&cur.no===p.no?'on':''}" data-no="${p.no}">
-      ${cover(p)?`<img src="${esc(cover(p))}" alt="" loading="lazy">`:'<span></span>'}
+      <img src="${esc(p.folder)}/images/01.jpg" alt="" style="object-position:${p.format==='LINE'?'left top':'center top'}" loading="lazy" data-fb="${esc(cover(p))}" onerror="if(this.dataset.fb){this.src=this.dataset.fb;this.dataset.fb=''}else{this.style.visibility='hidden';this.onerror=null}">
       <span><b><span class="no">No.${p.no}</span>${makerBadge(p)}${esc(p.title)}</b> <span data-ed="${p.no}">${editorBadges(p.no)}</span>
       <small>形式${esc(p.format||'')}・${esc(p.gafu_id||p.style_name)}・${p.pages}枚・${esc(p.aspect_ratio)}・${esc(p.created)}</small>
       ${p.posted?postedHTML(p):`<small>${esc(p.status||'')} <span class="pill" data-gc="${p.no}"></span></small>`}</span>
