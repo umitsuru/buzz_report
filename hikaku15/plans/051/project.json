@@ -1,0 +1,109 @@
+{
+  "plan_no": 51,
+  "folder": "051",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/051/",
+  "project": "コンドーム工場のバイトの日常。",
+  "created": "2026-11-28",
+  "made_by": "Claude",
+  "format": "A",
+  "format_name": "縦長3:4・1ページ3コマ（参考投稿No.48の形を縦長に）",
+  "image_count": 10,
+  "aspect_ratio": "3:4",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "bot_instruction": "このフォルダは制作データです。読み込んだだけでは画像を生成しないこと。ユーザーが「投稿案No.51の〇枚目（または〇〜〇枚目）を作って」と指示したときだけ、最初に common.md を読み（画像は作らない）、project.json の参考画像を確認し、次に指定されたページの NN.md を1つずつ読んで、1ページにつき1枚生成する。10枚を1枚にまとめない。生成ごとに、それまでの画像と同じ人物・線・色を保つ。生成後に右上の番号と画像内の文字を確認する。",
+  "fiction_notice": "登場人物・会社・出来事はすべて架空の創作。登場人物はすべて成人。性的な描写はしない。製品はロゴなしの個包装・無地の箱・検査機の膜・破裂試験の風船としてだけ描く。",
+  "series_note": "投稿案No.6（AVのメイク担当、表示299万）・参考投稿No.48（ラブホ清掃）と同じ主人公・同じ画風のシリーズ3作目",
+  "source_text": {
+    "site": "claude-buzz-text",
+    "no": 275,
+    "post_id": "n271",
+    "title": "コンドーム工場バイトの想像と現実",
+    "views": 7860000
+  },
+  "reference_posts": [
+    {
+      "post_no": 48,
+      "folder": "hikaku15/posts/20261121_2123549650963911107",
+      "url": "https://x.com/umitsuru_fire/status/2123549650963911107",
+      "title": "ラブホ清掃バイトの日常。",
+      "author": "@umitsuru_fire",
+      "used_for": "画風と形（線・ハッチング・主人公の顔・3段のコマ・タイトルと番号の位置）。主人公は同じ女性キャラクター"
+    }
+  ],
+  "style": {
+    "gafu_id": "No.48",
+    "ref_post_no": 48,
+    "name": "ざらっとした劇画風コメディ（参考投稿No.48と同じ）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/006/images/01.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/006/images/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/006/images/04.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/006/images/10.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/006/ref/01.jpg"
+    ],
+    "defined_in": "common.md"
+  },
+  "common_file": "common.md",
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/10",
+      "title": "コンドーム工場、はじめました。",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/10",
+      "title": "試すのは、機械。",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/10",
+      "title": "職場は、真面目。",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/10",
+      "title": "割れるまで、ふくらます。",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/10",
+      "title": "1個の重み。",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/10",
+      "title": "よく聞かれる。",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/10",
+      "title": "職業病。",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/10",
+      "title": "母からの電話。",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/10",
+      "title": "教育係のひと言。",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/10",
+      "title": "1年後。",
+      "file": "10.md"
+    }
+  ]
+}
