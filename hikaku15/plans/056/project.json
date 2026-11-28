@@ -1,0 +1,156 @@
+{
+  "plan_no": 56,
+  "folder": "056",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/056/",
+  "project": "ケチすぎる母の末路",
+  "created": "2026-11-28",
+  "made_by": "Claude",
+  "format": "G",
+  "format_name": "正方形1:1・実写1枚＋左上のタグ＋下のセリフ・20枚",
+  "image_count": 20,
+  "aspect_ratio": "1:1",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "generator": "チャッピー",
+  "bot_instruction": "common.md を読み（生成しない）、参考画像で形式を確認してから、01.md〜20.md を1つずつ読んで1ページ1枚ずつ生成し、images/NN.jpg に保存する。全20枚を作る。",
+  "fiction_notice": "登場人物はすべて架空の成人（子どもが出る場合は健全に描く）。実在の人物・店・会社とは関係ない創作。性的な絵・露出は描かない。",
+  "reference_posts": [
+    {
+      "no": 102,
+      "folder": "hikaku15/posts/20261127_2126062186980053401",
+      "title": "家族旅行で厳しすぎる父の末路…。",
+      "used_for": "形式（実写1枚・左上のタグ・下のセリフ）。人物・セリフはコピーしない"
+    }
+  ],
+  "style": {
+    "gafu_id": "No.102",
+    "name": "実写（参考投稿No.102と同じ形式）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261127_2126062186980053401/img/01.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261127_2126062186980053401/img/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261127_2126062186980053401/img/03.jpg"
+    ],
+    "defined_in": "common.md"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/20",
+      "title": "24歳 給料日",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/20",
+      "title": "26歳 結婚式",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/20",
+      "title": "新婚旅行",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/20",
+      "title": "新居",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/20",
+      "title": "28歳 出産",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/20",
+      "title": "夕食",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/20",
+      "title": "娘の誕生日",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/20",
+      "title": "遠足の前の日",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/20",
+      "title": "家族旅行 5:00",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/20",
+      "title": "観光地 14:00",
+      "file": "10.md"
+    },
+    {
+      "page": 11,
+      "label": "11/20",
+      "title": "宿 夜",
+      "file": "11.md"
+    },
+    {
+      "page": 12,
+      "label": "12/20",
+      "title": "娘 中学生",
+      "file": "12.md"
+    },
+    {
+      "page": 13,
+      "label": "13/20",
+      "title": "夏の夜",
+      "file": "13.md"
+    },
+    {
+      "page": 14,
+      "label": "14/20",
+      "title": "浩二 45歳",
+      "file": "14.md"
+    },
+    {
+      "page": 15,
+      "label": "15/20",
+      "title": "娘 22歳 独立",
+      "file": "15.md"
+    },
+    {
+      "page": 16,
+      "label": "16/20",
+      "title": "息子の結婚式",
+      "file": "16.md"
+    },
+    {
+      "page": 17,
+      "label": "17/20",
+      "title": "60歳",
+      "file": "17.md"
+    },
+    {
+      "page": 18,
+      "label": "18/20",
+      "title": "家族のLINE",
+      "file": "18.md"
+    },
+    {
+      "page": 19,
+      "label": "19/20",
+      "title": "1年後 旅館",
+      "file": "19.md"
+    },
+    {
+      "page": 20,
+      "label": "20/20",
+      "title": "チェックアウト",
+      "file": "20.md"
+    }
+  ]
+}

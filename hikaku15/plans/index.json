@@ -1106,5 +1106,33 @@
     "format_name": "正方形1:1・上の見出し＋上下2コマの実写比較（不幸／幸せ）＋自分名義のお金の箱・20枚",
     "status": "プロンプト完成・チャッピーで生成待ち",
     "maker": "claude"
+  },
+  {
+    "no": 56,
+    "folder": "056",
+    "title": "ケチすぎる母の末路",
+    "created": "2026-11-28",
+    "gafu_id": "No.102",
+    "style_name": "実写（参考投稿No.102と同じ形式）",
+    "pages": 20,
+    "aspect_ratio": "1:1",
+    "format": "G",
+    "format_name": "正方形1:1・実写1枚＋左上のタグ＋下のセリフ・20枚",
+    "status": "プロンプト完成・チャッピーで生成待ち",
+    "maker": "claude"
+  },
+  {
+    "no": 57,
+    "folder": "057",
+    "title": "ミニマリストな男の末路",
+    "created": "2026-11-28",
+    "gafu_id": "No.102",
+    "style_name": "実写（参考投稿No.102と同じ形式）",
+    "pages": 20,
+    "aspect_ratio": "1:1",
+    "format": "G",
+    "format_name": "正方形1:1・実写1枚＋左上のタグ＋下のセリフ・20枚",
+    "status": "プロンプト完成・チャッピーで生成待ち",
+    "maker": "claude"
   }
 ]
