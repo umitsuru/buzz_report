@@ -1041,8 +1041,15 @@
     "aspect_ratio": "1:1",
     "format": "ehon",
     "format_name": "正方形1:1・文字なしの絵物語・15枚",
-    "status": "15枚作成済み（普通のChatGPT・大人向け漫画風）",
-    "maker": "claude"
+    "status": "投稿済み（やまつる）",
+    "maker": "claude",
+    "posted": {
+      "account": "やまつる",
+      "at": "2026-11-28T22:12:00+09:00",
+      "via": "Postiz",
+      "postiz_id": "cmx0fjjck07oxmv07billa1gb",
+      "text": "もしも浦島太郎が竜宮城でお姫様と結婚したら…"
+    }
   },
   {
     "no": 53,
