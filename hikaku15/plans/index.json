@@ -957,9 +957,9 @@
     "pages": 12,
     "aspect_ratio": "可変",
     "format": "LINE",
-    "format_name": "LINEのトーク画面（ダークモード：黒い背景）・画像ごとに上下をトリミング（生成は3:2）・10枚",
+    "format_name": "LINEのトーク画面・画像ごとに上下をトリミング・12枚",
     "status": "画像完成（Claudeが描画）",
     "maker": "claude",
-    "timeline_hook": "、シーツびしょびしょ"
+    "timeline_hook": "藤部長／だーりん、お昼食べた／ハンバーグ、楽しみにしてるよ"
   }
 ]
