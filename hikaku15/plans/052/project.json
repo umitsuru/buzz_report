@@ -23,14 +23,8 @@
     }
   ],
   "style": {
-    "gafu_id": "No.110",
-    "name": "緻密なペン線＋淡い水彩の絵本風（セピア調）",
-    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/052/ref/01.jpg",
-    "reference_images": [
-      "https://umitsuru.github.io/buzz_report/hikaku15/plans/052/ref/01.jpg",
-      "https://umitsuru.github.io/buzz_report/hikaku15/plans/052/ref/05.jpg",
-      "https://umitsuru.github.io/buzz_report/hikaku15/plans/052/ref/11.jpg"
-    ],
+    "gafu_id": "なし",
+    "name": "色っぽい大人向け漫画風（普通のChatGPTで生成）",
     "defined_in": "common.md"
   },
   "pages": [
@@ -107,5 +101,5 @@
       "file": "12.md"
     }
   ],
-  "history": "2026/11/28作成。同日、画風をNo.59に変えて生成（old_v1/）、その後No.110の画風に戻し、普通のChatGPTで生成"
+  "history": "2026/11/28作成。同日、画風をNo.59に変えて生成（old_v1/）、その後No.110の画風に戻し、普通のChatGPTで生成。19:25、色っぽい大人向け漫画風に変えて普通のChatGPTで12枚を作り直し（No.110版の生成は途中で中止）"
 }
