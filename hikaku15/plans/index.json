@@ -982,5 +982,19 @@
     "status": "画像完成（Claudeが描画）",
     "maker": "claude",
     "timeline_hook": "藤部長／だーりん、お昼食べた／ハンバーグ、楽しみにしてるよ"
+  },
+  {
+    "no": 50,
+    "folder": "050",
+    "title": "↑昭和のセッｸｽ　↓令和のセッｸｽ",
+    "created": "2026-11-28",
+    "gafu_id": "No.109",
+    "style_name": "実写の上下比較（昭和／令和）",
+    "pages": 20,
+    "aspect_ratio": "1:1",
+    "format": "jojitsu_era",
+    "format_name": "正方形1:1・実写の上下比較（上＝昭和・下＝令和）・20枚",
+    "status": "プロンプト完成・チャッピーで生成中",
+    "maker": "claude"
   }
 ]
