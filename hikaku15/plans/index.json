@@ -994,7 +994,7 @@
     "aspect_ratio": "1:1",
     "format": "jojitsu_era",
     "format_name": "正方形1:1・実写の上下比較（上＝昭和・下＝令和）＋年齢の札と手書きの説明・20枚",
-    "status": "v2で全20枚作成済み（チャッピー）",
+    "status": "v3に改訂・チャッピーで作り直し待ち（1〜4枚目はv2のまま。v2は old_v2）",
     "maker": "claude"
   }
 ]
