@@ -1013,8 +1013,15 @@
     "aspect_ratio": "1:1",
     "format": "jojitsu_era",
     "format_name": "正方形1:1・実写の上下比較（上＝昭和・下＝令和）＋年齢の札と手書きの説明・20枚",
-    "status": "v3で全20枚作成済み（チャッピー）",
-    "maker": "claude"
+    "status": "予約済み（うみつる 11/29 6:45）",
+    "maker": "claude",
+    "posted": {
+      "account": "うみつる",
+      "at": "2026-11-29T06:45:00+09:00",
+      "via": "Postiz（予約）",
+      "postiz_id": "cmx0gqix008mnqv07a1rmwlrl",
+      "text": "↑昭和のセッ久\n↓令和のセッ久"
+    }
   },
   {
     "no": 51,
