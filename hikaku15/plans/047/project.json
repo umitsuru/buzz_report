@@ -6,12 +6,12 @@
   "created": "2026-11-28",
   "made_by": "Claude",
   "format": "E",
-  "format_name": "正方形1:1・実写の写真＋左上のタグ＋下のセリフ1行・20枚（普通のChatGPTで生成）",
+  "format_name": "正方形1:1・実写の写真＋左上のタグ＋下のセリフ1行・20枚",
   "image_count": 20,
   "aspect_ratio": "1:1",
   "initial_mode": "wait_for_explicit_generate_command",
-  "generator": "普通のChatGPT（チャッピーではない）。同じ会話で1枚ずつ。文字はClaudeが確認",
-  "bot_instruction": "この投稿案はチャッピーでは作らない。普通のChatGPTで作った画像を images/NN.jpg に保存するだけ。",
+  "generator": "チャッピー（ボット）。同じ会話で1枚ずつ",
+  "bot_instruction": "common.mdを読み（生成しない）、01〜20.mdを1つずつ読んで1ページ1枚ずつ生成し、images/NN.jpg に保存する。全20枚を作る。",
   "fiction_notice": "登場人物はすべて架空。実在の人物・学校とは関係ない創作。",
   "reference_posts": [
     {
