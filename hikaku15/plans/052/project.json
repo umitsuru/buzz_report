@@ -6,8 +6,8 @@
   "created": "2026-11-28",
   "made_by": "Claude",
   "format": "ehon",
-  "format_name": "正方形1:1・文字なしの絵物語・12枚",
-  "image_count": 12,
+  "format_name": "正方形1:1・文字なしの絵物語・15枚",
+  "image_count": 15,
   "aspect_ratio": "1:1",
   "initial_mode": "wait_for_explicit_generate_command",
   "generator": "普通のChatGPT（Chatモード）で12枚を同じ会話で生成し、チャッピーがそのまま images/ に保存",
@@ -30,76 +30,94 @@
   "pages": [
     {
       "page": 1,
-      "label": "1/12",
+      "label": "1/15",
       "title": "亀を助ける",
       "file": "01.md"
     },
     {
       "page": 2,
-      "label": "2/12",
+      "label": "2/15",
       "title": "海の底へ",
       "file": "02.md"
     },
     {
       "page": 3,
-      "label": "3/12",
+      "label": "3/15",
       "title": "竜宮城",
       "file": "03.md"
     },
     {
       "page": 4,
-      "label": "4/12",
+      "label": "4/15",
       "title": "宴",
       "file": "04.md"
     },
     {
       "page": 5,
-      "label": "5/12",
+      "label": "5/15",
       "title": "あれ？",
       "file": "05.md"
     },
     {
       "page": 6,
-      "label": "6/12",
-      "title": "帰らない",
+      "label": "6/15",
+      "title": "恋",
       "file": "06.md"
     },
     {
       "page": 7,
-      "label": "7/12",
-      "title": "住みつく",
+      "label": "7/15",
+      "title": "祝言",
       "file": "07.md"
     },
     {
       "page": 8,
-      "label": "8/12",
-      "title": "竜宮城の暮らし",
+      "label": "8/15",
+      "title": "誕生",
       "file": "08.md"
     },
     {
       "page": 9,
-      "label": "9/12",
-      "title": "ふるさと",
+      "label": "9/15",
+      "title": "子育て奮闘",
       "file": "09.md"
     },
     {
       "page": 10,
-      "label": "10/12",
-      "title": "年をとる",
+      "label": "10/15",
+      "title": "夫婦げんか",
       "file": "10.md"
     },
     {
       "page": 11,
-      "label": "11/12",
-      "title": "最期",
+      "label": "11/15",
+      "title": "仲直り",
       "file": "11.md"
     },
     {
       "page": 12,
-      "label": "12/12",
-      "title": "玉手箱",
+      "label": "12/15",
+      "title": "家族の時間",
       "file": "12.md"
+    },
+    {
+      "page": 13,
+      "label": "13/15",
+      "title": "ふるさと",
+      "file": "13.md"
+    },
+    {
+      "page": 14,
+      "label": "14/15",
+      "title": "年をとる",
+      "file": "14.md"
+    },
+    {
+      "page": 15,
+      "label": "15/15",
+      "title": "最期",
+      "file": "15.md"
     }
   ],
-  "history": "2026/11/28作成。同日、画風をNo.59に変えて生成（old_v1/）、その後No.110の画風に戻し、普通のChatGPTで生成。19:25、色っぽい大人向け漫画風に変えて普通のChatGPTで12枚を作り直し（No.110版の生成は途中で中止）"
+  "history": "2026/11/28作成。同日、画風をNo.59に変えて生成（old_v1/）、その後No.110の画風に戻し、普通のChatGPTで生成。19:25、色っぽい大人向け漫画風に変えて普通のChatGPTで12枚を作り直し（No.110版の生成は途中で中止）。20:45、15枚に増やし、6枚目から恋→結婚→子育て→夫婦げんか→家族、最後は玉手箱に家族の記念写真をしまう流れに変更（12枚版は old_v2/）"
 }

@@ -1027,11 +1027,11 @@
     "created": "2026-11-28",
     "gafu_id": "なし",
     "style_name": "色っぽい大人向け漫画風（ChatGPTで生成）",
-    "pages": 12,
+    "pages": 15,
     "aspect_ratio": "1:1",
     "format": "ehon",
-    "format_name": "正方形1:1・文字なしの絵物語・12枚",
-    "status": "全12枚作成済み（普通のChatGPT・大人向け漫画風。No.59版は old_v1）",
+    "format_name": "正方形1:1・文字なしの絵物語・15枚",
+    "status": "15枚に改訂・6〜15枚目を普通のChatGPTで生成中（12枚版は old_v2）",
     "maker": "claude"
   }
 ]

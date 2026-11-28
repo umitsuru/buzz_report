@@ -1,0 +1,105 @@
+{
+  "plan_no": 52,
+  "folder": "052",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/052/",
+  "project": "もしも浦島太郎が竜宮城から帰らなかったら",
+  "created": "2026-11-28",
+  "made_by": "Claude",
+  "format": "ehon",
+  "format_name": "正方形1:1・文字なしの絵物語・12枚",
+  "image_count": 12,
+  "aspect_ratio": "1:1",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "generator": "普通のChatGPT（Chatモード）で12枚を同じ会話で生成し、チャッピーがそのまま images/ に保存",
+  "bot_instruction": "common.md を読み（生成しない）、ref/ の参考画像で画風を確認してから、01.md〜12.md を1つずつ読んで1ページ1枚ずつ生成し、images/NN.jpg に保存する。全12枚を作る。文字は入れない。",
+  "fiction_notice": "昔話のパロディ。登場人物はすべて架空。性的な描写・残酷な描写はしない。",
+  "reference_posts": [
+    {
+      "post_no": 110,
+      "folder": "hikaku15/posts/20261128_2126488495430455551",
+      "title": "学校では教えてくれない本当は怖い桃太郎",
+      "author": "@darma00224",
+      "used_for": "「昔話を文字なし12枚で語り直す」型だけ"
+    }
+  ],
+  "style": {
+    "gafu_id": "なし",
+    "name": "色っぽい大人向け漫画風（普通のChatGPTで生成）",
+    "defined_in": "common.md"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/12",
+      "title": "亀を助ける",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/12",
+      "title": "海の底へ",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/12",
+      "title": "竜宮城",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/12",
+      "title": "宴",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/12",
+      "title": "あれ？",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/12",
+      "title": "帰らない",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/12",
+      "title": "住みつく",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/12",
+      "title": "竜宮城の暮らし",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/12",
+      "title": "ふるさと",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/12",
+      "title": "年をとる",
+      "file": "10.md"
+    },
+    {
+      "page": 11,
+      "label": "11/12",
+      "title": "最期",
+      "file": "11.md"
+    },
+    {
+      "page": 12,
+      "label": "12/12",
+      "title": "玉手箱",
+      "file": "12.md"
+    }
+  ],
+  "history": "2026/11/28作成。同日、画風をNo.59に変えて生成（old_v1/）、その後No.110の画風に戻し、普通のChatGPTで生成。19:25、色っぽい大人向け漫画風に変えて普通のChatGPTで12枚を作り直し（No.110版の生成は途中で中止）"
+}
