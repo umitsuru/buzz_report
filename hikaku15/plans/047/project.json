@@ -1,0 +1,160 @@
+{
+  "plan_no": 47,
+  "folder": "047",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/047/",
+  "project": "子供の教育に厳しすぎた両親の末路（実写版）",
+  "created": "2026-11-28",
+  "made_by": "Claude",
+  "format": "E",
+  "format_name": "正方形1:1・実写の写真＋左上のタグ＋下のセリフ1行・20枚（普通のChatGPTで生成）",
+  "image_count": 20,
+  "aspect_ratio": "1:1",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "generator": "普通のChatGPT（チャッピーではない）。同じ会話で1枚ずつ。文字はClaudeが確認",
+  "bot_instruction": "この投稿案はチャッピーでは作らない。普通のChatGPTで作った画像を images/NN.jpg に保存するだけ。",
+  "fiction_notice": "登場人物はすべて架空。実在の人物・学校とは関係ない創作。",
+  "reference_posts": [
+    {
+      "no": 102,
+      "folder": "hikaku15/posts/20261127_2126062186980053401",
+      "url": "https://x.com/isseicanada/status/2126062186980053401",
+      "title": "家族旅行で厳しすぎる父の末路…。",
+      "views": 17359014,
+      "used_for": "形式（正方形の実写、左上のタグ、下のセリフ1行、20枚、最後に1枚目へ戻る）。人物・セリフ・場面はコピーしない"
+    }
+  ],
+  "style": {
+    "gafu_id": "No.102",
+    "ref_post_no": 102,
+    "name": "実写（日本のドラマのワンシーン風）＋左上のタグ＋下のセリフ",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261127_2126062186980053401/img/01.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261127_2126062186980053401/img/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261127_2126062186980053401/img/20.jpg"
+    ],
+    "defined_in": "common.md"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/20",
+      "title": "小学6年 朝6:00　父「朝の計算ドリル、20ページな」",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/20",
+      "title": "塾の前 21:30　母「今日の小テスト、何点？」",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/20",
+      "title": "リビング　「テレビは、受験が終わるまで禁止」",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/20",
+      "title": "弟の誕生日　弟「プレゼント、問題集…」",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/20",
+      "title": "中学受験 合格発表　父「…滑り止めか」",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/20",
+      "title": "中学2年 夜　姉「もう、あんたらの成績表じゃない」",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/20",
+      "title": "深夜 0:30　母「既読もつかない…」",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/20",
+      "title": "弟 小学6年　母「お姉ちゃんの分まで、頑張ろうね」",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/20",
+      "title": "三者面談　姉「進路？ 美容師」",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/20",
+      "title": "高校3年 朝　姉「家、出るから。もう連絡しないで」",
+      "file": "10.md"
+    },
+    {
+      "page": 11,
+      "label": "11/20",
+      "title": "弟 中学受験 当日 7:30　弟（もう、無理かも）",
+      "file": "11.md"
+    },
+    {
+      "page": 12,
+      "label": "12/20",
+      "title": "弟 合格発表　父「さすが、うちの子だ！」",
+      "file": "12.md"
+    },
+    {
+      "page": 13,
+      "label": "13/20",
+      "title": "弟 高校2年　母「翔太、ごはんよ…」",
+      "file": "13.md"
+    },
+    {
+      "page": 14,
+      "label": "14/20",
+      "title": "カウンセリング　カウンセラー「まず、ご両親が変わりましょう」",
+      "file": "14.md"
+    },
+    {
+      "page": 15,
+      "label": "15/20",
+      "title": "数日後 夜　父「…そのゲーム、パパにも教えてくれ」",
+      "file": "15.md"
+    },
+    {
+      "page": 16,
+      "label": "16/20",
+      "title": "数か月後 深夜　弟「パパ、下手すぎ」",
+      "file": "16.md"
+    },
+    {
+      "page": 17,
+      "label": "17/20",
+      "title": "5年後 美容院　姉「動かないで。予約、3か月待ちなんだから」",
+      "file": "17.md"
+    },
+    {
+      "page": 18,
+      "label": "18/20",
+      "title": "弟 大学4年　弟「ゲーム会社、内定もらった」",
+      "file": "18.md"
+    },
+    {
+      "page": 19,
+      "label": "19/20",
+      "title": "10年後 お正月　父「勉強なんて、あとでいいんだよ〜」",
+      "file": "19.md"
+    },
+    {
+      "page": 20,
+      "label": "20/20",
+      "title": "同じ日 夜　姉「朝の計算ドリル、20ページね」",
+      "file": "20.md"
+    }
+  ],
+  "history": "2026/11/28作成。参考投稿No.102（家族旅行で厳しすぎる父の末路）の形式で、教育に厳しすぎた両親の話に。画像は未生成"
+}

@@ -906,5 +906,20 @@
     "reference_role": "composition",
     "cover": "../posts/20261127_2125831922010243263/img/01.jpg",
     "maker": "chatgpt"
+  },
+  {
+    "no": 47,
+    "folder": "047",
+    "title": "子供の教育に厳しすぎた両親の末路（実写版）",
+    "created": "2026-11-28",
+    "gafu_id": "No.102",
+    "style_name": "実写＋左上のタグ＋下のセリフ（普通のChatGPT）",
+    "pages": 20,
+    "aspect_ratio": "1:1",
+    "format": "E",
+    "format_name": "正方形1:1・実写の写真＋左上のタグ＋下のセリフ1行・20枚（普通のChatGPTで生成）",
+    "status": "プロンプト完成・画像未生成",
+    "maker": "claude",
+    "cover": "../posts/20261127_2126062186980053401/img/01.jpg"
   }
 ]
