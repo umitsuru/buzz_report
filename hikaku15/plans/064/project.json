@@ -2,124 +2,111 @@
   "plan_no": 64,
   "folder": "064",
   "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/064/",
-  "project": "同じ男性の人生。結婚相手が変わると、ここまで変わる。",
+  "project": "送迎先が、俺の実家だった",
   "created": "2026-11-28",
   "made_by": "Claude",
-  "format": "F",
-  "format_name": "正方形1:1・上の見出し＋上下2コマの実写比較＋貯金の箱・15枚",
-  "image_count": 15,
+  "format": "essay_manga",
+  "format_name": "正方形1:1・ゆるい手描き線画のマンガ・ナレーション＋吹き出し・12枚",
+  "image_count": 12,
   "aspect_ratio": "1:1",
   "initial_mode": "wait_for_explicit_generate_command",
   "generator": "チャッピー",
-  "bot_instruction": "common.md を読み（生成しない）、参考画像で形式を確認してから、01.md〜15.md を1つずつ読んで1ページ1枚ずつ生成し、images/NN.jpg に保存する。全15枚を作る。",
+  "bot_instruction": "common.md を読み（生成しない）、参考画像で形式を確認してから、01.md〜12.md を1つずつ読んで1ページ1枚ずつ生成し、images/NN.jpg に保存する。全12枚を作る。",
   "fiction_notice": "登場人物はすべて架空の成人（子どもが出る場合は健全に描く）。実在の人物・店・会社とは関係ない創作。性的な絵・露出は描かない。",
   "reference_posts": [
     {
-      "no": 97,
-      "folder": "hikaku15/posts/20261126_2125696023603679398",
-      "title": "同じ女性の人生。結婚相手が変わると、ここまで変わる。",
-      "used_for": "テーマ（結婚相手で人生が変わる）"
+      "source_text": {
+        "site": "claude-buzz-text",
+        "no": 283,
+        "post_id": "n279",
+        "title": "送迎先が、俺の実家だった",
+        "impressions": 7330000
+      }
     }
   ],
   "style": {
-    "gafu_id": "No.97",
-    "name": "実写＋上下比較（投稿案No.55と同じレイアウト）",
-    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261126_2125696023603679398/img/01.jpg",
+    "gafu_id": "No.112",
+    "name": "ゆるい手描き線画のマンガ（No.30・No.53と同じ）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/plans/030/images/02.jpg",
     "reference_images": [
-      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261126_2125696023603679398/img/01.jpg"
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/030/images/02.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/030/images/11.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/plans/030/images/13.jpg"
     ],
     "defined_in": "common.md"
   },
   "pages": [
     {
       "page": 1,
-      "label": "1/15",
-      "title": "27歳 結婚",
+      "label": "1/12",
+      "title": "送迎ドライバー",
       "file": "01.md"
     },
     {
       "page": 2,
-      "label": "2/15",
-      "title": "新婚旅行",
+      "label": "2/12",
+      "title": "次のお客さん",
       "file": "02.md"
     },
     {
       "page": 3,
-      "label": "3/15",
-      "title": "新居",
+      "label": "3/12",
+      "title": "ナビ",
       "file": "03.md"
     },
     {
       "page": 4,
-      "label": "4/15",
-      "title": "30歳",
+      "label": "4/12",
+      "title": "目的地",
       "file": "04.md"
     },
     {
       "page": 5,
-      "label": "5/15",
-      "title": "32歳 子ども",
+      "label": "5/12",
+      "title": "知り合い？",
       "file": "05.md"
     },
     {
       "page": 6,
-      "label": "6/15",
-      "title": "35歳 車",
+      "label": "6/12",
+      "title": "行ってください",
       "file": "06.md"
     },
     {
       "page": 7,
-      "label": "7/15",
-      "title": "38歳 家",
+      "label": "7/12",
+      "title": "実家の前",
       "file": "07.md"
     },
     {
       "page": 8,
-      "label": "8/15",
-      "title": "42歳 会社",
+      "label": "8/12",
+      "title": "90分",
       "file": "08.md"
     },
     {
       "page": 9,
-      "label": "9/15",
-      "title": "45歳 夫婦げんか",
+      "label": "9/12",
+      "title": "帰りの車",
       "file": "09.md"
     },
     {
       "page": 10,
-      "label": "10/15",
-      "title": "50歳 子どもの進学",
+      "label": "10/12",
+      "title": "次も",
       "file": "10.md"
     },
     {
       "page": 11,
-      "label": "11/15",
-      "title": "55歳 健康診断",
+      "label": "11/12",
+      "title": "日曜の実家",
       "file": "11.md"
     },
     {
       "page": 12,
-      "label": "12/15",
-      "title": "60歳 定年",
+      "label": "12/12",
+      "title": "給料",
       "file": "12.md"
-    },
-    {
-      "page": 13,
-      "label": "13/15",
-      "title": "63歳 熟年離婚",
-      "file": "13.md"
-    },
-    {
-      "page": 14,
-      "label": "14/15",
-      "title": "68歳 ひとり",
-      "file": "14.md"
-    },
-    {
-      "page": 15,
-      "label": "15/15",
-      "title": "70歳 誕生日",
-      "file": "15.md"
     }
   ]
 }

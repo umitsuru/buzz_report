@@ -2,124 +2,110 @@
   "plan_no": 65,
   "folder": "065",
   "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/065/",
-  "project": "↑平成のギャル　↓令和のギャル",
+  "project": "北海道の結婚式と、お車代1万円",
   "created": "2026-11-28",
   "made_by": "Claude",
-  "format": "H",
-  "format_name": "正方形1:1・上下2コマの実写比較＋手書き風の説明・15枚",
-  "image_count": 15,
+  "format": "essay_manga",
+  "format_name": "正方形1:1・ゆるい手描き線画のマンガ・ナレーション＋吹き出し・12枚",
+  "image_count": 12,
   "aspect_ratio": "1:1",
   "initial_mode": "wait_for_explicit_generate_command",
   "generator": "チャッピー",
-  "bot_instruction": "common.md を読み（生成しない）、参考画像で形式を確認してから、01.md〜15.md を1つずつ読んで1ページ1枚ずつ生成し、images/NN.jpg に保存する。全15枚を作る。",
+  "bot_instruction": "common.md を読み（生成しない）、参考画像で形式を確認してから、01.md〜12.md を1つずつ読んで1ページ1枚ずつ生成し、images/NN.jpg に保存する。全12枚を作る。",
   "fiction_notice": "登場人物はすべて架空の成人（子どもが出る場合は健全に描く）。実在の人物・店・会社とは関係ない創作。性的な絵・露出は描かない。",
   "reference_posts": [
     {
-      "no": 55,
-      "folder": "hikaku15/posts/20261121_2123886600761520325",
-      "title": "↑平成のヤンキー ↓令和のヤンキー",
-      "used_for": "上下比較の形式"
+      "source_text": {
+        "site": "claude-buzz-text",
+        "no": 12,
+        "post_id": "n7",
+        "title": "北海道の結婚式とお車代",
+        "impressions": 6650000
+      }
     }
   ],
   "style": {
-    "gafu_id": "No.55",
-    "name": "実写の上下比較（投稿案No.50と同じ形式）",
-    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261121_2123886600761520325/img/01.jpg",
+    "gafu_id": "No.90",
+    "name": "ゆるい手描き線画のマンガ（No.90に近い・No.54と同じ）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261124_2125140010181787659/img/01.jpg",
     "reference_images": [
-      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261121_2123886600761520325/img/01.jpg"
+      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261124_2125140010181787659/img/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261124_2125140010181787659/img/02.jpg"
     ],
     "defined_in": "common.md"
   },
   "pages": [
     {
       "page": 1,
-      "label": "1/15",
-      "title": "メイク",
+      "label": "1/12",
+      "title": "招待状",
       "file": "01.md"
     },
     {
       "page": 2,
-      "label": "2/15",
-      "title": "肌",
+      "label": "2/12",
+      "title": "計算",
       "file": "02.md"
     },
     {
       "page": 3,
-      "label": "3/15",
-      "title": "写真",
+      "label": "3/12",
+      "title": "受付",
       "file": "03.md"
     },
     {
       "page": 4,
-      "label": "4/15",
-      "title": "連絡手段",
+      "label": "4/12",
+      "title": "お車代",
       "file": "04.md"
     },
     {
       "page": 5,
-      "label": "5/15",
-      "title": "遊び場",
+      "label": "5/12",
+      "title": "言ってみた",
       "file": "05.md"
     },
     {
       "page": 6,
-      "label": "6/15",
-      "title": "恋愛",
+      "label": "6/12",
+      "title": "みんな1万",
       "file": "06.md"
     },
     {
       "page": 7,
-      "label": "7/15",
-      "title": "けんか",
+      "label": "7/12",
+      "title": "お礼",
       "file": "07.md"
     },
     {
       "page": 8,
-      "label": "8/15",
-      "title": "バイト",
+      "label": "8/12",
+      "title": "計算2",
       "file": "08.md"
     },
     {
       "page": 9,
-      "label": "9/15",
-      "title": "お金",
+      "label": "9/12",
+      "title": "私のときは",
       "file": "09.md"
     },
     {
       "page": 10,
-      "label": "10/15",
-      "title": "友だち",
+      "label": "10/12",
+      "title": "結婚式当日",
       "file": "10.md"
     },
     {
       "page": 11,
-      "label": "11/15",
-      "title": "結婚",
+      "label": "11/12",
+      "title": "翌月",
       "file": "11.md"
     },
     {
       "page": 12,
-      "label": "12/15",
-      "title": "子育て",
+      "label": "12/12",
+      "title": "手紙",
       "file": "12.md"
-    },
-    {
-      "page": 13,
-      "label": "13/15",
-      "title": "30代のおしゃれ",
-      "file": "13.md"
-    },
-    {
-      "page": 14,
-      "label": "14/15",
-      "title": "仕事",
-      "file": "14.md"
-    },
-    {
-      "page": 15,
-      "label": "15/15",
-      "title": "今",
-      "file": "15.md"
     }
   ]
 }
