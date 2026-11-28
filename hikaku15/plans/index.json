@@ -420,7 +420,16 @@
     "status": "画風を手描き風に変更・画像を全部作り直し待ち（旧画像は old_v1/）",
     "reference_role": "composition",
     "cover": "../posts/20261122_2124072831478866011/img/01.jpg",
-    "maker": "chatgpt"
+    "maker": "chatgpt",
+    "posted": {
+      "account": "かぜつる",
+      "at": "2026-11-28T17:31:00+09:00",
+      "via": "Postiz",
+      "postiz_id": "cmx05gx7l041dqv07v2kh45xm",
+      "url": null,
+      "text": "オススメゆる漫画１０選",
+      "impressions": null
+    }
   },
   {
     "no": 19,
