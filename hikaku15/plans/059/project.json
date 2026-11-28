@@ -1,0 +1,156 @@
+{
+  "plan_no": 59,
+  "folder": "059",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/059/",
+  "project": "↑20代のセッｸｽ　↓40代のセッｸｽ",
+  "created": "2026-11-28",
+  "made_by": "Claude",
+  "format": "H",
+  "format_name": "正方形1:1・上下2コマの実写比較＋手書き風の説明・20枚",
+  "image_count": 20,
+  "aspect_ratio": "1:1",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "generator": "チャッピー",
+  "bot_instruction": "common.md を読み（生成しない）、参考画像で形式を確認してから、01.md〜20.md を1つずつ読んで1ページ1枚ずつ生成し、images/NN.jpg に保存する。全20枚を作る。",
+  "fiction_notice": "登場人物はすべて架空の成人（子どもが出る場合は健全に描く）。実在の人物・店・会社とは関係ない創作。性的な絵・露出は描かない。",
+  "reference_posts": [
+    {
+      "no": 109,
+      "folder": "hikaku15/posts/20261128_2126420806385479967",
+      "title": "↑日本のセッｸｽ ↓アメリカのセッｸｽ",
+      "used_for": "上下比較の形式。人物・場面はコピーしない"
+    }
+  ],
+  "style": {
+    "gafu_id": "No.109",
+    "name": "実写の上下比較（参考投稿No.109の形式）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261128_2126420806385479967/img/01.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261128_2126420806385479967/img/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261128_2126420806385479967/img/02.jpg"
+    ],
+    "defined_in": "common.md"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/20",
+      "title": "夜の始まり",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/20",
+      "title": "回数",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/20",
+      "title": "体",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/20",
+      "title": "準備運動",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/20",
+      "title": "ベッド",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/20",
+      "title": "明かり",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/20",
+      "title": "スマホ",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/20",
+      "title": "ムードづくり",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/20",
+      "title": "途中で考えること",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/20",
+      "title": "ハプニング",
+      "file": "10.md"
+    },
+    {
+      "page": 11,
+      "label": "11/20",
+      "title": "心臓",
+      "file": "11.md"
+    },
+    {
+      "page": 12,
+      "label": "12/20",
+      "title": "終わったあと",
+      "file": "12.md"
+    },
+    {
+      "page": 13,
+      "label": "13/20",
+      "title": "翌日",
+      "file": "13.md"
+    },
+    {
+      "page": 14,
+      "label": "14/20",
+      "title": "気持ち",
+      "file": "14.md"
+    },
+    {
+      "page": 15,
+      "label": "15/20",
+      "title": "誘われたら",
+      "file": "15.md"
+    },
+    {
+      "page": 16,
+      "label": "16/20",
+      "title": "体型",
+      "file": "16.md"
+    },
+    {
+      "page": 17,
+      "label": "17/20",
+      "title": "時間配分",
+      "file": "17.md"
+    },
+    {
+      "page": 18,
+      "label": "18/20",
+      "title": "寝る服",
+      "file": "18.md"
+    },
+    {
+      "page": 19,
+      "label": "19/20",
+      "title": "いちばん大事なもの",
+      "file": "19.md"
+    },
+    {
+      "page": 20,
+      "label": "20/20",
+      "title": "それでも",
+      "file": "20.md"
+    }
+  ]
+}

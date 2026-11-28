@@ -1,0 +1,156 @@
+{
+  "plan_no": 61,
+  "folder": "061",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/061/",
+  "project": "パパ活してる女性と、パパ活してない女性",
+  "created": "2026-11-28",
+  "made_by": "Claude",
+  "format": "I",
+  "format_name": "正方形1:1・上下2コマ（ピンク／水色）のカラー漫画比較・20枚",
+  "image_count": 20,
+  "aspect_ratio": "1:1",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "generator": "チャッピー",
+  "bot_instruction": "common.md を読み（生成しない）、参考画像で形式を確認してから、01.md〜20.md を1つずつ読んで1ページ1枚ずつ生成し、images/NN.jpg に保存する。全20枚を作る。",
+  "fiction_notice": "登場人物はすべて架空の成人（子どもが出る場合は健全に描く）。実在の人物・店・会社とは関係ない創作。性的な絵・露出は描かない。",
+  "reference_posts": [
+    {
+      "no": 115,
+      "folder": "hikaku15/posts/20261128_2126445257370050928",
+      "title": "セフレがいる生活ってこんな感じですか？",
+      "used_for": "形式と色づかい。人物・文はコピーしない"
+    }
+  ],
+  "style": {
+    "gafu_id": "No.115",
+    "name": "大人向けの色っぽいカラー漫画（参考投稿No.115の形式）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261128_2126445257370050928/img/01.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261128_2126445257370050928/img/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261128_2126445257370050928/img/05.jpg"
+    ],
+    "defined_in": "common.md"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/20",
+      "title": "夜ごはんは高級フレンチ",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/20",
+      "title": "バッグが増える",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/20",
+      "title": "スマホが2台",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/20",
+      "title": "予定がパパで埋まる",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/20",
+      "title": "今月の「お手当」",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/20",
+      "title": "名前をまちがえない",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/20",
+      "title": "服はパパの好み",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/20",
+      "title": "会話はうなずき係",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/20",
+      "title": "SNSに顔が出せない",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/20",
+      "title": "1回で5万円",
+      "file": "10.md"
+    },
+    {
+      "page": 11,
+      "label": "11/20",
+      "title": "知らない番号から着信",
+      "file": "11.md"
+    },
+    {
+      "page": 12,
+      "label": "12/20",
+      "title": "友だちに本当のことが言えない",
+      "file": "12.md"
+    },
+    {
+      "page": 13,
+      "label": "13/20",
+      "title": "家はパパが払うタワマン",
+      "file": "13.md"
+    },
+    {
+      "page": 14,
+      "label": "14/20",
+      "title": "「若いね」が仕事",
+      "file": "14.md"
+    },
+    {
+      "page": 15,
+      "label": "15/20",
+      "title": "将来は…？",
+      "file": "15.md"
+    },
+    {
+      "page": 16,
+      "label": "16/20",
+      "title": "同年代の彼が物足りない",
+      "file": "16.md"
+    },
+    {
+      "page": 17,
+      "label": "17/20",
+      "title": "パパは3人目",
+      "file": "17.md"
+    },
+    {
+      "page": 18,
+      "label": "18/20",
+      "title": "28歳「最近は若い子が…」",
+      "file": "18.md"
+    },
+    {
+      "page": 19,
+      "label": "19/20",
+      "title": "30歳、貯金ゼロ",
+      "file": "19.md"
+    },
+    {
+      "page": 20,
+      "label": "20/20",
+      "title": "新しいパパは…",
+      "file": "20.md"
+    }
+  ]
+}

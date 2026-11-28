@@ -1134,5 +1134,61 @@
     "format_name": "正方形1:1・実写1枚＋左上のタグ＋下のセリフ・20枚",
     "status": "プロンプト完成・チャッピーで生成待ち",
     "maker": "claude"
+  },
+  {
+    "no": 58,
+    "folder": "058",
+    "title": "↑付き合いたてのセッｸｽ　↓結婚10年目のセッｸｽ",
+    "created": "2026-11-28",
+    "gafu_id": "No.109",
+    "style_name": "実写の上下比較（参考投稿No.109の形式）",
+    "pages": 20,
+    "aspect_ratio": "1:1",
+    "format": "H",
+    "format_name": "正方形1:1・上下2コマの実写比較＋手書き風の説明・20枚",
+    "status": "プロンプト完成・チャッピーで生成待ち",
+    "maker": "claude"
+  },
+  {
+    "no": 59,
+    "folder": "059",
+    "title": "↑20代のセッｸｽ　↓40代のセッｸｽ",
+    "created": "2026-11-28",
+    "gafu_id": "No.109",
+    "style_name": "実写の上下比較（参考投稿No.109の形式）",
+    "pages": 20,
+    "aspect_ratio": "1:1",
+    "format": "H",
+    "format_name": "正方形1:1・上下2コマの実写比較＋手書き風の説明・20枚",
+    "status": "プロンプト完成・チャッピーで生成待ち",
+    "maker": "claude"
+  },
+  {
+    "no": 60,
+    "folder": "060",
+    "title": "お互い初めての恋人あるある",
+    "created": "2026-11-28",
+    "gafu_id": "No.114",
+    "style_name": "ゆるい手描きのあるある（参考投稿No.114に近い雰囲気）",
+    "pages": 18,
+    "aspect_ratio": "1:1",
+    "format": "aruaru_line",
+    "format_name": "正方形1:1・ゆるい手描きのあるある・上の手書き見出し＋1枚1場面・18枚",
+    "status": "プロンプト完成・チャッピーで生成待ち",
+    "maker": "claude"
+  },
+  {
+    "no": 61,
+    "folder": "061",
+    "title": "パパ活してる女性と、パパ活してない女性",
+    "created": "2026-11-28",
+    "gafu_id": "No.115",
+    "style_name": "大人向けの色っぽいカラー漫画（参考投稿No.115の形式）",
+    "pages": 20,
+    "aspect_ratio": "1:1",
+    "format": "I",
+    "format_name": "正方形1:1・上下2コマ（ピンク／水色）のカラー漫画比較・20枚",
+    "status": "プロンプト完成・チャッピーで生成待ち",
+    "maker": "claude"
   }
 ]
