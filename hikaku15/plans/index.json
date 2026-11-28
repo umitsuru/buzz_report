@@ -946,5 +946,20 @@
     "status": "プロンプト完成・画像未生成",
     "maker": "claude",
     "cover": "../posts/20261128_2126438392338710882/img/01.jpg"
+  },
+  {
+    "no": 49,
+    "folder": "049",
+    "title": "新婚の夫に送ったつもりのLINEが、部長に届いていた",
+    "created": "2026-11-28",
+    "gafu_id": "No.60",
+    "style_name": "本物のLINEに近いトーク画面",
+    "pages": 12,
+    "aspect_ratio": "可変",
+    "format": "LINE",
+    "format_name": "LINEのトーク画面（ダークモード：黒い背景）・画像ごとに上下をトリミング（生成は3:2）・10枚",
+    "status": "画像完成（Claudeが描画）",
+    "maker": "claude",
+    "timeline_hook": "、シーツびしょびしょ"
   }
 ]
