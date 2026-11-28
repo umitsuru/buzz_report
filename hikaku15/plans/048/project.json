@@ -1,0 +1,160 @@
+{
+  "plan_no": 48,
+  "folder": "048",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/048/",
+  "project": "年末ジャンボが当選した女の末路（実写版）",
+  "created": "2026-11-28",
+  "made_by": "Claude",
+  "format": "F",
+  "format_name": "正方形1:1・上の見出し＋上下2コマの実写比較（不幸／幸せ）＋当選金の残りの箱・20枚",
+  "image_count": 20,
+  "aspect_ratio": "1:1",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "generator": "写真は普通のChatGPT（assets/photo_NN_top.jpg / _bottom.jpg）、文字と数字はチャッピーが重ねる",
+  "bot_instruction": "common.md を読んで共通設定を理解する（画像は作らない）。写真は新しく生成せず assets/photo_NN_top.jpg と photo_NN_bottom.jpg を使い、01.md から20.md の指定どおりに見出し・ラベル・説明文・金額を重ねて正方形にし、images/NN.jpg に保存する。全20枚を作る。",
+  "fiction_notice": "登場人物はすべて架空。実在の人物・店・会社とは関係ない創作。",
+  "reference_posts": [
+    {
+      "no": 107,
+      "folder": "hikaku15/posts/20261128_2126438392338710882",
+      "url": "https://x.com/i/status/2126438392338710882",
+      "title": "宝くじが当選した男の末路",
+      "views": 1301803,
+      "used_for": "レイアウト（上の見出し、不幸／幸せの上下2コマ、当選金の残りの箱、20枚）。絵柄は実写に変える。人物・文章はコピーしない"
+    }
+  ],
+  "style": {
+    "gafu_id": "No.107",
+    "ref_post_no": 107,
+    "name": "実写＋参考投稿No.107のレイアウト",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261128_2126438392338710882/img/01.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261128_2126438392338710882/img/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261128_2126438392338710882/img/20.jpg"
+    ],
+    "defined_in": "common.md"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/20",
+      "title": "7億円当選",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/20",
+      "title": "最初のぜいたく",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/20",
+      "title": "人に話した日",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/20",
+      "title": "家を買う",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/20",
+      "title": "親戚が来た",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/20",
+      "title": "夜の街",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/20",
+      "title": "きれいになりたい",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/20",
+      "title": "投資のお誘い",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/20",
+      "title": "連絡がつかない",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/20",
+      "title": "運命の出会い",
+      "file": "10.md"
+    },
+    {
+      "page": 11,
+      "label": "11/20",
+      "title": "彼のお願い",
+      "file": "11.md"
+    },
+    {
+      "page": 12,
+      "label": "12/20",
+      "title": "その後の彼",
+      "file": "12.md"
+    },
+    {
+      "page": 13,
+      "label": "13/20",
+      "title": "タワマンを手放す",
+      "file": "13.md"
+    },
+    {
+      "page": 14,
+      "label": "14/20",
+      "title": "誕生日",
+      "file": "14.md"
+    },
+    {
+      "page": 15,
+      "label": "15/20",
+      "title": "一発逆転",
+      "file": "15.md"
+    },
+    {
+      "page": 16,
+      "label": "16/20",
+      "title": "初めて借りた",
+      "file": "16.md"
+    },
+    {
+      "page": 17,
+      "label": "17/20",
+      "title": "実家に帰る",
+      "file": "17.md"
+    },
+    {
+      "page": 18,
+      "label": "18/20",
+      "title": "働く",
+      "file": "18.md"
+    },
+    {
+      "page": 19,
+      "label": "19/20",
+      "title": "再会",
+      "file": "19.md"
+    },
+    {
+      "page": 20,
+      "label": "20/20",
+      "title": "当選から10年",
+      "file": "20.md"
+    }
+  ],
+  "history": "2026/11/28作成。参考投稿No.107（宝くじが当選した男の末路）を、年末ジャンボ7億円が当選した女の実写版に"
+}
