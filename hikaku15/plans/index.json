@@ -773,7 +773,7 @@
     "aspect_ratio": "可変",
     "format": "LINE",
     "format_name": "LINEのトーク画面・画像ごとに上下をトリミング（生成は3:2）・16枚",
-    "status": "プロンプト完成・画像未生成",
+    "status": "全16枚作成済み（チャッピー）",
     "cover": "./037/ref/01.jpg",
     "maker": "claude",
     "timeline_hook": "俺の方が稼いで"
@@ -919,7 +919,7 @@
     "aspect_ratio": "1:1",
     "format": "D",
     "format_name": "正方形1:1・年齢＋見出し＋生活資金で追う20枚の末路漫画",
-    "status": "20枚の改訂プロンプト完成・画像未生成",
+    "status": "全20枚作成済み（チャッピー）",
     "reference_role": "composition",
     "cover": "../posts/20261127_2125831922010243263/img/01.jpg",
     "maker": "chatgpt"
