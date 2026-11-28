@@ -1,0 +1,112 @@
+{
+  "plan_no": 54,
+  "folder": "054",
+  "base_url": "https://umitsuru.github.io/buzz_report/hikaku15/plans/054/",
+  "project": "フードコートで笑いを堪えきれなかった話",
+  "created": "2026-11-28",
+  "made_by": "Claude",
+  "format": "essay_manga",
+  "format_name": "正方形1:1・ゆるい手描き線画のマンガ・心の声ツッコミ・12枚",
+  "image_count": 12,
+  "aspect_ratio": "1:1",
+  "initial_mode": "wait_for_explicit_generate_command",
+  "generator": "チャッピー",
+  "bot_instruction": "common.md を読み（生成しない）、参考画像で画風を確認してから、01.md〜12.md を1つずつ読んで1ページ1枚ずつ生成し、images/NN.jpg に保存する。全12枚を作る。",
+  "fiction_notice": "登場人物はすべて架空。色っぽさはセリフだけで、性的な絵はかかない。",
+  "reference_posts": [
+    {
+      "post_no": 90,
+      "folder": "hikaku15/posts/20261124_2125140010181787659",
+      "title": "満員電車で笑いを堪えきれなかった話",
+      "used_for": "画風と語り口"
+    }
+  ],
+  "style": {
+    "gafu_id": "No.90",
+    "name": "ゆるい手描き線画のマンガ（参考投稿No.90に近い雰囲気）",
+    "reference_image": "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261124_2125140010181787659/img/01.jpg",
+    "reference_images": [
+      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261124_2125140010181787659/img/01.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261124_2125140010181787659/img/02.jpg",
+      "https://umitsuru.github.io/buzz_report/hikaku15/posts/20261124_2125140010181787659/img/08.jpg"
+    ],
+    "defined_in": "common.md"
+  },
+  "wording_fallback": {
+    "お前だろ": "（断られたら）お前に決まってるだろ"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "label": "1/12",
+      "title": "満席",
+      "file": "01.md"
+    },
+    {
+      "page": 2,
+      "label": "2/12",
+      "title": "フーフー",
+      "file": "02.md"
+    },
+    {
+      "page": 3,
+      "label": "3/12",
+      "title": "ベル",
+      "file": "03.md"
+    },
+    {
+      "page": 4,
+      "label": "4/12",
+      "title": "ただいま",
+      "file": "04.md"
+    },
+    {
+      "page": 5,
+      "label": "5/12",
+      "title": "ソース",
+      "file": "05.md"
+    },
+    {
+      "page": 6,
+      "label": "6/12",
+      "title": "ひとくち",
+      "file": "06.md"
+    },
+    {
+      "page": 7,
+      "label": "7/12",
+      "title": "どっち",
+      "file": "07.md"
+    },
+    {
+      "page": 8,
+      "label": "8/12",
+      "title": "限界",
+      "file": "08.md"
+    },
+    {
+      "page": 9,
+      "label": "9/12",
+      "title": "見ちゃダメ",
+      "file": "09.md"
+    },
+    {
+      "page": 10,
+      "label": "10/12",
+      "title": "デザート",
+      "file": "10.md"
+    },
+    {
+      "page": 11,
+      "label": "11/12",
+      "title": "お前だろ",
+      "file": "11.md"
+    },
+    {
+      "page": 12,
+      "label": "12/12",
+      "title": "ブフォッ",
+      "file": "12.md"
+    }
+  ]
+}

@@ -1057,5 +1057,19 @@
     "format_name": "正方形1:1・ゆるい手描き線画のマンガ・ナレーション＋吹き出し・16枚",
     "status": "全16枚作成済み（チャッピー）",
     "maker": "claude"
+  },
+  {
+    "no": 54,
+    "folder": "054",
+    "title": "フードコートで笑いを堪えきれなかった話",
+    "created": "2026-11-28",
+    "gafu_id": "No.90",
+    "style_name": "ゆるい手描き線画のマンガ（No.90に近い）",
+    "pages": 12,
+    "aspect_ratio": "1:1",
+    "format": "essay_manga",
+    "format_name": "正方形1:1・ゆるい手描き線画のマンガ・心の声ツッコミ・12枚",
+    "status": "プロンプト完成・チャッピーで生成待ち",
+    "maker": "claude"
   }
 ]
